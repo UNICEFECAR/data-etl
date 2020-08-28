@@ -1,6 +1,8 @@
 requests
 pandas
 bs4
-sqlite3
-io
+difflib
+openpyxl
+pandas_datareader
+black
 

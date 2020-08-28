@@ -12,6 +12,9 @@
 # python cache (created by imports executed in notebooks)
 __pycache__
 
+# exclude folder created by visual studio 2019
+.vs/
+
 # IPython
 profile_default/
 ipython_config.py
