@@ -5,8 +5,19 @@ There will be our destination DSD, TransMonEE and the dataflows mapping
 We also place a variable type dictionary with code mappings
 """
 
-# import country code mapping (ISO 3/2 letters)
+# import country code mapping (ISO 2/3 letters)
 from transformation.country_map import country_map
+
+# import country code mapping (country name to ISO 3 code)
+from transformation.country_names_map import country_names_map
+
+import pandas as pd
+
+# path to file with legacy indicators meta data (age, sex, code, units)
+path_legacy = "./legacy_data/content_legacy_codes_v2.csv"
+# import csv into pandas
+legacy_meta_data = pd.read_csv(path_legacy, dtype=str)
+
 
 # NOTE: change comments, I separate dsd_dictionary and dflow_dictionary
 # Development NOTES: there could be a more complicated relation in the future
@@ -266,13 +277,29 @@ dflow_col_map = {
         "UNIT_MULTIPLIER": {"type": "col", "role": "attrib", "value": "UNIT_MULT"},
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
+    "LEGACY": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "country"},
+        "UNICEF_INDICATOR": {"type": "col", "role": "dim", "value": "indicator"},
+        "SEX": {"type": "col", "role": "dim", "value": "sex"},
+        "AGE": {"type": "col", "role": "dim", "value": "age"},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "year"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "value"},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "unit"},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "obs_note"},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
 }
 
 # Code mappings are intended to normalize data entries in our destination DSD
 # We must know beforehand if the extraction dataflow contains a different code to that of our destination one
 # The mapping order is very important
 # mapping order is written as actual_value:destination_value
-# Also, for some extraction dataflows, we get codes and description as entries and we will keep only codes
+# Also, for some extraction dataflows, we get codes and label descriptions as entries and we will keep only codes
 # This last case is denoted as 'code:description':true in the code mapping
 
 # Interesting discussion here: when to apply the code mapping?
@@ -394,6 +421,23 @@ code_mapping = {
         "LOCATION": {"RUR": "R", "URB": "U", "_Z": "_T"},
         "WEALTH_QUINTILE": {"_Z": "_T"},
     },
+    "LEGACY": {
+        "country": country_names_map,
+        "unit": {
+            "depends": "indicator",
+            "map": dict(zip(legacy_meta_data.indicator, legacy_meta_data.unit)),
+        },
+        "age": {
+            "depends": "indicator",
+            "map": dict(zip(legacy_meta_data.indicator, legacy_meta_data.age)),
+        },
+        "sex": {
+            "depends": "indicator",
+            "map": dict(zip(legacy_meta_data.indicator, legacy_meta_data.sex)),
+        },
+        # it is very important to put it last since the previous depend on this column !!!
+        "indicator": dict(zip(legacy_meta_data.indicator, legacy_meta_data.code)),
+    },
 }
 
 # constants added at the dataflow level
@@ -410,6 +454,7 @@ code_mapping = {
 # Is it decanting towards indicator level?
 
 # last recall: data dictionary already have (UNICEF_INDICATOR, DATA_SOURCE, OBS_FOOTNOTE)
+# last recall: data dictionary don't have information related to LEGACY indicators
 
 dflow_const = {
     "DM": {"WEALTH_QUINTILE": "_T"},
@@ -421,6 +466,11 @@ dflow_const = {
         "AGE": "_T",
         "WEALTH_QUINTILE": "_T",
         "RESIDENCE": "_T",
+    },
+    "LEGACY": {
+        "WEALTH_QUINTILE": "_T",
+        "RESIDENCE": "_T",
+        "DATA_SOURCE": "TMEE Legacy DB",
     },
 }
 
