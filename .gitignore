@@ -73,7 +73,7 @@ $RECYCLE.BIN/
 # ignore folder tests
 tests
 
-# Ignore some of my noteboooks prototypes
+# Ignore noteboooks prototypes
 API_calls.ipynb
 column_mapper.ipynb
 proto_sqlite.ipynb
@@ -82,6 +82,12 @@ wrap_API_calls.ipynb
 wrap_API_calls2.ipynb
 proto_extract_transform.ipynb
 excel_tmee.ipynb
+main_legacy.ipynb
+main_legacy_proto.ipynb
+prototype_legacy.ipynb
+prototype_API.ipynb
+prototype_API_v2.ipynb
+prototype_transform.ipynb
 
 
 # ignore folder below (all excel files)
@@ -89,11 +95,21 @@ populate_data_dictionary
 
 # ignore some versioning excel files
 indicator_dictionary_TM_v01.xlsx
+content_legacy.csv
+
+# ignore csv files from particular folders
+/tmee/data_out/data_raw/*.csv
+/tmee/data_out/data_transformed/*.csv
 
 # Ignore history download folder
 noYreq
 extractTest
 loopTest
 older
+
+# Ignore data_raw, transformed and data_2_load folders in tmee folder
+/tmee/data_raw/
+/tmee/data_transformed/
+/tmee/data_2_load/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,jupyternotebooks,microsoftoffice
