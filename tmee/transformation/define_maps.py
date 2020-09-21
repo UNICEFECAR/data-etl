@@ -14,7 +14,7 @@ from transformation.country_names_map import country_names_map
 import pandas as pd
 
 # path to file with legacy indicators meta data (age, sex, code, units)
-path_legacy = "./legacy_data/content_legacy_codes_v2.csv"
+path_legacy = "./data_in/legacy_data/content_legacy_codes_v2.csv"
 # import csv into pandas
 legacy_meta_data = pd.read_csv(path_legacy, dtype=str)
 
