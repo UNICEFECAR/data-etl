@@ -52,7 +52,8 @@ def wrap_api_address(
                 country_map_df.CountryIso2[country_map_df.CountryIso3 == elem].values
                 for elem in country_codes.values()
             ]
-            # keep only unique codes
+            # country names are repeated in the list, and I want the unique codes only
+            # Note: numpy unique sorts the array, but this doesn't modify the API call
             country_codes_2 = np.unique(np.concatenate(country_codes_2))
             # Join string of all TMEE country codes (2 letters) for SDMX requests
             country_call_2 = "+".join(country_codes_2)
