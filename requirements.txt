@@ -1,8 +1,9 @@
 requests
 pandas
 bs4
-difflib
 openpyxl
 pandas_datareader
 black
+rope
+fuzzywuzzy
 
