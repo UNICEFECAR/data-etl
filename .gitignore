@@ -73,6 +73,9 @@ $RECYCLE.BIN/
 # ignore folder tests
 tests
 
+# ignore folder validation (for now)
+validation
+
 # Ignore noteboooks prototypes
 API_calls.ipynb
 column_mapper.ipynb
