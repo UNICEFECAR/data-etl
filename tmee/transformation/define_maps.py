@@ -6,10 +6,10 @@ We also place a variable type dictionary with code mappings
 """
 
 # import country code mapping (ISO 2/3 letters)
-from transformation.country_map import country_map
+from .country_map import country_map
 
 # import country code mapping (country name to ISO 3 code)
-from transformation.country_names_map import country_names_map
+from .country_names_map import country_names_map
 
 import pandas as pd
 

@@ -1,7 +1,7 @@
-from transformation import define_maps
+from . import define_maps
 
 
-class dataflow:
+class Dataflow:
     """
     dataflows: similar to data structure definitions (DSD)
     dataflows: are the different DSD from where we extract indicators raw data

@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup
-from fileUtils import fileDownload
+from ..utils import api_request
 
 # function that returns TransMonEE list of countries from url web
 def get_countries(url_transmonee):
-    page = fileDownload.api_request(url_transmonee)
+    page = api_request(url_transmonee)
     # parse HTML
     page_html = BeautifulSoup(page.content, "html.parser")
     country_soup = page_html.findAll("div", {"class": "left-nav"})

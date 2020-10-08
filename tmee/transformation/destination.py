@@ -1,7 +1,7 @@
-from transformation import define_maps
+from . import define_maps
 
 
-class destination:
+class Destination:
     """
     destination data structure definition (DSD)
     """

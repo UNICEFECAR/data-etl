@@ -3,10 +3,10 @@ first prototype, this version could change a lot!
 To begin, there's only one function:
 it retrieves API address depending on the API source to call
 """
-
-from fileUtils import fileDownload
-from sdmx import sdmx_struc
 import numpy as np
+
+from ..utils import api_request
+from ..sdmx.sdmx_struc import SdmxJsonStruct
 
 
 def wrap_api_address(
@@ -18,6 +18,8 @@ def wrap_api_address(
     :param indicator: indicator code
     :param country_code: TMEE countries to filter in the call
     :param country_map_df: dataframe with country names and code mappings (2/3 letters)
+
+    TODO: Make use of .format method or F strings to format a string mask of what the call should look like
     """
 
     # separate how API addresses are built:
@@ -28,8 +30,10 @@ def wrap_api_address(
         dsd_api_address = url_endpoint + "all"
         # parameters: API request dataflow structure only
         dsd_api_params = {"format": "sdmx-json", "detail": "structureOnly"}
-        d_flow_struc = fileDownload.api_request(dsd_api_address, dsd_api_params)
-        n_dim = sdmx_struc.get_sdmx_dim(d_flow_struc.json())
+        data_flow_struc = SdmxJsonStruct(
+            api_request(dsd_api_address, dsd_api_params).json()
+        )
+        num_dims = data_flow_struc.get_sdmx_dims()
 
         # wrap api_address
         if country_codes:
@@ -37,10 +41,14 @@ def wrap_api_address(
             country_call_3 = "+".join(country_codes.values())
 
             api_address = (
-                url_endpoint + country_call_3 + "." + indicator_code + "." * (n_dim - 2)
+                url_endpoint
+                + country_call_3
+                + "."
+                + indicator_code
+                + "." * (num_dims - 2)
             )
         else:
-            api_address = url_endpoint + "." + indicator_code + "." * (n_dim - 2)
+            api_address = url_endpoint + "." + indicator_code + "." * (num_dims - 2)
 
     # source_key: UIS (no dataflow DSD read, uses url_endpoint directly)
     else:

@@ -1,7 +1,9 @@
 
+"""
+Functions related to SQLite management
+"""
 import sqlite3
 
-# Functions related to SQLite management
 
 def create_connection(db_file):
     """ creates a connection to a SQLite database
@@ -14,8 +16,8 @@ def create_connection(db_file):
     except sqlite3.Error as e:
         print(e)
     return conn
-    
-    
+
+
 def create_table(conn, create_table_sql):
     """ create a table from the create_table_sql statement
     :param conn: Connection object

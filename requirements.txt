@@ -4,8 +4,10 @@ bs4
 openpyxl
 pandas_datareader
 black
+numpy
+selenium
+html5lib
 rope
 fuzzywuzzy
 pandasdmx
 xlrd
-
