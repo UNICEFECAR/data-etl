@@ -7,6 +7,7 @@ _ Assigning a value for the sex disaggregation of an indicator
 _ Assigning a value for the age disaggregation of an indicator
 _ Assigning a value for the unit of an indicator
 _ Match an indicator name to an indicator code (for those already loaded into SDMX)
+_ Match indicator names (between those established as legacy against those 'new' or 'retained')
 """
 
 import pandas as pd
@@ -274,6 +275,42 @@ def process_indicator_codes(content_csv, legacy_indicators):
             content_df.iat[row, 4] = ind_codes_tmee[best_match_idx[0]]
 
     return content_df
+
+
+def match_legacy_and_new(content_csv, new_or_retained_nsi, tol_match):
+    """
+    Loop legacy content and match indicator names (TMEE 'new' or 'retained' with NSI source)
+    :param content_csv: path to csv with indicators name and metadata (sex, age, unit)
+    :param new_or_retained: indicator names list (marked as TMEE 'new' or 'retained' with NSI source)
+    :param tol_match: tolerance for matching indicators name
+    :return: dataframe matching indicator names
+    """
+
+    # content dataframe
+    content_df = pd.read_csv(content_csv, dtype=str)
+    # initialize dataframe to return
+    nsi_matched = pd.DataFrame(new_or_retained_nsi, columns=["NSI new or retained"])
+    # add empty code column to return dataframe
+    nsi_matched["legacy match"] = ""
+
+    # indicator name regex pattern (e.g: 4.1.7)
+    ind_pattern = r"\d+\.\d+.\d+."
+    # erase pattern from content_df column
+    content_df.indicator.replace(
+        to_replace=ind_pattern, value="", regex=True, inplace=True
+    )
+
+    for irow, indicator in enumerate(new_or_retained_nsi):
+
+        best_match_idx = get_close_match_indexes(
+            indicator, content_df.indicator.values, n=1, cutoff=tol_match
+        )
+
+        if best_match_idx:
+            # match NSI indicator with legacy indicator
+            nsi_matched.iat[irow, 1] = content_df.iat[best_match_idx[0], 0]
+
+    return nsi_matched
 
 
 def get_close_match_indexes(word, possibilities, n=3, cutoff=0.6):
