@@ -6,4 +6,6 @@ pandas_datareader
 black
 rope
 fuzzywuzzy
+pandasdmx
+xlrd
 
