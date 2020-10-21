@@ -5,8 +5,8 @@ it retrieves API address depending on the API source to call
 """
 import numpy as np
 
-from ..utils import api_request
-from ..sdmx.sdmx_struc import SdmxJsonStruct
+from utils import api_request
+from sdmx.sdmx_struc import SdmxJsonStruct
 
 
 def wrap_api_address(
