@@ -11,3 +11,8 @@ rope
 fuzzywuzzy
 pandasdmx
 xlrd
+pandera
+nltk
+pandoc
+nbconvert
+ipykernel
