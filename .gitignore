@@ -122,8 +122,10 @@ data/data_raw/S_8, S_9/WORLD_Dataset_Child_Labor_10.28.19.zip
 # ignore folder tests
 tests
 
-# ignore folder validation (for now)
-validation
+# ignore from validation
+/tmee/validation/*.csv
+/tmee/validation/*.py
+/tmee/validation/ipynb_2_py
 
 # Ignore noteboooks prototypes
 API_calls.ipynb
@@ -140,8 +142,13 @@ prototype_legacy.ipynb
 prototype_API.ipynb
 prototype_API_v2.ipynb
 prototype_transform.ipynb
+prototype_validation.ipynb
 main_extract_transform - Copy.ipynb
 test_imports.ipynb
+sharepoint_auth.ipynb
+test_pandera.ipynb
+try_sql_excel.ipynb
+validation_analytics.ipynb
 
 
 # ignore folder below (all excel files)
@@ -149,6 +156,8 @@ populate_data_dictionary
 
 # ignore some versioning excel files
 indicator_dictionary_TM_v01.xlsx
+Full_TMEE_Database.xlsx
+styled.xlsx
 content_legacy.csv
 
 # ignore csv files from particular folders
