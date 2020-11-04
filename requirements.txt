@@ -13,6 +13,8 @@ pandasdmx
 xlrd
 pandera
 nltk
-pandoc
-nbconvert
 ipykernel
+notebook
+nbconvert
+jupyter
+pandoc
