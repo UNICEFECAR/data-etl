@@ -2,6 +2,7 @@ import math
 import numbers
 import numpy as np
 import pandas as pd
+import re
 from collections.abc import Iterable
 
 
@@ -324,7 +325,7 @@ def valid_disaggregation(df, col_val, df_rows):
     """
     Validate disaggregation (total == sum(disaggregation))
     Test Numbers 9, 10, ... : Consistency Errors
-    Logic of the test developed by TMEE team 
+    Logic of the test developed by TMEE team
     Reference Doc: Transmonee - Manual for Data Validation -  24 June
     Reference Author: Flavio Bianconi
     :param df: dataframe
@@ -360,19 +361,20 @@ def valid_disaggregation(df, col_val, df_rows):
         # skip test: all missing data
         return True
     elif missing_values.iloc[0] | not_allowed:
-        # fail test: total missing, any sex not
+        # fail test: total missing, any disaggregation not
         # fail test: not allowed data entry types
         return False
     elif missing_values[1:].all():
-        # skip test: valid total and all sex missing
+        # skip test: valid total and all disaggregation missing
         return True
 
     # sum numeric values from disaggregation
     sum_disag = num_values[~nan_values][1:].sum()
-    test = math.isclose(num_values.iloc[0], sum_disag)
+    total = num_values.iloc[0]
+    test = math.isclose(total, sum_disag)
 
     # if math.isclose fails, validate condition: sum_disag less than total
-    if (not test) & (sum_disag < num_values.iloc[0]):
+    if (not test) & (sum_disag < total):
         # check partial flags in disaggregation
         disag_flags = df.iloc[rows_disag, col_val + 1]
         partial_flags = is_partial(disag_flags)
@@ -408,6 +410,41 @@ def get_totals_by_sex(formulas, row_offset):
         for rel in zip(totals_in_formulas, both_sex_formulas)
     ]
     return totals_by_sex
+
+
+def get_totals_and_disag(formulas, row_offset):
+    """
+    Get totals and disaggregation from formulas
+    Note: most documented formulas are "to complete once the form is finalized"
+    Formulas Doc: Transmonee - Manual for Data Validation -  24 June
+    :param formula: concatenation of formulas type str
+    :param row_offset: number of rows skiped by pandas excel reader
+    :return totals_and_disag: list of dictionaries, keys: 'total', 'lower', 'upper'
+    Dev Note: assumes data entered in consecutive rows 'lower' and 'upper' (both inclusive)
+    """
+    # formulas concatenated with commas
+    total_disag_formulas = formulas.split(",")
+
+    # check list last element: are formulas completed?
+    if "complete" in total_disag_formulas[-1]:
+        # eliminate label from list
+        label = total_disag_formulas.pop()
+        print(f"Formulas: {label.strip()}")
+
+    # split symbol not equal
+    split_neq_formulas = [x.split("≠") for x in total_disag_formulas]
+    totals_in_formulas = [x[0] for x in split_neq_formulas]
+    disag_bounds = [re.findall(r"\d+", x[1]) for x in split_neq_formulas]
+    # substract: int() - (row_offset + 2) --> go from Excel skiprows to pandas index
+    totals_and_disag = [
+        {
+            "total": int(rel[0]) - (row_offset + 2),
+            "lower": int(rel[1][0]) - (row_offset + 2),
+            "upper": int(rel[1][1]) - (row_offset + 2),
+        }
+        for rel in zip(totals_in_formulas, disag_bounds)
+    ]
+    return totals_and_disag
 
 
 def is_entry_row(col_codes):
