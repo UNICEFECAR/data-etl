@@ -33,7 +33,16 @@ def wrap_api_address(
         data_flow_struc = SdmxJsonStruct(
             api_request(dsd_api_address, dsd_api_params).json()
         )
-        num_dims = data_flow_struc.get_sdmx_dims()
+        # search num_dims and totals "_T" (not in TMEE destination dimensions)
+        num_dims, dim_t = data_flow_struc.get_sdmx_dims()
+
+        # build dimension points for sdmx API call
+        # (num_dims - 3): 3 dimensions not considered (REF_AREA, INDICATOR, TIME)
+        dim_points = "." * (num_dims - 3)
+        # position '_T' in dim_points according to dim_t
+        for i, t_pos in enumerate(dim_t, 1):
+            t_ind = t_pos - 2 + (i - 1) * 2
+            dim_points = dim_points[:t_ind] + "_T" + dim_points[t_ind:]
 
         # wrap api_address
         if country_codes:
@@ -41,14 +50,10 @@ def wrap_api_address(
             country_call_3 = "+".join(country_codes.values())
 
             api_address = (
-                url_endpoint
-                + country_call_3
-                + "."
-                + indicator_code
-                + "." * (num_dims - 2)
+                url_endpoint + country_call_3 + "." + indicator_code + dim_points
             )
         else:
-            api_address = url_endpoint + "." + indicator_code + "." * (num_dims - 2)
+            api_address = url_endpoint + "." + indicator_code + dim_points
 
     # source_key: UIS (no dataflow DSD read, uses url_endpoint directly)
     else:
