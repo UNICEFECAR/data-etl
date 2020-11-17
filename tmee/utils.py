@@ -4,6 +4,87 @@ Typically retrieve queries, useful for our ETL purposes
 """
 import requests
 import pandas as pd
+import numpy as np
+
+
+def get_codelist_API_legacy(excel_data_dict, path_legacy):
+    """
+    wraps all indicators codes and names from data dictionary (API third-party sources)
+    add to these the indicator codes and names from legacy data
+    :param excel_data_dict: path/file to our excel data dictionary in repo
+    :path_legacy: path/file to legacy indicators meta data (age, sex, code, units)
+    Note: first part of code follows function `get_API_code_address_etc`
+    """
+    # read snapshots table from excel data-dictionary
+    snapshot_df = pd.read_excel(excel_data_dict, sheet_name="Snapshot")
+    # read sources table from excel data-dictionary
+    source_df = pd.read_excel(excel_data_dict, sheet_name="Source")
+
+    # join snapshot and source based on Source_Id
+    # 'left' preserves key order from snapshots
+    snap_source_df = snapshot_df.merge(
+        source_df, on="Source_Id", how="left", sort=False
+    )
+
+    # get list of indicators code and name where extraction is API
+    logic_API = snap_source_df.Type == "API"
+    api_code_name_df = snap_source_df[logic_API][["Code", "Name_x"]]
+    api_code_name_df.rename(
+        columns={"Name_x": "Indicator_name",}, inplace=True,
+    )
+
+    # import csv into pandas
+    legacy_meta_data = pd.read_csv(path_legacy, dtype=str)
+
+    # search for sex and age totals
+    sex_and_age_t = (legacy_meta_data.age == "_T") & (legacy_meta_data.sex == "_T")
+
+    # TMEE legacy indicator pattern to be deleted (e.g: 4.1.7)
+    ind_pattern = r"\d+\.\d+.\d+."
+
+    # make new data frame with legacy code and name only
+    legacy_code_name_df = pd.concat(
+        [
+            legacy_meta_data.code[sex_and_age_t].str.strip(),
+            legacy_meta_data.indicator[sex_and_age_t]
+            .replace(ind_pattern, "", regex=True)
+            .str.strip(),
+        ],
+        axis=1,
+    )
+    # rename df columns to match api_code_name_df
+    legacy_code_name_df.rename(
+        columns={"code": "Code", "indicator": "Indicator_name"}, inplace=True
+    )
+
+    # search indicators not listed under sex and age totals
+    missed_codes = np.setdiff1d(
+        legacy_meta_data.code.unique(), legacy_code_name_df.Code.unique()
+    )
+
+    # add manually indicator names
+    missed_legacy = [
+        {
+            "Code": "DM_MRG_AGE",
+            "Indicator_name": "Average age at first marriage by sex",
+        },
+        {
+            "Code": "DM_POP_PROP",
+            "Indicator_name": "Proportion of total population by age groups",
+        },
+        {"Code": "FT_BRTS_LIVE", "Indicator_name": "Number of live births by sex",},
+        {
+            "Code": "JJ_CHLD_CRIME_PERPETRATOR",
+            "Indicator_name": "Registered crimes committed against children during the year by age of perpetrator",
+        },
+    ]
+
+    # check if missed_legacy contains all missed_codes
+    if np.setdiff1d(missed_codes, [ind["Code"] for ind in missed_legacy]):
+        print("Check missing codes from legacy")
+
+    # return concatenation of api_code_name_df and legacy_code_name_df (missed_legacy appended)
+    return pd.concat([api_code_name_df, legacy_code_name_df.append(missed_legacy)])
 
 
 def get_API_code_address_etc(excel_data_dict):
