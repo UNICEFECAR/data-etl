@@ -31,7 +31,7 @@ def checkout_merged_df(merged_df):
     """
     Checks notes and data merge operation
     Perform small cleaning operations
-    Add sex, age and unit columns for later use in SDMX
+    Add sex, age, unit and season columns for later use in SDMX
     :param merged_df: dataframe merged from parsed data and notes (parse_legacy function)
     :return: Warning messages eventually.
     :return: Operates directly to merged_df (statement return is left empty)
@@ -55,6 +55,8 @@ def checkout_merged_df(merged_df):
     std_sex_age = "_T"
     merged_df["age"] = std_sex_age
     merged_df["sex"] = std_sex_age
+    # create season column (filled empty)
+    merged_df["season"] = ""
 
     # return (introduced changes directly to merged_df)
     return
