@@ -27,7 +27,8 @@
 		"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
 		"python.formatting.provider": "black",
 		"editor.formatOnSave": true,
-		"python.dataScience.alwaysTrustNotebooks": true
+		"python.dataScience.alwaysTrustNotebooks": true,
+		"jupyter.alwaysTrustNotebooks": true
 	},
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
