@@ -112,7 +112,7 @@ class Dataflow:
         return cols
 
     # function to test on duplicates (proposed by Daniele)
-    # it is leave here for future development (validation step proposed by James)
+    # preview duplicates in destination DSD (not conforming disaggregation)
     def check_duplicates(self, dataframe):
         """
         :param dataframe: dataframe to check duplicates (dataflow must correspond!)
