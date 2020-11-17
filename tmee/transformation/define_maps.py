@@ -5,11 +5,12 @@ There will be our destination DSD, TransMonEE and the dataflows mapping
 We also place a variable type dictionary with code mappings
 """
 
-# import country code mapping (ISO 2/3 letters)
-from .country_map import country_map
+# country code mapping (ISO 2/3 letters) is writen in country_map.py
+# country code mapping (country name to ISO 3 code) is writen in country_names_map.py
+# seasons mapping and season_str is writen in seasons_map.py
 
-# import country code mapping (country name to ISO 3 code)
-from .country_names_map import country_names_map
+# py files above are wrap together in one py file: codes_2_map
+from .codes_2_map import country_map, country_names_map, seasons_map, season_str
 
 import pandas as pd
 
@@ -28,13 +29,14 @@ dsd_destination = {
     "TMEE": [
         {"id": "Dataflow", "type": "string"},
         {"id": "REF_AREA", "type": "enum", "role": "dim"},
-        {"id": "UNICEF_INDICATOR", "type": "string", "role": "dim"},
+        {"id": "INDICATOR", "type": "string", "role": "dim"},
         {"id": "SEX", "type": "string", "role": "dim"},
         {"id": "AGE", "type": "string", "role": "dim"},
         {"id": "RESIDENCE", "type": "string", "role": "dim"},
         {"id": "WEALTH_QUINTILE", "type": "string", "role": "dim"},
         {"id": "TIME_PERIOD", "type": "string", "role": "time"},
         {"id": "OBS_VALUE", "type": "string"},
+        {"id": "COVERAGE_TIME", "type": "string"},
         {"id": "UNIT_MEASURE", "type": "string"},
         {"id": "OBS_FOOTNOTE", "type": "string"},
         {"id": "FREQ", "type": "string"},
@@ -55,13 +57,14 @@ dsd_destination = {
 dflow_col_map = {
     "DM": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
-        "UNICEF_INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
         "SEX": {"type": "col", "role": "dim", "value": "SEX"},
         "AGE": {"type": "col", "role": "dim", "value": "AGE"},
         "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
         "RESIDENCE": {"type": "col", "role": "dim", "value": "RESIDENCE"},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "col", "role": "attrib", "value": "COVERAGE_TIME"},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
         "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
@@ -75,13 +78,14 @@ dflow_col_map = {
     },
     "CME": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
-        "UNICEF_INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
         "SEX": {"type": "col", "role": "dim", "value": "SEX"},
         "AGE": {"type": "const", "role": "dim", "value": ""},
         "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
         "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
         "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
         "FREQ": {"type": "const", "role": "attrib", "value": ""},
@@ -91,13 +95,14 @@ dflow_col_map = {
     },
     "NUTRITION": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
-        "UNICEF_INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
         "SEX": {"type": "col", "role": "dim", "value": "SEX"},
         "AGE": {"type": "col", "role": "dim", "value": "AGE"},
         "WEALTH_QUINTILE": {"type": "col", "role": "dim", "value": "WEALTH_QUINTILE"},
         "RESIDENCE": {"type": "col", "role": "dim", "value": "RESIDENCE"},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "col", "role": "attrib", "value": "COVERAGE_TIME"},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
         "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
@@ -111,13 +116,14 @@ dflow_col_map = {
     },
     "MNCH": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
-        "UNICEF_INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
         "SEX": {"type": "col", "role": "dim", "value": "SEX"},
         "AGE": {"type": "col", "role": "dim", "value": "AGE"},
         "WEALTH_QUINTILE": {"type": "col", "role": "dim", "value": "WEALTH_QUINTILE"},
         "RESIDENCE": {"type": "col", "role": "dim", "value": "RESIDENCE"},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "col", "role": "attrib", "value": "COVERAGE_TIME"},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
         "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
         "FREQ": {"type": "const", "role": "attrib", "value": ""},
@@ -131,13 +137,14 @@ dflow_col_map = {
     },
     "HIV_AIDS": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
-        "UNICEF_INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
         "SEX": {"type": "col", "role": "dim", "value": "SEX"},
         "AGE": {"type": "col", "role": "dim", "value": "AGE"},
         "WEALTH_QUINTILE": {"type": "col", "role": "dim", "value": "WEALTH_QUINTILE"},
         "RESIDENCE": {"type": "col", "role": "dim", "value": "RESIDENCE"},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "col", "role": "attrib", "value": "COVERAGE_TIME"},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
         "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
@@ -151,13 +158,14 @@ dflow_col_map = {
     },
     "IMMUNISATION": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
-        "UNICEF_INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
         "SEX": {"type": "const", "role": "dim", "value": ""},
         "AGE": {"type": "col", "role": "dim", "value": "AGE"},
         "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
         "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "col", "role": "attrib", "value": "COVERAGE_TIME"},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
         "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
@@ -171,13 +179,14 @@ dflow_col_map = {
     },
     "ECD": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
-        "UNICEF_INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
         "SEX": {"type": "col", "role": "dim", "value": "SEX"},
         "AGE": {"type": "col", "role": "dim", "value": "AGE"},
         "WEALTH_QUINTILE": {"type": "col", "role": "dim", "value": "WEALTH_QUINTILE"},
         "RESIDENCE": {"type": "col", "role": "dim", "value": "RESIDENCE"},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "col", "role": "attrib", "value": "COVERAGE_TIME"},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
         "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
@@ -191,13 +200,14 @@ dflow_col_map = {
     },
     "PT": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
-        "UNICEF_INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
         "SEX": {"type": "col", "role": "dim", "value": "SEX"},
         "AGE": {"type": "col", "role": "dim", "value": "AGE"},
         "WEALTH_QUINTILE": {"type": "col", "role": "dim", "value": "WEALTH_QUINTILE"},
         "RESIDENCE": {"type": "col", "role": "dim", "value": "RESIDENCE"},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "col", "role": "attrib", "value": "COVERAGE_TIME"},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
         "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
@@ -211,13 +221,14 @@ dflow_col_map = {
     },
     "GENDER": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
-        "UNICEF_INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
         "SEX": {"type": "col", "role": "dim", "value": "SEX"},
         "AGE": {"type": "const", "role": "dim", "value": ""},
         "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
         "RESIDENCE": {"type": "col", "role": "dim", "value": "RESIDENCE"},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
         "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
@@ -231,13 +242,14 @@ dflow_col_map = {
     },
     "EDU_FINANCE": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
-        "UNICEF_INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
         "SEX": {"type": "const", "role": "dim", "value": ""},
         "AGE": {"type": "const", "role": "dim", "value": ""},
         "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
         "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
         "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ"},
@@ -247,13 +259,14 @@ dflow_col_map = {
     },
     "SDG4": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
-        "UNICEF_INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
         "SEX": {"type": "col", "role": "dim", "value": "SEX"},
         "AGE": {"type": "col", "role": "dim", "value": "AGE"},
         "WEALTH_QUINTILE": {"type": "col", "role": "dim", "value": "WEALTH_QUINTILE"},
         "RESIDENCE": {"type": "col", "role": "dim", "value": "LOCATION"},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
         "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ"},
@@ -263,13 +276,14 @@ dflow_col_map = {
     },
     "EDU_NON_FINANCE": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
-        "UNICEF_INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
         "SEX": {"type": "col", "role": "dim", "value": "SEX"},
         "AGE": {"type": "col", "role": "dim", "value": "AGE"},
         "WEALTH_QUINTILE": {"type": "col", "role": "dim", "value": "WEALTH_QUINTILE"},
         "RESIDENCE": {"type": "col", "role": "dim", "value": "LOCATION"},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
         "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ"},
@@ -279,19 +293,41 @@ dflow_col_map = {
     },
     "LEGACY": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "country"},
-        "UNICEF_INDICATOR": {"type": "col", "role": "dim", "value": "indicator"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "indicator"},
         "SEX": {"type": "col", "role": "dim", "value": "sex"},
         "AGE": {"type": "col", "role": "dim", "value": "age"},
         "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
         "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "year"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "value"},
+        "COVERAGE_TIME": {"type": "col", "role": "attrib", "value": "season"},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "unit"},
         "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "obs_note"},
         "FREQ": {"type": "const", "role": "attrib", "value": ""},
         "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
         "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
         "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
+    "WASH_SCHOOLS": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
+        "SEX": {"type": "const", "role": "dim", "value": ""},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "col", "role": "dim", "value": "RESIDENCE"},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "col", "role": "attrib", "value": "COVERAGE_TIME"},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
+        "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "DATA_SOURCE"},
+        "UNIT_MULTIPLIER": {
+            "type": "col",
+            "role": "attrib",
+            "value": "UNIT_MULTIPLIER",
+        },
+        "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
 }
 
@@ -406,20 +442,32 @@ code_mapping = {
         "OBS_STATUS": {"code:description": True},
         "FREQ_COLL": {"code:description": True},
     },
-    "EDU_FINANCE": {"REF_AREA": country_map, "UNIT_MEASURE": {"GDP": "GDP_PERC"},},
+    "EDU_FINANCE": {
+        "REF_AREA": country_map,
+        "UNIT_MEASURE": {"GDP": "GDP_PERC"},
+        "FREQ": {"A": "1"},
+        "OBS_STATUS": {"Z": ""},
+    },
     "SDG4": {
         "REF_AREA": country_map,
         "UNIT_MEASURE": {"PER": "PS", "PT": "PCNT", "NB": "NUMBER"},
-        "AGE": {"UNDER1_AGE": "M023"},
         "LOCATION": {"RUR": "R", "URB": "U", "_Z": "_T"},
         "WEALTH_QUINTILE": {"_Z": "_T"},
+        "FREQ": {"A": "1"},
+        "OBS_STATUS": {"Z": ""},
     },
     "EDU_NON_FINANCE": {
         "REF_AREA": country_map,
         "UNIT_MEASURE": {"PER": "PS", "PT": "PCNT", "NB": "NUMBER"},
-        "AGE": {"UNDER1_AGE": "M023"},
+        "AGE": {
+            "UNDER1_AGE": "UNDER1_SCHOOL_ENTRY",
+            "SCH_AGE_GROUP": "SCHOOL_AGE",
+            "TH_ENTRY_AGE": "SCHOOL_ENTRY_AGE",
+        },
         "LOCATION": {"RUR": "R", "URB": "U", "_Z": "_T"},
         "WEALTH_QUINTILE": {"_Z": "_T"},
+        "FREQ": {"A": "1"},
+        "OBS_STATUS": {"Z": ""},
     },
     "LEGACY": {
         "country": country_names_map,
@@ -435,8 +483,21 @@ code_mapping = {
             "depends": "indicator",
             "map": dict(zip(legacy_meta_data.indicator, legacy_meta_data.sex)),
         },
-        # it is very important to put it last since the previous depend on this column !!!
+        # it is important to place "indicator" here (previous mapping dependece) !!!
         "indicator": dict(zip(legacy_meta_data.indicator, legacy_meta_data.code)),
+        # below is a trick to fill season if year column contains seasons strings
+        "season": {"depends": "year", "map": dict(zip(season_str, season_str))},
+        # it is important to place "year" after "season" (mapping dependence) !!!
+        "year": seasons_map,
+    },
+    "WASH_SCHOOLS": {
+        "REF_AREA": {"code:description": True},
+        "INDICATOR": {"code:description": True},
+        "RESIDENCE": {"code:description": True},
+        "UNIT_MULTIPLIER": {"code:description": True},
+        "UNIT_MEASURE": {"code:description": True},
+        "OBS_STATUS": {"code:description": True},
+        "FREQ_COLL": {"code:description": True},
     },
 }
 
@@ -453,7 +514,7 @@ code_mapping = {
 
 # Is it decanting towards indicator level?
 
-# last recall: data dictionary already have (UNICEF_INDICATOR, DATA_SOURCE, OBS_FOOTNOTE)
+# last recall: data dictionary already have (INDICATOR, DATA_SOURCE, OBS_FOOTNOTE)
 # last recall: data dictionary don't have information related to LEGACY indicators
 
 dflow_const = {
@@ -472,5 +533,6 @@ dflow_const = {
         "RESIDENCE": "_T",
         "DATA_SOURCE": "TMEE Legacy DB",
     },
+    "WASH_SCHOOLS": {"SEX": "_T", "AGE": "_T", "WEALTH_QUINTILE": "_T"},
 }
 
