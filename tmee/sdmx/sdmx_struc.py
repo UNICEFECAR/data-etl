@@ -12,10 +12,39 @@ class SdmxJsonStruct:
 
     def get_sdmx_dims(self):
         """ 
-        get number of dimensions from sdmx_json_struc file 
+        get (n_dim) number of dimensions from sdmx_json_struc file
+        searches for totals in sdmx dims not in: {SEX, AGE, RESIDENCE, WEALTH_QUINTILE}
+        duplicates when conforming to TMEE dataflow are prevented from the API call
+        Dev Note: it is a nice approach but must be tested (e.g: the "_Z" case)
+        :return dim_total: dictionary with key position 
         """
-        n_dim = len(self.sdmx_json["structure"]["dimensions"]["observation"])
-        return n_dim
+
+        # this is the list of dimension dictionaries
+        dim_list = self.sdmx_json["structure"]["dimensions"]["observation"]
+        # number of dimensions in sdmx structure
+        n_dim = len(dim_list)
+        # dimensions id
+        dim_id = [dim["id"] for dim in dim_list]
+        # TMEE dimensions list
+        tmee_dim_list = ["SEX", "AGE", "RESIDENCE", "WEALTH_QUINTILE"]
+        # dimensions not in tmee_dim_list
+        dim_not_tmee = []
+        for dim in dim_id:
+            if not get_close_matches(dim, tmee_dim_list, 1):
+                dim_not_tmee.append(dim)
+
+        not_tmee_with_t = []
+        # retrieve din_not_tmee key position that contains totals "_T"
+        for dim in dim_not_tmee:
+            dim_ind = dim_id.index(dim)
+            # access dimension dictionary
+            dim_dict = dim_list[dim_ind]
+            # search for totals in values
+            for val in dim_dict["values"]:
+                if "_T" == val["id"].strip():
+                    not_tmee_with_t.append(dim_ind + 1)
+
+        return n_dim, not_tmee_with_t
 
     def get_all_country_codes(self):
         """
