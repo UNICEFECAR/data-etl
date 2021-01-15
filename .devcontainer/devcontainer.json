@@ -28,7 +28,8 @@
 		"python.formatting.provider": "black",
 		"editor.formatOnSave": true,
 		"python.dataScience.alwaysTrustNotebooks": true,
-		"jupyter.alwaysTrustNotebooks": true
+		"jupyter.alwaysTrustNotebooks": true,
+		"jupyter.textOutputLimit": 0
 	},
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
