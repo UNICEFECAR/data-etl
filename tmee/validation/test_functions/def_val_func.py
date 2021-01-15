@@ -719,6 +719,35 @@ def get_totals_and_others(formulas, row_offset):
     return totals_and_others
 
 
+def get_totals_and_others_v2(formulas, row_offset):
+    """
+    Child Protection, category "other" for disaggregation
+    Typical formulas: row_other > 50% of row_total
+    Formulas Doc: Transmonee - Manual for Data Validation -  24 June
+    :param formula: concatenation of formulas type str
+    :param row_offset: number of rows skiped by pandas excel reader
+    :return totals_and_others: dictionary with two lists, keys: 'others', 'totals'
+    Dev Note: reuse code from "get_..." functions? (params: split character, exclude string)
+    """
+    # formulas concatenated with commas
+    formulas = formulas.split(",")
+
+    # split symbol greather
+    split_formulas = [x.split(">") for x in formulas]
+    # expression below assumes there's only one number before the split symbol ">"
+    totals_in_formulas = [re.findall(r"\d+", x[0])[0] for x in split_formulas]
+    # expression below excepts "50%" from all formulas, could it be done from regex directly?
+    others_in_formulas = [re.findall(r"(\d+)", x[1])[1] for x in split_formulas]
+
+    # substract: int() - (row_offset + 2) --> go from Excel skiprows to pandas index
+    totals_and_others = {
+        "others": [int(x) - (row_offset + 2) for x in totals_in_formulas],
+        "totals": [int(x) - (row_offset + 2) for x in others_in_formulas],
+    }
+
+    return totals_and_others
+
+
 def is_entry_row(col_codes):
     """
     Determine data collection rows from code criteria (if code then data)
