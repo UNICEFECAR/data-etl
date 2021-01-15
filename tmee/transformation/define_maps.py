@@ -5,17 +5,24 @@ There will be our destination DSD, TransMonEE and the dataflows mapping
 We also place a variable type dictionary with code mappings
 """
 
-# country code mapping (ISO 2/3 letters) is writen in country_map.py
-# country code mapping (country name to ISO 3 code) is writen in country_names_map.py
+# country code mapping (ISO 2/3 letters and M49) is writen in country_map.py
+# country code mapping (legacy country name to ISO 3 code) is writen in country_names_map.py
 # seasons mapping and season_str is writen in seasons_map.py
 
 # py files above are wrap together in one py file: codes_2_map
-from .codes_2_map import country_map, country_names_map, seasons_map, season_str
+from .codes_2_map import (
+    country_map,
+    country_map_49,
+    country_names_map,
+    seasons_map,
+    season_str,
+)
 
 import pandas as pd
+import numpy as np
 
 # path to file with legacy indicators meta data (age, sex, code, units)
-path_legacy = "./data_in/legacy_data/content_legacy_codes_v2.csv"
+path_legacy = "./data_in/legacy_data/content_legacy_codes_v3.csv"
 # import csv into pandas
 legacy_meta_data = pd.read_csv(path_legacy, dtype=str)
 
@@ -146,7 +153,7 @@ dflow_col_map = {
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
         "COVERAGE_TIME": {"type": "col", "role": "attrib", "value": "COVERAGE_TIME"},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
-        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "SERIES_FOOTNOTE"},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
         "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "DATA_SOURCE"},
         "UNIT_MULTIPLIER": {
@@ -329,6 +336,121 @@ dflow_col_map = {
         },
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
+    # WHO: indicators WHS_PBR and WHS9_CDR
+    "csv-str-1": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "COUNTRY (CODE)"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "const", "role": "dim", "value": ""},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "YEAR (CODE)"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "Numeric"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "Comments"},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "GHO (URL)"},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
+    # WHO: indicator SDGSUICIDE
+    "csv-str-2": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "COUNTRY (CODE)"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "col", "role": "dim", "value": "SEX (CODE)"},
+        "AGE": {"type": "col", "role": "dim", "value": "AGEGROUP (CODE)"},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "YEAR (CODE)"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "Numeric"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "Comments"},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "GHO (URL)"},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
+    # WHO: indicator SDGPM25
+    "csv-str-3": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "COUNTRY (CODE)"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "const", "role": "dim", "value": ""},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {
+            "type": "col",
+            "role": "dim",
+            "value": "RESIDENCEAREATYPE (CODE)",
+        },
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "YEAR (CODE)"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "Numeric"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "Comments"},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "GHO (URL)"},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
+    "DF_SDG_GLH": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "col", "role": "dim", "value": "SEX"},
+        "AGE": {"type": "col", "role": "dim", "value": "AGE"},
+        "WEALTH_QUINTILE": {
+            "type": "col",
+            "role": "dim",
+            "value": "INCOME_WEALTH_QUANTILE",
+        },
+        "RESIDENCE": {"type": "col", "role": "dim", "value": "URBANISATION"},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "col", "role": "attrib", "value": "TIME_COVERAGE"},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "COMMENT_OBS"},
+        "FREQ": {"type": "col", "role": "attrib", "value": "FREQ"},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "SOURCE_DETAIL"},
+        "UNIT_MULTIPLIER": {"type": "col", "role": "attrib", "value": "UNIT_MULT"},
+        "OBS_STATUS": {"type": "col", "role": "attrib", "value": "NATURE"},
+    },
+    # pandas data reader: indicators compiled by World Bank
+    "pandas data reader": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "iso3c"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "col", "role": "dim", "value": "sex"},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "year"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "value"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "source"},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
+    # ILO uses different dataflows per indicator - Unusual, why not to leverage SDMX DSDs???
+    "DF_SDG_ALL_SDG_0861_SEX_RT": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "col", "role": "dim", "value": "SEX"},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "INDICATOR_NOTE"},
+        "FREQ": {"type": "col", "role": "attrib", "value": "FREQ"},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "SOURCE_NOTE"},
+        "UNIT_MULTIPLIER": {"type": "col", "role": "attrib", "value": "UNIT_MULT"},
+        "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
+    },
 }
 
 # Code mappings are intended to normalize data entries in our destination DSD
@@ -489,6 +611,9 @@ code_mapping = {
         "season": {"depends": "year", "map": dict(zip(season_str, season_str))},
         # it is important to place "year" after "season" (mapping dependence) !!!
         "year": seasons_map,
+        # legacy data: integer to float conversion may result from pd.read_excel
+        # ensure integers for units "PS" (persons) and "YR" (years)
+        "value": {"depends": "unit", "map": {"PS": "to_int", "YR": "to_int"}},
     },
     "WASH_SCHOOLS": {
         "REF_AREA": {"code:description": True},
@@ -498,6 +623,45 @@ code_mapping = {
         "UNIT_MEASURE": {"code:description": True},
         "OBS_STATUS": {"code:description": True},
         "FREQ_COLL": {"code:description": True},
+    },
+    "csv-str-2": {
+        "SEX (CODE)": {"FMLE": "F", "MLE": "M", "BTSX": "_T"},
+        "AGEGROUP (CODE)": {
+            # empty values for age --> "_T"
+            np.nan: "_T",
+            "YEARS05-09": "Y5T9",
+            "YEARS10-14": "Y10T14",
+            "YEARS15-19": "Y15T19",
+            "YEARS20-24": "Y20T24",
+            "YEARS25-29": "Y25T29",
+            "YEARS10-19": "Y10T19",
+            "YEARS20-29": "Y20T29",
+            "YEARS30-39": "Y30T39",
+            "YEARS40-49": "Y40T49",
+            "YEARS50-59": "Y50T59",
+            "YEARS60-69": "Y60T69",
+            "YEARS70-79": "Y70T79",
+            "YEARS80PLUS": "Y_GE80",
+            "YEARS15-29": "Y15T29",
+            "YEARS30-49": "Y30T49",
+        },
+    },
+    "csv-str-3": {"RESIDENCEAREATYPE (CODE)": {"RUR": "R", "TOTL": "_T", "URB": "U"},},
+    "DF_SDG_GLH": {
+        "REF_AREA": country_map_49,
+        "UNIT_MEASURE": {
+            "PER_1000_POP": "RATE_1000",
+            "PT": "PCNT",
+            "PER_100000_POP": "RATE_100000",
+            "PER_1000_UNINFECTED_POP": "RATE_1000",
+        },
+        "NATURE": {"C": "A", "CA": "AD", "_X": "A"},
+    },
+    "pandas data reader": {"sex": {"female": "F", "male": "M", "total": "_T"}},
+    "DF_SDG_ALL_SDG_0861_SEX_RT": {
+        "SEX": {"SEX_F": "F", "SEX_M": "M", "SEX_T": "_T"},
+        "UNIT_MEASURE": {"PT": "PCNT"},
+        "FREQ": {"A": "1"},
     },
 }
 
@@ -515,6 +679,7 @@ code_mapping = {
 # Is it decanting towards indicator level?
 
 # last recall: data dictionary already have (INDICATOR, DATA_SOURCE, OBS_FOOTNOTE)
+# last recall Jan 21: data dictionary additions (UNIT_MEASURE, FREQ, OBS_STATUS)
 # last recall: data dictionary don't have information related to LEGACY indicators
 
 dflow_const = {
@@ -534,5 +699,19 @@ dflow_const = {
         "DATA_SOURCE": "TMEE Legacy DB",
     },
     "WASH_SCHOOLS": {"SEX": "_T", "AGE": "_T", "WEALTH_QUINTILE": "_T"},
+    "csv-str-1": {
+        "SEX": "_T",
+        "AGE": "_T",
+        "WEALTH_QUINTILE": "_T",
+        "RESIDENCE": "_T",
+    },
+    "csv-str-2": {"WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
+    "csv-str-3": {"SEX": "_T", "AGE": "_T", "WEALTH_QUINTILE": "_T"},
+    "pandas data reader": {"AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
+    "DF_SDG_ALL_SDG_0861_SEX_RT": {
+        "AGE": "_T",
+        "WEALTH_QUINTILE": "_T",
+        "RESIDENCE": "_T",
+    },
 }
 
