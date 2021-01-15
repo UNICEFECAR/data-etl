@@ -18,6 +18,8 @@ __pycache__
 # Debug file used for temporary debugging
 debug_file.py
 main_extract_transform.py
+main_extract_transform_old.py
+main_extract_transform_test.py
 test_nb.py
 
 # Gecko driver log file
@@ -121,6 +123,10 @@ data/data_raw/S_8, S_9/Child Labor Public Use Data Dictionary 10.28.19.pdf
 data/data_raw/S_8, S_9/WORLD_child_labor.dta
 data/data_raw/S_8, S_9/WORLD_child_labor.xls
 data/data_raw/S_8, S_9/WORLD_Dataset_Child_Labor_10.28.19.zip
+
+# ignore local VS code settings (this should be applied from dev container)
+settings.json
+
 # ignore folder tests
 tests
 
