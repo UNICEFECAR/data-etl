@@ -1,6 +1,7 @@
 # functions extracting basic information about an sdmx structure from a sdmx-json file
 # could be a good candidate to create a class sdmx_struct_json and these functions as methods
 from difflib import get_close_matches
+from utils import get_close_match_indexes
 
 
 class SdmxJsonStruct:
@@ -110,3 +111,30 @@ class SdmxJsonStruct:
 
         # return dictionary
         return legacy_indicators
+
+    def get_ilo_dims(self):
+        """ 
+        get (n_dim) number of dimensions from sdmx_json_struc file - ILOSTAT SDMX
+        :return dim_match_dict: key position for dimensions (implemented REF_AREA so far)
+        """
+
+        # this is the list of dimension dictionaries
+        dim_list = self.sdmx_json["data"]["dataStructures"][0][
+            "dataStructureComponents"
+        ]["dimensionList"]["dimensions"]
+
+        # number of dimensions in sdmx structure
+        n_dim = len(dim_list)
+        # dimensions id
+        dim_id = [dim["id"] for dim in dim_list]
+
+        # dimension to match: for now REF_AREA implemented only
+        dim_match_list = ["REF_AREA"]
+        # dimensions match dictionary
+        dim_match_dict = {}
+        for dim in dim_match_list:
+            dim_target = get_close_match_indexes(dim, dim_id, n=1, cutoff=0.7)
+            if dim_target:
+                dim_match_dict[dim] = dim_target[0]
+
+        return n_dim, dim_match_dict
