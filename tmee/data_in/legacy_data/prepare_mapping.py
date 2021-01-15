@@ -13,7 +13,7 @@ _ Match indicator names (between those established as legacy against those 'new'
 import pandas as pd
 import numpy as np
 import re
-from difflib import SequenceMatcher
+from difflib import SequenceMatcher, get_close_matches
 from heapq import nlargest
 from fuzzywuzzy import fuzz
 
@@ -222,6 +222,8 @@ def get_indicator_units(indicator_name):
     Uses indicator name to get percentages in indicator units
     :param indicator_name: indicator name (type string)
     :return unit: states percentage (type string), or a NaN type
+    Dev Note: we could expand this function to include more SDMX standard units
+    read from the indicator names (e.g: years, persons, rates per 100, 1000, 100000)
     """
 
     p = fuzz.partial_ratio("percentage", indicator_name)
@@ -359,3 +361,22 @@ def match_country_name(name, country_list):
             best_match = name2
             max_score = score
     return best_match
+
+
+def match_indicator_names(indicator_names, legacy_raw_names):
+    """
+    takes an indicator name (in legacy meta_data file) and provides its match with
+    the corresponging names in legacy raw data. This avoids typos across data updates.
+    returns the best match for those indicator names not matching exactly
+    :param indicator_names: pd.Series type string with indicator names from legacy metadata
+    :param legacy_raw_names: pd.Series type string with indicator names parsed from legacy data (raw)
+    """
+    # initialize indicators not matching exactly
+    no_exact_match = {}
+    # Iterating over all indicator names in metadata
+    for ind_name in indicator_names:
+        # not exact match: look for best fuzzy match
+        if ind_name not in legacy_raw_names.values:
+            match = get_close_matches(ind_name, legacy_raw_names, n=1)
+            no_exact_match[ind_name] = match[0]
+    return no_exact_match
