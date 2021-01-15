@@ -30,6 +30,38 @@ country_map = {
     "UZ": "UZB",
 }
 
+country_map_49 = {
+    "8": "ALB",
+    "51": "ARM",
+    "31": "AZE",
+    "112": "BLR",
+    "70": "BIH",
+    "100": "BGR",
+    "191": "HRV",
+    "203": "CZE",
+    "233": "EST",
+    "268": "GEO",
+    "348": "HUN",
+    "398": "KAZ",
+    "417": "KGZ",
+    "428": "LVA",
+    "440": "LTU",
+    "499": "MNE",
+    "807": "MKD",
+    "616": "POL",
+    "498": "MDA",
+    "642": "ROU",
+    "643": "RUS",
+    "688": "SRB",
+    "703": "SVK",
+    "705": "SVN",
+    "762": "TJK",
+    "792": "TUR",
+    "795": "TKM",
+    "804": "UKR",
+    "860": "UZB",
+}
+
 country_names_map = {
     "albania": "ALB",
     "armenia": "ARM",
@@ -55,7 +87,8 @@ country_names_map = {
     "slovakia": "SVK",
     "slovenia": "SVN",
     "tajikistan": "TJK",
-    "the former yugoslav republic of macedonia": "MKD",
+    "north macedonia": "MKD",
+    "turkey": "TUR",
     "turkmenistan": "TKM",
     "ukraine": "UKR",
     "uzbekistan": "UZB",
@@ -164,6 +197,7 @@ seasons_map = {
     "2049/50": "2049",
     "2050/51": "2050",
 }
+
 season_str = [
     "1950/51",
     "1951/52",
