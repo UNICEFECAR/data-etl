@@ -1,10 +1,17 @@
 """
 Utility functions that operate directly on our data-dictionary in Excel using pandas
 Typically retrieve queries, useful for our ETL purposes
+To improve: implement extraction as an abstract class following James' refactoring
 """
+
 import requests
 import pandas as pd
 import numpy as np
+import re
+import warnings
+from pandas_datareader import wb
+from difflib import SequenceMatcher
+from heapq import nlargest
 
 
 def get_codelist_API_legacy(excel_data_dict, path_legacy):
@@ -80,7 +87,7 @@ def get_codelist_API_legacy(excel_data_dict, path_legacy):
     ]
 
     # check if missed_legacy contains all missed_codes
-    if np.setdiff1d(missed_codes, [ind["Code"] for ind in missed_legacy]):
+    if np.setdiff1d(missed_codes, [ind["Code"] for ind in missed_legacy]).size != 0:
         print("Check missing codes from legacy")
 
     # return concatenation of api_code_name_df and legacy_code_name_df (missed_legacy appended)
@@ -90,7 +97,7 @@ def get_codelist_API_legacy(excel_data_dict, path_legacy):
 def get_API_code_address_etc(excel_data_dict):
     """ filters all indicators that are extracted by API
         :param excel_data_dict: path/file to our excel data dictionary in repo
-        :return: pandas dataframe (df) with code, address for API requests, data source name and observation footnotes
+        :return: pandas dataframe (df) with code, url endpoint for requests, data source name, etc
     """
     # read snapshots table from excel data-dictionary
     snapshot_df = pd.read_excel(excel_data_dict, sheet_name="Snapshot")
@@ -107,16 +114,34 @@ def get_API_code_address_etc(excel_data_dict):
     snap_source_ind_df = snap_source_df.merge(
         indicators_df, on="Indicator_Id", how="left", sort=False
     )
-    # get list of indicator codes, address with API extraction and other info
-    logic_API = snap_source_ind_df.Type == "API"
-    api_code_addr_etc_df = snap_source_ind_df[logic_API][
-        ["Code_y", "Address", "Name_y", "Comments_y"]
+    # Finally read Value_type table from excel data-dictionary
+    val_df = pd.read_excel(excel_data_dict, sheet_name="Value_type")
+    # join snap_source_ind and Value_type based on Value_Id
+    snap_source_ind_val_df = snap_source_ind_df.merge(
+        val_df, on="Value_Id", how="left", sort=False
+    )
+    # get list of API extractions: indicator codes, url endpoints, etc
+    logic_API = snap_source_ind_val_df.Type_x == "API"
+
+    api_code_addr_etc_df = snap_source_ind_val_df[logic_API][
+        [
+            "Code_y",
+            "Address",
+            "Name_y",
+            "Comments_y",
+            "Content_type",
+            "Units_y",
+            "Freq_Coll",
+            "Nature",
+        ]
     ]
+
     api_code_addr_etc_df.rename(
         columns={
             "Code_y": "Code",
             "Name_y": "Data_Source",
             "Comments_y": "Obs_Footnote",
+            "Units_y": "Units",
         },
         inplace=True,
     )
@@ -138,9 +163,164 @@ def api_request(address, params=None, headers=None):
         print(f"HTTP error occurred: {http_err}")
     except Exception as error:
         print(f"Other error occurred: {error}")
-    # return response object (check with James note below)
-    # for error "no connection adapters found", response will not defined!
+    # return response object (check with James notes below)
+    # response will not be defined for the following errors:
+    # "no connection adapters found", "Invalid URL: No schema supplied"
     return response
+
+
+def data_reader(address, country_codes=None, start_period=None, end_period=None):
+    """
+    Uses pandas data reader to download World Bank indicators (data and metadata)
+    :param address: from data dictionary, string containing World Bank Indicator code/s
+    :param country_codes: TMEE countries to call (note data reader default just 'US', 'CA' and 'MX')
+    :param start_period: First year of the data series (note data reader default is 2003)
+    :param end_period: Last year of the data series, inclusive (note data reader default is 2005)
+    :return: pandas dataframe with data/metadata and error flag
+    World Bank sex disaggregation is compilated using different indicator codes with 'FE' and 'MA'
+    Dev note: address must contain either one indicator (no sex) or three indicators (total, 'FE' and 'MA')
+    Transformations must be done to flaten data reader output
+    Simple error handling prints messages and don't stop program execution
+    Error message: when any of the provided indicator codes is wrong
+    """
+
+    # initialize output
+    data_df = None
+    data_error = False
+
+    # get indicator code/s from data dictionary
+    wb_codes = re.findall(r"'(.+?)'", address)
+
+    # add country_call if present
+    country_call = None
+    if country_codes:
+        country_call = list(country_codes.values())
+
+    # pandas data reader data call
+    # handle warnings as errors forces all indicator codes to be correct!
+    warnings.filterwarnings("error")
+    try:
+        # pandas data reader country calls (ISO-alpha 3)
+        data_df = wb.download(
+            indicator=wb_codes, country=country_call, start=start_period, end=end_period
+        )
+    except Exception as error:
+        print(f"Error occurred: {error}")
+        data_error = True
+
+    if not data_error:
+
+        # flatten output
+        data_df.reset_index(inplace=True)
+
+        # set warnings back to default for metadata call
+        warnings.resetwarnings()
+        warnings.filterwarnings("ignore", category=ResourceWarning)
+        # call for metadata using first element in wb_codes list
+        metadata_df = wb.search(string=wb_codes[0], field="id")
+        # metadata will download and cache all indicators the first time is called
+        # depending on your connection this can take some time
+        # subsequent searches should be faster on the chached copy
+
+        # filter metadata_df (wb.search does fuzzy matching)
+        filter_id = metadata_df.id == wb_codes[0]
+        metadata_row = metadata_df[filter_id]
+
+        # data source: collection
+        collection = metadata_row.source.values[0].strip(" .")
+        # data source: topic
+        topic = metadata_row.topics.values[0].strip(" .")
+        # data source: organization
+        organization = metadata_row.sourceOrganization.values[0].decode().strip(" .")
+
+        # acknowledge World Bank data compilation
+        wb_collection = f"Compiled in World Bank collection: {collection} ({topic})."
+        # full metadata to publish in data_source
+        data_source = f"{organization}. {wb_collection}"
+        data_df["source"] = data_source
+
+        # add country codes from pandas data reader and avoid posterior country mappings
+        country_df = wb.get_countries()
+        country_df.rename(columns={"name": "country"}, inplace=True)
+        # add iso3 codes to data_df from country_df
+        data_df = data_df.merge(
+            country_df[["country", "iso3c"]], on="country", how="left", sort=False
+        )
+
+        # boolean sex_female array
+        sex_female = np.array(["FE" in elem.split(".") for elem in wb_codes])
+        # boolean sex_male array
+        sex_male = np.array(["MA" in elem.split(".") for elem in wb_codes])
+        # boolean sex_total array
+        sex_total = ~(sex_female | sex_male)
+
+        # accepted disaggregation: total or (total and female and male)
+        if len(wb_codes) == 1 and sex_total.any():
+            # add sex dimension all populated with total
+            data_df["sex"] = "total"
+            # rename column with indicator name as value
+            data_df.rename(columns={wb_codes[0]: "value"}, inplace=True)
+
+        elif (
+            len(wb_codes) == 3
+            and sex_total.any()
+            and sex_female.any()
+            and sex_male.any()
+        ):
+            # rename columns using sex disaggregation
+            data_df.rename(
+                columns={wb_codes[np.where(sex_total)[0][0]]: "value_total"},
+                inplace=True,
+            )
+            data_df.rename(
+                columns={wb_codes[np.where(sex_female)[0][0]]: "value_female"},
+                inplace=True,
+            )
+            data_df.rename(
+                columns={wb_codes[np.where(sex_male)[0][0]]: "value_male"}, inplace=True
+            )
+
+            # wide to long transformation: SDMX has sex as a dimension
+            data_df_long = pd.wide_to_long(
+                data_df,
+                stubnames="value",
+                i=["country", "year"],
+                j="sex",
+                sep="_",
+                suffix=r"\w+",
+            )
+
+            # overwrite output variable with long format flatten
+            data_df = data_df_long.reset_index()
+
+        else:
+            # flag data_error to avoid posterior mapping of raw data
+            data_error = True
+            print("Verify correct sex disaggregation in pandas data reader call")
+
+    return data_df, data_error
+
+
+def get_close_match_indexes(word, possibilities, n=3, cutoff=0.6):
+    """Use SequenceMatcher to return a list of indexes of the best "good enough" matches
+    :param word: string
+    :param possibilities: list of strings
+    :param n: (optional integer) maximum number of close matches to return
+    :param cutoff: (optional) Threshold score to ignore possibilities
+    """
+    result = []
+    s = SequenceMatcher()
+    s.set_seq2(word)
+    for idx, x in enumerate(possibilities):
+        s.set_seq1(x)
+        if s.ratio() >= cutoff:
+            result.append((s.ratio(), idx))
+
+    # Move the best scorers to head of list
+    result = nlargest(n, result)
+
+    # Strip scores for the best n matches
+    return [x for score, x in result]
 
 
 # function from stackoverflow by MaxU
