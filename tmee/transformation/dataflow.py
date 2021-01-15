@@ -1,4 +1,5 @@
 from . import define_maps
+import pandas as pd
 
 
 class Dataflow:
@@ -80,7 +81,19 @@ class Dataflow:
                     source_col = self.cod_map[col][deps]
                     indexes = dataframe[source_col] == m
                     # apply mapping on that indexes only
-                    dataframe[col][indexes] = self.cod_map[col][maps][m]
+                    # mapping of observation values is an exception
+                    if col == "value":
+                        # ensure integers where corresponds
+                        # see code_mapping['LEGACY'] in define_maps.py
+                        # astype: int - str (avoid posterior float cast)
+                        dataframe[col][indexes] = (
+                            pd.to_numeric(dataframe[col][indexes])
+                            .round()
+                            .astype(int)
+                            .astype(str)
+                        )
+                    else:
+                        dataframe[col][indexes] = self.cod_map[col][maps][m]
 
             else:
                 # simpler case: apply the mapping straightforward to a column
