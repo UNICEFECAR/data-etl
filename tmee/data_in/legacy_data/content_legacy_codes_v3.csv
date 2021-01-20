@@ -124,8 +124,8 @@ indicator,sex,age,unit,code
 4.1.21 Children left without parental care by type of placement: were adopted (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_ADOPTED
 4.1.22 Total number of children in formal care (at the end of the year),_T,_T,NUMBER,PT_CHLD_INFORMALCARE
 "4.1.23 Rate of children in formal care (at the end of the year, per 100,000 population aged 0-17)",_T,Y0T17,RATE_100000,PT_CHLD_INFORMALCARE_RATE
-4.2.1 Total number of children in residential care (at the end of the year),_T,_T,NUMBER,PT_CHLD_INRESIDENTIAL
-"4.2.2 Rate of children in residential care (at the end of the year, per 100,000 population aged  0-17)",_T,Y0T17,RATE_100000,PT_CHLD_INRESIDENTIAL_RATE
+4.2.1 Total number of children in residential care (at the end of the year) - Includes persons aged 18 years old and over in some countries,_T,_T,NUMBER,PT_CHLD_INRESIDENTIAL
+"4.2.2.A. Rate of children in residential care (at the end of the year, per 100,000 population aged  0-17) - Includes persons aged 18 years old and over in some countries",_T,Y0T17,RATE_100000,PT_CHLD_INRESIDENTIAL_RATE
 4.2.3 Children in residential care by sex: boys (at the end of the year),M,_T,NUMBER,PT_CHLD_INRESIDENTIAL
 4.2.4 Children in residential care by sex: girls (at the end of the year),F,_T,NUMBER,PT_CHLD_INRESIDENTIAL
 4.2.5 Children in residential care by age: 0-2 years olds (at the end of the year),_T,Y0T2,NUMBER,PT_CHLD_INRESIDENTIAL
@@ -159,7 +159,7 @@ indicator,sex,age,unit,code
 4.2.33 Children who left public residential care by reason: were placed into family type care (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_INFAMILY
 4.2.34 Children who left public residential care by reason: were adopted (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_ADOPTED
 4.2.35 Children who left public residential care by reason: started independent life (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_INDEPENDENT
-4.2.36 Children who left public residential care by reason: transferred to another insitution (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_TRANSFERED
+4.2.36 Children who left public residential care by reason: transferred to another institution (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_TRANSFERED
 4.2.37 Children who left public residential care by reason: died (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_DIED
 4.2.38 Children who left public residential care by reason: other (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_OTHER
 4.3.1 Children in care of foster parents or guardians (at the end of the year),_T,_T,NUMBER,PT_CHLD_INCARE_FOSTER
@@ -196,7 +196,7 @@ indicator,sex,age,unit,code
 4.3.32 Children who left guardian care by reason: started independent life (during the year),_T,_T,NUMBER,PT_CHLD_GUARDIAN_LEFT_INDEPENDET
 4.3.33 Children who left guardian care by reason: other (during the year),_T,_T,NUMBER,PT_CHLD_GUARDIAN_LEFT_OTHER
 4.3.34 Total number of children cared for by guardians (at the end of the year),_T,_T,NUMBER,PT_CHLD_CARED_GUARDIAN
-"4.3.35 Rate of children in guradian care (at the end of the year, per 100,000 population aged 0-17)",_T,Y0T17,RATE_100000,PT_CHLD_CARED_GUARDIAN_RATE
+"4.3.35 Rate of children in guardian care (at the end of the year, per 100,000 population aged 0-17)",_T,Y0T17,RATE_100000,PT_CHLD_CARED_GUARDIAN_RATE
 4.3.36 Number of children with disabilities in guardian care (at the end of the year),_T,_T,NUMBER,PT_CHLD_DISAB_CARED_GUARDIAN
 4.4.1 Total number of adoptions - including intercountry adoptions (during the year),_T,_T,NUMBER,PT_CHLD_ADOPTION
 "4.4.2 Gross adoption rate (per 100,000 average population aged  0-3)",_T,Y0T3,RATE_100000,PT_CHLD_ADOPTION_RATE
@@ -228,7 +228,7 @@ indicator,sex,age,unit,code
 5.2.10 Registered crimes committed against children by type: against a person (as % of total crimes committed against children),_T,_T,PCNT,JJ_CHLD_CRIME_PERSON
 5.2.11 Registered crimes committed against children by type: property crimes (as % of total crimes committed against children),_T,_T,PCNT,JJ_CHLD_CRIME_PROPERTY
 5.2.12 Registered crimes committed against children by type: other crimes (as % of total crimes committed against children),_T,_T,PCNT,JJ_CHLD_CRIME_OTHER
-5.3.1 Total number of children reported as being in contact with the police because of their own behavior (during the year),_T,_T,NUMBER,JJ_CHLD_POLICE
+5.3.1 Total number of children reported as being in contact with the police because of their own behaviour (during the year),_T,_T,NUMBER,JJ_CHLD_POLICE
 5.3.2 Children reported as being in contact with the police by sex: boys (during the year),M,_T,NUMBER,JJ_CHLD_POLICE
 5.3.3 Children reported as being in contact with the police by sex: girls (during the year),F,_T,NUMBER,JJ_CHLD_POLICE
 5.3.4 Children reported as being in contact with the police by age: 13 years or younger (during the year),_T,Y0T13,NUMBER,JJ_CHLD_POLICE
@@ -304,7 +304,7 @@ indicator,sex,age,unit,code
 6.2.9 Total number of families receiving foster/guardian allowance,_T,_T,NUMBER,SP_ALLOW_FAMILY_FOSSINGLE
 6.2.10 Daily average number of women receiving maternity leave in the period,F,_T,NUMBER,SP_MOTHLEAVE_DAYSAVG
 6.2.11 Total number of women receiving birth grant in the year,F,_T,NUMBER,SP_WOM_BIRTHGRANT
-6.2.12 Daily average number of parents on parental leave,_T,_T,NUMBER,SP_PATLEAVE_DAYSAVG
+6.2.12 Daily average number of parents on parental leave,_T,_T,NUMBER,SP_PARLEAVE_DAYSAVG
 6.3.1 Total number of pensioners,_T,_T,NUMBER,SP_PENSIONER
 6.3.2 Total number of old age pensioners,_T,_T,NUMBER,SP_PENSIONER_OLD
 6.3.3 Total number of disability pensioners,_T,_T,NUMBER,SP_PENSIONER_DISAB
@@ -314,10 +314,10 @@ indicator,sex,age,unit,code
 6.3.7 Total number of orphan's pensions or allowances,_T,_T,NUMBER,SP_PENSION_ORPHAN
 6.3.8 Total number of early retirement pensioners,_T,_T,NUMBER,SP_PENSIONER_EARLY
 "6.3.9 Total number of veteran, merit and other pensioners",_T,_T,NUMBER,SP_PENSIONER_VETERAN
-6.3.10 Average value of pensions (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE
-6.3.11 Average value of old age pensions (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE_OLD
-6.3.12 Average value of  disability  pensions (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE_DISAB
-6.3.13 Average value of  disability  pensions for children (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE_DISAB_CHLD
-6.3.14  Average value of survivors'  pensions (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE_SURVIVOR
-6.3.15  Average value of orphan's pensions or allowances (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE_ORPHAN
-6.3.16 Average minimum pension (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE_MIN
+6.3.10 Average value of pensions (national currency),_T,_T,NUMBER,SP_PENSION_VALUE
+6.3.11 Average value of old age pensions (national currency),_T,_T,NUMBER,SP_PENSION_VALUE_OLD
+6.3.12 Average value of  disability  pensions (national currency),_T,_T,NUMBER,SP_PENSION_VALUE_DISAB
+6.3.13 Average value of  disability  pensions for children (national currency),_T,_T,NUMBER,SP_PENSION_VALUE_DISAB_CHLD
+6.3.14  Average value of survivors'  pensions (national currency),_T,_T,NUMBER,SP_PENSION_VALUE_SURVIVOR
+6.3.15  Average value of orphan's pensions or allowances (national currency),_T,_T,NUMBER,SP_PENSION_VALUE_ORPHAN
+6.3.16 Average minimum pension (national currency),_T,_T,NUMBER,SP_PENSION_VALUE_MIN
