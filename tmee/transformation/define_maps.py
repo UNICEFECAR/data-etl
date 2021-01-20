@@ -656,6 +656,7 @@ code_mapping = {
             "PER_1000_UNINFECTED_POP": "RATE_1000",
         },
         "NATURE": {"C": "A", "CA": "AD", "_X": "A"},
+        "FREQ": {"A": "1"},
     },
     "pandas data reader": {"sex": {"female": "F", "male": "M", "total": "_T"}},
     "DF_SDG_ALL_SDG_0861_SEX_RT": {
