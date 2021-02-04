@@ -125,7 +125,8 @@ indicator,sex,age,unit,code
 4.1.22 Total number of children in formal care (at the end of the year),_T,_T,NUMBER,PT_CHLD_INFORMALCARE
 "4.1.23 Rate of children in formal care (at the end of the year, per 100,000 population aged 0-17)",_T,Y0T17,RATE_100000,PT_CHLD_INFORMALCARE_RATE
 4.2.1 Total number of children in residential care (at the end of the year) - Includes persons aged 18 years old and over in some countries,_T,_T,NUMBER,PT_CHLD_INRESIDENTIAL
-"4.2.2.A. Rate of children in residential care (at the end of the year, per 100,000 population aged  0-17) - Includes persons aged 18 years old and over in some countries",_T,Y0T17,RATE_100000,PT_CHLD_INRESIDENTIAL_RATE
+"4.2.2.A. Rate of children in residential care (at the end of the year, per 100,000 population aged  0-17) - Includes persons aged 18 years old and over in some countries",_T,Y0T17,RATE_100000,PT_CHLD_INRESIDENTIAL_RATE_A
+"4.2.2.B. Rate of children in residential care (at the end of the year, per 100,000 population aged  0-17) -  Excludes persons aged 18 years old and over when data is available",_T,Y0T17,RATE_100000,PT_CHLD_INRESIDENTIAL_RATE_B
 4.2.3 Children in residential care by sex: boys (at the end of the year),M,_T,NUMBER,PT_CHLD_INRESIDENTIAL
 4.2.4 Children in residential care by sex: girls (at the end of the year),F,_T,NUMBER,PT_CHLD_INRESIDENTIAL
 4.2.5 Children in residential care by age: 0-2 years olds (at the end of the year),_T,Y0T2,NUMBER,PT_CHLD_INRESIDENTIAL
