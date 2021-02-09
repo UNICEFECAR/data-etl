@@ -45,6 +45,7 @@ def get_API_code_address_etc(excel_data_dict):
 
     api_code_addr_etc_df = snap_source_ind_val_df[logic_API][
         [
+            "Theme",
             "Code_y",
             "Name",
             "Address",
@@ -52,6 +53,7 @@ def get_API_code_address_etc(excel_data_dict):
             "Comments_y",
             "Content_type",
             "Units_y",
+            "Disaggregation",
             "Freq_Coll",
             "Nature",
         ]
