@@ -1,0 +1,18 @@
+Code,Unit_label
+D_PER_1000_B,Deaths per 1000 live births
+PS,Persons
+PCNT,%
+YR,Years
+NUMBER,Number
+GPI,Gender Parity Index
+PPP_CONST,Constant PPP ($ millions)
+GOV_EXP_EDU,% of government expenditure on education
+GDP_PERC,% of GDP
+GOV_EXP_T,% of total government expenditure
+SCORE,Learning Outcomes Score
+RATE_1000,"Rate per 1,000 of Population"
+RATE_100,Rate per 100 of Population
+BINARY,Binary
+GPERM3,Micrograms per cubic meter
+RATE_100000,"Rate per 100,000 of Population"
+PER100KLIVEBIRTHS,Per 100000 live births
