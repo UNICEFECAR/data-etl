@@ -451,6 +451,27 @@ dflow_col_map = {
         "UNIT_MULTIPLIER": {"type": "col", "role": "attrib", "value": "UNIT_MULT"},
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
+    "UNPD_DEMOGRAPHY": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
+        "SEX": {"type": "col", "role": "dim", "value": "SEX"},
+        "AGE": {"type": "col", "role": "dim", "value": "AGE"},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "col", "role": "dim", "value": "RESIDENCE"},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "col", "role": "attrib", "value": "COVERAGE_TIME"},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
+        "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "DATA_SOURCE"},
+        "UNIT_MULTIPLIER": {
+            "type": "col",
+            "role": "attrib",
+            "value": "UNIT_MULTIPLIER",
+        },
+        "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
+    },
 }
 
 # Code mappings are intended to normalize data entries in our destination DSD
@@ -664,6 +685,17 @@ code_mapping = {
         "UNIT_MEASURE": {"PT": "PCNT"},
         "FREQ": {"A": "1"},
     },
+    "UNPD_DEMOGRAPHY": {
+        "REF_AREA": {"code:description": True},
+        "INDICATOR": {"code:description": True},
+        "SEX": {"code:description": True},
+        "AGE": {"code:description": True},
+        "RESIDENCE": {"code:description": True},
+        "UNIT_MULTIPLIER": {"code:description": True},
+        "UNIT_MEASURE": {"code:description": True},
+        "OBS_STATUS": {"code:description": True},
+        "FREQ_COLL": {"code:description": True},
+    },
 }
 
 # constants added at the dataflow level
@@ -714,5 +746,6 @@ dflow_const = {
         "WEALTH_QUINTILE": "_T",
         "RESIDENCE": "_T",
     },
+    "UNPD_DEMOGRAPHY": {"WEALTH_QUINTILE": "_T"},
 }
 
