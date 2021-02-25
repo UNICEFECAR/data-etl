@@ -1,38 +1,39 @@
 Code,Indicator_name
-DM_BRTS,Annual births 
+DM_BRTS,Number of births (expressed in thousands)
 DM_POP_URBN,Urban population as a percentage of the total population
-FT_WHS_PBR,Preterm Births 
-DM_FRATE_TOT,Total fertility rate (number of children per woman aged 15-49)
-FT_SP_DYN_ADKL,Adolescent birth rate 
+DM_POP_TOT_AGE,Total population by age (expressed in thousands)
+FT_WHS_PBR,Preterm birth rate (per 100 live births)
+DM_FRATE_TOT,Total fertility rate (average live births per woman aged 15-49)
+FT_SP_DYN_ADKL,"Adolescent birth rate (per 1,000 women aged 15-19)"
 NT_BW_LBW,Prevalence of low birth weight among new-borns
 MT_WHS9_CDR," Crude death rate (per 1,000 average population)"
-DM_LIFE_EXP,Life expectancy at birth (years)
+DM_LIFE_EXP,Life expectancy at birth (average years)
 CME_MRY0,"Infant mortality rate (per 1,000 live births)"
 CME_MRY0T4,"Under-5 mortality rate (per 1,000 live births)"
 CME_MRM0,"Neonatal mortality rate (per 1,000 live births)"
 MNCH_MMR,"Maternal mortality ratio (per 100,000 live births)"
-MT_SDG_SUICIDE,"Suicide death rate (deaths per 100,000 average relevant population), by sex and age group"
+MT_SDG_SUICIDE,"Suicide mortality rate (deaths per 100,000 average relevant population, by sex and age groups)"
 HT_SH_HAP_HBSAG,SDG Incidence of Hepatitis B (percentage of children under 5 years who have developed chronic HBV infection)
 HT_SH_TBS_INCD,"Incidence of tuberculosis (new cases per 100,000 average population)"
 HT_SH_HIV_INCD,"Number of new HIV infections per 1,000 uninfected population, by sex and age groups"
-HT_SH_SUD_ALCOL,Alcohol use disorders of 12 month prevalence with 95% (percentage of adults aged 15+ years)
-MNCH_SAB,Proportion of births attended by skilled health personnel
+HT_SH_SUD_ALCOL,"Alcohol use disorders of 12 month prevalence with 95% (percentage of population aged 15+ years, by sex)"
+MNCH_SAB,"Proportion of births attended by skilled health personnel (%, by age groups, residence and wealth quintile)"
 HT_SH_XPD_CHEX_GD_ZS,Current health expenditure (% of GDP)
 HT_SH_XPD_OOPC_CH_ZS,"Out-of-pocket expenditure (OOPS), as % of Current Health Expenditure"
 HVA_PMTCT_ARV_CVG,Percentage of pregnant women living with HIV receiving ARVs for PMTCT
-MNCH_ANC4,Antenatal care 4+ visits - percentage of women (aged 15-49 years) attended at least four times during pregnancy by any provider
-MNCH_PNCMOM,Postnatal care for mothers - percentage of women (aged 15-49 years) who received postnatal care within 2 days of giving birth
-MNCH_PNEUCARE,Care seeking for children with symptoms of Acute Respiratory Infection (ARI)
+MNCH_ANC4,"Antenatal care 4+ visits - percentage of women (by age groups, residence and wealth quintile), attended at least four times during pregnancy by any provider"
+MNCH_PNCMOM,"Postnatal care for mothers - percentage of women (by age groups, residence and wealth quintile), who received postnatal care within 2 days of giving birth"
+MNCH_PNEUCARE,"Care seeking for children (under age 5) with symptoms of Acute Respiratory Infection -ARI- (%, by sex, residence and wealth quintile)"
 HT_SH_FPL_MTMM,Proportion of women of reproductive age (aged 15-49 years) who have their need for family planning satisfied with modern methods (%)
-IM_DTP3,Number of surviving infants who received the third dose of DPT containing vaccine
-IM_MCV2,"Percentage of children who received the 2nd dose of measles-containing vaccine, as per administered in the national schedule"
-HT_SDG_PM25,Annual mean concentration of particles PM2.5 by residence areas (ug/m3)
-NT_BF_EIBF,Early initiation on brestfeeding
-NT_BF_EXBF,Exclusive breastfeeding
-NT_CF_MAD,Minumum acceptable diet
-NT_ANT_WHZ_PO2,Overweight
-NT_ANT_HAZ_NE2,Under-5 stunting 
-ECD_CHLD_36-59M_ADLT_SRC,Early stimulation and responsive care by adults
+IM_DTP3,Percentage of surviving infants who received the third dose of DPT-containing vaccine
+IM_MCV2,"Percentage of children (by age groups) who received the 2nd dose of measles-containing vaccine, as per administered in the national schedule"
+HT_SDG_PM25,"Annual mean concentration of particles PM2.5 (ug/m3, by residence)"
+NT_BF_EIBF,"Early initiation on brestfeeding (%, by sex, residence and wealth quintile)"
+NT_BF_EXBF,"Exclusive breastfeeding (%, by sex, age groups, residence and wealth quintile)"
+NT_CF_MAD,"Minumum acceptable diet (%, by sex, age groups, residence and wealth quintile)"
+NT_ANT_WHZ_PO2,"Overweight (%, by sex, age groups, residence and wealth quintile)"
+NT_ANT_HAZ_NE2,"Stunting (%, by sex, age groups, residence and wealth quintile)"
+ECD_CHLD_36-59M_ADLT_SRC,"Percentage of children (by sex, age groups, residence and wealth quintile) with whom any adult household member has engaged in 4 or more activities to provide early stimulation and responsive care in the last 3 days"
 HT_SH_SUD_TREAT,"Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders (%)"
 EDUNF_STU_L01_TOT,Early childhood educational development enrolments (absolute number)
 EDUNF_STU_L01_PUB,Early childhood educational development enrolments in public institutions
@@ -43,13 +44,13 @@ EDU_SDG_COMP_EDU_L02,Number of years of compulsory pre-primary education guarant
 EDUNF_STU_L02_TOT,Pre-primary (ISCED 02) education enrolments (absolute number)
 EDUNF_STU_L02_PUB,Pre-primary (ISCED 02) education enrolments in public institutions
 EDUNF_STU_L02_PRV,Pre-primary (ISCED 02) education enrolments in  private institutions
-EDUNF_GECER_L02,"Enrolment in pre-primary  (ISCED 02) education (gross enrolment ratio, % of population aged 3-6)"
-EDUNF_NER_L02,"Enrolment in pre-primary  (ISCED 02) education (net enrolment ratio, % of population aged 3-6)"
+EDUNF_GER_L02,"Enrolment in pre-primary (ISCED 02) education (gross enrolment ratio, % of population aged 3-6, by sex)"
+EDUNF_NER_L02,"Enrolment in pre-primary  (ISCED 02) education (net enrolment ratio, % of population aged 3-6, by sex)"
 EDUNF_PRP_L02,Enrolment in private institutions of pre-primary (ISCED 02) education ( % of all children enrolled in respective level of education)
 EDUNF_FEP_L02,Percentage of females in pre-primary (ISCED 02) education (% of all students enrolled in the respective level of education)
 EDUNF_NERA_L1_UNDER1,"Participation in organized learning (Adjusted net enrolment rate, one year before official primary entry age - Administrative data) (SDG 4.2.2.)"
 EDUNF_NARA_L1_UNDER1,"Participation in organized learning (Adjusted net attendance rate, one year before official primary entry age - Household survey data) (SDG 4.2.2.)"
-ECD_CHLD_36-59M_LMPSL,"Percentage of children (aged 36-59 months) developmentally on track in at least 3 of the 4 following domains: literacy-numeracy, physical, social-emotional and learning"
+ECD_CHLD_36-59M_LMPSL,"Percentage of children (aged 36-59 months, by sex, residence and wealth quintile) developmentally on track in at least 3 of the 4 following domains: literacy-numeracy, physical, social-emotional and learning"
 EDUNF_NIR_L1_ENTRYAGE,Net Intake Rate to primary education of official entry age
 EDUNF_STU_L1_TOT,Primary education (ISCED 1) enrolments (absolute number)
 EDUNF_FEP_L1,Percentage of females in primary  (ISCED 1) education (% of all students enrolled in the respective level of education)
@@ -152,9 +153,9 @@ EDU_FIN_EXP_L5T8,Expenditure on tertiary as a percentage of government expenditu
 EDU_SDG_SCH_L1,Proportion of schools with access to adapted infrastructure and materials for students with disabilities - Primary (%)
 EDU_SDG_SCH_L2,Proportion of schools with access to adapted infrastructure and materials for students with disabilities - Lower secondary (%)
 EDU_SDG_SCH_L3,Proportion of schools with access to adapted infrastructure and materials for students with disabilities - Upper secondary (%)
-WS_SCH_H-B,Proportion of schools with basic hygiene services
-WS_SCH_S-B,Proportion of schools with basic sanitation services
-WS_SCH_W-B,Proportion of schools with basic drinking water services
+WS_SCH_H-B,"Proportion of total schools with basic hygiene services (%, by residence)"
+WS_SCH_S-B,"Proportion of total schools with basic sanitation services (%, by residence)"
+WS_SCH_W-B,"Proportion of total schools with basic drinking water services (%, by residence)"
 EDUNF_TEACH_L1,Total number of Classroom teachers in primary education (ISCED 1) by sex
 EDUNF_TEACH_L2,Total number of Classroom teachers in lower secondary education (ISCED 2) by sex
 EDUNF_TEACH_L3,Total number of Classroom teachers in upper secondary education (ISCED 3) by sex
@@ -178,8 +179,8 @@ EDU_SDG_PQTR_L02,Pupil-qualified teacher ratio in pre-primary education (headcou
 EDU_SDG_PQTR_L1,Pupil-qualified teacher ratio in primary education (headcount basis)
 EDU_SDG_PQTR_L2,Pupil-qualified teacher ratio in lower secondary education (headcount basis)
 EDU_SDG_PQTR_L3,Pupil-qualified teacher ratio in upper secondary education (headcount basis)
-ECD_CHLD_U5_BKS-HM,Percentage of children under age 5 who have 3 or more children's books at home
-ECD_CHLD_U5_PLYTH-HM,Percentage of children under age 5 who play with 2 or more types of playthings at home
+ECD_CHLD_U5_BKS-HM,"Percentage of children (by sex, age groups, residence and wealth quintile) who have 3 or more children's books at home"
+ECD_CHLD_U5_PLYTH-HM,"Percentage of children under age 5 (by sex, residence and wealth quintile) who play with 2 or more types of playthings at home"
 EDUNF_EA_L2T8,"Educational attainment by sex: at least completed lower secondary (ISCED 2 or higher), population 25+ years (%)"
 EDUNF_ADMIN_L1_G2OR3_REA,Administration of nationally representative learning assessment in reading (Grade 2 or 3)
 EDUNF_ADMIN_L1_G2OR3_MAT,Administration of nationally representative learning assessment in math (Grade 2 or 3)
@@ -203,9 +204,19 @@ EDUNF_FRP_L2AND3,Percentage of females among repeaters in secondary education (I
 EDUNF_OFST_L1_UNDER1,Number of out-of-school children one year younger than the official entry age to primary education by sex
 EDUNF_ROFST_L1_UNDER1,Out-of-school rate for children one year younger than the official entry age to primary education by sex (%)
 EDUNF_GER_GPI_L01,"Gross enrolment ratio, early childhood educational development programmes, Gender Parity Index (GPI)"
-PT_CHLD_Y0T4_REG,Percentage of children under age 5 whose births are registered
-PT_CHLD_1-14_PS-PSY-V_CGVR,Percentage of children (aged 1-14 years) who experienced any physical punishment and/or psychological aggression by caregivers
-ECD_CHLD_U5_LFT-ALN,Percentage of children under age 5 left alone or under the supervision of another child younger than 10 years of age for more than 1 hour at least once in the last week
+EDUNF_SAP_L02,"Population of the official age for pre-primary education (number of persons, by sex)"
+EDUNF_SAP_L1,"Population of the official age for primary education (number of persons, by sex)"
+EDUNF_SAP_L2,"Population of the official age for lower secondary education (number of persons, by sex)"
+EDUNF_SAP_L3,"Population of the official age for upper secondary education (number of persons, by sex)"
+EDUNF_SAP_L1T3,"Population of the official age for primary and secondary education - ISCED 1 to 3 included - (number of persons, by sex)"
+EDUNF_OFST_L1T3,"Number of out-of-school children, adolescents and youth of primary and secondary school age (persons, by sex)"
+EDUNF_ROFST_L1T3,"Out-of-school rate for children, adolescents and youth of primary and secondary school age (%, by sex)"
+EDUNF_SAP_L2_GLAST,"Population of the official age for Last Grade of lower secondary education - ISCED 2, Last Grade - (number of persons, by sex)"
+EDUNF_PRP_L2AND3,Enrolment in private schools of secondary education - ISCED 2 and 3 - (% of all students enrolled in the respective level of education)
+EDUNF_STU_L2AND3_PRV,"Enrolment in secondary education - ISCED 2 and 3 - private institutions (number of persons, by sex)"
+PT_CHLD_Y0T4_REG,"Percentage of children (by sex, age groups, residence and wealth quintile) whose births are registered"
+PT_CHLD_1-14_PS-PSY-V_CGVR,"Percentage of children (by sex, age groups, residence and wealth quintile) who experienced any physical punishment and/or psychological aggression by caregivers"
+ECD_CHLD_U5_LFT-ALN,"Percentage of children under age 5 (by sex, residence and wealth quintile) left alone or under the supervision of another child younger than 10 years of age for more than 1 hour at least once in the last week"
 GN_MTNTY_LV_BNFTS,Maternity leave benefits
 GN_PTNTY_LV_BNFTS,Paternity leave benefits
 DM_POP_TOT,Total population on 1 January
