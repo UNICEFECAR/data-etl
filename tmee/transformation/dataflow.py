@@ -98,9 +98,12 @@ class Dataflow:
             else:
                 # simpler case: apply the mapping straightforward to a column
                 for m in self.cod_map[col]:
-                    # any() condition below: split will get an error if any NaN in column
+                    # any column entry not NaN: split "code:description" for strings only
                     if m == "code:description" and dataframe[col].notnull().any():
-                        dataframe[col] = dataframe[col].apply(lambda x: x.split(":")[0])
+                        log_ind = dataframe[col].notnull()
+                        dataframe.loc[log_ind, col] = dataframe.loc[log_ind, col].apply(
+                            lambda x: x.split(":")[0]
+                        )
                     else:
                         dataframe[col].replace(m, self.cod_map[col][m], inplace=True)
 
