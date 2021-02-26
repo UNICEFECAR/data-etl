@@ -29,8 +29,10 @@ test_nb.py
 z_archive
 data/*/z_archive
 
-# Exclude all data output by the ETL script
-data_out/
+# Exclude all data output by the ETL script (commented by Alberto below)
+# data_out/
+# (Alberto: treated for tmee/data_out end of file)
+
 # this is legacy, because the data folder has been renamed to data_out
 data/*
 
@@ -180,6 +182,14 @@ content_legacy.csv
 # ignore csv files from particular folders
 /tmee/data_out/data_raw/*.csv
 /tmee/data_out/data_transformed/*.csv
+# ignore excel files from codelist
+/tmee/data_out/codelists/*.xlsx
+# ignore csv files from codelist
+/tmee/data_out/codelists/*.csv
+# track from codelists: indicators, age and units
+!CL_TMEE_INDICATORS.csv
+!CL_TMEE_UNITS.csv
+!CL_TMEE_AGE.csv
 
 # Ignore history download folder
 noYreq
