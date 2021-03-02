@@ -1,5 +1,6 @@
 from . import define_maps
 import pandas as pd
+import numpy as np
 
 
 class Dataflow:
@@ -136,3 +137,59 @@ class Dataflow:
         """
         dim_cols = self.get_dim_cols()
         return dataframe.duplicated(subset=dim_cols, keep=False).any()
+
+    # function to remove duplicates from data source
+    # customized per indicator: can't think of a generalization so far
+    # it requires to know the dimension (can't be more that one) that brings the duplicities
+    def rem_dupli_source(
+        self,
+        dataframe,
+        target_source=[
+            "MNCH_SRC_1824",
+            "MNCH_SRC_1825",
+            "MNCH_SRC_1244",
+            "MNCH_SRC_118",
+            "MNCH_SRC_1505",
+            "MNCH_SRC_1780",
+            "MNCH_SRC_651",
+            "MNCH_SRC_11",
+            "MNCH_SRC_1619",
+            "MNCH_SRC_989",
+            "MNCH_SRC_1193",
+        ],
+    ):
+        """
+        :param dataframe: dataframe to remove duplicates (pre-requisite: already know there are!)
+        :param target_dim: list of values to remove duplicates (pre-requisite: know the dimension)
+        :return non_dupli_df: dataframe without duplicates
+        """
+        dim_cols = self.get_dim_cols()
+        logic_dupli = dataframe.duplicated(subset=dim_cols, keep=False)
+        # initialize output dataframe: first keep entries without any duplicates
+        non_dupli_df = dataframe[~logic_dupli]
+        # all duplicates df
+        dupli_df = dataframe[logic_dupli]
+        for source in target_source:
+            logic_source = dupli_df.DATA_SOURCE == source
+            # add source to output
+            non_dupli_df = pd.concat([non_dupli_df, dupli_df[logic_source]])
+            # eliminate duplicates from added source (country-year combination)
+            countries_source = dupli_df[logic_source].REF_AREA
+            years_source = dupli_df[logic_source].TIME_PERIOD
+            country_year_source = np.logical_or.reduce(
+                [
+                    (dupli_df.REF_AREA == country) & (dupli_df.TIME_PERIOD == year)
+                    for country, year in zip(countries_source, years_source)
+                ]
+            )
+            # update remaining from duplicates
+            dupli_df = dupli_df[~country_year_source]
+
+        # check-out duplicates before return!
+        if self.check_duplicates(non_dupli_df):
+            print("Not enough target sources to remove all duplicates!")
+        else:
+            print("Duplicates eliminated.")
+
+        return non_dupli_df
+
