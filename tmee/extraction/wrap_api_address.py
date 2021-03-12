@@ -10,6 +10,7 @@ To improve: wrap_api_address could become an abstract class (similar to James' e
 
 import numpy as np
 import re
+import pandas as pd
 
 from utils import api_request
 from sdmx.sdmx_struc import SdmxJsonStruct
@@ -93,8 +94,12 @@ def wrap_api_address(
                 for elem in country_codes.values()
             ]
             # country names are repeated in the list, and I want the unique codes only
+            # eliminate M49 missmatch countries (kosovo eg): unique not nan's
+            all_countries = np.concatenate(country_codes_m49)
+            # pandas not null supports mix of string with floats (numpy doesn't)
+            null_match = pd.isnull(all_countries)
             # Note: numpy unique sorts the array, but this doesn't modify the API call
-            country_codes_m49 = np.unique(np.concatenate(country_codes_m49))
+            country_codes_m49 = np.unique(all_countries[~null_match])
             # Join country_codes_m49 for SDMX requests (removing zeros to the left)
             country_call_m49 = "+".join(country_codes_m49.astype(int).astype(str))
             # split url_endpoint
