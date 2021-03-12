@@ -10,6 +10,8 @@ import numpy as np
 import re
 import warnings
 from pandas_datareader import wb
+from bs4 import BeautifulSoup
+from io import StringIO
 from difflib import SequenceMatcher
 from heapq import nlargest
 
@@ -40,10 +42,13 @@ def get_API_code_address_etc(excel_data_dict):
     snap_source_ind_val_df = snap_source_ind_df.merge(
         val_df, on="Value_Id", how="left", sort=False
     )
-    # get list of API extractions: indicator codes, url endpoints, etc
-    logic_API = snap_source_ind_val_df.Type_x == "API"
+    # get indicator codes, url endpoints, etc for API/Web Scrape extractions
+    logic_API = snap_source_ind_val_df.Type_x.str.contains("API|Web Scrape")
+    logic_not_null = logic_API.notnull()
+    # operator AND for two logics above
+    logic_API_not_null = logic_API & logic_not_null
 
-    api_code_addr_etc_df = snap_source_ind_val_df[logic_API][
+    api_code_addr_etc_df = snap_source_ind_val_df[logic_API_not_null][
         [
             "Theme",
             "Code_y",
@@ -224,6 +229,59 @@ def data_reader(address, country_codes=None, start_period=None, end_period=None)
             print("Verify correct sex disaggregation in pandas data reader call")
 
     return data_df, data_error
+
+
+def web_scrape(raw_html, source_key=None):
+    """
+    Web scraping (data and metadata)
+    :param raw_html: this is a satisfactory url requests response (HTML content)
+    :param source_key: future dev of different web structures
+    Dev note: web structure now is WHO: https://apps.who.int/immunization_monitoring/globalsummary/
+    :return: pandas dataframe with data/metadata
+    Simple wide to long transformation to match SDMX dimensions
+    TODO: error handling?
+    """
+    # correct WHO HTML (thank you developer!)
+    html_text = StringIO(raw_html.text)
+    # Erase % from colspan (possible regex equivalence?)
+    html_refactor = "".join(
+        [line.replace("%", "") if "colspan" in line else line for line in html_text]
+    )
+    # Soupify refactored html
+    soup = BeautifulSoup(html_refactor, "html.parser")
+    # Extract tables (missing targeting attributes)
+    tables = soup.find_all("table")
+    # Feed target table by HTML position into pandas: specify [0] to get actual df
+    data_df = pd.read_html(str(tables[2]), header=0, skiprows=[1])[0]
+    # drop columns by regex
+    data_df.drop(
+        list(
+            data_df.filter(
+                regex=re.compile("unnamed|category|indicator", re.IGNORECASE)
+            )
+        ),
+        axis=1,
+        inplace=True,
+    )
+
+    # metadata (data provider): get it from last row
+    data_prov = data_df.iat[-1, 0].strip("")
+    # metadata (last updated): target table by HTML position - contains also class attribute -
+    data_date = pd.read_html(str(tables[1]))[0].iat[-1, 0].strip("")
+    data_date = data_date.replace("Next", ". Next") + "."
+
+    # transform wide to long (except last 2 rows)
+    data_df = pd.melt(data_df.iloc[:-2], id_vars=["country"])
+    data_df.rename(columns={"variable": "year"}, inplace=True)
+
+    # full metadata to publish in data_source
+    data_source = f"{data_prov}{data_date}"
+    data_df["source"] = data_source
+
+    # country names to lowercase for code mapping
+    data_df["country"] = data_df.country.str.lower()
+
+    return data_df
 
 
 def get_close_match_indexes(word, possibilities, n=3, cutoff=0.6):
