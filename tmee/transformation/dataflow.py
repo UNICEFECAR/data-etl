@@ -71,6 +71,8 @@ class Dataflow:
     def map_codes(self, dataframe):
 
         deps = "depends"
+        # multi index dependence (two-index for UIS BDSS in Helix: not tested)
+        bi_deps = "bi_depends"
         maps = "map"
 
         for col in self.cod_map:
@@ -95,6 +97,16 @@ class Dataflow:
                         )
                     else:
                         dataframe[col][indexes] = self.cod_map[col][maps][m]
+
+            elif bi_deps in self.cod_map[col]:
+                # the mapping depends on entries of two columns (BDSS UIS in Helix)
+                for m, n in self.cod_map[col][maps]:
+                    # get indexes where entries in two columns are m and n
+                    source_col1 = self.cod_map[col][bi_deps][0]
+                    source_col2 = self.cod_map[col][bi_deps][1]
+                    indexes = dataframe[source_col1] == m & dataframe[source_col2] == n
+                    # apply mapping on indexes only
+                    dataframe[col][indexes] = self.cod_map[col][maps][m, n]
 
             else:
                 # simpler case: apply the mapping straightforward to a column
