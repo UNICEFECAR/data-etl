@@ -21,6 +21,7 @@ main_extract_transform.py
 main_extract_transform_old.py
 main_extract_transform_test.py
 test_nb.py
+test_nb2.py
 
 # Gecko driver log file
 *.log
@@ -168,6 +169,10 @@ try_sql_excel.ipynb
 validation_analytics.ipynb
 test_nb.ipynb
 main_validation - Copy.ipynb
+proto_who_imm_scrape.ipynb
+bdss_uis.ipynb
+bdss_uis_sdg_ger.ipynb
+bdss_uis_unicef.ipynb
 
 
 # ignore folder below (all excel files)
