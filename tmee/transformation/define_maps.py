@@ -472,6 +472,24 @@ dflow_col_map = {
         },
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
+    # web: web scraping (WHO Immunization only as of 26 Feb 2021)
+    "web": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "country"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "const", "role": "dim", "value": ""},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "year"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "value"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "source"},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
 }
 
 # Code mappings are intended to normalize data entries in our destination DSD
@@ -696,6 +714,7 @@ code_mapping = {
         "OBS_STATUS": {"code:description": True},
         "FREQ_COLL": {"code:description": True},
     },
+    "web": {"country": country_names_map},
 }
 
 # constants added at the dataflow level
