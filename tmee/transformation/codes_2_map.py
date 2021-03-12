@@ -94,6 +94,9 @@ country_names_map = {
     "uzbekistan": "UZB",
 }
 
+# update few keys from above: WHO immunization web country map
+country_web_map = {}
+
 seasons_map = {
     "1950/51": "1950",
     "1951/52": "1951",
