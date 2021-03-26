@@ -2,6 +2,7 @@ Code,Indicator_name
 DM_BRTS,Number of births (expressed in thousands)
 DM_POP_URBN,Urban population as a percentage of the total population
 DM_POP_TOT_AGE,Total population by age (expressed in thousands)
+DM_POP_NETM,Net migration (expressed as thousands)
 FT_WHS_PBR,Preterm birth rate (per 100 live births)
 DM_FRATE_TOT,Total fertility rate (average live births per woman aged 15-49)
 FT_SP_DYN_ADKL,"Adolescent birth rate (per 1,000 women aged 15-19)"
@@ -26,7 +27,9 @@ MNCH_PNCMOM,"Postnatal care for mothers - percentage of women (by age groups, re
 MNCH_PNEUCARE,"Care seeking for children (under age 5) with symptoms of Acute Respiratory Infection -ARI- (%, by sex, residence and wealth quintile)"
 HT_SH_FPL_MTMM,Proportion of women of reproductive age (aged 15-49 years) who have their need for family planning satisfied with modern methods (%)
 IM_DTP3,Percentage of surviving infants who received the third dose of DPT-containing vaccine
+HT_DIST79DTP3_P,Percentage of districts with DTP3 coverage 50-79%
 IM_MCV2,"Percentage of children (by age groups) who received the 2nd dose of measles-containing vaccine, as per administered in the national schedule"
+HT_DIST79MCV2_P,Percentage of districts with MCV2 coverage 50-79%
 HT_SDG_PM25,"Annual mean concentration of particles PM2.5 (ug/m3, by residence)"
 NT_BF_EIBF,"Early initiation on brestfeeding (%, by sex, residence and wealth quintile)"
 NT_BF_EXBF,"Exclusive breastfeeding (%, by sex, age groups, residence and wealth quintile)"
@@ -214,6 +217,18 @@ EDUNF_ROFST_L1T3,"Out-of-school rate for children, adolescents and youth of prim
 EDUNF_SAP_L2_GLAST,"Population of the official age for Last Grade of lower secondary education - ISCED 2, Last Grade - (number of persons, by sex)"
 EDUNF_PRP_L2AND3,Enrolment in private schools of secondary education - ISCED 2 and 3 - (% of all students enrolled in the respective level of education)
 EDUNF_STU_L2AND3_PRV,"Enrolment in secondary education - ISCED 2 and 3 - private institutions (number of persons, by sex)"
+SP_SI_COV_BENFTS,Proportion of population covered by at least one social protection benefit (%)
+SP_SI_COV_LMKT,Proportion of population covered by labour market programs (% by wealth quintile)
+SP_SI_COV_SOCAST,Proportion of population covered by social assistance programs (% by wealth quintile)
+SP_SI_COV_SOCINS,Proportion of population covered by social insurance programs (% by wealth quintile)
+SP_SI_COV_WKINJRY,Proportion of employed population covered in the event of work injury (%)
+SP_SI_COV_CHLD,Proportion of children/households receiving child/family cash benefit (%)
+SP_SI_COV_DISAB,Proportion of population with severe disabilities receiving disability cash benefit (% by sex)
+SP_SI_COV_MATNL,Proportion of mothers with newborns receiving maternity cash benefit (%)
+SP_SI_COV_POOR,Proportion of poor population receiving social assistance cash benefit (%)
+SP_SI_COV_UEMP,Proportion of unemployed persons receiving unemployment cash benefit (% by sex)
+SP_SI_COV_VULN,Proportion of vulnerable population receiving social assistance cash benefit (% by sex)
+SP_SI_COV_PENSN,Proportion of population above statutory pensionable age receiving a pension (% by sex)
 PT_CHLD_Y0T4_REG,"Percentage of children (by sex, age groups, residence and wealth quintile) whose births are registered"
 PT_CHLD_1-14_PS-PSY-V_CGVR,"Percentage of children (by sex, age groups, residence and wealth quintile) who experienced any physical punishment and/or psychological aggression by caregivers"
 ECD_CHLD_U5_LFT-ALN,"Percentage of children under age 5 (by sex, residence and wealth quintile) left alone or under the supervision of another child younger than 10 years of age for more than 1 hour at least once in the last week"
