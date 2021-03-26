@@ -14,6 +14,7 @@ from .codes_2_map import (
     country_map,
     country_map_49,
     country_names_map,
+    country_web_map,
     seasons_map,
     season_str,
 )
@@ -354,12 +355,12 @@ dflow_col_map = {
         "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
         "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
     },
-    # WHO: indicator SDGSUICIDE
+    # WHO: indicator SDGSUICIDE (noted struct mod WHO: 12 march 2021, age groups droped)
     "csv-str-2": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "COUNTRY (CODE)"},
         "INDICATOR": {"type": "const", "role": "dim", "value": ""},
         "SEX": {"type": "col", "role": "dim", "value": "SEX (CODE)"},
-        "AGE": {"type": "col", "role": "dim", "value": "AGEGROUP (CODE)"},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
         "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
         "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "YEAR (CODE)"},
@@ -451,6 +452,7 @@ dflow_col_map = {
         "UNIT_MULTIPLIER": {"type": "col", "role": "attrib", "value": "UNIT_MULT"},
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
+    # check unit multiplier thousands in population --> Daniele to update!
     "UNPD_DEMOGRAPHY": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
         "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
@@ -665,25 +667,26 @@ code_mapping = {
     },
     "csv-str-2": {
         "SEX (CODE)": {"FMLE": "F", "MLE": "M", "BTSX": "_T"},
-        "AGEGROUP (CODE)": {
-            # empty values for age --> "_T"
-            np.nan: "_T",
-            "YEARS05-09": "Y5T9",
-            "YEARS10-14": "Y10T14",
-            "YEARS15-19": "Y15T19",
-            "YEARS20-24": "Y20T24",
-            "YEARS25-29": "Y25T29",
-            "YEARS10-19": "Y10T19",
-            "YEARS20-29": "Y20T29",
-            "YEARS30-39": "Y30T39",
-            "YEARS40-49": "Y40T49",
-            "YEARS50-59": "Y50T59",
-            "YEARS60-69": "Y60T69",
-            "YEARS70-79": "Y70T79",
-            "YEARS80PLUS": "Y_GE80",
-            "YEARS15-29": "Y15T29",
-            "YEARS30-49": "Y30T49",
-        },
+        # WHO: indicator SDGSUICIDE (noted struct mod WHO: 12 march 2021, age groups droped)
+        # "AGEGROUP (CODE)": {
+        #     # empty values for age --> "_T"
+        #     np.nan: "_T",
+        #     "YEARS05-09": "Y5T9",
+        #     "YEARS10-14": "Y10T14",
+        #     "YEARS15-19": "Y15T19",
+        #     "YEARS20-24": "Y20T24",
+        #     "YEARS25-29": "Y25T29",
+        #     "YEARS10-19": "Y10T19",
+        #     "YEARS20-29": "Y20T29",
+        #     "YEARS30-39": "Y30T39",
+        #     "YEARS40-49": "Y40T49",
+        #     "YEARS50-59": "Y50T59",
+        #     "YEARS60-69": "Y60T69",
+        #     "YEARS70-79": "Y70T79",
+        #     "YEARS80PLUS": "Y_GE80",
+        #     "YEARS15-29": "Y15T29",
+        #     "YEARS30-49": "Y30T49",
+        # },
     },
     "csv-str-3": {"RESIDENCEAREATYPE (CODE)": {"RUR": "R", "TOTL": "_T", "URB": "U"},},
     "DF_SDG_GLH": {
@@ -714,7 +717,7 @@ code_mapping = {
         "OBS_STATUS": {"code:description": True},
         "FREQ_COLL": {"code:description": True},
     },
-    "web": {"country": country_names_map},
+    "web": {"country": country_web_map},
 }
 
 # constants added at the dataflow level
@@ -757,7 +760,8 @@ dflow_const = {
         "WEALTH_QUINTILE": "_T",
         "RESIDENCE": "_T",
     },
-    "csv-str-2": {"WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
+    # WHO: indicator SDGSUICIDE (noted struct mod WHO: 12 march 2021, age groups droped)
+    "csv-str-2": {"AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
     "csv-str-3": {"SEX": "_T", "AGE": "_T", "WEALTH_QUINTILE": "_T"},
     "pandas data reader": {"AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
     "DF_SDG_ALL_SDG_0861_SEX_RT": {
@@ -766,5 +770,6 @@ dflow_const = {
         "RESIDENCE": "_T",
     },
     "UNPD_DEMOGRAPHY": {"WEALTH_QUINTILE": "_T"},
+    "web": {"SEX": "_T", "AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
 }
 
