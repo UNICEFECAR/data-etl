@@ -452,7 +452,8 @@ dflow_col_map = {
         "UNIT_MULTIPLIER": {"type": "col", "role": "attrib", "value": "UNIT_MULT"},
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
-    # check unit multiplier thousands in population --> Daniele to update!
+    # bring unit multiplier from data dictionary (column not updated in Helix)
+    # contact Daniele to check and update unit multiplier column in thousands --> 26/03/2021
     "UNPD_DEMOGRAPHY": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
         "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
@@ -467,11 +468,7 @@ dflow_col_map = {
         "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
         "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "DATA_SOURCE"},
-        "UNIT_MULTIPLIER": {
-            "type": "col",
-            "role": "attrib",
-            "value": "UNIT_MULTIPLIER",
-        },
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
     # web: web scraping (WHO Immunization only as of 26 Feb 2021)
@@ -735,6 +732,7 @@ code_mapping = {
 
 # last recall: data dictionary already have (INDICATOR, DATA_SOURCE, OBS_FOOTNOTE)
 # last recall Jan 21: data dictionary additions (UNIT_MEASURE, FREQ, OBS_STATUS)
+# last recall Mar 26: data dictionary additions (UNIT_MULTIPLIER) --> for UNPD and NET MIGRATION
 # last recall: data dictionary don't have information related to LEGACY indicators
 
 dflow_const = {
