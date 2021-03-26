@@ -1,3 +1,4 @@
+# list of countries for ECARO
 country_map = {
     "AL": "ALB",
     "AM": "ARM",
@@ -56,6 +57,7 @@ country_map = {
     "XK": "XKX",
 }
 
+# list of countries for ECARO (Kosovo not in UN code 49)
 country_map_49 = {
     "8": "ALB",
     "51": "ARM",
@@ -113,6 +115,7 @@ country_map_49 = {
     "826": "GBR",
 }
 
+# list of countries for TMEE (not all ECARO)
 country_names_map = {
     "albania": "ALB",
     "armenia": "ARM",
@@ -145,8 +148,40 @@ country_names_map = {
     "uzbekistan": "UZB",
 }
 
-# update few keys from above: WHO immunization web country map
-country_web_map = {}
+# update few keys from TMEE for WHO immunization app countries
+key_update = {"czech republic": "czechia", "moldova": "republic of moldova"}
+country_web_map = {
+    key_update.get(k, k): country_names_map[k] for k in country_names_map
+}
+# update with remaining ECARO (not present "VAT", "LIE", "XKX" as of 25/03/2021)
+country_web_map.update(
+    {
+        "andorra": "AND",
+        "austria": "AUT",
+        "belgium": "BEL",
+        "cyprus": "CYP",
+        "denmark": "DNK",
+        "finland": "FIN",
+        "france": "FRA",
+        "germany": "DEU",
+        "greece": "GRC",
+        "iceland": "ISL",
+        "ireland": "IRL",
+        "italy": "ITA",
+        "luxembourg": "LUX",
+        "malta": "MLT",
+        "monaco": "MCO",
+        "netherlands": "NLD",
+        "norway": "NOR",
+        "portugal": "PRT",
+        "san marino": "SMR",
+        "spain": "ESP",
+        "sweden": "SWE",
+        "switzerland": "CHE",
+        "united kingdom of great britain and northern ireland": "GBR",
+    }
+)
+
 
 seasons_map = {
     "1950/51": "1950",
