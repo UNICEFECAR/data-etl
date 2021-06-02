@@ -7,7 +7,7 @@ FT_WHS_PBR,Preterm birth rate (per 100 live births)
 DM_FRATE_TOT,Total fertility rate (average live births per woman aged 15-49)
 FT_SP_DYN_ADKL,"Adolescent birth rate (per 1,000 women aged 15-19)"
 NT_BW_LBW,Prevalence of low birth weight among new-borns
-MT_WHS9_CDR," Crude death rate (per 1,000 average population)"
+MT_WHS9_CDR,"Crude death rate (per 1,000 average population)"
 DM_LIFE_EXP,Life expectancy at birth (average years)
 CME_MRY0,"Infant mortality rate (per 1,000 live births)"
 CME_MRY0T4,"Under-5 mortality rate (per 1,000 live births)"
@@ -229,8 +229,55 @@ SP_SI_COV_POOR,Proportion of poor population receiving social assistance cash be
 SP_SI_COV_UEMP,Proportion of unemployed persons receiving unemployment cash benefit (% by sex)
 SP_SI_COV_VULN,Proportion of vulnerable population receiving social assistance cash benefit (% by sex)
 SP_SI_COV_PENSN,Proportion of population above statutory pensionable age receiving a pension (% by sex)
-PT_CHLD_Y0T4_REG,"Percentage of children (by sex, age groups, residence and wealth quintile) whose births are registered"
+EC_NY_GDP_MKTP_KD_ZG,GDP growth (annual %)
+EC_NY_GDP_PCAP_KD_ZG,GDP per capita growth (annual %)
+EC_NE_DAB_TOTL_ZS,Gross national expenditure (% of GDP)
+EC_GR_G14_GDP,Total government revenue (budgetary central government) as a proportion of GDP (%)
+EC_NY_GDP_PCAP_PP_CD,"GDP per capita, PPP (current international $)"
+EC_NY_GNP_ATLS_CD,"GNI, Atlas method (current US$)"
+EC_NY_GNP_PCAP_CD,"GNI per capita, Atlas method (current US$)"
+EC_GC_DOD_TOTL_GD_ZS,"Central government debt, total (% of GDP)"
+EC_SP_POV_GINI,Gini index (World Bank estimate)
+EC_SL_UEM_TOTL_NE_ZS,"Unemployment, national estimate (% of total labor force, by sex)"
+EC_SL_UEM_TOTL_ZS,"Unemployment, modelled ILO estimate (% of total labor force, by sex)"
+DM_SM_POP_REFG,Refugee population by country or territory of asylum
+DM_SM_POP_REFG_OR,Refugee population by country or territory of origin
+CR_VC_DSR_MTMP,"Number of deaths and missing persons attributed to disasters (per 100,000 population)"
+CR_VC_DSR_DAFF,"Number of directly affected persons attributed to disasters (per 100,000 population)"
+CR_SH_STA_AIRP,"Crude death rate attributed to household and ambient air pollution (deaths per 100,000 population)"
+CR_SH_STA_ASAIRP,"Age-standardized mortality rate attributed to household and ambient air pollution (deaths per 100,000 population)"
+CR_EG_EGY_CLEAN,Proportion of population with primary reliance on clean fuels and technology (%)
+CR_EG_ACS_ELEC,Proportion of population with access to electricity (% by residence)
+CR_SG_DSR_LGRGSR,Score of adoption and implementation of national DRR strategies in line with the Sendai Framework
+PT_F_GE15_PS-SX-EM_V_PTNR_12MNTH,"Percentage of ever-partnered women and girls (aged 15 years and older, by age groups, residence and wealth quintile) subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months"
+PT_F_GE15_SX_V_PTNR_12MNTH,Women and girls aged 15 and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months (%)
+PT_VC_VOV_PHYL,Proportion of population subjected to physical violence in the previous 12 months (% by sex)
+PT_VC_VOV_SEXL,Proportion of population subjected to sexual violence in the previous 12 months (% by sex)
+PT_VC_VOV_ROBB,Proportion of population subjected to robbery in the previous 12 months (% by sex)
+PT_VC_SNS_WALN,Proportion of population that feel safe walking alone around the area they live (% by sex)
 PT_CHLD_1-14_PS-PSY-V_CGVR,"Percentage of children (by sex, age groups, residence and wealth quintile) who experienced any physical punishment and/or psychological aggression by caregivers"
+PT_F_18-29_SX-V_AGE-18,"Percentage of women (aged 18 and over, by age groups) who experienced sexual violence by age 18"
+PT_M_18-29_SX-V_AGE-18,Percentage of men (aged 18 and over) who experienced sexual violence by age 18
+PT_VC_PRR_PHYV,Police reporting rate for physical assault (% by sex)
+PT_VC_PRR_SEXV,Police reporting rate for sexual assault (%)
+PT_VC_PRR_ROBB,Police reporting rate for robbery (% by sex)
+PT_ADLT_PS_NEC,"Percentage of adults (by sex, age groups, residence and wealth quintile) who think that physical punishment is necessary to raise/educate children"
+PT_F_15-49_W-BTNG,"Percentage of women (aged 15-49 years, by age groups, residence and wealth quintile) who consider a husband to be justified in hitting or beating his wife for at least one of the specified reasons"
+PT_M_15-49_W-BTNG,"Percentage of men (aged 15-49 years, by age groups, residence and wealth quintile) who consider a husband to be justified in hitting or beating his wife for at least one of the specified reasons"
+PT_ST_13-15_BUL_30-DYS,Percentage of students (by sex and age groups) who reported being bullied on 1 or more days in the past 30 days
+PT_F_15-19_MRD,Percentage of girls aged 15-19 years (by residence and wealth quintile) who are currently married or in union
+PT_M_15-19_MRD,Percentage of boys aged 15-19 years (by residence and wealth quintile) who are currently married or in union
+PT_F_20-24_MRD_U15,"Percentage of women (aged 20-24 years, by residence and wealth quintile) married or in union before age 15"
+PT_F_20-24_MRD_U18,"Percentage of women (aged 20-24 years, by residence and wealth quintile) married or in union before age 18"
+PT_M_20-24_MRD_U18,"Percentage of men (aged 20-24 years, by residence and wealth quintile) married or in union before age 18"
+PT_CHLD_5-17_LBR_ECON,"Percentage of children (aged 5-17 years, by sex and age groups) engaged in child labour (economic activities)"
+PT_CHLD_5-17_LBR_ECON-HC,"Percentage of children (aged 5-17 years, by sex and age groups) engaged in child labour (economic activities and household chores)"
+JJ_SG_NHR_IMPLN,Countries with National Human Rights Institutions in compliance with the Paris Principles (A status)
+JJ_SG_NHR_INTEXSTN,Countries with National Human Rights Institutions not fully compliant with the Paris Principles (B status)
+JJ_SG_NHR_NOSTUSN,Countries with National Human Rights Institutions and no status with the Paris Principles (C status)
+JJ_SG_NHR_NOAPPLN,Countries with no application for accreditation with the Paris Principles (D status)
+JJ_VC_PRS_UNSNT,Unsentenced detainees as a proportion of overall prison population (%)
+PT_CHLD_Y0T4_REG,"Percentage of children (by sex, age groups, residence and wealth quintile) whose births are registered"
 ECD_CHLD_U5_LFT-ALN,"Percentage of children under age 5 (by sex, residence and wealth quintile) left alone or under the supervision of another child younger than 10 years of age for more than 1 hour at least once in the last week"
 GN_MTNTY_LV_BNFTS,Maternity leave benefits
 GN_PTNTY_LV_BNFTS,Paternity leave benefits

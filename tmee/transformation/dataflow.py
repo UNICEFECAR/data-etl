@@ -153,27 +153,14 @@ class Dataflow:
     # function to remove duplicates from data source
     # customized per indicator: can't think of a generalization so far
     # it requires to know the dimension (can't be more that one) that brings the duplicities
-    # target source initialize for MNCH_SAB (only indicator with duplicates: 26/Feb/2021)
+    # works on new column of MNCH dataflow --> data source priority
+    # the idea is clear: use data source priority and first occurrence for cases not solved by data source priority
     def rem_dupli_source(
-        self,
-        dataframe,
-        target_source=[
-            "MNCH_SRC_1824",
-            "MNCH_SRC_1825",
-            "MNCH_SRC_1244",
-            "MNCH_SRC_118",
-            "MNCH_SRC_1505",
-            "MNCH_SRC_1780",
-            "MNCH_SRC_651",
-            "MNCH_SRC_11",
-            "MNCH_SRC_1619",
-            "MNCH_SRC_989",
-            "MNCH_SRC_1193",
-        ],
+        self, dataframe, target_source="DATA_SOURCE_PRIORITY",
     ):
         """
         :param dataframe: dataframe to remove duplicates (pre-requisite: already know there are!)
-        :param target_dim: list of values to remove duplicates (pre-requisite: know the dimension)
+        :param target_dim: uses a targeted column to remove duplicates (pre-requisite: know the column)
         :return non_dupli_df: dataframe without duplicates
         """
         dim_cols = self.get_dim_cols()
@@ -182,21 +169,31 @@ class Dataflow:
         non_dupli_df = dataframe[~logic_dupli]
         # all duplicates df
         dupli_df = dataframe[logic_dupli]
-        for source in target_source:
-            logic_source = dupli_df.DATA_SOURCE == source
-            # add source to output
-            non_dupli_df = pd.concat([non_dupli_df, dupli_df[logic_source]])
-            # eliminate duplicates from added source (country-year combination)
-            countries_source = dupli_df[logic_source].REF_AREA
-            years_source = dupli_df[logic_source].TIME_PERIOD
-            country_year_source = np.logical_or.reduce(
+
+        # use target column to prioritize from duplicates
+        target_prior = dupli_df[target_source] == "1"
+        # add source to output
+        non_dupli_df = pd.concat([non_dupli_df, dupli_df[target_prior]])
+
+        # ideally target_source should be specified for all multiple indexes available
+        # Note to Daniele this doesn't happend
+        if target_prior.sum() != len(dupli_df.groupby(dim_cols).size()):
+            # eliminate entries already prioritized using country-year combination
+            countries_prior = dupli_df[target_prior].REF_AREA
+            years_prior = dupli_df[target_prior].TIME_PERIOD
+            country_year_prior = np.logical_or.reduce(
                 [
                     (dupli_df.REF_AREA == country) & (dupli_df.TIME_PERIOD == year)
-                    for country, year in zip(countries_source, years_source)
+                    for country, year in zip(countries_prior, years_prior)
                 ]
             )
             # update remaining from duplicates
-            dupli_df = dupli_df[~country_year_source]
+            dupli_df = dupli_df[~country_year_prior]
+            # retain first occurrence among duplicates only
+            logic_dupli = dupli_df.duplicated(subset=dim_cols)
+            non_dupli_2add_df = dupli_df[~logic_dupli]
+            # add source to output
+            non_dupli_df = pd.concat([non_dupli_df, non_dupli_2add_df])
 
         # check-out duplicates before return!
         if self.check_duplicates(non_dupli_df):

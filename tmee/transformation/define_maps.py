@@ -89,15 +89,19 @@ dflow_col_map = {
         "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
         "SEX": {"type": "col", "role": "dim", "value": "SEX"},
         "AGE": {"type": "const", "role": "dim", "value": ""},
-        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        # data structure modification as of June 2021
+        "WEALTH_QUINTILE": {"type": "col", "role": "dim", "value": "WEALTH_QUINTILE"},
         "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
         "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
         "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
-        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        # added reference period June 2021
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": "REF_PERIOD"},
         "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
-        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        # added country notes June 2021
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": "COUNTRY_NOTES"},
         "FREQ": {"type": "const", "role": "attrib", "value": ""},
-        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
+        # data structure modification as of June 2021
+        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": "DATA_SOURCE"},
         "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
@@ -452,8 +456,7 @@ dflow_col_map = {
         "UNIT_MULTIPLIER": {"type": "col", "role": "attrib", "value": "UNIT_MULT"},
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
-    # bring unit multiplier from data dictionary (column not updated in Helix)
-    # contact Daniele to check and update unit multiplier column in thousands --> 26/03/2021
+    # bring unit multiplier from Helix (Daniele updated as of april 2021)
     "UNPD_DEMOGRAPHY": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
         "INDICATOR": {"type": "col", "role": "dim", "value": "INDICATOR"},
@@ -468,7 +471,11 @@ dflow_col_map = {
         "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "OBS_FOOTNOTE"},
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
         "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "DATA_SOURCE"},
-        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MULTIPLIER": {
+            "type": "const",
+            "role": "attrib",
+            "value": "UNIT_MULTIPLIER",
+        },
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
     # web: web scraping (WHO Immunization only as of 26 Feb 2021)
@@ -516,6 +523,7 @@ code_mapping = {
         "REF_AREA": {"code:description": True},
         "INDICATOR": {"code:description": True},
         "SEX": {"code:description": True},
+        "WEALTH_QUINTILE": {"code:description": True},
         "UNIT_MEASURE": {"code:description": True},
         "OBS_STATUS": {"code:description": True},
     },
@@ -607,6 +615,9 @@ code_mapping = {
         "UNIT_MEASURE": {"GDP": "GDP_PERC"},
         "FREQ": {"A": "1"},
         "OBS_STATUS": {"Z": ""},
+        # simple trick to work out millions not properly set for UNIT_MULT
+        # works only since PPP_CONST corresponds to one indicator only
+        "UNIT_MULT": {"depends": "UNIT_MEASURE", "map": {"PPP_CONST": "6"}},
     },
     "SDG4": {
         "REF_AREA": country_map,
@@ -693,8 +704,9 @@ code_mapping = {
             "PT": "PCNT",
             "PER_100000_POP": "RATE_100000",
             "PER_1000_UNINFECTED_POP": "RATE_1000",
+            "IX": "IDX",
         },
-        "NATURE": {"C": "A", "CA": "AD", "_X": "A"},
+        "NATURE": {"C": "A", "CA": "AD", "_X": "A", "M": "MD"},
         "FREQ": {"A": "1"},
     },
     "pandas data reader": {"sex": {"female": "F", "male": "M", "total": "_T"}},
@@ -737,7 +749,8 @@ code_mapping = {
 
 dflow_const = {
     "DM": {"WEALTH_QUINTILE": "_T"},
-    "CME": {"AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
+    # data structure modification as of June 2021 (wealth quintile included in Helix)
+    "CME": {"AGE": "_T", "RESIDENCE": "_T"},
     "IMMUNISATION": {"SEX": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
     "GENDER": {"AGE": "_T", "WEALTH_QUINTILE": "_T"},
     "EDU_FINANCE": {
