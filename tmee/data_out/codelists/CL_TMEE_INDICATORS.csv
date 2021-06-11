@@ -7,7 +7,7 @@ FT_WHS_PBR,Preterm birth rate (per 100 live births)
 DM_FRATE_TOT,Total fertility rate (average live births per woman aged 15-49)
 FT_SP_DYN_ADKL,"Adolescent birth rate (per 1,000 women aged 15-19)"
 NT_BW_LBW,Prevalence of low birth weight among new-borns
-MT_WHS9_CDR,"Crude death rate (per 1,000 average population)"
+MT_SP_DYN_CDRT_IN,"Crude death rate (per 1,000 average population)"
 DM_LIFE_EXP,Life expectancy at birth (average years)
 CME_MRY0,"Infant mortality rate (per 1,000 live births)"
 CME_MRY0T4,"Under-5 mortality rate (per 1,000 live births)"
@@ -19,8 +19,6 @@ HT_SH_TBS_INCD,"Incidence of tuberculosis (new cases per 100,000 average populat
 HT_SH_HIV_INCD,"Number of new HIV infections per 1,000 uninfected population, by sex and age groups"
 HT_SH_SUD_ALCOL,"Alcohol use disorders of 12 month prevalence with 95% (percentage of population aged 15+ years, by sex)"
 MNCH_SAB,"Proportion of births attended by skilled health personnel (%, by age groups, residence and wealth quintile)"
-HT_SH_XPD_CHEX_GD_ZS,Current health expenditure (% of GDP)
-HT_SH_XPD_OOPC_CH_ZS,"Out-of-pocket expenditure (OOPS), as % of Current Health Expenditure"
 HVA_PMTCT_ARV_CVG,Percentage of pregnant women living with HIV receiving ARVs for PMTCT
 MNCH_ANC4,"Antenatal care 4+ visits - percentage of women (by age groups, residence and wealth quintile), attended at least four times during pregnancy by any provider"
 MNCH_PNCMOM,"Postnatal care for mothers - percentage of women (by age groups, residence and wealth quintile), who received postnatal care within 2 days of giving birth"
@@ -38,6 +36,40 @@ NT_ANT_WHZ_PO2,"Overweight (%, by sex, age groups, residence and wealth quintile
 NT_ANT_HAZ_NE2,"Stunting (%, by sex, age groups, residence and wealth quintile)"
 ECD_CHLD_36-59M_ADLT_SRC,"Percentage of children (by sex, age groups, residence and wealth quintile) with whom any adult household member has engaged in 4 or more activities to provide early stimulation and responsive care in the last 3 days"
 HT_SH_SUD_TREAT,"Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders (%)"
+HT_SH_ACS_UNHC,Universal health coverage (UHC) service coverage index
+HT_SH_XPD_CHEX_GD_ZS,Current health expenditure (% of GDP)
+HT_SH_XPD_GHED_GD_ZS,Domestic General Government Health Expenditure (% of GDP)
+HT_SH_XPD_GHED_GE_ZS,Domestic General Government Health Expenditure (% of General Government Expenditure)
+HT_SH_XPD_GHED_PP_CD,"Domestic General Government Health Expenditure per capita, PPP (current international $)"
+HT_SH_XPD_GHED_PC_CD,Domestic General Government Health Expenditure per capita (current US$)
+HT_SH_XPD_OOPC_CH_ZS,"Out-of-pocket expenditure (OOPS), as % of Current Health Expenditure"
+CME_TMY0T4,"Under-five deaths (number, by sex and wealth quintile)"
+CME_SBR,Stillbirth rate (per 1000 total births)
+CME_PND,Neonatal deaths as a percentage of under-five deaths
+MNCH_CSEC,"C-section rate - percentage of deliveries by cesarean section (by age groups, residence and wealth quintile)"
+HT_SH_ACS_DTP3,Proportion of the target population with access to 3 doses of diphtheria-tetanus-pertussis (DTP3) (%)
+HT_SH_ACS_HPV,"Proportion of the target population with access to affordable medicines and vaccines on a sustainable basis, human papillomavirus (HPV) (%)"
+HT_SH_ACS_MCV2,Proportion of the target population with access to measles-containing-vaccine second-dose (MCV2) (%)
+HT_SH_ACS_PCV3,Proportion of the target population with access to pneumococcal conjugate 3rd dose (PCV3) (%)
+IM_MCV1,Percentage of surviving infants who received the first dose of measles-containing vaccine
+HT_DIST80DTP3_P,Percentage of districts with at least 80% DTP3 coverage
+HT_SN_STA_OVWGTN,Children moderately or severely overweight (thousands)
+HT_SH_STA_ANEM,Proportion of women aged 15-49 years with anaemia (%)
+HT_SH_STA_ANEM_NPRG,"Proportion of women aged 15-49 years with anaemia, non-pregnant (%)"
+HT_SH_STA_ANEM_PREG,"Proportion of women aged 15-49 years with anaemia, pregnant (%)"
+NT_BW_UNW,Percentage of births without a birth weight in key data sources
+HT_SH_PRV_SMOK,"Age-standardized prevalence of current tobacco use among persons aged 15 years and older (%, by sex)"
+HT_SH_HIV_0014,Children (aged 0-14 years) living with HIV
+HVA_EPI_LHIV_0-19,"Estimated number of children (aged 0-19 years, by sex and age groups) living with HIV"
+HVA_EPI_LHIV_15-24,"Estimated number of adolescents and young people (aged 15-24 years, by sex and age groups) living with HIV"
+HVA_EPI_INF_RT_0-14,"Estimated incidence rate (new HIV infection per 1,000 uninfected population, children aged 0-14 years, by sex)"
+HVA_EPI_INF_RT_10-19,"Estimated incidence rate (new HIV infection per 1,000 uninfected population, adolescents aged 10-19 years, by sex)"
+HVA_PED_ART_NUM,Reported number of children (aged 0-14 years) receiving antiretroviral treatment (ART)
+HVA_PED_ART_CVG,Percentage of children (aged 0-14 years) living with HIV and receiving antiretroviral therapy (ART)
+WS_PPL_W-SM,"Proportion of population using safely managed drinking water services (%, by residence)"
+WS_PPL_S-SM,"Proportion of population using safely managed sanitation services (%, by residence)"
+WS_PPL_H-B,"Proportion of population with a handwashing facility with soap and water available at home (%, by residence)"
+WS_PPS_S-OD,"Proportion of population practising open defecation (%, by residence and wealth quintile)"
 EDUNF_STU_L01_TOT,Early childhood educational development enrolments (absolute number)
 EDUNF_STU_L01_PUB,Early childhood educational development enrolments in public institutions
 EDUNF_STU_L01_PRV,Early childhood educational development enrolments in private institutions
@@ -237,7 +269,7 @@ EC_NY_GDP_PCAP_PP_CD,"GDP per capita, PPP (current international $)"
 EC_NY_GNP_ATLS_CD,"GNI, Atlas method (current US$)"
 EC_NY_GNP_PCAP_CD,"GNI per capita, Atlas method (current US$)"
 EC_GC_DOD_TOTL_GD_ZS,"Central government debt, total (% of GDP)"
-EC_SP_POV_GINI,Gini index (World Bank estimate)
+EC_SI_POV_GINI,Gini index (World Bank estimate)
 EC_SL_UEM_TOTL_NE_ZS,"Unemployment, national estimate (% of total labor force, by sex)"
 EC_SL_UEM_TOTL_ZS,"Unemployment, modelled ILO estimate (% of total labor force, by sex)"
 DM_SM_POP_REFG,Refugee population by country or territory of asylum
