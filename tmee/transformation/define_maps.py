@@ -22,11 +22,30 @@ from .codes_2_map import (
 import pandas as pd
 import numpy as np
 
-# path to file with legacy indicators meta data (age, sex, code, units)
+# path to legacy indicators meta data (age, sex, code, units) --> mantain to update new TM data collection Sept. 2021
 path_legacy = "./data_in/legacy_data/content_legacy_codes_v3.csv"
 # import csv into pandas
 legacy_meta_data = pd.read_csv(path_legacy, dtype=str)
 
+# codes to breakdown CDDEM extra dimension into different indicators
+CDDEM_codes = [
+    "HT_U5DEATH_AIDS",
+    "HT_U5DEATH_DIAR",
+    "HT_U5DEATH_PERT",
+    "HT_U5DEATH_TETA",
+    "HT_U5DEATH_MEAS",
+    "HT_U5DEATH_MENI",
+    "HT_U5DEATH_MALA",
+    "HT_U5DEATH_PNEU",
+    "HT_U5DEATH_PRET",
+    "HT_U5DEATH_INTR",
+    "HT_U5DEATH_SEPS",
+    "HT_U5DEATH_OTHE",
+    "HT_U5DEATH_CONG",
+    "HT_U5DEATH_NCDS",
+    "HT_U5DEATH_INJU",
+    "HT_ADOL_MR",
+]
 
 # NOTE: change comments, I separate dsd_dictionary and dflow_dictionary
 # Development NOTES: there could be a more complicated relation in the future
@@ -517,6 +536,23 @@ dflow_col_map = {
         },
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
+    "CDDEM": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "CDAREAS"},
+        "INDICATOR": {"type": "col", "role": "dim", "value": "CDDDEMINDICS"},
+        "SEX": {"type": "col", "role": "dim", "value": "CDGENDER"},
+        "AGE": {"type": "col", "role": "dim", "value": "CDAGE"},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "CDUNIT"},
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "CDDATASOURCE"},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
 }
 
 # Code mappings are intended to normalize data entries in our destination DSD
@@ -758,6 +794,48 @@ code_mapping = {
         "OBS_STATUS": {"code:description": True},
         "FREQ_COLL": {"code:description": True},
     },
+    "CDDEM": {
+        "CDAREAS": {"code:description": True},
+        "CDGENDER": {
+            "code:description": True,
+            "FEMALE": "F",
+            "MALE": "M",
+            "TOTAL": "_T",
+        },
+        "CDAGE": {"code:description": True, "UFIVE": "Y0T4", "10TO19": "Y10T19"},
+        "CDDEMOSTRATIFIERS": {"code:description": True},
+        "CDUNIT": {
+            "code:description": True,
+            "PCT": "PCNT",
+            "PERHUNDREDTHOUSAND": "RATE_100000",
+        },
+        "CDDDEMINDICS": {
+            "depends": "CDDEMOSTRATIFIERS",
+            "map": dict(
+                zip(
+                    [
+                        "CH2",
+                        "CH3",
+                        "CH4",
+                        "CH5",
+                        "CH6",
+                        "CH7",
+                        "CH8",
+                        "CH9",
+                        "CH10",
+                        "CH11",
+                        "CH12",
+                        "CH13",
+                        "CH15",
+                        "CH16",
+                        "CH17",
+                        "TOTAL",
+                    ],
+                    CDDEM_codes,
+                )
+            ),
+        },
+    },
 }
 
 # constants added at the dataflow level
@@ -814,5 +892,6 @@ dflow_const = {
     "UNPD_DEMOGRAPHY": {"WEALTH_QUINTILE": "_T"},
     "web": {"SEX": "_T", "AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
     "WASH_HOUSEHOLDS": {"SEX": "_T", "AGE": "_T"},
+    "CDDEM": {"WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
 }
 
