@@ -6,14 +6,19 @@ Dev Note: original idea comes from trying to specify only url endpoint in data d
 To modify: James insight about data dictionary, address should be complete not only API endpoint
 To implement: print the final url used by requests into data dictionary --> allows users retrieve raw data
 To improve: wrap_api_address could become an abstract class (similar to James' extraction refactoring)
+To improve note: code repetition is very high therefore there would be a clever way to wrap it all
 """
 
 import numpy as np
 import re
 import pandas as pd
+import requests
+import sys
 
 from utils import api_request
 from sdmx.sdmx_struc import SdmxJsonStruct
+import pandasdmx as pdsdmx
+import xmltodict
 
 
 def wrap_api_address(
@@ -154,6 +159,137 @@ def wrap_api_address(
             dim_key[dim_num_dict["REF_AREA"]] = country_call_3
 
         api_address = url_endpoint + ".".join(dim_key)
+
+    # source_key: ESTAT - different dataflows per indicator groups by Eurostat
+    elif source_key.lower() == "estat":
+
+        # wrap api_address (similar to UIS iso2 with two particularities)
+        if country_codes:
+            # first map two-letter country codes
+            country_codes_2 = [
+                country_map_df.CountryIso2[country_map_df.CountryIso3 == elem].values
+                for elem in country_codes.values()
+            ]
+            # country names are repeated in the list, and I want the unique codes only
+            # Note: numpy unique sorts the array, but this doesn't modify the API call
+            country_codes_2 = np.unique(np.concatenate(country_codes_2))
+
+            # replace iso2 eurostat particulars
+            estat_only = {"GR": "EL", "GB": "UK"}
+            country_call = [estat_only.get(i, i) for i in country_codes_2]
+
+            # EUROSTAT datastructure --> query countries reported only (if not breaks)
+            # pandasdmx with Cache HTTP response: instantiate a Request object with data provider ESTAT
+            Estat = pdsdmx.Request(source_key.upper(), backend="memory")
+
+            # split url_endpoint
+            url_split = url_endpoint.split("/")
+            # get position of dataflow
+            dflow_position = url_split.index("data") + 1
+            dflow_name = url_split[dflow_position]
+
+            # dsd name
+            dsd_name = f"DSD_{dflow_name}"
+
+            # handle errors from pdsdmx dsd request
+            try:
+                Dsd_estat = Estat.datastructure(dsd_name)
+                # If the response was successful, no Exception will be raised
+                Dsd_estat.raise_for_status()
+            except requests.exceptions.HTTPError as http_err:
+                print(f"HTTP error occurred: {http_err}")
+                return None
+            except Exception as error:
+                print(f"Other error occurred: {error}")
+                return None
+
+            # filter estat/dsd/geo in ecaro
+            geo_query = [
+                country
+                for country in pdsdmx.to_pandas(Dsd_estat.codelist["CL_GEO"]).index
+                if country in country_call
+            ]
+
+            api_address = url_endpoint + "+".join(geo_query)
+        else:
+            # just keep url_endpoint (no country_codes)
+            api_address = url_endpoint
+
+    # source_key: CDDEM - from UNICEF web services
+    elif source_key.lower() == "cddem":
+
+        # wrap api_address (iso3)
+        if country_codes:
+            # Join string of all TMEE country codes (3 letters) for SDMX requests
+            country_call_3 = "+".join(country_codes.values())
+
+            # split url_endpoint
+            url_split = url_endpoint.split("/")
+            # get position of query to split
+            query_pos = url_split.index("data") + 2
+            query_split = url_split[query_pos].split(".")
+
+            # place country call at dimension 3
+            query_split[2] = country_call_3
+            # rebuild query with country call
+            query_with_geo = ".".join(query_split)
+
+            # rebuild api_adress using query_with_geo
+            api_address = "/".join(url_split[:-1]) + "/" + query_with_geo
+        else:
+            # just keep url_endpoint (no country_codes)
+            api_address = url_endpoint
+
+    # source_key: OECD - different dataflows per indicator groups
+    elif source_key.lower() == "oecd":
+
+        # wrap api_address (iso3 but not all ecaro)
+        if country_codes:
+            # get dataflow from url
+            url_split = url_endpoint.split("/")
+            # get dataflow position
+            dflow_position = url_split.index("data") + 1
+            dflow_name = url_split[dflow_position]
+
+            # build api_address for datastructure call (hardcoded here as uses SDMX-ML service)
+            url_base = "http://stats.oecd.org/restsdmx/sdmx.ashx"
+            dsd_api_address = f"{url_base}/GetDataStructure/{dflow_name}"
+
+            # do the datastructure call and parse xmltodict
+            dsd_struc = xmltodict.parse(api_request(dsd_api_address).text)
+
+            # get position of country codes in codelists
+            dsd_codelists = dsd_struc["message:Structure"]["message:CodeLists"][
+                "CodeList"
+            ]
+            cou_pos = [
+                k for k, item in enumerate(dsd_codelists) if "_COU" in item["@id"]
+            ]
+
+            # cou_pos: one element list or substring matching has failed
+            cou_pos = cou_pos[0] if len(cou_pos) == 1 else None
+
+            # if exit: '_COU' in item['@id'] is not exclusive and must be revised
+            if cou_pos is None:
+                sys.exit(f"Identify COU Codelist for indicator {indicator_code} - OECD")
+            else:
+                # filter oecd/dsd/geo in ecaro
+                cou_query = [
+                    country
+                    for country in [
+                        item["@value"] for item in dsd_codelists[cou_pos]["Code"]
+                    ]
+                    if country in country_codes.values()
+                ]
+                query_split = url_split[dflow_position + 1].split(".")
+                # place cou_query at cou_pos (assumes codelist position matches dimensions)
+                query_split[cou_pos] = "+".join(cou_query)
+                # rebuild api_adress using query_with_geo
+                api_address = "/".join(url_split[:-1]) + "/" + ".".join(query_split)
+
+        else:
+            # just keep url_endpoint (no country_codes)
+            api_address = url_endpoint
 
     # rest of the source_keys: just keep url_endpoint
     else:
