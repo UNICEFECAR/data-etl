@@ -27,25 +27,23 @@ path_legacy = "./data_in/legacy_data/content_legacy_codes_v3.csv"
 # import csv into pandas
 legacy_meta_data = pd.read_csv(path_legacy, dtype=str)
 
-# codes to breakdown CDDEM extra dimension into different indicators
-CDDEM_codes = [
-    "HT_U5DEATH_AIDS",
-    "HT_U5DEATH_DIAR",
-    "HT_U5DEATH_PERT",
-    "HT_U5DEATH_TETA",
-    "HT_U5DEATH_MEAS",
-    "HT_U5DEATH_MENI",
-    "HT_U5DEATH_MALA",
-    "HT_U5DEATH_PNEU",
-    "HT_U5DEATH_PRET",
-    "HT_U5DEATH_INTR",
-    "HT_U5DEATH_SEPS",
-    "HT_U5DEATH_OTHE",
-    "HT_U5DEATH_CONG",
-    "HT_U5DEATH_NCDS",
-    "HT_U5DEATH_INJU",
-    "HT_ADOL_MR",
-]
+# update country_map with EUROSTAT particular geo codes (Greece and UK)
+country_map.update({"EL": "GRC", "UK": "GBR"})
+
+# mapping of observation flags from EUROSTAT
+estat_flag_map = {
+    "b": "B",
+    "bu": "BU",
+    "d": "D",
+    "e": "E",
+    "s": "E",
+    "f": "F",
+    "n": "N",
+    "p": "P",
+    "pu": "PU",
+    "u": "U",
+    "z": "Z",
+}
 
 # NOTE: change comments, I separate dsd_dictionary and dflow_dictionary
 # Development NOTES: there could be a more complicated relation in the future
@@ -498,6 +496,7 @@ dflow_col_map = {
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
     # web: web scraping (WHO Immunization only as of 26 Feb 2021)
+    # updated source as constant to simplify metadata for different tables across the web
     "web": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "country"},
         "INDICATOR": {"type": "const", "role": "dim", "value": ""},
@@ -511,7 +510,7 @@ dflow_col_map = {
         "UNIT_MEASURE": {"type": "const", "role": "attrib", "value": ""},
         "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
         "FREQ": {"type": "const", "role": "attrib", "value": ""},
-        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "source"},
+        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
         "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
         "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
     },
@@ -538,7 +537,7 @@ dflow_col_map = {
     },
     "CDDEM": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "CDAREAS"},
-        "INDICATOR": {"type": "col", "role": "dim", "value": "CDDDEMINDICS"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
         "SEX": {"type": "col", "role": "dim", "value": "CDGENDER"},
         "AGE": {"type": "col", "role": "dim", "value": "CDAGE"},
         "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
@@ -552,6 +551,138 @@ dflow_col_map = {
         "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "CDDATASOURCE"},
         "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
         "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
+    # ESTAT SDMX-ML vs SDMX-JSON --> brings OBS_FLAGS + much better query size limit
+    # ESTAT uses different dataflows per indicator/indicator groups
+    "crim_pris_age": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "GEO"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "col", "role": "dim", "value": "SEX"},
+        "AGE": {"type": "col", "role": "dim", "value": "AGE"},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "value"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT"},
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        "FREQ": {"type": "col", "role": "attrib", "value": "FREQ"},
+        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        # in UNICEF SDMX we understand OBS_STATUS as EUROSTAT OBS_FLAG
+        "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
+    # ESTAT uses different dataflows per indicator/indicator groups
+    "hlth_silc_08": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "GEO"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "col", "role": "dim", "value": "SEX"},
+        "AGE": {"type": "col", "role": "dim", "value": "AGE"},
+        "WEALTH_QUINTILE": {"type": "col", "role": "dim", "value": "QUANTILE"},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "value"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT"},
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        "FREQ": {"type": "col", "role": "attrib", "value": "FREQ"},
+        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        # in UNICEF SDMX we understand OBS_STATUS as EUROSTAT OBS_FLAG
+        "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_FLAG"},
+    },
+    # ESTAT uses different dataflows per indicator/indicator groups
+    "tec00023": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "GEO"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "const", "role": "dim", "value": ""},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "value"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT"},
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        "FREQ": {"type": "col", "role": "attrib", "value": "FREQ"},
+        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        # in UNICEF SDMX we understand OBS_STATUS as EUROSTAT OBS_FLAG
+        "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_FLAG"},
+    },
+    # ESTAT uses different dataflows per indicator/indicator groups
+    "gov_10a_exp": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "GEO"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "const", "role": "dim", "value": ""},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "value"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT"},
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        "FREQ": {"type": "col", "role": "attrib", "value": "FREQ"},
+        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        # in UNICEF SDMX we understand OBS_STATUS as EUROSTAT OBS_FLAG
+        "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_FLAG"},
+    },
+    # ESTAT uses different dataflows per indicator/indicator groups
+    "ilc_mdho05": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "GEO"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "col", "role": "dim", "value": "SEX"},
+        "AGE": {"type": "col", "role": "dim", "value": "AGE"},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "value"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT"},
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        "FREQ": {"type": "col", "role": "attrib", "value": "FREQ"},
+        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        # in UNICEF SDMX we understand OBS_STATUS as EUROSTAT OBS_FLAG
+        "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_FLAG"},
+    },
+    # OECD uses different dataflows per indicator/indicator groups
+    "cwb": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "COU"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "const", "role": "dim", "value": ""},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "value"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
+    # OECD uses different dataflows per indicator/indicator groups
+    "health_prot": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "COU"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "const", "role": "dim", "value": ""},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "value"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT"},
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
 }
 
@@ -803,37 +934,79 @@ code_mapping = {
             "TOTAL": "_T",
         },
         "CDAGE": {"code:description": True, "UFIVE": "Y0T4", "10TO19": "Y10T19"},
-        "CDDEMOSTRATIFIERS": {"code:description": True},
         "CDUNIT": {
             "code:description": True,
             "PCT": "PCNT",
             "PERHUNDREDTHOUSAND": "RATE_100000",
         },
-        "CDDDEMINDICS": {
-            "depends": "CDDEMOSTRATIFIERS",
-            "map": dict(
-                zip(
-                    [
-                        "CH2",
-                        "CH3",
-                        "CH4",
-                        "CH5",
-                        "CH6",
-                        "CH7",
-                        "CH8",
-                        "CH9",
-                        "CH10",
-                        "CH11",
-                        "CH12",
-                        "CH13",
-                        "CH15",
-                        "CH16",
-                        "CH17",
-                        "TOTAL",
-                    ],
-                    CDDEM_codes,
-                )
-            ),
+    },
+    "crim_pris_age": {
+        "GEO": country_map,
+        "SEX": {"T": "_T"},
+        "AGE": {"TOTAL": "_T", "ADULT": "Y_GE18", "JUVENILE": "Y0T17"},
+        "UNIT": {"NR": "NUMBER", "P_HTHAB": "RATE_100000"},
+        "FREQ": {"A": "1"},
+    },
+    "hlth_silc_08": {
+        "GEO": country_map,
+        "SEX": {"T": "_T"},
+        "AGE": {
+            "Y16-19": "Y16T19",
+            "Y16-24": "Y16T24",
+            "Y16-29": "Y16T29",
+            "Y16-44": "Y16T44",
+            "Y16-64": "Y16T64",
+            "Y18-44": "Y18T44",
+            "Y20-24": "Y20T24",
+            "Y20-29": "Y20T29",
+            "Y25-29": "Y25T29",
+            "Y25-34": "Y25T34",
+            "Y35-44": "Y35T44",
+            "Y45-49": "Y45T49",
+            "Y45-54": "Y45T54",
+            "Y45-64": "Y45T64",
+            "Y55-64": "Y55T64",
+            "Y65-74": "Y65T74",
+            "Y75-84": "Y75T84",
+        },
+        "QUANTILE": {
+            "TOTAL": "_T",
+            "QU1": "Q1",
+            "QU2": "Q2",
+            "QU3": "Q3",
+            "QU4": "Q4",
+            "QU5": "Q5",
+        },
+        "UNIT": {"PC": "PCNT"},
+        "FREQ": {"A": "1"},
+        "OBS_FLAG": estat_flag_map,
+    },
+    "tec00023": {
+        "GEO": country_map,
+        "UNIT": {"PC_GDP": "GDP_PERC"},
+        "FREQ": {"A": "1"},
+        "OBS_FLAG": estat_flag_map,
+    },
+    "gov_10a_exp": {
+        "GEO": country_map,
+        "UNIT": {"PC_GDP": "GDP_PERC", "PC_TOT": "GOV_EXP_T"},
+        "FREQ": {"A": "1"},
+        "OBS_FLAG": estat_flag_map,
+    },
+    "ilc_mdho05": {
+        "GEO": country_map,
+        "SEX": {"T": "_T"},
+        "AGE": {"TOTAL": "_T", "Y_LT18": "Y0T17", "Y18-64": "Y18T64"},
+        "UNIT": {"PC": "PCNT"},
+        "FREQ": {"A": "1"},
+        "OBS_FLAG": estat_flag_map,
+    },
+    "health_prot": {
+        "UNIT": {"COVPOPTX": "PCNT"},
+        "OBS_STATUS": {
+            "Estimated value": "E",
+            "Break": "B",
+            "Break; Estimated value": "BE",
         },
     },
 }
@@ -890,8 +1063,46 @@ dflow_const = {
         "RESIDENCE": "_T",
     },
     "UNPD_DEMOGRAPHY": {"WEALTH_QUINTILE": "_T"},
-    "web": {"SEX": "_T", "AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
+    "web": {
+        "SEX": "_T",
+        "AGE": "_T",
+        "WEALTH_QUINTILE": "_T",
+        "RESIDENCE": "_T",
+        "DATA_SOURCE": "WHO-UNICEF Joint Report",
+    },
     "WASH_HOUSEHOLDS": {"SEX": "_T", "AGE": "_T"},
     "CDDEM": {"WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
+    "crim_pris_age": {
+        "WEALTH_QUINTILE": "_T",
+        "RESIDENCE": "_T",
+        "DATA_SOURCE": "EUROSTAT",
+    },
+    "hlth_silc_08": {"RESIDENCE": "_T", "DATA_SOURCE": "EUROSTAT",},
+    "tec00023": {
+        "SEX": "_T",
+        "AGE": "_T",
+        "WEALTH_QUINTILE": "_T",
+        "RESIDENCE": "_T",
+        "DATA_SOURCE": "EUROSTAT",
+    },
+    "gov_10a_exp": {
+        "SEX": "_T",
+        "AGE": "_T",
+        "WEALTH_QUINTILE": "_T",
+        "RESIDENCE": "_T",
+        "DATA_SOURCE": "EUROSTAT",
+    },
+    "ilc_mdho05": {
+        "WEALTH_QUINTILE": "_T",
+        "RESIDENCE": "_T",
+        "DATA_SOURCE": "EUROSTAT",
+    },
+    "cwb": {
+        "SEX": "_T",
+        "AGE": "_T",
+        "WEALTH_QUINTILE": "_T",
+        "RESIDENCE": "_T",
+        "DATA_SOURCE": "OECD",
+    },
 }
 
