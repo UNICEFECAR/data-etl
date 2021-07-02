@@ -6,14 +6,17 @@ To improve: implement extraction as an abstract class following James' refactori
 
 import requests
 import pandas as pd
+import pandasdmx as pdsdmx
 import numpy as np
 import re
 import warnings
 from pandas_datareader import wb
 from bs4 import BeautifulSoup
-from io import StringIO
+from io import BytesIO, StringIO
 from difflib import SequenceMatcher
 from heapq import nlargest
+from time import sleep
+from zipfile import ZipFile
 
 
 def get_API_code_address_etc(excel_data_dict):
@@ -238,9 +241,10 @@ def web_scrape(raw_html, source_key=None):
     :param raw_html: this is a satisfactory url requests response (HTML content)
     :param source_key: future dev of different web structures
     Dev note: web structure now is WHO: https://apps.who.int/immunization_monitoring/globalsummary/
-    :return: pandas dataframe with data/metadata
+    :return: pandas dataframe with data
     Simple wide to long transformation to match SDMX dimensions
     TODO: error handling?
+    TODO: generalize metadata extraction?
     """
     # correct WHO HTML (thank you developer!)
     html_text = StringIO(raw_html.text)
@@ -264,25 +268,157 @@ def web_scrape(raw_html, source_key=None):
         axis=1,
         inplace=True,
     )
-
-    # metadata (data provider): get it from last row
-    data_prov = data_df.iat[-1, 0].strip("")
-    # metadata (last updated): target table by HTML position - contains also class attribute -
-    data_date = pd.read_html(str(tables[1]))[0].iat[-1, 0].strip("")
-    data_date = data_date.replace("Next", ". Next") + "."
+    # rename first column as country
+    data_df.rename(columns={data_df.columns[0]: "country"}, inplace=True)
 
     # transform wide to long (except last 2 rows)
     data_df = pd.melt(data_df.iloc[:-2], id_vars=["country"])
     data_df.rename(columns={"variable": "year"}, inplace=True)
 
-    # full metadata to publish in data_source
-    data_source = f"{data_prov}{data_date}"
-    data_df["source"] = data_source
+    # dummy use of source key to trigger metadata extraction
+    if source_key:
+        # metadata (data provider): get it from last row (this should be generalized)
+        data_prov = data_df.iat[-1, 0].strip("")
+        # metadata (last updated): target table by HTML position - contains also class attribute -
+        data_date = pd.read_html(str(tables[1]))[0].iat[-1, 0].strip("")
+        data_date = data_date.replace("Next", ". Next") + "."
+
+        # full metadata to publish in data_source (this should be generalized for posterior structure mapping)
+        data_source = f"{data_prov}{data_date}"
+        data_df["source"] = data_source
 
     # country names to lowercase for code mapping
     data_df["country"] = data_df.country.str.lower()
 
     return data_df
+
+
+def estat_reader(address, raw_path, ind_code, params=None, headers=None):
+    """
+    First wrapper for sdmx eurostat
+    :param address: expected to contain endpoint and query
+    :param raw_path: path to write xml raw file
+    :param ind_code: name to write xml raw file
+    :param params: requests parameters
+    :param headers: requests headers
+    :return: download flag: True/False
+    """
+
+    # get dataflow from address
+    url_split = address.split("/")
+    # get position of dataflow
+    dflow_position = url_split.index("data") + 1
+    dflow_name = url_split[dflow_position]
+    dsd_name = f"DSD_{dflow_name}"
+
+    # use pdsdmx to get dsd from estat
+    Estat = pdsdmx.Request("ESTAT", backend="memory")
+
+    # handle errors from pdsdmx dsd request
+    try:
+        Dsd_estat = Estat.datastructure(dsd_name).structure[dsd_name]
+        # If the response was successful, no Exception will be raised
+        Dsd_estat.raise_for_status()
+    except requests.exceptions.HTTPError as http_err:
+        print(f"HTTP error occurred: {http_err}")
+    except Exception as error:
+        print(f"Other error occurred: {error}")
+
+    flag_download = False
+    # first api call (determine if xml response asynchronous)
+    indicator_xml = api_request(address, params, headers)
+
+    if indicator_xml.status_code == 200:
+        # write raw xml file first: can't make pandasdmx work from requests content
+        raw_file = f"{raw_path}{ind_code}.xml"
+        with open(raw_file, "wb") as f:
+            f.write(indicator_xml.content)
+        # now pandasdmx read written file
+        xml_message = pdsdmx.read_sdmx(raw_file, format="XML", dsd=Dsd_estat)
+
+        # inspect asynchronous response code: 413 (actually not None)
+        if "footer" in xml_message:
+            print(f"EUROSTAT asynchronous response for {ind_code}")
+            # eurostat data in file url/zip file
+            file_url = str(xml_message.footer.text[0]).split("URL:")[1].strip()
+
+            # try attemps to get file in url with wait_seconds
+            wait_seconds, attempts = (12, 5)
+            for a in range(attempts):
+                print(f"Attempt {a+1} to reach EUROSTAT zip file for {ind_code}")
+                sleep(wait_seconds)
+                indicator_xml = api_request(file_url)
+                # status code 200: ZIP response exists
+                if indicator_xml.status_code == 200:
+                    flag_download = True
+                    break
+
+            if flag_download:
+                # Open the zip archive
+                zf = ZipFile(BytesIO(indicator_xml.content), mode="r")
+                # The archive should contain only one file
+                file_in_zip = zf.infolist()[0]
+
+                # overwrite xml with zf
+                with open(raw_file, "wb") as f:
+                    f.write(zf.open(file_in_zip).read())
+
+                # proper read_sdmx: content inside zip
+                xml_message = pdsdmx.read_sdmx(raw_file, format="XML", dsd=Dsd_estat)
+
+        else:
+            # no footer assumes data delivered at first time
+            flag_download = True
+
+        if flag_download:
+            print(f"Parsing {ind_code} sdmx-xml to pandas: please wait")
+            # convert xml to pandas (long format, attributes per observation)
+            data_df = xml_message.to_pandas(dtype=str, attributes="o", rtype="rows")
+            data_df.reset_index(inplace=True)
+            # EUROSTAT reports all dimension keys even if empty values: detect/drop strings 'NaN'
+            filter_nan_str = pd.to_numeric(data_df.value, errors="coerce").isnull()
+            data_df.drop(data_df[filter_nan_str].index, inplace=True)
+            # save raw file as csv
+            data_df.to_csv(f"{raw_path}{ind_code}.csv", index=False)
+            print(f"Indicator {ind_code} succesfully downloaded")
+
+    return flag_download
+
+
+def oecd_reader(address, raw_path, ind_code, params=None, headers=None):
+    """
+    First wrapper for sdmx oecd
+    :param address: expected to contain endpoint and query
+    :param raw_path: path to write json and csv raw files
+    :param ind_code: name to write json and csv raw file
+    :param params: requests parameters
+    :param headers: requests headers
+    :return: download flag: True/False
+    """
+
+    flag_download = False
+    # api call for json file
+    indicator_json = api_request(address, params, headers)
+
+    if indicator_json.status_code == 200:
+        # write raw json file first: can't make pandasdmx work from requests content
+        raw_file = f"{raw_path}{ind_code}.json"
+        with open(raw_file, "wb") as f:
+            f.write(indicator_json.content)
+        # now pandasdmx read written file
+        json_message = pdsdmx.read_sdmx(raw_file, format="JSON")
+
+        print(f"Parsing {ind_code} sdmx-json to pandas: please wait")
+        # convert json to pandas (long format, attributes per observation)
+        data_df = json_message.to_pandas(dtype=str, attributes="o", rtype="rows")
+        data_df.reset_index(inplace=True)
+
+        # save raw file as csv
+        data_df.to_csv(f"{raw_path}{ind_code}.csv", index=False)
+        print(f"Indicator {ind_code} succesfully downloaded")
+        flag_download = True
+
+    return flag_download
 
 
 def get_close_match_indexes(word, possibilities, n=3, cutoff=0.6):
