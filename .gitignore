@@ -188,6 +188,10 @@ content_legacy.csv
 # ignore csv files from particular folders
 /tmee/data_out/data_raw/*.csv
 /tmee/data_out/data_transformed/*.csv
+# ignore xml files from particular folders
+/tmee/data_out/data_raw/*.xml
+# ignore json files from particular folders
+/tmee/data_out/data_raw/*.json
 # ignore excel files from codelist
 /tmee/data_out/codelists/*.xlsx
 # ignore csv files from codelist
