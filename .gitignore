@@ -18,9 +18,7 @@ __pycache__
 # Debug file used for temporary debugging
 debug_file.py
 main_extract_transform.py
-main_extract_transform_old.py
-main_extract_transform_test.py
-main_extract_transform_ecaro_countries.py
+main_extract_transform_.py
 test_nb.py
 test_nb2.py
 
@@ -188,6 +186,8 @@ content_legacy.csv
 # ignore csv files from particular folders
 /tmee/data_out/data_raw/*.csv
 /tmee/data_out/data_transformed/*.csv
+# track from data_out: TMEE_ETL_out --> this allows to know how the DB is updated along history
+!TMEE_ETL_out.csv
 # ignore xml files from particular folders
 /tmee/data_out/data_raw/*.xml
 # ignore json files from particular folders
