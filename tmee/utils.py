@@ -84,21 +84,27 @@ def get_API_code_address_etc(excel_data_dict):
 
 # function for api request as proposed by Daniele
 # errors are printed and don't stop program execution
-def api_request(address, params=None, headers=None):
+def api_request(address, params=None, headers=None, timeout=45):
     """
     TODO: Look at the error handerling here
     """
     try:
-        response = requests.get(address, params=params, headers=headers)
+        response = requests.get(
+            address, params=params, headers=headers, timeout=timeout
+        )
         # If the response was successful, no Exception will be raised
         response.raise_for_status()
     except requests.exceptions.HTTPError as http_err:
         print(f"HTTP error occurred: {http_err}")
+        # return None
     except Exception as error:
         print(f"Other error occurred: {error}")
+        # return None
     # return response object (check with James notes below)
     # response will not be defined for the following errors:
     # "no connection adapters found", "Invalid URL: No schema supplied"
+    # same response not defined for timeouts: alternative to return response None in those cases
+    # TODO: evaluate the impact of the current flow managing response return None for errors
     return response
 
 
@@ -112,6 +118,7 @@ def data_reader(address, country_codes=None, start_period=None, end_period=None)
     :return: pandas dataframe with data/metadata and error flag
     World Bank sex disaggregation is compilated using different indicator codes with 'FE' and 'MA'
     Dev note: address must contain either one indicator (no sex) or three indicators (total, 'FE' and 'MA')
+    TODO: handle age disaggregation from World Bank codes ! Nice add-on feature
     Transformations must be done to flaten data reader output
     Simple error handling prints messages and don't stop program execution
     Error message: when any of the provided indicator codes is wrong
@@ -316,42 +323,55 @@ def estat_reader(address, raw_path, ind_code, params=None, headers=None):
 
     # handle errors from pdsdmx dsd request
     try:
-        Dsd_estat = Estat.datastructure(dsd_name).structure[dsd_name]
+        print(
+            f"Querying EUROSTAT metadata: please wait, long response times are reported"
+        )
+        Dsd_estat = Estat.datastructure(dsd_name)
         # If the response was successful, no Exception will be raised
-        Dsd_estat.raise_for_status()
+        Dsd_estat.response.raise_for_status()
     except requests.exceptions.HTTPError as http_err:
         print(f"HTTP error occurred: {http_err}")
+        return False
     except Exception as error:
         print(f"Other error occurred: {error}")
+        return False
 
     flag_download = False
     # first api call (determine if xml response asynchronous)
-    indicator_xml = api_request(address, params, headers)
+    print(f"Querying EUROSTAT data: please wait, long response times are reported")
+    indicator_xml = api_request(address, params, headers, timeout=15)
 
-    if indicator_xml.status_code == 200:
-        # write raw xml file first: can't make pandasdmx work from requests content
-        raw_file = f"{raw_path}{ind_code}.xml"
-        with open(raw_file, "wb") as f:
-            f.write(indicator_xml.content)
-        # now pandasdmx read written file
-        xml_message = pdsdmx.read_sdmx(raw_file, format="XML", dsd=Dsd_estat)
+    if hasattr(indicator_xml, "status_code"):
+        if indicator_xml.status_code == 200:
+            # write raw xml file first: can't make pandasdmx work from requests content
+            raw_file = f"{raw_path}{ind_code}.xml"
+            with open(raw_file, "wb") as f:
+                f.write(indicator_xml.content)
+            # now pandasdmx read written file
+            xml_message = pdsdmx.read_sdmx(
+                raw_file, format="XML", dsd=Dsd_estat.structure[dsd_name]
+            )
 
         # inspect asynchronous response code: 413 (actually not None)
-        if "footer" in xml_message:
+        if hasattr(xml_message.footer, "text"):
             print(f"EUROSTAT asynchronous response for {ind_code}")
             # eurostat data in file url/zip file
             file_url = str(xml_message.footer.text[0]).split("URL:")[1].strip()
 
-            # try attemps to get file in url with wait_seconds
-            wait_seconds, attempts = (12, 5)
+            # try attemps to get file in url with wait_time duplicating at each attempt
+            wait_time, attempts = (15, 5)
             for a in range(attempts):
-                print(f"Attempt {a+1} to reach EUROSTAT zip file for {ind_code}")
-                sleep(wait_seconds)
+                wait_time = wait_time * 2
+                print(
+                    f"Attempt {a+1} to reach EUROSTAT zip file for {ind_code}, please wait: {wait_time} seconds"
+                )
+                sleep(wait_time)
                 indicator_xml = api_request(file_url)
                 # status code 200: ZIP response exists
-                if indicator_xml.status_code == 200:
-                    flag_download = True
-                    break
+                if hasattr(indicator_xml, "status_code"):
+                    if indicator_xml.status_code == 200:
+                        flag_download = True
+                        break
 
             if flag_download:
                 # Open the zip archive
@@ -364,7 +384,9 @@ def estat_reader(address, raw_path, ind_code, params=None, headers=None):
                     f.write(zf.open(file_in_zip).read())
 
                 # proper read_sdmx: content inside zip
-                xml_message = pdsdmx.read_sdmx(raw_file, format="XML", dsd=Dsd_estat)
+                xml_message = pdsdmx.read_sdmx(
+                    raw_file, format="XML", dsd=Dsd_estat.structure[dsd_name]
+                )
 
         else:
             # no footer assumes data delivered at first time

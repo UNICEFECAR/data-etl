@@ -190,12 +190,23 @@ def wrap_api_address(
 
             # dsd name
             dsd_name = f"DSD_{dflow_name}"
+            # url endpoint for estat datastructure calls
+            estat_url_dsd = (
+                "https://ec.europa.eu/eurostat/SDMX/diss-web/rest/datastructure/ESTAT/"
+            )
 
             # handle errors from pdsdmx dsd request
             try:
+                print(
+                    f"Querying EUROSTAT metadata: please wait, long response times are reported"
+                )
+                # until I could pass timeout into pdsdmx I do an intermediate step
+                # check_Estat = api_request(f"{estat_url_dsd}{dsd_name}", timeout=15)
+                # if not hasattr(check_Estat, "status_code"):
+                # return None
                 Dsd_estat = Estat.datastructure(dsd_name)
                 # If the response was successful, no Exception will be raised
-                Dsd_estat.raise_for_status()
+                Dsd_estat.response.raise_for_status()
             except requests.exceptions.HTTPError as http_err:
                 print(f"HTTP error occurred: {http_err}")
                 return None
