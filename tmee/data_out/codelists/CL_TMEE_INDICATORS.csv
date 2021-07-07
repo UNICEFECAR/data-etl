@@ -13,7 +13,7 @@ CME_MRY0,"Infant mortality rate (per 1,000 live births)"
 CME_MRY0T4,"Under-5 mortality rate (per 1,000 live births)"
 CME_MRM0,"Neonatal mortality rate (per 1,000 live births)"
 MNCH_MMR,"Maternal mortality ratio (per 100,000 live births)"
-MT_SDG_SUICIDE,"Suicide mortality rate (deaths per 100,000 average relevant population, by sex and age groups)"
+MT_SDG_SUICIDE,"Suicide mortality rate (deaths per 100,000 population, by sex)"
 HT_SH_HAP_HBSAG,SDG Incidence of Hepatitis B (percentage of children under 5 years who have developed chronic HBV infection)
 HT_SH_TBS_INCD,"Incidence of tuberculosis (new cases per 100,000 average population)"
 HT_SH_HIV_INCD,"Number of new HIV infections per 1,000 uninfected population, by sex and age groups"
@@ -37,15 +37,49 @@ NT_ANT_HAZ_NE2,"Stunting (%, by sex, age groups, residence and wealth quintile)"
 ECD_CHLD_36-59M_ADLT_SRC,"Percentage of children (by sex, age groups, residence and wealth quintile) with whom any adult household member has engaged in 4 or more activities to provide early stimulation and responsive care in the last 3 days"
 HT_SH_SUD_TREAT,"Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders (%)"
 HT_SH_ACS_UNHC,Universal health coverage (UHC) service coverage index
+HT_ADOL_UNMETMED_NOUNMET,"Self-reported unmet needs for medical examination and main reason declared: No unmet needs to declare (%, by sex, age groups and wealth quintile)"
+HT_ADOL_UNMETMED_TOOEXP,"Self-reported unmet needs for medical examination and main reason declared: Too expensive (%, by sex, age groups and wealth quintile)"
+HT_ADOL_UNMETMED_TOOFAR,"Self-reported unmet needs for medical examination and main reason declared: Too far to travel (%, by sex, age groups and wealth quintile)"
+HT_ADOL_UNMETMED_WAITING,"Self-reported unmet needs for medical examination and main reason declared: Waiting list (%, by sex, age groups and wealth quintile)"
+HT_ADOL_UNMETMED_TOOEFW,"Self-reported unmet needs for medical examination and main reason declared: Too expensive or too far to travel or waiting list (%, by sex, age groups and wealth quintile)"
+HT_ADOL_UNMETMED_NOTIME,"Self-reported unmet needs for medical examination and main reason declared: No time (%, by sex, age groups and wealth quintile)"
+HT_ADOL_UNMETMED_NOKNOW,"Self-reported unmet needs for medical examination and main reason declared: Didn't know any good doctor or specialist (%, by sex, age groups and wealth quintile)"
+HT_ADOL_UNMETMED_FEAR,"Self-reported unmet needs for medical examination and main reason declared: Fear of doctor, hospital, examination or treatment (%, by sex, age groups and wealth quintile)"
+HT_ADOL_UNMETMED_HOPING,"Self-reported unmet needs for medical examination and main reason declared: Wanted to wait and see if problem got better on its own (%, by sex, age groups and wealth quintile)"
+HT_ADOL_UNMETMED_OTH,"Self-reported unmet needs for medical examination and main reason declared: Other (%, by sex, age groups and wealth quintile)"
 HT_SH_XPD_CHEX_GD_ZS,Current health expenditure (% of GDP)
-HT_SH_XPD_GHED_GD_ZS,Domestic General Government Health Expenditure (% of GDP)
-HT_SH_XPD_GHED_GE_ZS,Domestic General Government Health Expenditure (% of General Government Expenditure)
-HT_SH_XPD_GHED_PP_CD,"Domestic General Government Health Expenditure per capita, PPP (current international $)"
-HT_SH_XPD_GHED_PC_CD,Domestic General Government Health Expenditure per capita (current US$)
-HT_SH_XPD_OOPC_CH_ZS,"Out-of-pocket expenditure (OOPS), as % of Current Health Expenditure"
+HT_SH_XPD_GHED_GD_ZS,Domestic general government health expenditure (% of GDP)
+HT_SH_XPD_GHED_GE_ZS,Domestic general government health expenditure (% of general government expenditure)
+HT_SH_XPD_GHED_CH_ZS,Domestic general government health expenditure (% of current health expenditure)
+HT_SH_XPD_GHED_PP_CD,"Domestic general government health expenditure per capita, PPP (current international $)"
+HT_SH_XPD_GHED_PC_CD,Domestic general government health expenditure per capita (current US$)
+HT_SH_XPD_PVTD_CH_ZS,Domestic private health expenditure (% of current health expenditure)
+HT_SH_XPD_PVTD_PP_CD,"Domestic private health expenditure per capita, PPP (current international $)"
+HT_SH_XPD_PVTD_PC_CD,Domestic private health expenditure per capita (current US$)
+HT_SH_XPD_CHEX_PP_CD,"Current health expenditure per capita, PPP (current international $)"
+HT_SH_XPD_CHEX_PC_CD,Current health expenditure per capita (current US$)
+HT_SH_XPD_OOPC_CH_ZS,"Out-of-pocket expenditure (OOPS), as % of current health expenditure"
+HT_SH_XPD_OOPC_PP_CD,"Out-of-pocket expenditure (OOPS) per capita, PPP (current international $)"
+HT_SH_XPD_OOPC_PC_CD,Out-of-pocket expenditure (OOPS) per capita (current US$)
+HT_INS_COV,Total population covered by public and primary private health insurance (%)
 CME_TMY0T4,"Under-five deaths (number, by sex and wealth quintile)"
 CME_SBR,Stillbirth rate (per 1000 total births)
 CME_PND,Neonatal deaths as a percentage of under-five deaths
+HT_U5DEATH_AIDS,Percentage of under-five deaths detailed by cause: AIDS
+HT_U5DEATH_DIAR,Percentage of under-five deaths detailed by cause: Diarrhoea
+HT_U5DEATH_PERT,Percentage of under-five deaths detailed by cause: Pertussis
+HT_U5DEATH_TETA,Percentage of under-five deaths detailed by cause: Tetanus
+HT_U5DEATH_MEAS,Percentage of under-five deaths detailed by cause: Measles
+HT_U5DEATH_MENI,Percentage of under-five deaths detailed by cause: Meningitis
+HT_U5DEATH_MALA,Percentage of under-five deaths detailed by cause: Malaria
+HT_U5DEATH_PNEU,Percentage of under-five deaths detailed by cause: Pneumonia
+HT_U5DEATH_PRET,Percentage of under-five deaths detailed by cause: Preterm
+HT_U5DEATH_INTR,Percentage of under-five deaths detailed by cause: Intrapartum-related events
+HT_U5DEATH_SEPS,Percentage of under-five deaths detailed by cause: Sepsis
+HT_U5DEATH_OTHE,Percentage of under-five deaths detailed by cause: Other
+HT_U5DEATH_CONG,Percentage of under-five deaths detailed by cause: Congenital
+HT_U5DEATH_NCDS,Percentage of under-five deaths detailed by cause: NCDs
+HT_U5DEATH_INJU,Percentage of under-five deaths detailed by cause: Injuries
 MNCH_CSEC,"C-section rate - percentage of deliveries by cesarean section (by age groups, residence and wealth quintile)"
 HT_SH_ACS_DTP3,Proportion of the target population with access to 3 doses of diphtheria-tetanus-pertussis (DTP3) (%)
 HT_SH_ACS_HPV,"Proportion of the target population with access to affordable medicines and vaccines on a sustainable basis, human papillomavirus (HPV) (%)"
@@ -53,12 +87,24 @@ HT_SH_ACS_MCV2,Proportion of the target population with access to measles-contai
 HT_SH_ACS_PCV3,Proportion of the target population with access to pneumococcal conjugate 3rd dose (PCV3) (%)
 IM_MCV1,Percentage of surviving infants who received the first dose of measles-containing vaccine
 HT_DIST80DTP3_P,Percentage of districts with at least 80% DTP3 coverage
+HT_COVERAGE_DTP3,WHO-UNICEF estimates of DTP3 coverage (%)
 HT_SN_STA_OVWGTN,Children moderately or severely overweight (thousands)
 HT_SH_STA_ANEM,Proportion of women aged 15-49 years with anaemia (%)
 HT_SH_STA_ANEM_NPRG,"Proportion of women aged 15-49 years with anaemia, non-pregnant (%)"
 HT_SH_STA_ANEM_PREG,"Proportion of women aged 15-49 years with anaemia, pregnant (%)"
 NT_BW_UNW,Percentage of births without a birth weight in key data sources
+HT_ADOL_MT,"Adolescents (aged 10-19 years) mortality rate, by sex"
 HT_SH_PRV_SMOK,"Age-standardized prevalence of current tobacco use among persons aged 15 years and older (%, by sex)"
+HT_CDRT_SELF_HARM,"Crude death rate caused by intentional self-harm (deaths per 100,000 inhabitants, by sex and age groups)"
+HT_ADOL_MEAL,Adolescents (15-year-olds) skipping either breakfast or dinner (%)
+HT_ADOL_NO_EXCS,Adolescents (15-year-olds) who report doing no physical activity outside of school (%)
+HT_ADOL_VGRS_EXCS,Adolescents (15-year-olds) who report regularly engaging in vigorous physical activity outside of school (%)
+HT_CHLD_BODY_RGHT,"Children (11-, 13- and 15-year-olds) who report thinking their body is ""about right"" (%)"
+HT_CHLD_BODY_NO_RGHT,"Children (11-, 13- and 15-year-olds) who report thinking their body is ""much too thin"" or ""much too fat"" (%)"
+HT_CHLD_REG_SMOK,"Children (11-, 13- and 15-year-olds) who are regular smokers (%)"
+HT_CHLD_DRNK,"Children (11-, 13- and 15-year-olds) who have been drunk at least twice (%)"
+HT_ADOL_HIGH_SATS,Adolescents (15-year-olds) reporting high life satisfaction (%)
+HT_ADOL_LOW_SATS,Adolescents (15-year-olds) reporting low life satisfaction (%)
 HT_SH_HIV_0014,Children (aged 0-14 years) living with HIV
 HVA_EPI_LHIV_0-19,"Estimated number of children (aged 0-19 years, by sex and age groups) living with HIV"
 HVA_EPI_LHIV_15-24,"Estimated number of adolescents and young people (aged 15-24 years, by sex and age groups) living with HIV"
@@ -70,6 +116,7 @@ WS_PPL_W-SM,"Proportion of population using safely managed drinking water servic
 WS_PPL_S-SM,"Proportion of population using safely managed sanitation services (%, by residence)"
 WS_PPL_H-B,"Proportion of population with a handwashing facility with soap and water available at home (%, by residence)"
 WS_PPS_S-OD,"Proportion of population practising open defecation (%, by residence and wealth quintile)"
+HT_NO_BTH_SHW_FLSH,"Total population having neither a bath, nor a shower, nor indoor flushing toilet in their household (%, by sex and age groups)"
 EDUNF_STU_L01_TOT,Early childhood educational development enrolments (absolute number)
 EDUNF_STU_L01_PUB,Early childhood educational development enrolments in public institutions
 EDUNF_STU_L01_PRV,Early childhood educational development enrolments in private institutions
@@ -249,22 +296,30 @@ EDUNF_ROFST_L1T3,"Out-of-school rate for children, adolescents and youth of prim
 EDUNF_SAP_L2_GLAST,"Population of the official age for Last Grade of lower secondary education - ISCED 2, Last Grade - (number of persons, by sex)"
 EDUNF_PRP_L2AND3,Enrolment in private schools of secondary education - ISCED 2 and 3 - (% of all students enrolled in the respective level of education)
 EDUNF_STU_L2AND3_PRV,"Enrolment in secondary education - ISCED 2 and 3 - private institutions (number of persons, by sex)"
-SP_SI_COV_BENFTS,Proportion of population covered by at least one social protection benefit (%)
-SP_SI_COV_LMKT,Proportion of population covered by labour market programs (% by wealth quintile)
-SP_SI_COV_SOCAST,Proportion of population covered by social assistance programs (% by wealth quintile)
-SP_SI_COV_SOCINS,Proportion of population covered by social insurance programs (% by wealth quintile)
-SP_SI_COV_WKINJRY,Proportion of employed population covered in the event of work injury (%)
-SP_SI_COV_CHLD,Proportion of children/households receiving child/family cash benefit (%)
-SP_SI_COV_DISAB,Proportion of population with severe disabilities receiving disability cash benefit (% by sex)
-SP_SI_COV_MATNL,Proportion of mothers with newborns receiving maternity cash benefit (%)
-SP_SI_COV_POOR,Proportion of poor population receiving social assistance cash benefit (%)
-SP_SI_COV_UEMP,Proportion of unemployed persons receiving unemployment cash benefit (% by sex)
-SP_SI_COV_VULN,Proportion of vulnerable population receiving social assistance cash benefit (% by sex)
-SP_SI_COV_PENSN,Proportion of population above statutory pensionable age receiving a pension (% by sex)
+PV_SI_POV_EMP1,"Employed population below international poverty line (%, by sex and age groups)"
+PV_SI_POV_DAY1,Proportion of population below international poverty line (%)
+PV_SI_POV_UMIC,Poverty headcount ratio at $5.50 a day (2011 PPP) (% of population)
+PV_SI_POV_NAHC,"Proportion of population living below the national poverty line (%, by residence)"
+PV_AROPE,"People at risk of poverty or social exclusion (%, by sex and age groups)"
+PV_SI_COV_BENFTS,Proportion of population covered by at least one social protection benefit (%)
+PV_SI_COV_LMKT,Proportion of population covered by labour market programs (% by wealth quintile)
+PV_SI_COV_SOCAST,Proportion of population covered by social assistance programs (% by wealth quintile)
+PV_SI_COV_SOCINS,Proportion of population covered by social insurance programs (% by wealth quintile)
+PV_SI_COV_WKINJRY,Proportion of employed population covered in the event of work injury (%)
+PV_SI_COV_CHLD,Proportion of children/households receiving child/family cash benefit (%)
+PV_SI_COV_DISAB,Proportion of population with severe disabilities receiving disability cash benefit (% by sex)
+PV_SI_COV_MATNL,Proportion of mothers with newborns receiving maternity cash benefit (%)
+PV_SI_COV_POOR,Proportion of poor population receiving social assistance cash benefit (%)
+PV_SI_COV_UEMP,Proportion of unemployed persons receiving unemployment cash benefit (% by sex)
+PV_SI_COV_VULN,Proportion of vulnerable population receiving social assistance cash benefit (% by sex)
+PV_SI_COV_PENSN,Proportion of population above statutory pensionable age receiving a pension (% by sex)
 EC_NY_GDP_MKTP_KD_ZG,GDP growth (annual %)
 EC_NY_GDP_PCAP_KD_ZG,GDP per capita growth (annual %)
 EC_NE_DAB_TOTL_ZS,Gross national expenditure (% of GDP)
+EC_TEC_GOV_EXP,Total general government expenditure (% of GDP)
 EC_GR_G14_GDP,Total government revenue (budgetary central government) as a proportion of GDP (%)
+EC_SP_GOV_EXP_GDP,Total general government expenditure in Social Protection (% of GDP)
+EC_SP_GOV_EXP_TOT,Total general government expenditure in Social Protection (% of total government expenditure)
 EC_NY_GDP_PCAP_PP_CD,"GDP per capita, PPP (current international $)"
 EC_NY_GNP_ATLS_CD,"GNI, Atlas method (current US$)"
 EC_NY_GNP_PCAP_CD,"GNI per capita, Atlas method (current US$)"
@@ -309,6 +364,8 @@ JJ_SG_NHR_INTEXSTN,Countries with National Human Rights Institutions not fully c
 JJ_SG_NHR_NOSTUSN,Countries with National Human Rights Institutions and no status with the Paris Principles (C status)
 JJ_SG_NHR_NOAPPLN,Countries with no application for accreditation with the Paris Principles (D status)
 JJ_VC_PRS_UNSNT,Unsentenced detainees as a proportion of overall prison population (%)
+JJ_PRISIONERS,Number of Prisoners by the relevant sex and age groups
+JJ_PRISIONERS_RT,Rate of Prisoners by the relevant sex and age groups
 PT_CHLD_Y0T4_REG,"Percentage of children (by sex, age groups, residence and wealth quintile) whose births are registered"
 ECD_CHLD_U5_LFT-ALN,"Percentage of children under age 5 (by sex, residence and wealth quintile) left alone or under the supervision of another child younger than 10 years of age for more than 1 hour at least once in the last week"
 GN_MTNTY_LV_BNFTS,Maternity leave benefits
