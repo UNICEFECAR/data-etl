@@ -299,8 +299,18 @@ EDUNF_STU_L2AND3_PRV,"Enrolment in secondary education - ISCED 2 and 3 - private
 PV_SI_POV_EMP1,"Employed population below international poverty line (%, by sex and age groups)"
 PV_SI_POV_DAY1,Proportion of population below international poverty line (%)
 PV_SI_POV_UMIC,Poverty headcount ratio at $5.50 a day (2011 PPP) (% of population)
-PV_SI_POV_NAHC,"Proportion of population living below the national poverty line (%, by residence)"
+PV_SDG_SI_POV_NAHC,"Proportion of population living below the national poverty line (%, by residence)"
+PV_WB_SI_POV_NAHC,Poverty headcount ratio at national poverty lines (% of population)
 PV_AROPE,"People at risk of poverty or social exclusion (%, by sex and age groups)"
+PV_AROPRT,"At-risk-of-poverty rate by threshold: 60% of median equivalized income after social transfers (%, by sex and age groups)"
+PV_SD_MDP_CSMP,"Proportion of children living in child-specific multidimensional poverty (%, by residence)"
+PV_SD_MDP_MUHHC,Proportion of households living in multidimensional poverty (%)
+PV_SD_MDP_MUHC,"Proportion of population living in multidimensional poverty (%, by sex, age groups and residence)"
+PV_SI_POV_MDIM,"Multidimensional poverty headcount ratio (% of total population, by sex)"
+PV_SI_POV_MDIM_17,"Multidimensional poverty headcount ratio, children (% of population ages 0-17)"
+WS_PPL_W-B,"Proportion of population using basic drinking water services (%, by residence)"
+WS_PPL_S-B,"Proportion of population using basic sanitation services (%, by residence)"
+PV_SEV_MAT_DPRT,"Severe material deprivation rate (%, by sex and age groups)"
 PV_SI_COV_BENFTS,Proportion of population covered by at least one social protection benefit (%)
 PV_SI_COV_LMKT,Proportion of population covered by labour market programs (% by wealth quintile)
 PV_SI_COV_SOCAST,Proportion of population covered by social assistance programs (% by wealth quintile)
