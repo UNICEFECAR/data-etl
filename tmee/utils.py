@@ -4,6 +4,7 @@ Typically retrieve queries, useful for our ETL purposes
 To improve: implement extraction as an abstract class following James' refactoring
 """
 
+from os import name
 import requests
 import pandas as pd
 import pandasdmx as pdsdmx
@@ -433,10 +434,57 @@ def oecd_reader(address, raw_path, ind_code, params=None, headers=None):
         print(f"Parsing {ind_code} sdmx-json to pandas: please wait")
         # convert json to pandas (long format, attributes per observation)
         data_df = json_message.to_pandas(dtype=str, attributes="o", rtype="rows")
+
+        # it's observed that names in multi-index may repeat in df columns, then check and rename
+        check_idx_col_names = [item in data_df.columns for item in data_df.index.names]
+        if any(check_idx_col_names):
+            # rename first
+            rename_array = [
+                (name + "_idx") if check_idx_col_names[i] else name
+                for i, name in enumerate(data_df.index.names)
+            ]
+            data_df.index.rename(rename_array, inplace=True)
+
         data_df.reset_index(inplace=True)
 
         # save raw file as csv
         data_df.to_csv(f"{raw_path}{ind_code}.csv", index=False)
+        print(f"Indicator {ind_code} succesfully downloaded")
+        flag_download = True
+
+    return flag_download
+
+
+def undp_reader(address, raw_path, ind_code, params=None, headers=None):
+    """
+    First wrapper for undp api
+    :param address: expected to contain endpoint and query
+    :param raw_path: path to write csv raw files
+    :param ind_code: name to write csv raw file
+    :param params: requests parameters
+    :param headers: requests headers
+    :return: download flag: True/False
+    """
+
+    flag_download = False
+    # api call for json file
+    indicator_json = api_request(address, params, headers)
+
+    if indicator_json.status_code == 200:
+        # transform json response into csv file using pandas
+        # step one - read json and normalize
+        wide_df = pd.json_normalize(
+            indicator_json.json()["indicator_value"], max_level=3
+        )
+        # step two - build long format from column names structure
+        long_df = wide_df.columns.str.split(".", expand=True).to_frame(
+            index=False, name=["cou", "ind", "year"]
+        )
+        # step three fill values from series
+        long_df["val"] = wide_df.values[0]
+
+        # save raw file as csv
+        long_df.to_csv(f"{raw_path}{ind_code}.csv", index=False)
         print(f"Indicator {ind_code} succesfully downloaded")
         flag_download = True
 
