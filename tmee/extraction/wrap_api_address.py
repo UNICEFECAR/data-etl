@@ -36,36 +36,65 @@ def wrap_api_address(
 
     # separate how API addresses are built:
     # source_key: helix (reads dataflows DSD)
+    # brings disaggregation in sex, age, residence and wealth if present
+    # sometimes would like to keep the query as it is --> flag is query!
+    # CDDEM could be brought under this case!
     if source_key.lower() == "helix":
 
-        # first get dataflow number of dimensions
-        dsd_api_address = url_endpoint + "all"
-        # parameters: API request dataflow structure only
-        dsd_api_params = {"format": "sdmx-json", "detail": "structureOnly"}
-        data_flow_struc = SdmxJsonStruct(
-            api_request(dsd_api_address, dsd_api_params).json()
-        )
-        # search num_dims and totals "_T" (not in TMEE destination dimensions)
-        num_dims, dim_t = data_flow_struc.get_sdmx_dims()
+        # split url_endpoint
+        url_split = url_endpoint.split("/")
 
-        # build dimension points for sdmx API call
-        # (num_dims - 3): 3 dimensions not considered (REF_AREA, INDICATOR, TIME)
-        dim_points = "." * (num_dims - 3)
-        # position '_T' in dim_points according to dim_t
-        for i, t_pos in enumerate(dim_t, 1):
-            t_ind = t_pos - 2 + (i - 1) * 2
-            dim_points = dim_points[:t_ind] + "_T" + dim_points[t_ind:]
+        # flag if query!
+        if len(url_split) > 9:
 
-        # wrap api_address
-        if country_codes:
-            # Join string of all TMEE country codes (3 letters) for SDMX requests
-            country_call_3 = "+".join(country_codes.values())
+            # use query and add countries
+            if country_codes:
+                # Join string of all TMEE country codes (3 letters) for SDMX requests
+                country_call_3 = "+".join(country_codes.values())
 
-            api_address = (
-                url_endpoint + country_call_3 + "." + indicator_code + dim_points
-            )
+                # query split
+                query_split = url_split[9].split(".")
+
+                # place country call at first dimension
+                query_split[0] = country_call_3
+                # rebuild query with country call
+                query_with_geo = ".".join(query_split)
+
+                # rebuild api_adress using query_with_geo
+                api_address = "/".join(url_split[:-1]) + "/" + query_with_geo
+            else:
+                api_address = url_endpoint
+
         else:
-            api_address = url_endpoint + "." + indicator_code + dim_points
+
+            # first get dataflow number of dimensions
+            dsd_api_address = url_endpoint + "all"
+            # parameters: API request dataflow structure only
+            dsd_api_params = {"format": "sdmx-json", "detail": "structureOnly"}
+            data_flow_struc = SdmxJsonStruct(
+                api_request(dsd_api_address, dsd_api_params).json()
+            )
+            # search num_dims and totals "_T" (not in TMEE destination dimensions)
+            num_dims, dim_t = data_flow_struc.get_sdmx_dims()
+
+            # build dimension points for sdmx API call
+            # (num_dims - 3): 3 dimensions not considered (REF_AREA, INDICATOR, TIME)
+            dim_points = "." * (num_dims - 3)
+            # position '_T' in dim_points according to dim_t
+            for i, t_pos in enumerate(dim_t, 1):
+                t_ind = t_pos - 2 + (i - 1) * 2
+                dim_points = dim_points[:t_ind] + "_T" + dim_points[t_ind:]
+
+            # wrap api_address
+            if country_codes:
+                # Join string of all TMEE country codes (3 letters) for SDMX requests
+                country_call_3 = "+".join(country_codes.values())
+
+                api_address = (
+                    url_endpoint + country_call_3 + "." + indicator_code + dim_points
+                )
+            else:
+                api_address = url_endpoint + "." + indicator_code + dim_points
 
     # source_key: UIS (no dataflow DSD read, uses url_endpoint directly)
     elif source_key.lower() == "uis":
@@ -191,9 +220,9 @@ def wrap_api_address(
             # dsd name
             dsd_name = f"DSD_{dflow_name}"
             # url endpoint for estat datastructure calls
-            estat_url_dsd = (
-                "https://ec.europa.eu/eurostat/SDMX/diss-web/rest/datastructure/ESTAT/"
-            )
+            # estat_url_dsd = (
+            # "https://ec.europa.eu/eurostat/SDMX/diss-web/rest/datastructure/ESTAT/"
+            # )
 
             # handle errors from pdsdmx dsd request
             try:
@@ -298,6 +327,19 @@ def wrap_api_address(
                 # rebuild api_adress using query_with_geo
                 api_address = "/".join(url_split[:-1]) + "/" + ".".join(query_split)
 
+        else:
+            # just keep url_endpoint (no country_codes)
+            api_address = url_endpoint
+
+    elif source_key.lower() == "undp":
+
+        # wrap api_address (iso3 let's see if all ecaro)
+        if country_codes:
+            # Join string of all TMEE country codes (3 letters) for SDMX requests
+            country_call_3 = ",".join(country_codes.values())
+
+            # rebuild api_adress using query_with_geo
+            api_address = url_endpoint + "country_code=" + country_call_3
         else:
             # just keep url_endpoint (no country_codes)
             api_address = url_endpoint
