@@ -323,10 +323,16 @@ PV_SI_COV_POOR,Proportion of poor population receiving social assistance cash be
 PV_SI_COV_UEMP,Proportion of unemployed persons receiving unemployment cash benefit (% by sex)
 PV_SI_COV_VULN,Proportion of vulnerable population receiving social assistance cash benefit (% by sex)
 PV_SI_COV_PENSN,Proportion of population above statutory pensionable age receiving a pension (% by sex)
+DM_CHLD_TWO_PRNT,Children (0-17) living with two parents (%)
+EC_HDI,"Human Development Index (HDI, by sex)"
 EC_NY_GDP_MKTP_KD_ZG,GDP growth (annual %)
 EC_NY_GDP_PCAP_KD_ZG,GDP per capita growth (annual %)
 EC_NE_DAB_TOTL_ZS,Gross national expenditure (% of GDP)
-EC_TEC_GOV_EXP,Total general government expenditure (% of GDP)
+EC_TEC_GRL_GOV_EXP,Total general government expenditure (% of GDP)
+EC_TEC_CNT_GOV_EXP,Total central government expenditure (% of GDP)
+EC_TEC_STA_GOV_EXP,Total state government expenditure (% of GDP)
+EC_TEC_LOC_GOV_EXP,Total local government expenditure (% of GDP)
+EC_TEC_SSF_EXP,Total social security funds expenditure (% of GDP)
 EC_GR_G14_GDP,Total government revenue (budgetary central government) as a proportion of GDP (%)
 EC_SP_GOV_EXP_GDP,Total general government expenditure in Social Protection (% of GDP)
 EC_SP_GOV_EXP_TOT,Total general government expenditure in Social Protection (% of total government expenditure)
@@ -339,6 +345,10 @@ EC_SL_UEM_TOTL_NE_ZS,"Unemployment, national estimate (% of total labor force, b
 EC_SL_UEM_TOTL_ZS,"Unemployment, modelled ILO estimate (% of total labor force, by sex)"
 DM_SM_POP_REFG,Refugee population by country or territory of asylum
 DM_SM_POP_REFG_OR,Refugee population by country or territory of origin
+DM_ASYL_FRST,"First time asylum applicants (persons, by sex and age groups)"
+DM_ASYL_UASC,"Asylum applicants considered to be unaccompanied minors (persons, by sex and age groups)"
+MG_INTNL_MG_CNTRY_DEST_PS,"International migrant stock by country of destination (thousands of persons, by age)"
+MG_INTNL_MG_CNTRY_DEST_RT,International migrant stock by country of destination (% of total population)
 CR_VC_DSR_MTMP,"Number of deaths and missing persons attributed to disasters (per 100,000 population)"
 CR_VC_DSR_DAFF,"Number of directly affected persons attributed to disasters (per 100,000 population)"
 CR_SH_STA_AIRP,"Crude death rate attributed to household and ambient air pollution (deaths per 100,000 population)"
@@ -346,6 +356,21 @@ CR_SH_STA_ASAIRP,"Age-standardized mortality rate attributed to household and am
 CR_EG_EGY_CLEAN,Proportion of population with primary reliance on clean fuels and technology (%)
 CR_EG_ACS_ELEC,Proportion of population with access to electricity (% by residence)
 CR_SG_DSR_LGRGSR,Score of adoption and implementation of national DRR strategies in line with the Sendai Framework
+EC_TOT_PUB_EXP_GDP,Total public social expenditure (% of GDP)
+EC_TOT_PUB_EXP_TOT,Total public social expenditure (% of total general government expenditure)
+EC_FAM_PUB_EXP_GDP,Family public social expenditure (% of GDP)
+EC_FAM_PUB_EXP_TOT,Family public social expenditure (% of total general government expenditure)
+CR_IQ_SCI_OVRL,Statistical Capacity score (Overall average)
+CR_SG_STT_FPOS,Countries with national statistical legislation exists that complies with the Fundamental Principles of Official Statistics
+CR_SG_STT_NSDSFND,Countries with national statistical plans that are fully funded
+CR_SG_STT_NSDSIMPL,Countries with national statistical plans that are under implementation
+CR_SG_STT_NSDSFDGVT,Countries with national statistical plans with funding from Government
+CR_SG_STT_NSDSFDDNR,Countries with national statistical plans with funding from donors
+CR_SG_STT_NSDSFDOTHR,Countries with national statistical plans with funding from others
+CR_SG_STT_CAPTY,Value of all resources made available to strengthen statistical capacity in developing countries (current US$)
+CR_SG_REG_CENSUSN,Countries that have conducted at least one population and housing census in the last 10 years
+CR_SG_REG_BRTH90N,Countries with birth registration data that are at least 90 percent complete
+CR_SG_REG_DETH75N,Countries with death registration data that are at least 75 percent complete
 PT_F_GE15_PS-SX-EM_V_PTNR_12MNTH,"Percentage of ever-partnered women and girls (aged 15 years and older, by age groups, residence and wealth quintile) subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months"
 PT_F_GE15_SX_V_PTNR_12MNTH,Women and girls aged 15 and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months (%)
 PT_VC_VOV_PHYL,Proportion of population subjected to physical violence in the previous 12 months (% by sex)

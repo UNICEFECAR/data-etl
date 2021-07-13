@@ -1260,8 +1260,8 @@ code_mapping = {
         "OBS_FLAG": estat_flag_map,
     },
     # information about sex taken from indicator code @undp api doc
-    "undp": {"sex": {"137506": "_T", "136906": "F", "137006": "M"}},
-    "socx_agg": {"UNIT": {"PCT_GDP": "GDP_PERC", "PCT_GOV": "GOV_EXP_T"}},
+    "undp": {"ind": {"137506": "_T", "136906": "F", "137006": "M"}},
+    "socx_agg": {"UNIT_idx": {"PCT_GDP": "GDP_PERC", "PCT_GOV": "GOV_EXP_T"}},
     "migr_asyappctza": {
         "GEO": country_map,
         "SEX": {"T": "_T", "UNK": "_U"},
