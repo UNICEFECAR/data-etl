@@ -44,8 +44,8 @@ def wrap_api_address(
         # split url_endpoint
         url_split = url_endpoint.split("/")
 
-        # flag if query!
-        if len(url_split) > 9:
+        # flag if query! --> 10th position in url not empty
+        if url_split[9] != "":
 
             # use query and add countries
             if country_codes:
