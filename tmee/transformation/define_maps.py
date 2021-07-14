@@ -1129,6 +1129,7 @@ code_mapping = {
             "PER_100000_POP": "RATE_100000",
             "PER_1000_UNINFECTED_POP": "RATE_1000",
             "IX": "IDX",
+            "PER_100_POP": "RATE_100",
         },
         "NATURE": {"C": "A", "CA": "AD", "_X": "A", "M": "MD", "G": "A"},
         "FREQ": {"A": "1"},
