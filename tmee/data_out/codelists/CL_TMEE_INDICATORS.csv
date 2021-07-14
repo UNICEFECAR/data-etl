@@ -369,8 +369,6 @@ CR_SG_STT_NSDSFDDNR,Countries with national statistical plans with funding from 
 CR_SG_STT_NSDSFDOTHR,Countries with national statistical plans with funding from others
 CR_SG_STT_CAPTY,Value of all resources made available to strengthen statistical capacity in developing countries (current US$)
 CR_SG_REG_CENSUSN,Countries that have conducted at least one population and housing census in the last 10 years
-CR_SG_REG_BRTH90N,Countries with birth registration data that are at least 90 percent complete
-CR_SG_REG_DETH75N,Countries with death registration data that are at least 75 percent complete
 PT_F_GE15_PS-SX-EM_V_PTNR_12MNTH,"Percentage of ever-partnered women and girls (aged 15 years and older, by age groups, residence and wealth quintile) subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months"
 PT_F_GE15_SX_V_PTNR_12MNTH,Women and girls aged 15 and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months (%)
 PT_VC_VOV_PHYL,Proportion of population subjected to physical violence in the previous 12 months (% by sex)
@@ -394,14 +392,32 @@ PT_F_20-24_MRD_U18,"Percentage of women (aged 20-24 years, by residence and weal
 PT_M_20-24_MRD_U18,"Percentage of men (aged 20-24 years, by residence and wealth quintile) married or in union before age 18"
 PT_CHLD_5-17_LBR_ECON,"Percentage of children (aged 5-17 years, by sex and age groups) engaged in child labour (economic activities)"
 PT_CHLD_5-17_LBR_ECON-HC,"Percentage of children (aged 5-17 years, by sex and age groups) engaged in child labour (economic activities and household chores)"
-JJ_SG_NHR_IMPLN,Countries with National Human Rights Institutions in compliance with the Paris Principles (A status)
-JJ_SG_NHR_INTEXSTN,Countries with National Human Rights Institutions not fully compliant with the Paris Principles (B status)
-JJ_SG_NHR_NOSTUSN,Countries with National Human Rights Institutions and no status with the Paris Principles (C status)
-JJ_SG_NHR_NOAPPLN,Countries with no application for accreditation with the Paris Principles (D status)
 JJ_VC_PRS_UNSNT,Unsentenced detainees as a proportion of overall prison population (%)
 JJ_PRISIONERS,Number of Prisoners by the relevant sex and age groups
 JJ_PRISIONERS_RT,Rate of Prisoners by the relevant sex and age groups
-PT_CHLD_Y0T4_REG,"Percentage of children (by sex, age groups, residence and wealth quintile) whose births are registered"
+PT_CHLD_Y0T4_REG,"Proportion of children whose births have been registered with a civil authority (%, by sex, age groups, residence and wealth quintile)"
+PP_SG_REG_BRTH90N,Countries with birth registration data that are at least 90 percent complete
+PP_SG_REG_DETH75N,Countries with death registration data that are at least 75 percent complete
+PP_SG_NHR_IMPLN,Countries with National Human Rights Institutions in compliance with the Paris Principles (A status)
+PP_SG_NHR_INTEXSTN,Countries with National Human Rights Institutions not fully compliant with the Paris Principles (B status)
+PP_SG_NHR_NOSTUSN,Countries with National Human Rights Institutions and no status with the Paris Principles (C status)
+PP_SG_NHR_NOAPPLN,Countries with no application for accreditation with the Paris Principles (D status)
+PP_IT_USE_ii99,Internet users per 100 inhabitants
+PP_SE_ADT_ACTS_ATCH,"Proportion of youth and adults with ICT skill: sending e-mails with attached files (%, by sex)"
+PP_SE_ADT_ACTS_CPT,"Proportion of youth and adults with ICT skill: using copy and paste tools to duplicate or move information within a document (%, by sex)"
+PP_SE_ADT_ACTS_CDV,"Proportion of youth and adults with ICT skill: connecting and installing new devices (%, by sex)"
+PP_SE_ADT_ACTS_SSHT,"Proportion of youth and adults with ICT skill: using basic arithmetic formula in a spreadsheet (%, by sex)"
+PP_SE_ADT_ACTS_PRGM,"Proportion of youth and adults with ICT skill: writing a computer program using a specialized programming language (%, by sex)"
+PP_SE_ADT_ACTS_PST,"Proportion of youth and adults with ICT skill: creating electronic presentations with presentation software (%, by sex)"
+PP_SE_ADT_ACTS_SFWR,"Proportion of youth and adults with ICT skill: finding, downloading, installing and configuring software (%, by sex)"
+PP_SE_ADT_ACTS_TRFF,"Proportion of youth and adults with ICT skill: transferring files between a computer and other devices (%, by sex)"
+PP_SE_ADT_ACTS_CMFL,"Proportion of youth and adults with ICT skill: copying or moving a file or folder (%, by sex)"
+PP_IT_MOB_OWN,"Proportion of individuals who own a mobile telephone (%, by sex)"
+PP_ADOL_TVGM,"Adolescents (15-year-olds) who watch TV or play video games, before or after school (%)"
+PP_ADOL_INET,"Adolescents (15-year-olds) who use the internet and social networks, before or after school (%)"
+PP_ADOL_ITXT,Adolescents (15-year-olds) who are high or extreme internet users (%)
+PP_ADOL_WORK_PAID,"Adolescents (15-year-olds) who do paid work, before or after school (%)"
+PP_ADOL_WORK_HOME,"Adolescents (15-year-olds) who do unpaid work in the home, before or after school (%)"
 ECD_CHLD_U5_LFT-ALN,"Percentage of children under age 5 (by sex, residence and wealth quintile) left alone or under the supervision of another child younger than 10 years of age for more than 1 hour at least once in the last week"
 GN_MTNTY_LV_BNFTS,Maternity leave benefits
 GN_PTNTY_LV_BNFTS,Paternity leave benefits
