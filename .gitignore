@@ -20,6 +20,8 @@ debug_file.py
 main_extract_transform.py
 main_extract_transform_.py
 main_extract_transform_2.py
+sitan_extract.py
+test_imports.py
 test_nb.py
 test_nb2.py
 
@@ -154,6 +156,8 @@ wrap_API_calls.ipynb
 wrap_API_calls2.ipynb
 proto_extract_transform.ipynb
 excel_tmee.ipynb
+sdg_16_2_1.ipynb
+sitan_extract.ipynb
 main_legacy.ipynb
 main_legacy_proto.ipynb
 prototype_legacy.ipynb
@@ -180,6 +184,7 @@ populate_data_dictionary
 
 # ignore some versioning excel files
 indicator_dictionary_TM_v01.xlsx
+sitan_report.xlsx
 Full_TMEE_Database.xlsx
 styled.xlsx
 content_legacy.csv
