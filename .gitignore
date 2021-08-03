@@ -184,7 +184,7 @@ populate_data_dictionary
 
 # ignore some versioning excel files
 indicator_dictionary_TM_v01.xlsx
-sitan_report.xlsx
+sitan_report*.xlsx
 Full_TMEE_Database.xlsx
 styled.xlsx
 content_legacy.csv
