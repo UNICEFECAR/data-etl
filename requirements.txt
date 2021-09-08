@@ -21,3 +21,9 @@ nbconvert
 jupyter
 pandoc
 matplotlib
+# for small apps (and sharepoint auth)
+dash
+dash_extensions
+jupyter-dash
+jupyter_server_proxy
+Office365-REST-Python-Client

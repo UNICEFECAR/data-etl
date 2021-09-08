@@ -17,6 +17,9 @@ __pycache__
 
 # Debug file used for temporary debugging
 debug_file.py
+EDA_covid19_trends.py
+EDA_covid19_v0.py
+EDA_ICO.py
 main_extract_transform.py
 main_extract_transform_.py
 main_extract_transform_2.py
@@ -158,6 +161,9 @@ proto_extract_transform.ipynb
 excel_tmee.ipynb
 sdg_16_2_1.ipynb
 sitan_extract.ipynb
+sitan_invoice.ipynb
+EDA_covid19_trends.ipynb
+EDA_covid19_v0.ipynb
 main_legacy.ipynb
 main_legacy_proto.ipynb
 prototype_legacy.ipynb
@@ -206,6 +212,9 @@ content_legacy.csv
 !CL_TMEE_INDICATORS.csv
 !CL_TMEE_UNITS.csv
 !CL_TMEE_AGE.csv
+
+# ignore test folder population (india ICO project)
+/tmee/population/
 
 # Ignore history download folder
 noYreq
