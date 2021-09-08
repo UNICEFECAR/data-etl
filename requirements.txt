@@ -26,4 +26,5 @@ dash
 dash_extensions
 jupyter-dash
 jupyter_server_proxy
+styleframe
 Office365-REST-Python-Client
