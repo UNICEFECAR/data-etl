@@ -17,6 +17,8 @@ __pycache__
 
 # Debug file used for temporary debugging
 debug_file.py
+india_covid_dash.py
+india_covid_dash_.py
 EDA_covid19_trends.py
 EDA_covid19_v0.py
 EDA_ICO.py
