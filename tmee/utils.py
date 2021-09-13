@@ -40,19 +40,25 @@ def get_API_code_address_etc(excel_data_dict):
     snap_source_ind_df = snap_source_df.merge(
         indicators_df, on="Indicator_Id", how="left", sort=False
     )
-    # Finally read Value_type table from excel data-dictionary
+    # read Value_type table from excel data-dictionary
     val_df = pd.read_excel(excel_data_dict, sheet_name="Value_type")
     # join snap_source_ind and Value_type based on Value_Id
     snap_source_ind_val_df = snap_source_ind_df.merge(
         val_df, on="Value_Id", how="left", sort=False
     )
-    # get indicator codes, url endpoints, etc for API/Web Scrape extractions
-    logic_API = snap_source_ind_val_df.Type_x.str.contains("API|Web Scrape")
+    # read Transformation table from excel data-dictionary
+    transf_df = pd.read_excel(excel_data_dict, sheet_name="Transformation")
+    # join snap_transform_ind and Tranformation based on Transformation_Id
+    snap_join_df = snap_source_ind_val_df.merge(
+        transf_df, on="Transformation_Id", how="left", sort=False
+    )
+    # get indicator codes, url endpoints, etc for API/Web Scrape/Calculation extractions
+    logic_API = snap_join_df.Type_x.str.contains("API|Web Scrape|Calculation")
     logic_not_null = logic_API.notnull()
     # operator AND for two logics above
     logic_API_not_null = logic_API & logic_not_null
 
-    api_code_addr_etc_df = snap_source_ind_val_df[logic_API_not_null][
+    api_code_addr_etc_df = snap_join_df[logic_API_not_null][
         [
             "Theme",
             "Code_y",
@@ -66,6 +72,9 @@ def get_API_code_address_etc(excel_data_dict):
             "Freq_Coll",
             "Nature",
             "Unit_Mult",
+            "Parameters",
+            "Numerator",
+            "Denominator",
         ]
     ]
 
@@ -76,6 +85,7 @@ def get_API_code_address_etc(excel_data_dict):
             "Name_y": "Data_Source",
             "Comments_y": "Obs_Footnote",
             "Units_y": "Units",
+            "Parameters": "Transf_Param",
         },
         inplace=True,
     )
