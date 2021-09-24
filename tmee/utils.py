@@ -60,6 +60,7 @@ def get_API_code_address_etc(excel_data_dict):
 
     api_code_addr_etc_df = snap_join_df[logic_API_not_null][
         [
+            "Type_x",
             "Theme",
             "Code_y",
             "Name",
@@ -80,6 +81,7 @@ def get_API_code_address_etc(excel_data_dict):
 
     api_code_addr_etc_df.rename(
         columns={
+            "Type_x": "Extraction_type",
             "Name": "Indicator_name",
             "Code_y": "Code",
             "Name_y": "Data_Source",
@@ -499,6 +501,183 @@ def undp_reader(address, raw_path, ind_code, params=None, headers=None):
         flag_download = True
 
     return flag_download
+
+
+def calculate_indicator(func_name, func_param, numerator, denominator, dest_dict):
+    """
+    First wrapper for calculations
+    :param func_name: function name to be called
+    :param func_param: input parameters to func_name
+    :param numerator: original indicator numerator
+    :param denominator: original indicator denominator
+    :param dest_dict: info dictionary for calculated indicator
+    :return: download flag: True
+    TODO: error handling
+    """
+
+    orig_indicators = [numerator, denominator]
+    globals()[func_name](func_param, orig_indicators, dest_dict)
+
+    return True
+
+
+def calc_age_sum(age_limits, orig_ind, dest_info):
+    """
+    First wrapper for group age calculations
+    :param age_limits: string with age limits
+    :param orig_ind: original indicator codes to read
+    :param dest_info: indicator_code and path to write calculated data
+    :return: download flag: True
+    TODO: error handling
+    """
+
+    # year start
+    y0_1 = age_limits.split(";")
+    age_groups = [
+        "Y0" + str(i) if ((i < 10) & (i != 0)) else "Y" + str(i)
+        for i in range(int(y0_1[0]), int(y0_1[1]) + 1)
+    ]
+
+    # read indicator raw data (numerator only)
+    org_code = orig_ind[0]
+    raw_path = dest_info["path"]
+    data_raw = pd.read_csv(f"{raw_path}{org_code}.csv", dtype=str)
+
+    # retain only codes from csv headers
+    raw_columns = data_raw.columns.values
+    rename_dict = {k: v.split(":")[0] for k, v in zip(raw_columns, raw_columns)}
+    data_raw.rename(columns=rename_dict, inplace=True)
+
+    # retain only codes from age groups, indicator and obs_status column
+    data_raw.loc[:, "AGE"] = data_raw.AGE.apply(lambda x: x.split(":")[0])
+    data_raw.loc[:, "INDICATOR"] = data_raw.INDICATOR.apply(lambda x: x.split(":")[0])
+    obs_status_notnan = data_raw.OBS_STATUS.notnull()
+    data_raw.loc[obs_status_notnan, "OBS_STATUS"] = data_raw[
+        obs_status_notnan
+    ].OBS_STATUS.apply(lambda x: x.split(":")[0])
+
+    # query data_raw years
+    query_y = "AGE in @age_groups"
+    df_q = (
+        data_raw.query(query_y)
+        .astype({"OBS_VALUE": float})
+        .groupby(by=["REF_AREA", "SEX", "TIME_PERIOD"], sort=False)
+        .agg({"OBS_VALUE": "sum"})
+        .round(3)
+    ).reset_index()
+
+    # keep unit multiplier as in the original source
+    # commented alternative below: bring unit multiplier into obs_value
+    # Unit Multiplier must be rewriten to zero (if incorporated into obs_value)
+
+    # u_mult = data_raw.UNIT_MULTIPLIER.unique()[0]
+    # u_mult = int(u_mult.split(":")[0]) if not pd.isnull(u_mult) else 0
+    # df_q.loc[:, "OBS_VALUE"] = (df_q.OBS_VALUE * 10 ** int(u_mult)).astype(int)
+
+    # add age group accordingly
+    df_q["AGE"] = f"Y{y0_1[0]}T{y0_1[1]}"
+
+    # complete data raw structure
+    for col in [col for col in data_raw.columns if len(data_raw[col].unique()) == 1]:
+        df_q[col] = data_raw[col].unique()[0]
+
+    # indicator destination code
+    dest_code = dest_info["code"]
+    # transform indicator column to destination code
+    df_q["INDICATOR"].replace(org_code, dest_code, inplace=True)
+    # place DATAFLOW column index 0 (ETL requirement: Helix transforms)
+    df_q.insert(0, "DATAFLOW", df_q.pop("DATAFLOW"))
+
+    # unpd obs_status projection
+    pr_years = data_raw[data_raw.OBS_STATUS == "PR"].TIME_PERIOD.unique()
+    pr_rows = [df_q.TIME_PERIOD == yr for yr in pr_years]
+    df_q.loc[np.logical_or.reduce(pr_rows), "OBS_STATUS"] = "PR"
+
+    # save data_raw file and return flag
+    df_q.to_csv(f"{raw_path}{dest_code}.csv", index=False)
+    print(f"Indicator {dest_code} succesfully calculated")
+
+    return True
+
+
+def calc_indicator_rate(func_param, orig_ind, dest_info):
+    """
+    First wrapper for rate calculations
+    :param func_param: for future use
+    :param orig_ind: indicator codes to read (numerator, denominator)
+    :param dest_info: indicator_code and path to write calculated data
+    :return: download flag: True
+    TODO: error handling
+    """
+
+    # read numerator raw data
+    num_code = orig_ind[0]
+    raw_path = dest_info["path"]
+    num_raw = pd.read_csv(f"{raw_path}{num_code}.csv", dtype=str)
+
+    # retain only codes from numerator csv headers
+    num_raw_col = num_raw.columns.values
+    rename_dict = {k: v.split(":")[0] for k, v in zip(num_raw_col, num_raw_col)}
+    num_raw.rename(columns=rename_dict, inplace=True)
+
+    # retain only codes from indicator column
+    num_raw.loc[:, "INDICATOR"] = num_raw.INDICATOR.apply(lambda x: x.split(":")[0])
+
+    # read denominator raw data
+    den_code = orig_ind[1]
+    den_raw = pd.read_csv(f"{raw_path}{den_code}.csv", dtype=str)
+
+    # retain only codes from denominator csv headers
+    den_raw_col = den_raw.columns.values
+    rename_dict = {k: v.split(":")[0] for k, v in zip(den_raw_col, den_raw_col)}
+    den_raw.rename(columns=rename_dict, inplace=True)
+
+    # calcultion index
+    calc_index = ["REF_AREA", "SEX", "TIME_PERIOD"]
+
+    # no total population: requires sum across group ages
+    den_tot = (
+        den_raw.astype({"OBS_VALUE": float})
+        .groupby(by=calc_index, sort=False)
+        .agg({"OBS_VALUE": "sum"})
+        .round(3)
+    )
+
+    # share of num against den_tot
+    share_pop = (
+        (
+            num_raw.astype({"OBS_VALUE": float}).set_index(calc_index).OBS_VALUE
+            / den_tot.OBS_VALUE
+            * 100
+        )
+        .round(2)
+        .reset_index()
+    )
+
+    # complete remaining columns: join extraction source data structure
+    share_pop = share_pop.merge(
+        num_raw.drop(columns=["OBS_VALUE", "UNIT_MEASURE", "UNIT_MULTIPLIER"]),
+        on=calc_index,
+        how="left",
+        sort=False,
+    )
+
+    # indicator destination code
+    dest_code = dest_info["code"]
+    # transform indicator column to destination code
+    share_pop["INDICATOR"].replace(num_code, dest_code, inplace=True)
+    # place DATAFLOW column index 0 (ETL requirement: Helix transforms)
+    share_pop.insert(0, "DATAFLOW", share_pop.pop("DATAFLOW"))
+    # replace unit with data dictionary info
+    share_pop["UNIT_MEASURE"] = dest_info["units"]
+    # trivial unit multiplier: zero always for a rate
+    share_pop["UNIT_MULTIPLIER"] = 0
+
+    # save data_raw file and return flag
+    share_pop.to_csv(f"{raw_path}{dest_code}.csv", index=False)
+    print(f"Indicator {dest_code} succesfully calculated")
+
+    return True
 
 
 def get_close_match_indexes(word, possibilities, n=3, cutoff=0.6):
