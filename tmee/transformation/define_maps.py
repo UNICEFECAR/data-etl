@@ -554,7 +554,7 @@ dflow_col_map = {
         "FREQ": {"type": "col", "role": "attrib", "value": "FREQ_COLL"},
         "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "DATA_SOURCE"},
         "UNIT_MULTIPLIER": {
-            "type": "const",
+            "type": "col",
             "role": "attrib",
             "value": "UNIT_MULTIPLIER",
         },
