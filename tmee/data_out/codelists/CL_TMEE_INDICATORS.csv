@@ -324,6 +324,9 @@ PV_SI_COV_UEMP,Proportion of unemployed persons receiving unemployment cash bene
 PV_SI_COV_VULN,Proportion of vulnerable population receiving social assistance cash benefit (%)
 PV_SI_COV_PENSN,Proportion of population above statutory pensionable age receiving a pension (%)
 DM_CHLD_TWO_PRNT,Percentage of children (0-17) living with two parents
+DM_CHLD_POP,Total child population aged 0-17 years (expressed in thousands)
+DM_ADOL_POP,Total adolescent population aged 10-19 years (expressed in thousands)
+DM_CHLD_POP_PT,Percentage of children as a share of the total population
 EC_HDI,Human Development Index (HDI)
 EC_NY_GDP_MKTP_KD_ZG,GDP growth (annual %)
 EC_NY_GDP_PCAP_KD_ZG,GDP per capita growth (annual %)
