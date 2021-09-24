@@ -34,6 +34,7 @@ from utils import (
     oecd_reader,
     undp_reader,
     web_scrape,
+    calculate_indicator,
 )
 from sdmx.sdmx_struc import SdmxJsonStruct
 from extraction import legacy
@@ -49,6 +50,8 @@ import re
 import filecmp
 import pandas as pd
 import numpy as np
+import sys
+import shutil
 from time import time
 
 
@@ -60,6 +63,10 @@ from time import time
 
 # start execution time of the ETL
 start_time = time()
+# open file to write terminal output
+py_terminal_file = "etl_terminal.out"
+f_t_out = open(py_terminal_file, "w")
+sys.stdout = f_t_out
 
 
 # In[ ]:
@@ -496,6 +503,7 @@ dest_dsd = Destination("TMEE")
 for index, row in api_code_addr_df.iterrows():
 
     # sanity check on first four: strip strings leading and ending spaces
+    ext_type = row["Extraction_type"].strip()
     url_endpoint = row["Address"].strip()
     indicator_code = row["Code"].strip()
     indicator_source = row["Data_Source"].strip()
@@ -521,9 +529,17 @@ for index, row in api_code_addr_df.iterrows():
 
     print(f"Dealing with indicator: {indicator_code}")
 
-    # wrap API addresses
-    api_address = wrap_api_address(
-        source_key, url_endpoint, indicator_code, country_codes_3, country_codes_m49_df
+    # wrap API addresses if Extraction is not Calculation
+    api_address = (
+        wrap_api_address(
+            source_key,
+            url_endpoint,
+            indicator_code,
+            country_codes_3,
+            country_codes_m49_df,
+        )
+        if ext_type.lower() != "calculation"
+        else url_endpoint
     )
     # oecd and estat requires api calls to dsd: if failed returns api_address None
     if not api_address:
@@ -551,8 +567,27 @@ for index, row in api_code_addr_df.iterrows():
     # File names could include the year of execution?
     if flag_download:
         print(f"Indicator {indicator_code} skipped (already downloaded)")
-    elif source_format == "pandas data reader":
 
+    elif ext_type.lower() == "calculation":
+        denominator = (
+            row["Denominator"].strip()
+            if not pd.isnull(row["Denominator"])
+            else row["Denominator"]
+        )
+        transf_params = (
+            row["Transf_Param"].strip()
+            if not pd.isnull(row["Transf_Param"])
+            else row["Transf_Param"]
+        )
+        flag_download = calculate_indicator(
+            url_endpoint,
+            transf_params,
+            row["Numerator"].strip(),
+            denominator,
+            {"path": raw_path, "code": indicator_code, "units": indicator_units},
+        )
+
+    elif source_format == "pandas data reader":
         # this could be optimized
         country_call_wb = country_codes_3.copy()
         for k in wb_exclude:
@@ -569,6 +604,7 @@ for index, row in api_code_addr_df.iterrows():
             data_raw.to_csv(raw_file, index=False)
             print(f"Indicator {indicator_code} succesfully downloaded")
             flag_download = True
+
     elif source_format == "web":
         # raw data is web scraped
         # update parameters: indicator code (all "HT_" stripped: 26/Feb/2021)
@@ -586,20 +622,18 @@ for index, row in api_code_addr_df.iterrows():
             data_raw.to_csv(raw_file, index=False)
             print(f"Indicator {indicator_code} succesfully scraped")
             flag_download = True
-    elif source_key.lower() == "estat":
 
+    elif source_key.lower() == "estat":
         flag_download = estat_reader(
             api_address, raw_path, indicator_code, sdg_api_params, estat_headers
         )
 
     elif source_key.lower() == "oecd":
-
         flag_download = oecd_reader(
             api_address, raw_path, indicator_code, oecd_api_params, compress_header
         )
 
     elif source_key.lower() == "undp":
-
         flag_download = undp_reader(
             api_address, raw_path, indicator_code, headers=compress_header
         )
@@ -948,4 +982,7 @@ print("Errors:", errors)
 # finish execution time of ETL
 total_sec = time() - start_time
 print(f"{round(total_sec/60,2)} minutes execution")
+# close and move terminal output file
+f_t_out.close()
+shutil.move(py_terminal_file, f"{trans_path}{py_terminal_file}")
 
