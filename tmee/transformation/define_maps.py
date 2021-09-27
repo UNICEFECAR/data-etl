@@ -1318,7 +1318,10 @@ dflow_const = {
         "AGE": "_T",
         "WEALTH_QUINTILE": "_T",
         "RESIDENCE": "_T",
+        "DATA_SOURCE": "UNESCO",
     },
+    "SDG4": {"DATA_SOURCE": "UNESCO"},
+    "EDU_NON_FINANCE": {"DATA_SOURCE": "UNESCO"},
     "LEGACY": {
         "WEALTH_QUINTILE": "_T",
         "RESIDENCE": "_T",
