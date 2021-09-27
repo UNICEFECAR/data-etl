@@ -715,6 +715,13 @@ for index, row in api_code_addr_df.iterrows():
         # good point to raise analysis on non-numerics (NaN, etc)
         # e.g: drop nan values if present
         data_trans.dropna(subset=["OBS_VALUE"], inplace=True)
+
+        # replace indicator_units (if binary overrides column-map hierarchy)
+        # map SDMX binary (ideally in code_mapping: TODO invert code/column mapping actions)
+        if indicator_units == "BINARY":
+            data_trans.loc[:, "UNIT_MEASURE"] = indicator_units
+            data_trans.replace({"1": "Yes", "0": "No"}, inplace=True)
+
         # check non-numeric data in observations
         filter_non_num = pd.to_numeric(data_trans.OBS_VALUE, errors="coerce").isnull()
         # eliminate non-numeric observations if units not BINARY ('YES/NO' must be kept)
