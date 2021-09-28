@@ -720,7 +720,7 @@ for index, row in api_code_addr_df.iterrows():
         # map SDMX binary (ideally in code_mapping: TODO invert code/column mapping actions)
         if indicator_units == "BINARY":
             data_trans.loc[:, "UNIT_MEASURE"] = indicator_units
-            data_trans.replace({"1": "Yes", "0": "No"}, inplace=True)
+            data_trans.OBS_VALUE.replace({"1": "Yes", "0": "No"}, inplace=True)
 
         # check non-numeric data in observations
         filter_non_num = pd.to_numeric(data_trans.OBS_VALUE, errors="coerce").isnull()
