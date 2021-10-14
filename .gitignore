@@ -204,7 +204,8 @@ content_legacy.csv
 /tmee/data_out/data_raw/*.csv
 /tmee/data_out/data_transformed/*.csv
 # track from data_out: TMEE_ETL_out --> this allows to know how the DB is updated along history
-!TMEE_ETL_out.csv
+# commented: lack of git LFS space
+# !TMEE_ETL_out.csv
 # ignore xml files from particular folders
 /tmee/data_out/data_raw/*.xml
 # ignore json files from particular folders
