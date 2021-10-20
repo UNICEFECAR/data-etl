@@ -156,38 +156,63 @@ def wrap_api_address(
 
         # split url_endpoint
         url_split = url_endpoint.split("/")
-        # get position of rest
-        rest_position = url_split.index("rest") + 1
-        # split dataflow reference (rest_position + 1) with commas and re-join with slash
-        flow_ref = "/".join(url_split[rest_position + 1].split(","))
 
-        # build base url from url_endpoint
-        url_base = "/".join(url_split[:rest_position])
-        # build api_address for datastructure call
-        dsd_api_address = f"{url_base}/datastructure/{flow_ref}"
-        # API headers: valid for structural metadata queries only
-        api_headers = {
-            "Accept": "application/vnd.sdmx.structure+json;version=1.0",
-            "Accept-Encoding": "gzip",
-        }
-        # do the datastructure call
-        data_flow_struc = SdmxJsonStruct(
-            api_request(dsd_api_address, headers=api_headers).json()
-        )
+        # flag if query! --> 8th position in url not empty
+        if url_split[7] != "":
 
-        # search num_dims and dim_num_dict (dimension key positions)
-        num_dims, dim_num_dict = data_flow_struc.get_ilo_dims()
+            if country_codes:
 
-        # build dimensions key for sdmx API data query
-        dim_key = ["" for i in range(num_dims)]
+                # Join string of all TMEE country codes (3 letters) for SDMX requests
+                country_call_3 = "+".join(country_codes.values())
 
-        # fill dimensions key for data query (only country call implemented so far)
-        if country_codes:
-            # Join string of all TMEE country codes (3 letters) for SDMX requests
-            country_call_3 = "+".join(country_codes.values())
-            dim_key[dim_num_dict["REF_AREA"]] = country_call_3
+                # query split
+                query_split = url_split[7].split(".")
 
-        api_address = url_endpoint + ".".join(dim_key)
+                # place country call at first dimension (assumption ILO)
+                query_split[0] = country_call_3
+                # rebuild query with country call
+                query_with_geo = ".".join(query_split)
+
+                # rebuild api_adress using query_with_geo
+                api_address = "/".join(url_split[:-1]) + "/" + query_with_geo
+
+            else:
+                api_address = url_endpoint
+
+        else:
+
+            # get position of rest
+            rest_position = url_split.index("rest") + 1
+            # split dataflow reference (rest_position + 1) with commas and re-join with slash
+            flow_ref = "/".join(url_split[rest_position + 1].split(","))
+
+            # build base url from url_endpoint
+            url_base = "/".join(url_split[:rest_position])
+            # build api_address for datastructure call
+            dsd_api_address = f"{url_base}/datastructure/{flow_ref}"
+            # API headers: valid for structural metadata queries only
+            api_headers = {
+                "Accept": "application/vnd.sdmx.structure+json;version=1.0",
+                "Accept-Encoding": "gzip",
+            }
+            # do the datastructure call
+            data_flow_struc = SdmxJsonStruct(
+                api_request(dsd_api_address, headers=api_headers).json()
+            )
+
+            # search num_dims and dim_num_dict (dimension key positions)
+            num_dims, dim_num_dict = data_flow_struc.get_ilo_dims()
+
+            # build dimensions key for sdmx API data query
+            dim_key = ["" for i in range(num_dims)]
+
+            # fill dimensions key for data query (only country call implemented so far)
+            if country_codes:
+                # Join string of all TMEE country codes (3 letters) for SDMX requests
+                country_call_3 = "+".join(country_codes.values())
+                dim_key[dim_num_dict["REF_AREA"]] = country_call_3
+
+            api_address = url_endpoint + ".".join(dim_key)
 
     # source_key: ESTAT - different dataflows per indicator groups by Eurostat
     elif source_key.lower() == "estat":
@@ -306,24 +331,34 @@ def wrap_api_address(
                 k for k, item in enumerate(dsd_codelists) if "_COU" in item["@id"]
             ]
 
-            # cou_pos: one element list or substring matching has failed
-            cou_pos = cou_pos[0] if len(cou_pos) == 1 else None
+            # cou_pos: one element list or search exception: _LOCATION
+            cou_pos = (
+                cou_pos
+                if len(cou_pos) == 1
+                else [
+                    k
+                    for k, item in enumerate(dsd_codelists)
+                    if "_LOCATION" in item["@id"]
+                ]
+            )
 
-            # if exit: '_COU' in item['@id'] is not exclusive and must be revised
-            if cou_pos is None:
+            # if exit: not '_COU' nor '_LOCATION' exist in item['@id']: must be revised
+            # if exit: '_COU' or '_LOCATION' are not exclusive: must be revised
+            if len(cou_pos) != 1:
+                # cou_pos: substring matching or one element list have failed
                 sys.exit(f"Identify COU Codelist for indicator {indicator_code} - OECD")
             else:
                 # filter oecd/dsd/geo in ecaro
                 cou_query = [
                     country
                     for country in [
-                        item["@value"] for item in dsd_codelists[cou_pos]["Code"]
+                        item["@value"] for item in dsd_codelists[cou_pos[0]]["Code"]
                     ]
                     if country in country_codes.values()
                 ]
                 query_split = url_split[dflow_position + 1].split(".")
                 # place cou_query at cou_pos (assumes codelist position matches dimensions)
-                query_split[cou_pos] = "+".join(cou_query)
+                query_split[cou_pos[0]] = "+".join(cou_query)
                 # rebuild api_adress using query_with_geo
                 api_address = "/".join(url_split[:-1]) + "/" + ".".join(query_split)
 
