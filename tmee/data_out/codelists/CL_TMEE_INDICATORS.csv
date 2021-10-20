@@ -17,24 +17,24 @@ MT_SDG_SUICIDE,"Suicide mortality rate (deaths per 100,000 population)"
 HT_SH_HAP_HBSAG,SDG Incidence of Hepatitis B (percentage of children under 5 years who have developed chronic HBV infection)
 HT_SH_TBS_INCD,"Incidence of tuberculosis (new cases per 100,000 average population)"
 HT_SH_HIV_INCD,"Number of new HIV infections per 1,000 uninfected population"
-HT_SH_SUD_ALCOL,"Alcohol use disorders of 12 month prevalence with 95% (percentage of population aged 15+ years, by sex)"
-MNCH_SAB,"Proportion of births attended by skilled health personnel (%, by age groups, residence and wealth quintile)"
+HT_SH_SUD_ALCOL,Alcohol use disorders of 12 month prevalence with 95% (percentage of population aged 15+ years)
+MNCH_SAB,Proportion of births attended by skilled health personnel (%)
 HVA_PMTCT_ARV_CVG,Percentage of pregnant women living with HIV receiving ARVs for PMTCT
-MNCH_ANC4,"Antenatal care 4+ visits - percentage of women (by age groups, residence and wealth quintile), attended at least four times during pregnancy by any provider"
-MNCH_PNCMOM,"Postnatal care for mothers - percentage of women (by age groups, residence and wealth quintile), who received postnatal care within 2 days of giving birth"
-MNCH_PNEUCARE,"Care seeking for children (under age 5) with symptoms of Acute Respiratory Infection -ARI- (%, by sex, residence and wealth quintile)"
+MNCH_ANC4,Antenatal care 4+ visits - percentage of women attended at least four times during pregnancy by any provider
+MNCH_PNCMOM,Postnatal care for mothers - percentage of women who received postnatal care within 2 days of giving birth
+MNCH_PNEUCARE,Care seeking for children (under age 5) with symptoms of Acute Respiratory Infection -ARI- (%)
 HT_SH_FPL_MTMM,"Women of reproductive age 15-49 years, who have family planning modern methods (%)"
 IM_DTP3,Percentage of surviving infants who received the third dose of DPT-containing vaccine
 HT_DIST79DTP3_P,Percentage of districts with DTP3 coverage 50-79%
-IM_MCV2,"Percentage of children (by age groups) who received the 2nd dose of measles-containing vaccine, as per administered in the national schedule"
+IM_MCV2,"Percentage of children who received the 2nd dose of measles-containing vaccine, as per administered in the national schedule"
 HT_DIST79MCV2_P,Percentage of districts with MCV2 coverage 50-79%
-HT_SDG_PM25,"Annual mean concentration of particles PM2.5 (ug/m3, by residence)"
+HT_SDG_PM25,Annual mean concentration of particles PM2.5 (ug/m3)
 NT_BF_EIBF,Percentage of most recent live-born children to women with a live birth in the last 2 years who were put to the breast within one hour of birth
 NT_BF_EXBF,Percentage of infants under 6 months of age who are exclusively breastfed
 NT_CF_MAD,Percentage of children age 6-23 months who had at least the minimum dietary diversity and the minimum meal frequency during the previous day
 NT_ANT_WHZ_PO2,Percentage of children under age 5 who are above two standard deviations (moderate and severe) of the median weight for height of the WHO standard - Overweight prevelance
 NT_ANT_HAZ_NE2,Percentage of children under age 5 who fall below minus two standard deviations (moderate and severe) of the median height for age of the WHO standard -(stunting prevelance)
-ECD_CHLD_36-59M_ADLT_SRC,"Percentage of children (by sex, age groups, residence and wealth quintile) with whom any adult household member has engaged in 4 or more activities to provide early stimulation and responsive care in the last 3 days"
+ECD_CHLD_36-59M_ADLT_SRC,Percentage of children with whom any adult household member has engaged in 4 or more activities to provide early stimulation and responsive care in the last 3 days
 HT_SH_SUD_TREAT,"Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders (%)"
 HT_SH_ACS_UNHC,Universal health coverage (UHC) service coverage index
 HT_ADOL_UNMETMED_NOUNMET,Percentage of self-reported unmet needs for medical examination and main reason declared: No unmet needs to declare
@@ -62,7 +62,7 @@ HT_SH_XPD_OOPC_CH_ZS,"Out-of-pocket expenditure (OOPS), as % of current health e
 HT_SH_XPD_OOPC_PP_CD,"Out-of-pocket expenditure (OOPS) per capita, PPP (current international $)"
 HT_SH_XPD_OOPC_PC_CD,Out-of-pocket expenditure (OOPS) per capita (current US$)
 HT_INS_COV,Total population covered by public and primary private health insurance (%)
-CME_TMY0T4,"Under-five deaths (number, by sex and wealth quintile)"
+CME_TMY0T4,Under-five deaths (number)
 CME_SBR,"Stillbirth rate (per 1,000 total births)"
 CME_PND,Neonatal deaths as a percentage of under-five deaths
 HT_U5DEATH_AIDS,Percentage of under-five deaths detailed by cause: AIDS
@@ -80,7 +80,12 @@ HT_U5DEATH_OTHE,Percentage of under-five deaths detailed by cause: Other
 HT_U5DEATH_CONG,Percentage of under-five deaths detailed by cause: Congenital
 HT_U5DEATH_NCDS,Percentage of under-five deaths detailed by cause: NCDs
 HT_U5DEATH_INJU,Percentage of under-five deaths detailed by cause: Injuries
-MNCH_CSEC,"C-section rate - percentage of deliveries by cesarean section (by age groups, residence and wealth quintile)"
+MNCH_CSEC,C-section rate - percentage of deliveries by cesarean section
+MNCH_MATERNAL_DEATHS,Estimated number of maternal deaths
+MNCH_SH_MMR_RISK,Lifetime risk of maternal death (1 in X)
+MNCH_SH_MMR_RISK_ZS,Lifetime risk of maternal death (%)
+MNCH_INSTDEL,Institutional deliveries - percentage of deliveries in a health facility
+MNCH_BIRTH18,Early childbearing - percentage of women (aged 20-24 years) who gave birth before age 18
 HT_SH_ACS_DTP3,Proportion of the target population with access to 3 doses of diphtheria-tetanus-pertussis (DTP3)
 HT_SH_ACS_HPV,"Proportion of the target population with access to affordable medicines and vaccines on a sustainable basis, human papillomavirus (HPV)"
 HT_SH_ACS_MCV2,Proportion of the target population with access to measles-containing-vaccine second-dose (MCV2)
@@ -93,6 +98,7 @@ HT_SH_STA_ANEM,Proportion of women aged 15-49 years with anaemia (%)
 HT_SH_STA_ANEM_NPRG,"Proportion of women aged 15-49 years with anaemia, non-pregnant (%)"
 HT_SH_STA_ANEM_PREG,"Proportion of women aged 15-49 years with anaemia, pregnant (%)"
 NT_BW_UNW,Percentage of births without a birth weight in key data sources
+HT_NCD_BMI_18A,"Prevalence of underweight among adults, BMI < 18.5 (%, age-standardized estimate)"
 HT_ADOL_MT,Adolescents (aged 10-19 years) mortality rate
 HT_SH_PRV_SMOK,Age-standardized prevalence of current tobacco use among persons aged 15 years and older
 HT_CDRT_SELF_HARM,Crude death rate caused by intentional self-harm
@@ -112,6 +118,7 @@ HVA_EPI_INF_RT_0-14,"Estimated incidence rate (new HIV infection per 1,000 uninf
 HVA_EPI_INF_RT_10-19,"Estimated incidence rate (new HIV infection per 1,000 uninfected population, adolescents aged 10-19 years)"
 HVA_PED_ART_NUM,Reported number of children (aged 0-14 years) receiving antiretroviral treatment (ART)
 HVA_PED_ART_CVG,Percentage of children (aged 0-14 years) living with HIV and receiving antiretroviral therapy (ART)
+HVA_EPI_INF_ANN_15-24,Estimated number of new HIV infections in adolescents and young people aged 15-24 years
 WS_PPL_W-SM,Proportion of population using safely managed drinking water services
 WS_PPL_S-SM,Proportion of population using safely managed sanitation services
 WS_PPL_H-B,Proportion of population with a handwashing facility with soap and water available at home
@@ -296,6 +303,66 @@ EDUNF_ROFST_L1T3,"Out-of-school rate for children, adolescents and youth of prim
 EDUNF_SAP_L2_GLAST,"Population of the official age for Last Grade of lower secondary education - ISCED 2, Last Grade - (number of persons)"
 EDUNF_PRP_L2AND3,Percentage of children enrolled in private schools of secondary education - ISCED 2 and 3
 EDUNF_STU_L2AND3_PRV,Number of children enrolled in private schools of secondary education - ISCED 2 and 3
+EDUNF_COMP_YR,Duration of compulsory education in years
+EDUNF_COMP_YR_L02T3,Total number of years of compulsory education guaranteed in legal frameworks
+EDUNF_PTR_L02,Pupil-teacher ratio in pre-primary education (headcount basis)
+EDUNF_GECER_L01,Gross early childhood enrolment ratio in early childhood educational development (%)
+EDUNF_GECER_L02,Gross early childhood enrolment ratio in pre-primary education (%)
+EDU_ECEC_PART,Participation in early childhood education (% of children aged 4 and over)
+ED_ANAR_L1,Adjusted net attendance rate for children of primary school age (%)
+ED_ANAR_L2,Adjusted net attendance rate for adolescents of lower secondary school age (%)
+ED_ANAR_L3,Adjusted net attendance rate for youth of upper secondary school age (%)
+EDU_SE_ACS_INTNT_L1,Percentage of primary schools with access to the internet for pedagogical purposes
+EDU_SE_ACS_INTNT_L2,Percentage of lower secondary schools with access to the internet for pedagogical purposes
+EDU_SE_ACS_INTNT_L3,Percentage of upper secondary schools with access to the internet for pedagogical purposes
+EDU_SE_ACS_CMPTR_L1,Percentage of primary schools with access to computers for pedagogical purposes
+EDU_SE_ACS_CMPTR_L2,Percentage of lower secondary schools with access to computers for pedagogical purposes
+EDU_SE_ACS_CMPTR_L3,Percentage of upper secondary schools with access to computers for pedagogical purposes
+EDU_SE_ACS_ELECT_L1,Percentage of primary schools with access to electricity
+EDU_SE_ACS_ELECT_L2,Percentage of lower secondary schools with access to electricity
+EDU_SE_ACS_ELECT_L3,Percentage of upper secondary schools with access to electricity
+EDU_SE_TOT_GPI_L1_REA,Adjusted gender parity index for students at the end of primary education achieving a minimum proficiency level in reading
+EDU_SE_TOT_GPI_L2_REA,Adjusted gender parity index for students at the end of lower secondary education achieving a minimum proficiency level in reading
+EDU_SE_TOT_GPI_L1_MAT,Adjusted gender parity index for students at the end of primary education achieving a minimum proficiency level in mathematics
+EDU_SE_TOT_GPI_L2_MAT,Adjusted gender parity index for students at the end of lower secondary education achieving a minimum proficiency level in mathematics
+EDU_SE_TOT_GPI_FS_LIT,Adjusted gender parity index for achieving at least a fixed level of proficiency in functional literacy skills
+EDU_SE_TOT_GPI_FS_NUM,Adjusted gender parity index for achieving at least a fixed level of proficiency in functional numeracy skills
+EDU_SE_AGP_CPRA_L1,Adjusted gender parity index for primary education completion rate
+EDU_SE_AGP_CPRA_L2,Adjusted gender parity index for lower secondary education completion rate
+EDU_SE_AGP_CPRA_L3,Adjusted gender parity index for upper secondary education completion rate
+EDU_SE_GPI_PART,Adjusted gender parity index for participation rate of youth and adults in formal and non-formal education and training in the previous 12 months
+EDU_SE_GPI_PTNPRE,Adjusted gender parity index for participation rate in organized learning (one year before the official primary entry age)
+EDU_SE_GPI_TCAQ_L02,Adjusted gender parity index for the proportion of qualified teachers in pre-primary education
+EDU_SE_GPI_TCAQ_L1,Adjusted gender parity index for the proportion of qualified teachers in primary education
+EDU_SE_GPI_TCAQ_L2,Adjusted gender parity index for the proportion of qualified teachers in lower secondary education
+EDU_SE_GPI_TCAQ_L3,Adjusted gender parity index for the proportion of qualified teachers in upper secondary education
+EDU_SE_NAP_ACHI_L1_REA,Adjusted immigration status parity index for students at the end of primary education achieving a minimum proficiency level in reading
+EDU_SE_NAP_ACHI_L2_REA,Adjusted immigration status parity index for students at the end of lower secondary education achieving a minimum proficiency level in reading
+EDU_SE_NAP_ACHI_L1_MAT,Adjusted immigration status parity index for students at the end of primary education achieving a minimum proficiency level in mathematics
+EDU_SE_NAP_ACHI_L2_MAT,Adjusted immigration status parity index for students at the end of lower secondary education achieving a minimum proficiency level in mathematics
+EDU_SE_IMP_FPOF_LIT,Adjusted immigration status parity index for achieving at least a fixed level of proficiency in functional literacy skills
+EDU_SE_IMP_FPOF_NUM,Adjusted immigration status parity index for achieving at least a fixed level of proficiency in functional numeracy skills
+EDU_SE_LGP_ACHI_L1_REA,Adjusted language test parity index for students at the end of primary education achieving a minimum proficiency level in reading
+EDU_SE_LGP_ACHI_L2_REA,Adjusted language test parity index for students at the end of lower secondary education achieving a minimum proficiency level in reading
+EDU_SE_LGP_ACHI_L1_MAT,Adjusted language test parity index for students at the end of primary education achieving a minimum proficiency level in mathematics
+EDU_SE_LGP_ACHI_L2_MAT,Adjusted language test parity index for students at the end of lower secondary education achieving a minimum proficiency level in mathematics
+EDU_SE_ALP_CPLR_L1,Adjusted location parity index for primary education completion rate
+EDU_SE_ALP_CPLR_L2,Adjusted location parity index for lower secondary education completion rate
+EDU_SE_ALP_CPLR_L3,Adjusted location parity index for upper secondary education completion rate
+EDU_SE_TOT_SESPI_L1_REA,Adjusted wealth parity index for students at the end of primary education achieving a minimum proficiency level in reading
+EDU_SE_TOT_SESPI_L2_REA,Adjusted wealth parity index for students at the end of lower secondary education achieving a minimum proficiency level in reading
+EDU_SE_TOT_SESPI_L1_MAT,Adjusted wealth parity index for students at the end of primary education achieving a minimum proficiency level in mathematics
+EDU_SE_TOT_SESPI_L2_MAT,Adjusted wealth parity index for students at the end of lower secondary education achieving a minimum proficiency level in mathematics
+EDU_SE_TOT_SESPI_FS_LIT,Adjusted wealth parity index for achieving at least a fixed level of proficiency in functional literacy skills
+EDU_SE_TOT_SESPI_FS_NUM,Adjusted wealth parity index for achieving at least a fixed level of proficiency in functional numeracy skills
+EDU_SE_TOT_RUPI_L1_REA,Adjusted location parity index for students at the end of primary education achieving a minimum proficiency level in reading
+EDU_SE_TOT_RUPI_L2_REA,Adjusted location parity index for students at the end of lower secondary education achieving a minimum proficiency level in reading
+EDU_SE_TOT_RUPI_L1_MAT,Adjusted location parity index for students at the end of primary education achieving a minimum proficiency level in mathematics
+EDU_SE_TOT_RUPI_L2_MAT,Adjusted location parity index for students at the end of lower secondary education achieving a minimum proficiency level in mathematics
+EDU_SE_AWP_CPRA_L1,Adjusted wealth parity index for primary education completion rate
+EDU_SE_AWP_CPRA_L2,Adjusted wealth parity index for lower secondary education completion rate
+EDU_SE_AWP_CPRA_L3,Adjusted wealth parity index for upper secondary education completion rate
+EDUNF_STEM_GRAD_RT,"Percentage of tertiary education graduates from Science, Technology , Engineering and Mathematics (STEM) programmes"
 PV_SI_POV_EMP1,Employed population below international poverty line (%)
 PV_SI_POV_DAY1,Proportion of population below international poverty line (%)
 PV_SI_POV_UMIC,Poverty headcount ratio at $5.50 a day (2011 PPP) (% of population)
@@ -327,6 +394,7 @@ DM_CHLD_TWO_PRNT,Percentage of children (0-17) living with two parents
 DM_CHLD_POP,Total child population aged 0-17 years (expressed in thousands)
 DM_ADOL_POP,Total adolescent population aged 10-19 years (expressed in thousands)
 DM_CHLD_POP_PT,Percentage of children as a share of the total population
+DM_SP_POP_BRTH_MF,Sex ratio at birth (male births per female births)
 EC_HDI,Human Development Index (HDI)
 EC_NY_GDP_MKTP_KD_ZG,GDP growth (annual %)
 EC_NY_GDP_PCAP_KD_ZG,GDP per capita growth (annual %)
@@ -346,6 +414,18 @@ EC_GC_DOD_TOTL_GD_ZS,"Central government debt, total (% of GDP)"
 EC_SI_POV_GINI,Gini index (World Bank estimate)
 EC_SL_UEM_TOTL_NE_ZS,"Unemployment, national estimate (% of total labor force)"
 EC_SL_UEM_TOTL_ZS,"Unemployment, modelled ILO estimate (% of total labor force)"
+GN_MTNTY_LV_BNFTS,Maternity leave benefits
+GN_PTNTY_LV_BNFTS,Paternity leave benefits
+EC_GDI,Gender Development Index (GDI)
+EC_GII,Gender Inequality Index (GII)
+EC_IQ_CPA_GNDR_XQ,CPIA gender equality rating (1=low to 6=high)
+EC_SIGI,Social Institutions and Gender Index (SIGI)
+EC_YOUTH_UNE_RT,Youth unemployment rate (% of population aged 15 to 29 years old)
+EC_EAP_RT,Labour force participation rate (%)
+EC_GNI_PCAP_PPP,Gross national income (GNI) per capita (constant 2017 PPP$)
+EC_FB_BNK_ACCSS,Proportion of adults with an account at a financial institution or mobile-money-service provider (% of adults aged 15 years and older)
+SL_DOM_TSPD,Proportion of time spent on unpaid domestic chores and care work (%)
+SG_GEN_PARL,Proportion of seats held by women in national parliaments (%)
 DM_SM_POP_REFG,Refugee population by country or territory of asylum
 DM_SM_POP_REFG_OR,Refugee population by country or territory of origin
 DM_ASYL_FRST,First time asylum applicants (persons)
@@ -359,6 +439,7 @@ CR_SH_STA_ASAIRP,"Age-standardized mortality rate attributed to household and am
 CR_EG_EGY_CLEAN,Proportion of population with primary reliance on clean fuels and technology (%)
 CR_EG_ACS_ELEC,Proportion of population with access to electricity (%)
 CR_SG_DSR_LGRGSR,Score of adoption and implementation of national DRR strategies in line with the Sendai Framework
+CR_VC_VOV_GDSD,"Percentage of population reporting having felt discriminated against, by grounds of discrimination, sex and disability"
 EC_TOT_PUB_EXP_GDP,Total public social expenditure (% of GDP)
 EC_TOT_PUB_EXP_TOT,Total public social expenditure (% of total general government expenditure)
 EC_FAM_PUB_EXP_GDP,Family public social expenditure (% of GDP)
@@ -395,6 +476,7 @@ PT_F_20-24_MRD_U18,Percentage of women aged 20-24 years married or in union befo
 PT_M_20-24_MRD_U18,Percentage of men aged 20-24 years married or in union before age 18
 PT_CHLD_5-17_LBR_ECON,Percentage of children aged 5-17 years engaged in child labour (economic activities)
 PT_CHLD_5-17_LBR_ECON-HC,Percentage of children aged 5-17 years engaged in child labour (economic activities and household chores)
+PT_ADLS_10-14_LBR_HC,Percentage of adolescents (aged 10-14 years) engaged in household chores
 JJ_VC_PRS_UNSNT,Unsentenced detainees as a proportion of overall prison population (%)
 JJ_PRISIONERS,Number of Prisoners
 JJ_PRISIONERS_RT,Rate of Prisoners
@@ -415,6 +497,15 @@ PP_SE_ADT_ACTS_PST,Proportion of youth and adults with ICT skill: creating elect
 PP_SE_ADT_ACTS_SFWR,"Proportion of youth and adults with ICT skill: finding, downloading, installing and configuring software"
 PP_SE_ADT_ACTS_TRFF,Proportion of youth and adults with ICT skill: transferring files between a computer and other devices
 PP_SE_ADT_ACTS_CMFL,Proportion of youth and adults with ICT skill: copying or moving a file or folder
+PP_SE_GPI_ICTS_ATCH,Gender parity index for the proportion of youth and adults with ICT skill: sending e-mails with attached files
+PP_SE_GPI_ICTS_CPT,Gender parity index for the proportion of youth and adults with ICT skill: using copy and paste tools to duplicate or move information within a document
+PP_SE_GPI_ICTS_CDV,Gender parity index for the proportion of youth and adults with ICT skill: connecting and installing new devices
+PP_SE_GPI_ICTS_SSHT,Gender parity index for the proportion of youth and adults with ICT skill: using basic arithmetic formula in a spreadsheet
+PP_SE_GPI_ICTS_PRGM,Gender parity index for the proportion of youth and adults with ICT skill: writing a computer program using a specialized programming language
+PP_SE_GPI_ICTS_PST,Gender parity index for the proportion of youth and adults with ICT skill: creating electronic presentations with presentation software
+PP_SE_GPI_ICTS_SFWR,"Gender parity index for the proportion of youth and adults with ICT skill: finding, downloading, installing and configuring software"
+PP_SE_GPI_ICTS_TRFF,Gender parity index for the proportion of youth and adults with ICT skill: transferring files between a computer and other devices
+PP_SE_GPI_ICTS_CMFL,Gender parity index for the proportion of youth and adults with ICT skill: copying or moving a file or folder
 PP_IT_MOB_OWN,Proportion of individuals who own a mobile telephone
 PP_ADOL_TVGM,"Adolescents (15-year-olds) who watch TV or play video games, before or after school (%)"
 PP_ADOL_INET,"Adolescents (15-year-olds) who use the internet and social networks, before or after school (%)"
@@ -422,8 +513,6 @@ PP_ADOL_ITXT,Adolescents (15-year-olds) who are high or extreme internet users (
 PP_ADOL_WORK_PAID,"Adolescents (15-year-olds) who do paid work, before or after school (%)"
 PP_ADOL_WORK_HOME,"Adolescents (15-year-olds) who do unpaid work in the home, before or after school (%)"
 ECD_CHLD_U5_LFT-ALN,"Percentage of children under age 5 (by sex, residence and wealth quintile) left alone or under the supervision of another child younger than 10 years of age for more than 1 hour at least once in the last week"
-GN_MTNTY_LV_BNFTS,Maternity leave benefits
-GN_PTNTY_LV_BNFTS,Paternity leave benefits
 DM_POP_TOT,Total population on 1 January
 DM_AVG_POP_TOT,Average total population
 DM_DPR_AGE,"Age dependency ratio (population aged 0-14 and 65 and over to population aged 15-64, %)"
