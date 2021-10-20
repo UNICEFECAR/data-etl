@@ -481,6 +481,24 @@ dflow_col_map = {
         "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
         "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
     },
+    # WHO: indicator NCD_BMI_18A
+    "csv-str-4": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "COUNTRY (CODE)"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "col", "role": "dim", "value": "SEX (CODE)"},
+        "AGE": {"type": "col", "role": "dim", "value": "AGEGROUP (CODE)"},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "YEAR (CODE)"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "Numeric"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "Comments"},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "GHO (URL)"},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
     "DF_SDG_GLH": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
         "INDICATOR": {"type": "const", "role": "dim", "value": ""},
@@ -521,8 +539,8 @@ dflow_col_map = {
         "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
     },
     # ILO uses different dataflows per indicator - Unusual, why not to leverage SDMX DSDs???
-    # this would probably need name update - September/October 2021 detected
-    "DF_SDG_ALL_SDG_0861_SEX_RT": {
+    # name update - September/October 2021 updates
+    "DF_SDG_0861_SEX_RT": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
         "INDICATOR": {"type": "const", "role": "dim", "value": ""},
         "SEX": {"type": "col", "role": "dim", "value": "SEX"},
@@ -961,6 +979,60 @@ dflow_col_map = {
         },
         "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
     },
+    # ILO youth unemployment rate
+    "DF_UNE_3EAP_SEX_AGE_GEO_RT": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "col", "role": "dim", "value": "SEX"},
+        "AGE": {"type": "col", "role": "dim", "value": "AGE"},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "col", "role": "dim", "value": "GEO"},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "NOTE_INDICATOR"},
+        "FREQ": {"type": "col", "role": "attrib", "value": "FREQ"},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "NOTE_SOURCE"},
+        "UNIT_MULTIPLIER": {"type": "col", "role": "attrib", "value": "UNIT_MULT"},
+        "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
+    },
+    # ILO labour force participation rate
+    "DF_EAP_DWAP_SEX_AGE_MTS_RT": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "col", "role": "dim", "value": "SEX"},
+        "AGE": {"type": "col", "role": "dim", "value": "AGE"},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "NOTE_INDICATOR"},
+        "FREQ": {"type": "col", "role": "attrib", "value": "FREQ"},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "NOTE_SOURCE"},
+        "UNIT_MULTIPLIER": {"type": "col", "role": "attrib", "value": "UNIT_MULT"},
+        "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
+    },
+    # OECD uses different dataflows per indicator/indicator groups
+    "sigi2019": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "LOCATION"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "const", "role": "dim", "value": ""},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "value"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
 }
 
 # Code mappings are intended to normalize data entries in our destination DSD
@@ -1011,6 +1083,7 @@ code_mapping = {
         "AGE": {"code:description": True},
         "WEALTH_QUINTILE": {"code:description": True},
         "RESIDENCE": {"code:description": True},
+        # here you should bring label since data source is coded!
         "DATA_SOURCE": {"code:description": True},
         "UNIT_MULTIPLIER": {"code:description": True},
         "UNIT_MEASURE": {"code:description": True},
@@ -1162,6 +1235,11 @@ code_mapping = {
         # },
     },
     "csv-str-3": {"RESIDENCEAREATYPE (CODE)": {"RUR": "R", "TOTL": "_T", "URB": "U"},},
+    "csv-str-4": {
+        "SEX (CODE)": {"FMLE": "F", "MLE": "M", "BTSX": "_T"},
+        # if empty age --> checked by SDMX validation
+        "AGEGROUP (CODE)": {"YEARS18-PLUS": "Y_GE18"},
+    },
     "DF_SDG_GLH": {
         "REF_AREA": country_map_49,
         "UNIT_MEASURE": {
@@ -1177,7 +1255,7 @@ code_mapping = {
         "FREQ": {"A": "1"},
     },
     "pandas data reader": {"sex": {"female": "F", "male": "M", "total": "_T"}},
-    "DF_SDG_ALL_SDG_0861_SEX_RT": {
+    "DF_SDG_0861_SEX_RT": {
         "SEX": {"SEX_F": "F", "SEX_M": "M", "SEX_T": "_T"},
         "UNIT_MEASURE": {"PT": "PCNT"},
         "FREQ": {"A": "1"},
@@ -1303,7 +1381,18 @@ code_mapping = {
         "OBS_FLAG": estat_flag_map,
     },
     # information about sex taken from indicator code @undp api doc
-    "undp": {"ind": {"137506": "_T", "136906": "F", "137006": "M"}},
+    "undp": {
+        "ind": {
+            "137506": "_T",
+            "136906": "F",
+            "137006": "M",
+            "195706": "_T",
+            "123506": "F",
+            "123606": "M",
+            "137906": "_T",
+            "68606": "_T",
+        }
+    },
     "socx_agg": {"UNIT_idx": {"PCT_GDP": "GDP_PERC", "PCT_GOV": "GOV_EXP_T"}},
     "migr_asyappctza": {
         "GEO": country_map,
@@ -1335,6 +1424,36 @@ code_mapping = {
         "UNIT": {"PC": "PCNT"},
         "FREQ": {"A": "1"},
         "OBS_FLAG": estat_flag_map,
+    },
+    # good use of age groups ILOSTAT (eg: YOUTH BANDS below)
+    "DF_UNE_3EAP_SEX_AGE_GEO_RT": {
+        "SEX": {"SEX_F": "F", "SEX_M": "M", "SEX_T": "_T"},
+        "AGE": {
+            "AGE_YTHBANDS_Y15-29": "_T",
+            "AGE_YTHBANDS_Y15-19": "Y15T19",
+            "AGE_YTHBANDS_Y20-24": "Y20T24",
+            "AGE_YTHBANDS_Y25-29": "Y25T29",
+        },
+        "GEO": {
+            "GEO_COV_NAT": "_T",
+            "GEO_COV_RUR": "R",
+            "GEO_COV_URB": "U",
+            "GEO_COV_X": "_Z",
+        },
+        "UNIT_MEASURE": {"PT": "PCNT"},
+        "FREQ": {"A": "1"},
+    },
+    "DF_EAP_DWAP_SEX_AGE_MTS_RT": {
+        "SEX": {"SEX_F": "F", "SEX_M": "M", "SEX_T": "_T"},
+        "AGE": {
+            "AGE_AGGREGATE_TOTAL": "_T",
+            "AGE_AGGREGATE_Y15-24": "Y15T24",
+            "AGE_AGGREGATE_Y25-54": "Y25T54",
+            "AGE_AGGREGATE_Y55-64": "Y55T64",
+            "AGE_AGGREGATE_YGE65": "Y_GE65",
+        },
+        "UNIT_MEASURE": {"PT": "PCNT"},
+        "FREQ": {"A": "1"},
     },
 }
 
@@ -1386,12 +1505,9 @@ dflow_const = {
     # WHO: indicator SDGSUICIDE (noted struct mod WHO: 12 march 2021, age groups droped)
     "csv-str-2": {"AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
     "csv-str-3": {"SEX": "_T", "AGE": "_T", "WEALTH_QUINTILE": "_T"},
+    "csv-str-4": {"WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
     "pandas data reader": {"AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
-    "DF_SDG_ALL_SDG_0861_SEX_RT": {
-        "AGE": "_T",
-        "WEALTH_QUINTILE": "_T",
-        "RESIDENCE": "_T",
-    },
+    "DF_SDG_0861_SEX_RT": {"AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
     "UNPD_DEMOGRAPHY": {"WEALTH_QUINTILE": "_T"},
     "web": {
         "SEX": "_T",
@@ -1490,6 +1606,15 @@ dflow_const = {
         "WEALTH_QUINTILE": "_T",
         "RESIDENCE": "_T",
         "DATA_SOURCE": "EUROSTAT",
+    },
+    "DF_UNE_3EAP_SEX_AGE_GEO_RT": {"WEALTH_QUINTILE": "_T"},
+    "DF_EAP_DWAP_SEX_AGE_MTS_RT": {"WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
+    "sigi2019": {
+        "SEX": "_T",
+        "AGE": "_T",
+        "WEALTH_QUINTILE": "_T",
+        "RESIDENCE": "_T",
+        "DATA_SOURCE": "OECD",
     },
 }
 
