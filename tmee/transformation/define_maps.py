@@ -1425,6 +1425,17 @@ code_mapping = {
         "FREQ": {"A": "1"},
         "OBS_FLAG": estat_flag_map,
     },
+    "EDUCATION": {
+        "REF_AREA": {"code:description": True},
+        "INDICATOR": {"code:description": True},
+        "SEX": {"code:description": True},
+        "WEALTH_QUINTILE": {"code:description": True},
+        "RESIDENCE": {"code:description": True},
+        "UNIT_MEASURE": {"code:description": True},
+        "UNIT_MULTIPLIER": {"code:description": True},
+        "FREQ_COLL": {"code:description": True},
+        "OBS_STATUS": {"code:description": True},
+    },
     # good use of age groups ILOSTAT (eg: YOUTH BANDS below)
     "DF_UNE_3EAP_SEX_AGE_GEO_RT": {
         "SEX": {"SEX_F": "F", "SEX_M": "M", "SEX_T": "_T"},
@@ -1607,6 +1618,7 @@ dflow_const = {
         "RESIDENCE": "_T",
         "DATA_SOURCE": "EUROSTAT",
     },
+    "EDUCATION": {"AGE": "_T"},
     "DF_UNE_3EAP_SEX_AGE_GEO_RT": {"WEALTH_QUINTILE": "_T"},
     "DF_EAP_DWAP_SEX_AGE_MTS_RT": {"WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
     "sigi2019": {
