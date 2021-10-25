@@ -393,8 +393,11 @@ PV_SI_COV_PENSN,Proportion of population above statutory pensionable age receivi
 DM_CHLD_TWO_PRNT,Percentage of children (0-17) living with two parents
 DM_CHLD_POP,Total child population aged 0-17 years (expressed in thousands)
 DM_ADOL_POP,Total adolescent population aged 10-19 years (expressed in thousands)
+DM_TOT_POP_PROSP,Total population prospects (expressed in thousands)
 DM_CHLD_POP_PT,Percentage of children as a share of the total population
 DM_SP_POP_BRTH_MF,Sex ratio at birth (male births per female births)
+DM_ADOL_YOUTH_POP,"Total adolescent, young and youth population aged 10-24 years (expressed in thousands)"
+DM_REPD_AGE_POP,Total population of reproductive age 15-49 years (expressed in thousands)
 EC_HDI,Human Development Index (HDI)
 EC_NY_GDP_MKTP_KD_ZG,GDP growth (annual %)
 EC_NY_GDP_PCAP_KD_ZG,GDP per capita growth (annual %)
@@ -512,22 +515,22 @@ PP_ADOL_INET,"Adolescents (15-year-olds) who use the internet and social network
 PP_ADOL_ITXT,Adolescents (15-year-olds) who are high or extreme internet users (%)
 PP_ADOL_WORK_PAID,"Adolescents (15-year-olds) who do paid work, before or after school (%)"
 PP_ADOL_WORK_HOME,"Adolescents (15-year-olds) who do unpaid work in the home, before or after school (%)"
-ECD_CHLD_U5_LFT-ALN,"Percentage of children under age 5 (by sex, residence and wealth quintile) left alone or under the supervision of another child younger than 10 years of age for more than 1 hour at least once in the last week"
-DM_POP_TOT,Total population on 1 January
-DM_AVG_POP_TOT,Average total population
-DM_DPR_AGE,"Age dependency ratio (population aged 0-14 and 65 and over to population aged 15-64, %)"
-DM_DPR_CHD,"Child dependency ratio (population aged 0-14 to population aged 15-64, %)"
-DM_DPR_OLD,"Old-age dependency ratio (population aged 65 and over to population aged 15-64, %)"
-DM_IMG,Number of immigrants
-DM_EMG,Number of emigrants
+ECD_CHLD_U5_LFT-ALN,Percentage of children under age 5 left alone or under the supervision of another child younger than 10 years of age for more than 1 hour at least once in the last week
+DM_POP_TOT,"Total population at the beginning of the year (persons), 1989-2019"
+DM_AVG_POP_TOT,"Average total population (persons), 1989-2018"
+DM_DPR_AGE,"Age dependency ratio (% of population aged 0-14 and 65 and over, to population aged 15-64), 1989-2019"
+DM_DPR_CHD,"Child dependency ratio (% of population aged 0-14, to population aged 15-64), 1989-2019"
+DM_DPR_OLD,"Old-age dependency ratio (% of population aged 65 and over, to population aged 15-64), 1989-2019"
+DM_IMG,"Number of immigrants, 1989-2018"
+DM_EMG,"Number of emigrants, 1989-2018"
 DM_NEXT_MG,Net external migration
-DM_NEXTRT_MG,"Crude rate of net migration (per 100,000 average population)"
+DM_NEXTRT_MG,"Crude rate of net migration (per 100,000 average population), 1989-2018"
 DM_MRG,Number of marriages
 DM_MRGRT,"Crude marriage rate (per 1,000 average population)"
-DM_DIV,Number of divorces
-DM_CRDIVRT,"Crude divorce rate (per 1,000 average population)"
+DM_DIV,"Number of divorces, 1989-2018"
+DM_CRDIVRT,"Crude divorce rate (per 1,000 average population), 1989-2018"
 DM_GNDIVRT,General divorce rate (per 100 marriages)
-DM_CHLD_DIV,Number of children affected by parental divorce
+DM_CHLD_DIV,"Number of children affected by parental divorce, 1989-2018"
 FT_BRTS_LIVE,Number of live births by sex and by mother's age
 FT_BRTS_LIVE_LOW,"Number of low-weight births (live births under 2,500 grams)"
 FT_BRTS_LIVE_LOWRT,"Proportion of live births under 2,500 grams (births under 2,500 grams as % of total live births)"
@@ -556,7 +559,7 @@ PT_CHLD_NO_PARENTAL_CARE_INGUARDIAN,Children left without parental care by type 
 PT_CHLD_NO_PARENTAL_CARE_ADOPTED,Children left without parental care by type of placement: were adopted (during the year)
 PT_CHLD_INFORMALCARE,Total number of children in formal care (at the end of the year)
 PT_CHLD_INRESIDENTIAL,Total number of children in residential care (at the end of the year) - Includes persons aged 18 years old and over in some countries
-PT_CHLD_DISAB_PUBLIC,"Number of children with disabilities in public residential care - all types of institutions (at the end of the year, by sex and age groups)"
+PT_CHLD_DISAB_PUBLIC,Number of children with disabilities in public residential care - all types of institutions (at the end of the year)
 PT_CHLD_NO_PARENTAL_CARE_PUBLIC,"Number of children without parental care in public residential care (at the end of the year, by age groups)"
 PT_CHLD_ININFANTHOME,Number of children in infant homes (at the end of the year)
 PT_CHLD_INBOARDING,Number of children in general boarding schools - under the full state support (at the end of the year)
@@ -580,7 +583,7 @@ PT_CHLD_LEFTFOSTER_OTHER,Children who left foster care by reason: other (during 
 PT_CHLD_LEFTFOSTER_INFAMILY,Children who left foster care by reason: placed into other foster family (during the year)
 PT_CHLD_CARED_BY_FOSTER,Total number of children cared for by foster parents (at the end of the year)
 PT_CHLD_DISAB_FOSTER,Number of children with disabilities in foster care (at the end of the year)
-PT_CHLD_GUARDIAN,"Total number of children who entered guardian care (during the year, by sex and age groups)"
+PT_CHLD_GUARDIAN,Total number of children who entered guardian care (during the year)
 PT_CHLD_GUARDIAN_LEFT,Total number of children who left guardian care (during the year)
 PT_CHLD_GUARDIAN_LEFT_RETURNED,Children who left guardian care by reason: returned to their biological parents (during the year)
 PT_CHLD_GUARDIAN_LEFT_INSTITUTION,Children who left guardian care by reason: entered child care/educational institutions (during the year)
@@ -661,14 +664,14 @@ SP_PENSIONER_EARLY,Total number of early retirement pensioners
 SP_PENSIONER_VETERAN,"Total number of veteran, merit and other pensioners"
 SP_PENSION_VALUE,Average value of pensions (national currency)
 SP_PENSION_VALUE_OLD,Average value of old age pensions (national currency)
-SP_PENSION_VALUE_DISAB,Average value of  disability  pensions (national currency)
-SP_PENSION_VALUE_DISAB_CHLD,Average value of  disability  pensions for children (national currency)
-SP_PENSION_VALUE_SURVIVOR,Average value of survivors'  pensions (national currency)
+SP_PENSION_VALUE_DISAB,Average value of disability pensions (national currency)
+SP_PENSION_VALUE_DISAB_CHLD,Average value of disability pensions for children (national currency)
+SP_PENSION_VALUE_SURVIVOR,Average value of survivors' pensions (national currency)
 SP_PENSION_VALUE_ORPHAN,Average value of orphan's pensions or allowances (national currency)
 SP_PENSION_VALUE_MIN,Average minimum pension (national currency)
-DM_CHLDRT_DIV,"Rate of children affected by parental divorce (per 1,000 average population aged 0-17)"
-DM_MRG_AGE,"Average age at first marriage (years, by sex)"
-DM_POP_PROP,"Proportion of total population (%, by age groups)"
+DM_CHLDRT_DIV,"Rate of children affected by parental divorce (per 1,000 average population aged 0-17), 1989-2018"
+DM_MRG_AGE,"Average age at first marriage (years), 1989-2018"
+DM_POP_PROP,"Proportion of total population (%), 1989-2019"
 FT_BRTS_AGE,Mean age of women at the birth of first child (years)
 FT_BRTS_LIVERT_U20,Proportion of births to mothers under age 20 (as % of total live births)
 FT_FRATE,Total fertility rate (number of children per woman aged 15-49)
