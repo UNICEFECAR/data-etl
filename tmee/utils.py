@@ -523,7 +523,7 @@ def calculate_indicator(func_name, func_param, numerator, denominator, dest_dict
 
 def calc_age_sum(age_limits, orig_ind, dest_info):
     """
-    First wrapper for group age calculations
+    First wrapper for group age calculations - Accomodates loop for age disaggregation
     :param age_limits: string with age limits
     :param orig_ind: original indicator codes to read
     :param dest_info: indicator_code and path to write calculated data
@@ -531,12 +531,8 @@ def calc_age_sum(age_limits, orig_ind, dest_info):
     TODO: error handling
     """
 
-    # year start
-    y0_1 = age_limits.split(";")
-    age_groups = [
-        "Y0" + str(i) if ((i < 10) & (i != 0)) else "Y" + str(i)
-        for i in range(int(y0_1[0]), int(y0_1[1]) + 1)
-    ]
+    # configuration of age disaggregation
+    age_disagg = age_limits.split(",")
 
     # read indicator raw data (numerator only)
     org_code = orig_ind[0]
@@ -556,45 +552,62 @@ def calc_age_sum(age_limits, orig_ind, dest_info):
         obs_status_notnan
     ].OBS_STATUS.apply(lambda x: x.split(":")[0])
 
-    # query data_raw years
-    query_y = "AGE in @age_groups"
-    df_q = (
-        data_raw.query(query_y)
-        .astype({"OBS_VALUE": float})
-        .groupby(by=["REF_AREA", "SEX", "TIME_PERIOD"], sort=False)
-        .agg({"OBS_VALUE": "sum"})
-        .round(3)
-    ).reset_index()
+    # age calculations loop
+    df_out = None
+    for age_group in age_disagg:
+        # year start/end: empty year assumes UNPD limit --> [0;100]
+        y0_1 = age_group.strip(" ()").split(";")
+        y0_1[0] = y0_1[0] if y0_1[0] != "" else "0"
+        y0_1[1] = y0_1[1] if y0_1[1] != "" else "100"
+        single_ages = [
+            "Y0" + str(i) if ((i < 10) & (i != 0)) else "Y" + str(i)
+            for i in range(int(y0_1[0]), int(y0_1[1]) + 1)
+        ]
 
-    # keep unit multiplier as in the original source
-    # commented alternative below: bring unit multiplier into obs_value
-    # Unit Multiplier must be rewriten to zero (if incorporated into obs_value)
+        # query data_raw years
+        query_y = "AGE in @single_ages"
+        df_q = (
+            data_raw.query(query_y)
+            .astype({"OBS_VALUE": float})
+            .groupby(by=["REF_AREA", "SEX", "TIME_PERIOD"], sort=False)
+            .agg({"OBS_VALUE": "sum"})
+            .round(3)
+        ).reset_index()
 
-    # u_mult = data_raw.UNIT_MULTIPLIER.unique()[0]
-    # u_mult = int(u_mult.split(":")[0]) if not pd.isnull(u_mult) else 0
-    # df_q.loc[:, "OBS_VALUE"] = (df_q.OBS_VALUE * 10 ** int(u_mult)).astype(int)
+        # keep unit multiplier as in the original source
+        # commented alternative below: bring unit multiplier into obs_value
+        # Unit Multiplier must be rewriten to zero (if incorporated into obs_value)
 
-    # add age group accordingly
-    df_q["AGE"] = f"Y{y0_1[0]}T{y0_1[1]}"
+        # u_mult = data_raw.UNIT_MULTIPLIER.unique()[0]
+        # u_mult = int(u_mult.split(":")[0]) if not pd.isnull(u_mult) else 0
+        # df_q.loc[:, "OBS_VALUE"] = (df_q.OBS_VALUE * 10 ** int(u_mult)).astype(int)
+
+        # add age group accordingly
+        df_q["AGE"] = f"Y{y0_1[0]}T{y0_1[1]}" if y0_1[1] != "100" else f"Y_GE{y0_1[0]}"
+        # replace Y_GE0 as _T
+        df_q.AGE.replace({"Y_GE0": "_T"}, inplace=True)
+
+        # concat output
+        df_out = pd.concat([df_out, df_q], ignore_index=True)
 
     # complete data raw structure
     for col in [col for col in data_raw.columns if len(data_raw[col].unique()) == 1]:
-        df_q[col] = data_raw[col].unique()[0]
+        df_out[col] = data_raw[col].unique()[0]
 
     # indicator destination code
     dest_code = dest_info["code"]
     # transform indicator column to destination code
-    df_q["INDICATOR"].replace(org_code, dest_code, inplace=True)
+    df_out["INDICATOR"].replace(org_code, dest_code, inplace=True)
     # place DATAFLOW column index 0 (ETL requirement: Helix transforms)
-    df_q.insert(0, "DATAFLOW", df_q.pop("DATAFLOW"))
+    df_out.insert(0, "DATAFLOW", df_out.pop("DATAFLOW"))
 
     # unpd obs_status projection
     pr_years = data_raw[data_raw.OBS_STATUS == "PR"].TIME_PERIOD.unique()
-    pr_rows = [df_q.TIME_PERIOD == yr for yr in pr_years]
-    df_q.loc[np.logical_or.reduce(pr_rows), "OBS_STATUS"] = "PR"
+    pr_rows = [df_out.TIME_PERIOD == yr for yr in pr_years]
+    df_out.loc[np.logical_or.reduce(pr_rows), "OBS_STATUS"] = "PR"
 
     # save data_raw file and return flag
-    df_q.to_csv(f"{raw_path}{dest_code}.csv", index=False)
+    df_out.to_csv(f"{raw_path}{dest_code}.csv", index=False)
     print(f"Indicator {dest_code} succesfully calculated")
 
     return True
@@ -603,12 +616,15 @@ def calc_age_sum(age_limits, orig_ind, dest_info):
 def calc_indicator_rate(func_param, orig_ind, dest_info):
     """
     First wrapper for rate calculations
-    :param func_param: for future use
+    :param func_param: use to query the proper age groups so far
     :param orig_ind: indicator codes to read (numerator, denominator)
     :param dest_info: indicator_code and path to write calculated data
     :return: download flag: True
     TODO: error handling
     """
+
+    # age groups query
+    age_groups = func_param.split(",")
 
     # read numerator raw data
     num_code = orig_ind[0]
@@ -635,19 +651,21 @@ def calc_indicator_rate(func_param, orig_ind, dest_info):
     # calcultion index
     calc_index = ["REF_AREA", "SEX", "TIME_PERIOD"]
 
-    # no total population: requires sum across group ages
-    den_tot = (
-        den_raw.astype({"OBS_VALUE": float})
-        .groupby(by=calc_index, sort=False)
-        .agg({"OBS_VALUE": "sum"})
-        .round(3)
-    )
+    # age groups to query
+    y_num = age_groups[0].strip(" ()")
+    y_den = age_groups[1].strip(" ()")
 
     # share of num against den_tot
     share_pop = (
         (
-            num_raw.astype({"OBS_VALUE": float}).set_index(calc_index).OBS_VALUE
-            / den_tot.OBS_VALUE
+            num_raw.query("AGE == @y_num")
+            .astype({"OBS_VALUE": float})
+            .set_index(calc_index)
+            .OBS_VALUE
+            / den_raw.query("AGE == @y_den")
+            .astype({"OBS_VALUE": float})
+            .set_index(calc_index)
+            .OBS_VALUE
             * 100
         )
         .round(2)
