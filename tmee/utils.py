@@ -9,15 +9,24 @@ import requests
 import pandas as pd
 import pandasdmx as pdsdmx
 import numpy as np
+import nltk
 import re
+import sys
 import warnings
 from pandas_datareader import wb
 from bs4 import BeautifulSoup
 from io import BytesIO, StringIO
-from difflib import SequenceMatcher
+from difflib import SequenceMatcher, get_close_matches
 from heapq import nlargest
 from time import sleep
 from zipfile import ZipFile
+
+# nltk library stopwords
+nltk.download("stopwords")
+stop_words_english = nltk.corpus.stopwords.words("english")
+# nltk library lemmatization
+nltk.download("wordnet")
+lemmatizer = nltk.wordnet.WordNetLemmatizer()
 
 
 def get_API_code_address_etc(excel_data_dict):
@@ -311,6 +320,72 @@ def web_scrape(raw_html, source_key=None):
     data_df["country"] = data_df.country.str.lower()
 
     return data_df
+
+
+def web_scrape_un_treaty(raw_html, iso_3_extract, iso_3_map):
+    """
+    Web scraping (data in table)
+    :param raw_html: this is a satisfactory url requests response (HTML content)
+    :param iso_3_extract: dictionary with ECARO country codes
+    :param iso_3_map: country names / iso3 map
+    :return: pandas dataframe with data
+    """
+    # Soupify html
+    soup = BeautifulSoup(raw_html.text, "html.parser")
+    # Extract target table by class
+    target_table = soup.find_all(
+        "table",
+        {"class": "table table-striped table-bordered table-hover table-condensed"},
+    )
+    # Feed target table by HTML position into pandas: specify [0] to get actual df
+    data_df = pd.read_html(str(target_table[0]), header=0)[0]
+    # take out numbers and not significant strings, apply bagOfWords to country name
+    data_df.loc[:, "Participant"] = data_df.Participant.str.replace(
+        "(?i)\d+|republic|state|democratic", "", regex=True
+    ).apply(bagOfWords)
+    # get UN description for ECARO codes (replace nulls with UNICEF description)
+    ecaro_names_df = iso_3_map[
+        iso_3_map.CountryIso3.str.contains("|".join(iso_3_extract.values()))
+    ].reset_index(drop=True)
+    ecaro_names_df.loc[
+        ecaro_names_df.CountryDescUN.isnull(), "CountryDescUN"
+    ] = ecaro_names_df[ecaro_names_df.CountryDescUN.isnull()].CountryDesc.values
+    # take out numbers and not significant strings, apply bagOfWords to ecaro names
+    ecaro_names_df.loc[:, "CountryDescUN"] = ecaro_names_df.CountryDescUN.str.replace(
+        "(?i)\d+|republic|state|democratic", "", regex=True
+    ).apply(bagOfWords)
+    # drop duplicates ISO3:CountryUNdesc combinations
+    set_iso_desc = ["CountryIso3", "CountryDescUN"]
+    logic_dupli = ecaro_names_df.duplicated(subset=set_iso_desc)
+    un_ecaro_dict = (
+        ecaro_names_df.drop(ecaro_names_df[logic_dupli].index)
+        .set_index(set_iso_desc[1])
+        .to_dict()[set_iso_desc[0]]
+    )
+    # check unique ECARO codes match unique UN names
+    if len(un_ecaro_dict) != len(iso_3_extract):
+        sys.exit("Validate UN unique description of iso3 country codes")
+    # now use refactor country names to get closer match
+    ecaro_in_treaty = [
+        word
+        for word in un_ecaro_dict
+        if len(get_close_matches(word, data_df.Participant.values, n=1, cutoff=0.65))
+        > 0
+    ]
+
+    # build output dataframe ('Yes' if present)
+    data_series = pd.Series(index=un_ecaro_dict.values())
+    for word in ecaro_in_treaty:
+        data_series.loc[un_ecaro_dict[word]] = "Yes"
+    # fill NaN with 'No
+    data_series.fillna("No", inplace=True)
+    # convert series to dataframe and add time period to the current year
+    data_return_df = data_series.reset_index().rename(
+        columns={"index": "country", 0: "value"}
+    )
+    data_return_df["year"] = pd.Timestamp.today().strftime("%Y")
+
+    return data_return_df
 
 
 def estat_reader(address, raw_path, ind_code, params=None, headers=None):
@@ -620,6 +695,7 @@ def calc_indicator_rate(func_param, orig_ind, dest_info):
     :param orig_ind: indicator codes to read (numerator, denominator)
     :param dest_info: indicator_code and path to write calculated data
     :return: download flag: True
+    TODO: rate of population for different age groups in numerator
     TODO: error handling
     """
 
@@ -638,6 +714,8 @@ def calc_indicator_rate(func_param, orig_ind, dest_info):
 
     # retain only codes from indicator column
     num_raw.loc[:, "INDICATOR"] = num_raw.INDICATOR.apply(lambda x: x.split(":")[0])
+    # retain only codes from age column
+    num_raw.loc[:, "AGE"] = num_raw.AGE.apply(lambda x: x.split(":")[0])
 
     # read denominator raw data
     den_code = orig_ind[1]
@@ -648,34 +726,41 @@ def calc_indicator_rate(func_param, orig_ind, dest_info):
     rename_dict = {k: v.split(":")[0] for k, v in zip(den_raw_col, den_raw_col)}
     den_raw.rename(columns=rename_dict, inplace=True)
 
+    # retain only codes from age column
+    den_raw.loc[:, "AGE"] = den_raw.AGE.apply(lambda x: x.split(":")[0])
+
     # calcultion index
+    # TODO: how to accomodate for more than one age group?
     calc_index = ["REF_AREA", "SEX", "TIME_PERIOD"]
 
-    # age groups to query
+    # age groups to query (assumes one per num and one per den only)
     y_num = age_groups[0].strip(" ()")
     y_den = age_groups[1].strip(" ()")
 
     # share of num against den_tot
     share_pop = (
         (
-            num_raw.query("AGE == @y_num")
-            .astype({"OBS_VALUE": float})
-            .set_index(calc_index)
-            .OBS_VALUE
-            / den_raw.query("AGE == @y_den")
-            .astype({"OBS_VALUE": float})
-            .set_index(calc_index)
-            .OBS_VALUE
+            # '==' could be replaced by 'in': more than one age group
+            num_raw.query("AGE == @y_num").astype({"OBS_VALUE": float})
+            # calc_index: works for only one age group
+            .set_index(calc_index).OBS_VALUE
+            # '==' could be replaced by 'in': more than one age group
+            / den_raw.query("AGE == @y_den").astype({"OBS_VALUE": float})
+            # calc_index: works for only one age group
+            .set_index(calc_index).OBS_VALUE
             * 100
         )
         .round(2)
         .reset_index()
     )
 
+    # add age group from numerator (assumes denominator is total)
+    share_pop["AGE"] = y_num
+
     # complete remaining columns: join extraction source data structure
     share_pop = share_pop.merge(
         num_raw.drop(columns=["OBS_VALUE", "UNIT_MEASURE", "UNIT_MULTIPLIER"]),
-        on=calc_index,
+        on=[*calc_index, "AGE"],
         how="left",
         sort=False,
     )
@@ -696,6 +781,15 @@ def calc_indicator_rate(func_param, orig_ind, dest_info):
     print(f"Indicator {dest_code} succesfully calculated")
 
     return True
+
+
+def bagOfWords(x):
+    pattern = "\w{2,}"
+    bag_of_words = re.findall(pattern, str(x))
+    bag_of_words = [word.lower() for word in bag_of_words]
+    bag_of_words = [word for word in bag_of_words if word not in stop_words_english]
+    bag_of_words = [lemmatizer.lemmatize(word) for word in bag_of_words]
+    return " ".join(bag_of_words)
 
 
 def get_close_match_indexes(word, possibilities, n=3, cutoff=0.6):
