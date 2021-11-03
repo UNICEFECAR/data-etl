@@ -3,7 +3,7 @@
 
 # #### TransMonEE Indicators - API (Helix and UIS) sources populated in Data Dictionary - LEGACY DATA ETL
 # In this notebook, I will loop along these indicators for extraction and transformation.
-#
+# 
 # **Numbers (updated with dictionary v8):**
 # * Total in WH: 598 indicators
 # * Helix sources (70 indicators)
@@ -34,6 +34,7 @@ from utils import (
     oecd_reader,
     undp_reader,
     web_scrape,
+    web_scrape_un_treaty,
     calculate_indicator,
 )
 from sdmx.sdmx_struc import SdmxJsonStruct
@@ -47,6 +48,7 @@ from data_in.legacy_data.prepare_mapping import (
 )
 import os
 import re
+import roman
 import filecmp
 import pandas as pd
 import numpy as np
@@ -185,8 +187,8 @@ m49_codes_df = pd.read_csv(m49_codes_file, dtype=str)
 
 # add country M49 codes to country_codes_df
 country_codes_m49_df = country_codes_df.merge(
-    m49_codes_df[["M49 Code", "ISO-alpha3 Code"]].rename(
-        columns={"ISO-alpha3 Code": "CountryIso3"}
+    m49_codes_df[["M49 Code", "ISO-alpha3 Code", "Country or Area"]].rename(
+        columns={"ISO-alpha3 Code": "CountryIso3", "Country or Area": "CountryDescUN"}
     ),
     on="CountryIso3",
     how="left",
@@ -353,9 +355,9 @@ raw_path = "./data_out/data_raw/"
 
 # ##### Parse all legacy indicators from Excel `source_file`
 # There's one spreadsheet with contents and 6 spreadsheets containing data.
-#
+# 
 # The loop calls `parse_legacy` function for different spreadsheets.
-#
+# 
 # **Dev improvement**: `parse_legacy` could get the number of sheets directly from excel file and loop inside.
 
 # In[ ]:
@@ -383,13 +385,13 @@ else:
 
 
 # **Warning Messages**: Education legacy indicators specify seasons instead of years, e.g: 2005/06
-#
+# 
 # SDMX accepts only a year as time dimension. Seasons are kept in `COVERAGE_TIME` attribute as suggested by *Daniele*.
 # ##### Transformation of legacy data into an SDMX structure
 # It is performed on `legacy_df` dataframe, and placed in this [**Section**](#Transformation-of-Legacy-Indicators-into-an-SDMX-structure).
-#
-#
-#
+# 
+# 
+# 
 
 # #### TransMonEE UIS API Key
 
@@ -457,6 +459,16 @@ who_web_params = {
 }
 
 
+# In[ ]:
+
+
+# parameters: web scrape UN treaties
+un_web_params = {
+    "src": "TREATY",
+    "clang": "_en",
+}
+
+
 # ##### API Extraction: headers
 
 # In[ ]:
@@ -501,7 +513,7 @@ dest_dsd = Destination("TMEE")
 
 # actual loop (EXTRACT AND TRANSFORM)
 for index, row in api_code_addr_df.iterrows():
-
+    
     # sanity check on first four: strip strings leading and ending spaces
     ext_type = row["Extraction_type"].strip()
     url_endpoint = row["Address"].strip()
@@ -526,9 +538,9 @@ for index, row in api_code_addr_df.iterrows():
     source_key = re.findall(pattern, indicator_source)[0].strip()
     # type of extraction response (json, sdmx, etc) from data dictionary
     source_format = row["Content_type"].strip()
-
+    
     print(f"Dealing with indicator: {indicator_code}")
-
+        
     # wrap API addresses if Extraction is not Calculation
     api_address = (
         wrap_api_address(
@@ -560,6 +572,8 @@ for index, row in api_code_addr_df.iterrows():
         api_headers = compress_header
     elif source_format == "web":
         api_params = who_web_params
+    elif source_format == "web-un":
+        api_params = un_web_params
 
     # Skip extraction if indicator already downloaded
     flag_download = os.path.exists(f"{raw_path}{indicator_code}.csv")
@@ -623,6 +637,30 @@ for index, row in api_code_addr_df.iterrows():
             print(f"Indicator {indicator_code} succesfully scraped")
             flag_download = True
 
+    elif source_format == "web-un":
+        # raw data is web scraped from UN treaties
+        # update parameters from source name to point UN treatie                        
+        treaty_index = indicator_source.split(":")[1].strip()                
+        param_dict = {
+            "mtdsg_no": treaty_index,
+            "chapter": roman.fromRoman(treaty_index.split("-")[0]),
+        }
+        api_params.update(param_dict)
+        # request html page (static extraction)
+        indicator_raw = api_request(api_address, api_params)
+        # if requests satisfactory
+        if indicator_raw.status_code == 200:
+            print(f"Indicator {indicator_code} HTML succesfully accessed for scraping")
+            # raw data is scraped into pandas df
+            data_raw = web_scrape_un_treaty(
+                indicator_raw, country_codes_3, country_codes_m49_df
+            )
+            # write data_raw to raw file
+            raw_file = f"{raw_path}{indicator_code}.csv"
+            data_raw.to_csv(raw_file, index=False)
+            print(f"Indicator {indicator_code} succesfully scraped")
+            flag_download = True
+
     elif source_key.lower() == "estat":
         flag_download = estat_reader(
             api_address, raw_path, indicator_code, sdg_api_params, estat_headers
@@ -649,7 +687,7 @@ for index, row in api_code_addr_df.iterrows():
                 f.write(indicator_raw.content)
             print(f"Indicator {indicator_code} succesfully downloaded")
             flag_download = True
-
+    
     # Transform raw_data if it hasn't occured before
     flag_transform = os.path.exists(f"{trans_path}{indicator_code}.csv")
 
@@ -721,7 +759,7 @@ for index, row in api_code_addr_df.iterrows():
         if indicator_units == "BINARY":
             data_trans.loc[:, "UNIT_MEASURE"] = indicator_units
             data_trans.OBS_VALUE.replace({"1": "Yes", "0": "No"}, inplace=True)
-
+        
         # check non-numeric data in observations
         filter_non_num = pd.to_numeric(data_trans.OBS_VALUE, errors="coerce").isnull()
         # eliminate non-numeric observations if units not BINARY ('YES/NO' must be kept)
@@ -749,7 +787,7 @@ for index, row in api_code_addr_df.iterrows():
 
 # #### Transformation of Legacy Indicators into an SDMX structure
 # For this purpose we need some indicators *metadata* that allows the mappings.
-#
+# 
 # **Dev note**: data dictionary is not leveraged for legacy data so far. *Metadata* is prepared in a separated csv file `content_legacy_codes_v3`, located in `legacy_data` folder (and read by `define_maps.py` in `transformation` folder)
 
 # In[ ]:
@@ -784,7 +822,7 @@ else:
     # pre-view duplicates in legacy data
     if dflow_actual.check_duplicates(data_raw):
         print(f"Legacy data contains duplicates")
-
+    
     # map the codes - normalization - from legacy dataframe
     dflow_actual.map_codes(data_raw)
 
@@ -792,7 +830,7 @@ else:
     constants = {}
     # map the columns
     data_map = dflow_actual.map_dataframe(data_raw, constants)
-
+    
     # save transformed indicator info independently (through pandas)
     data_trans = pd.DataFrame(columns=dest_dsd.get_csv_columns(), dtype=str)
     data_trans = data_trans.append(data_map)
@@ -846,15 +884,15 @@ else:
 
 # #### File output ETL
 # csv lines counted for the first SDMX upload: header + 235927
-#
+# 
 # csv lines counted for the second SDMX upload: header + 241548
-#
+# 
 # csv lines counted for the third SDMX upload: header + 285646
-#
+# 
 # csv lines counted for the fourth SDMX upload: header + 948460 (632664: UNPD indicator only; web scrape excluded)
-#
+# 
 # csv lines counted for the fourth SDMX upload: header + 1555490 (web scrape + sitan feb 21 included)
-#
+# 
 # last round june 21 not updated --> new idea --> commit TMEE_out.csv to repo? (consult James: file size for github)
 
 # #### Work on output for Daniele codelist of indicators
