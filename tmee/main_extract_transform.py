@@ -560,7 +560,7 @@ for index, row in api_code_addr_df.iterrows():
 
     # wrap API parameters & headers
     api_headers = sdmx_headers
-    if source_key.lower() == "helix":
+    if source_key.lower() in ["helix", "cddem", "ccri"]:
         api_params = helix_api_params
     elif source_key.lower() == "uis":
         api_params = uis_api_params
