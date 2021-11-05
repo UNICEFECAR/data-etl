@@ -363,6 +363,11 @@ EDU_SE_AWP_CPRA_L1,Adjusted wealth parity index for primary education completion
 EDU_SE_AWP_CPRA_L2,Adjusted wealth parity index for lower secondary education completion rate
 EDU_SE_AWP_CPRA_L3,Adjusted wealth parity index for upper secondary education completion rate
 EDUNF_STEM_GRAD_RT,"Percentage of tertiary education graduates from Science, Technology , Engineering and Mathematics (STEM) programmes"
+EDUNF_GER_L5T8,Tertiary education gross enrolment ratio (%)
+EDUNF_GER_GPI_L5T8,"Gross enrolment ratio, tertiary, Gender Parity Index (GPI)"
+ECD_CHLD_36-59M_FHR-SPT-LNG,Percentage of children (aged 36-59 months) whose father has engaged in 4 or more activities to provide early stimulation and responsive care in the last 3 days
+ECD_CHLD_36-59M_EDU-PGM,Percentage of children (aged 36-59 months) attending an early childhood education programme
+EDU_FIN_INIT_GOV_L02_GDP,Initial government funding of pre-primary education as a percentage of GDP (%)
 PV_SI_POV_EMP1,Employed population below international poverty line (%)
 PV_SI_POV_DAY1,Proportion of population below international poverty line (%)
 PV_SI_POV_UMIC,Poverty headcount ratio at $5.50 a day (2011 PPP) (% of population)
@@ -397,6 +402,7 @@ DM_TOT_POP_PROSP,Total population prospects (expressed in thousands)
 DM_CHLD_POP_PT,Percentage of children as a share of the total population
 DM_SP_POP_BRTH_MF,Sex ratio at birth (male births per female births)
 DM_ADOL_YOUTH_POP,"Total adolescent, young and youth population aged 10-24 years (expressed in thousands)"
+DM_ADULT_YOUTH_POP,Total adult youth population aged 20-29 years (expressed in thousands)
 DM_REPD_AGE_POP,Total population of reproductive age 15-49 years (expressed in thousands)
 EC_HDI,Human Development Index (HDI)
 EC_NY_GDP_MKTP_KD_ZG,GDP growth (annual %)
@@ -417,8 +423,8 @@ EC_GC_DOD_TOTL_GD_ZS,"Central government debt, total (% of GDP)"
 EC_SI_POV_GINI,Gini index (World Bank estimate)
 EC_SL_UEM_TOTL_NE_ZS,"Unemployment, national estimate (% of total labor force)"
 EC_SL_UEM_TOTL_ZS,"Unemployment, modelled ILO estimate (% of total labor force)"
-GN_MTNTY_LV_BNFTS,Maternity leave benefits
-GN_PTNTY_LV_BNFTS,Paternity leave benefits
+GN_MTNTY_LV_BNFTS,Maternity leave paid benefits (ILO standards)
+GN_PTNTY_LV_BNFTS,Paternity leave paid benefits (of any length)
 EC_GDI,Gender Development Index (GDI)
 EC_GII,Gender Inequality Index (GII)
 EC_IQ_CPA_GNDR_XQ,CPIA gender equality rating (1=low to 6=high)
@@ -429,6 +435,12 @@ EC_GNI_PCAP_PPP,Gross national income (GNI) per capita (constant 2017 PPP$)
 EC_FB_BNK_ACCSS,Proportion of adults with an account at a financial institution or mobile-money-service provider (% of adults aged 15 years and older)
 SL_DOM_TSPD,Proportion of time spent on unpaid domestic chores and care work (%)
 SG_GEN_PARL,Proportion of seats held by women in national parliaments (%)
+EC_INACT_RT,Inactivity rate (%)
+EC_YOUTH_INACT_RT,Youth inactivity rate (% of population aged 15 to 29 years old)
+EC_GEN_PAY_GAP,Gender pay gap in unadjusted form (%)
+EC_GEN_CONF_JUD,Share of women declaring lack of confidence in the justice system (%)
+EC_HCI_OVRL,Human capital index (HCI) (scale 0-1)
+EC_MIN_WAGE,Minimum wages (EUR)
 DM_SM_POP_REFG,Refugee population by country or territory of asylum
 DM_SM_POP_REFG_OR,Refugee population by country or territory of origin
 DM_ASYL_FRST,First time asylum applicants (persons)
@@ -437,12 +449,38 @@ MG_INTNL_MG_CNTRY_DEST_PS,International migrant stock by country of destination 
 MG_INTNL_MG_CNTRY_DEST_RT,International migrant stock by country of destination (% of total population)
 CR_VC_DSR_MTMP,"Number of deaths and missing persons attributed to disasters (per 100,000 population)"
 CR_VC_DSR_DAFF,"Number of directly affected persons attributed to disasters (per 100,000 population)"
+CR_SH_AAP_MORT,"Crude death rate attributed to ambient air pollution (deaths per 100,000 population)"
+CR_SH_HAP_MORT,"Crude death rate attributed to household air pollution (deaths per 100,000 population)"
 CR_SH_STA_AIRP,"Crude death rate attributed to household and ambient air pollution (deaths per 100,000 population)"
+CR_SH_AAP_ASMORT,"Age-standardized mortality rate attributed to ambient air pollution (deaths per 100,000 population)"
+CR_SH_HAP_ASMORT,"Age-standardized mortality rate attributed to household air pollution (deaths per 100,000 population)"
 CR_SH_STA_ASAIRP,"Age-standardized mortality rate attributed to household and ambient air pollution (deaths per 100,000 population)"
+CR_AAP_DEATH,Total number of deaths attributable to ambient air pollution
+CR_HAP_DEATH,Total number of deaths attributable to household air pollution
+CR_CCRI_VUL_HT,Children's vulnerability index: lack of essential services of health and nutrition
+CR_CCRI_VUL_EDU,Children's vulnerability index: lack of essential services of education
+CR_CCRI_VUL_WASH,"Children's vulnerability index: lack of essential services of water, sanitation and hygiene (WASH)"
+CR_CCRI_VUL_SP,"Children's vulnerability index: lack of essential services of poverty, communication assets and social protection"
+CR_CCRI_VUL_ES,Children's vulnerability index to climate hazards due to the lack of access to essential services
+CR_CCRI,Children's Climate and Environment Risk Index (CCRI)
 CR_EG_EGY_CLEAN,Proportion of population with primary reliance on clean fuels and technology (%)
 CR_EG_ACS_ELEC,Proportion of population with access to electricity (%)
+CR_CCRI_EXP_WS,Children's exposure index to water scarsity
+CR_CCRI_EXP_RF,Children's exposure index to riverine floods
+CR_CCRI_EXP_CF,Children's exposure index to coastal floods
+CR_CCRI_EXP_TC,Children's exposure index to tropical cyclones
+CR_CCRI_EXP_VBD,Children's exposure index to vector borne diseases
+CR_CCRI_EXP_HEAT,Children's exposure index to heatwaves
+CR_CCRI_EXP_AP,Children's exposure index to air pollution
+CR_CCRI_EXP_SWP,Children's exposure index to soil and water pollution
+CR_CCRI_EXP_CESS,Children's exposure index to climate and environmental shocks and stresses
 CR_SG_DSR_LGRGSR,Score of adoption and implementation of national DRR strategies in line with the Sendai Framework
-CR_VC_VOV_GDSD,"Percentage of population reporting having felt discriminated against, by grounds of discrimination, sex and disability"
+CR_VC_VOV_GDSD,"Percentage of population reporting having felt discriminated against, by grounds of discrimination, sex or disability"
+CR_VC_VOV_GDSD_PD,"Percentage of persons with disability reporting having felt discriminated against, by grounds of discrimination, sex or disability"
+CR_VC_VOV_GDSD_DISHEA_PD,"Percentage of persons with disability reporting having felt discriminated against, by grounds of disability or health status"
+CR_UN_CHLD_RIGHTS,"UN Convention on the Rights of the Child, 1989 (signature, ratification, acceptance, accession or succession)"
+CR_UN_CHLD_SALE,"UN Convention on the Rights of the Child, Optional Protocol on the sale of children, child prostitution and child pornography (signature, ratification, accession or succession)"
+CR_UN_RIGHTS_DISAB,"UN Convention on the Rights of Persons with Disabilities, 2006 (signature, formal confirmation, accession or ratification)"
 EC_TOT_PUB_EXP_GDP,Total public social expenditure (% of GDP)
 EC_TOT_PUB_EXP_TOT,Total public social expenditure (% of total general government expenditure)
 EC_FAM_PUB_EXP_GDP,Family public social expenditure (% of GDP)
@@ -544,8 +582,8 @@ EDU_CHLD_DISAB_L02,Number of children with disabilities in education by ISCED le
 EDU_CHLD_DISAB_L1,Number of children with disabilities in education by ISCED level: ISCED 1
 EDU_CHLD_DISAB_L2,Number of children with disabilities in education by ISCED level: ISCED 2
 EDU_CHLD_DISAB_L3,Number of children with disabilities in education by ISCED level: ISCED 3
-PT_CHLD_NO_PARENTAL_CARE,"Total number of children left without parental care (during the year, by sex and age groups)"
-PT_CHLD_NO_PARENTAL_CARE_DISABILITY,"Number of children with disabilities left without parental care (during the year, by sex)"
+PT_CHLD_NO_PARENTAL_CARE,Total number of children left without parental care (during the year)
+PT_CHLD_NO_PARENTAL_CARE_DISABILITY,Number of children with disabilities left without parental care (during the year)
 PT_CHLD_NO_PARENTAL_CARE_ORPHAN,Children left without parental care by cause: orphan children (during the year)
 PT_CHLD_NO_PARENTAL_CARE_PARRIGHTS,Children left without parental care by cause: deprivation of parental rights (during the year)
 PT_CHLD_NO_PARENTAL_CARE_ABANDON,Children left without parental care by cause: abandonment or relinquishment by the parents (during the year)
@@ -603,7 +641,7 @@ JJ_CHLD_CRIME,Total number of registered crimes committed against children (duri
 JJ_CHLD_CRIME_PERSON,Registered crimes committed against children by type: against a person (as % of total crimes committed against children)
 JJ_CHLD_CRIME_PROPERTY,Registered crimes committed against children by type: property crimes (as % of total crimes committed against children)
 JJ_CHLD_CRIME_OTHER,Registered crimes committed against children by type: other crimes (as % of total crimes committed against children)
-JJ_CHLD_POLICE,"Total number of children reported as being in contact with the police because of their own behaviour (during the year, by sex and age groups)"
+JJ_CHLD_POLICE,"Total number of children reported as being in contact with the police because of their own behaviour (during the year)"
 JJ_CHLD_ARRESTED,"Total number of arrested children (during the year, by sex)"
 JJ_CHLD_OFFENCE,"Total number of children charged with an offence - crimes (during the year, by sex)"
 JJ_CHLD_OFFENCE_PERSON,Children charged with an offence (crimes) by type of offence: against a person (as % of total)
