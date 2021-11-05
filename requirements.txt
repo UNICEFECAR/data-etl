@@ -8,6 +8,7 @@ numpy
 selenium
 html5lib
 rope
+roman
 fuzzywuzzy
 pandasdmx
 requests-cache
