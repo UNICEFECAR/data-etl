@@ -36,10 +36,11 @@ def wrap_api_address(
 
     # separate how API addresses are built:
     # source_key: helix (reads dataflows DSD)
+    # also included CCRI: UNICEF web services
     # brings disaggregation in sex, age, residence and wealth if present
     # sometimes would like to keep the query as it is --> flag is query!
-    # CDDEM could be brought under this case!
-    if source_key.lower() == "helix":
+    # TODO: CDDEM could be brought here? Bare in mind difference in GEO position
+    if source_key.lower() in ["helix", "ccri"]:
 
         # split url_endpoint
         url_split = url_endpoint.split("/")
