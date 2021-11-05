@@ -499,6 +499,24 @@ dflow_col_map = {
         "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
         "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
     },
+    # WHO: Air Pollution attributable death indicators - particular code mapping
+    "csv-str-5": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "COUNTRY (CODE)"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "col", "role": "dim", "value": "SEX (CODE)"},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "YEAR (CODE)"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "Numeric"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_FOOTNOTE": {"type": "col", "role": "attrib", "value": "Comments"},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "col", "role": "attrib", "value": "GHO (URL)"},
+        "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
+        "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
+    },
     "DF_SDG_GLH": {
         "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
         "INDICATOR": {"type": "const", "role": "dim", "value": ""},
@@ -1143,6 +1161,27 @@ dflow_col_map = {
         "UNIT_MULTIPLIER": {"type": "const", "role": "attrib", "value": ""},
         "OBS_STATUS": {"type": "const", "role": "attrib", "value": ""},
     },
+    "CCRI": {
+        "REF_AREA": {"type": "col", "role": "dim", "value": "REF_AREA"},
+        "INDICATOR": {"type": "const", "role": "dim", "value": ""},
+        "SEX": {"type": "const", "role": "dim", "value": ""},
+        "AGE": {"type": "const", "role": "dim", "value": ""},
+        "WEALTH_QUINTILE": {"type": "const", "role": "dim", "value": ""},
+        "RESIDENCE": {"type": "const", "role": "dim", "value": ""},
+        "TIME_PERIOD": {"type": "col", "role": "time", "value": "TIME_PERIOD"},
+        "OBS_VALUE": {"type": "col", "role": "obs", "value": "OBS_VALUE"},
+        "COVERAGE_TIME": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MEASURE": {"type": "col", "role": "attrib", "value": "UNIT_MEASURE"},
+        "OBS_FOOTNOTE": {"type": "const", "role": "attrib", "value": ""},
+        "FREQ": {"type": "const", "role": "attrib", "value": ""},
+        "DATA_SOURCE": {"type": "const", "role": "attrib", "value": ""},
+        "UNIT_MULTIPLIER": {
+            "type": "col",
+            "role": "attrib",
+            "value": "UNIT_MULTIPLIER",
+        },
+        "OBS_STATUS": {"type": "col", "role": "attrib", "value": "OBS_STATUS"},
+    },
 }
 
 # Code mappings are intended to normalize data entries in our destination DSD
@@ -1349,6 +1388,20 @@ code_mapping = {
         "SEX (CODE)": {"FMLE": "F", "MLE": "M", "BTSX": "_T"},
         # if empty age --> checked by SDMX validation
         "AGEGROUP (CODE)": {"YEARS18-PLUS": "Y_GE18"},
+    },
+    "csv-str-5": {
+        "SEX (CODE)": {"FMLE": "F", "MLE": "M", "BTSX": "_T"},
+        # this is a walkthrough: generate NaN where cause is not total ENVCAUSE
+        "Numeric": {
+            "depends": "ENVCAUSE (CODE)",
+            "map": {
+                "ENVCAUSE113": np.nan,
+                "ENVCAUSE114": np.nan,
+                "ENVCAUSE118": np.nan,
+                "ENVCAUSE039": np.nan,
+                "ENVCAUSE068": np.nan,
+            },
+        },
     },
     "DF_SDG_GLH": {
         "REF_AREA": country_map_49,
@@ -1618,6 +1671,12 @@ code_mapping = {
         "OBS_FLAG": estat_flag_map,
     },
     "tps00155": {"GEO": country_map, "FREQ": {"A": "1"}, "OBS_FLAG": estat_flag_map,},
+    "CCRI": {
+        "REF_AREA": {"code:description": True},
+        "UNIT_MULTIPLIER": {"code:description": True},
+        "UNIT_MEASURE": {"code:description": True},
+        "OBS_STATUS": {"code:description": True},
+    },
 }
 
 # constants added at the dataflow level
@@ -1669,6 +1728,7 @@ dflow_const = {
     "csv-str-2": {"AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
     "csv-str-3": {"SEX": "_T", "AGE": "_T", "WEALTH_QUINTILE": "_T"},
     "csv-str-4": {"WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
+    "csv-str-5": {"AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
     "pandas data reader": {"AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
     "DF_SDG_0861_SEX_RT": {"AGE": "_T", "WEALTH_QUINTILE": "_T", "RESIDENCE": "_T"},
     "UNPD_DEMOGRAPHY": {"WEALTH_QUINTILE": "_T"},
@@ -1809,6 +1869,13 @@ dflow_const = {
         "WEALTH_QUINTILE": "_T",
         "RESIDENCE": "_T",
         "DATA_SOURCE": "UNTC",
+    },
+    "CCRI": {
+        "SEX": "_T",
+        "AGE": "_T",
+        "WEALTH_QUINTILE": "_T",
+        "RESIDENCE": "_T",
+        "DATA_SOURCE": "UNICEF CCRI",
     },
 }
 
