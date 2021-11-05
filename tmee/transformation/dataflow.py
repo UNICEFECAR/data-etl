@@ -13,6 +13,8 @@ class Dataflow:
 
     # column and code mappings: known before hand and stored in define_maps
     def __init__(self, key):
+        # attribute for the dataflow name
+        self.name = key
         self.col_map = define_maps.dflow_col_map[key]
         self.cod_map = None
         if key in define_maps.code_mapping:
@@ -162,7 +164,15 @@ class Dataflow:
         :param dataframe: dataframe to remove duplicates (pre-requisite: already know there are!)
         :param target_dim: uses a targeted column to remove duplicates (pre-requisite: know the column)
         :return non_dupli_df: dataframe without duplicates
+        :TODO: generalize exclusion of apply to dataflows
         """
+
+        # avoid application to dataflow: return dataframe without modification
+        if self.name == "csv-str-5":
+            # duplicates eliminated as NaN's at transformation phase
+            print("Duplicates eliminated at Transformation phase")
+            return dataframe
+
         dim_cols = self.get_dim_cols()
         logic_dupli = dataframe.duplicated(subset=dim_cols, keep=False)
         # initialize output dataframe: first keep entries without any duplicates
