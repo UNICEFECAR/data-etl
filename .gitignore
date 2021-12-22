@@ -21,7 +21,8 @@ india_covid_dash.py
 india_covid_dash_.py
 EDA_covid19_trends.py
 EDA_covid19_v0.py
-ETL_steps.py
+ETL_steps*.py
+ETL_steps.txt
 EDA_ICO.py
 main_extract_transform_*.py
 sitan_extract.py
@@ -165,7 +166,7 @@ sitan_extract.ipynb
 sitan_invoice.ipynb
 EDA_covid19_trends.ipynb
 EDA_covid19_v0.ipynb
-ETL_steps.ipynb
+ETL_steps*.ipynb
 main_legacy.ipynb
 main_legacy_proto.ipynb
 prototype_legacy.ipynb
@@ -220,6 +221,8 @@ content_legacy.csv
 
 # ignore test folder population (india ICO project)
 /tmee/population/
+# ignore folder ba_sdmx (flavio project bosnia sdmx)
+/tmee/ba_sdmx/
 
 # Ignore history download folder
 noYreq
