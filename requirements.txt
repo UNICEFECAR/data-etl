@@ -24,6 +24,7 @@ pandoc
 matplotlib
 # for small apps (and sharepoint auth)
 dash
+dash-bootstrap-components
 dash_extensions
 jupyter-dash
 jupyter_server_proxy

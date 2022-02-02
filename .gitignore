@@ -223,6 +223,8 @@ content_legacy.csv
 /tmee/population/
 # ignore folder ba_sdmx (flavio project bosnia sdmx)
 /tmee/ba_sdmx/
+# ignore folder ebse_dev (ebse project kpis)
+/tmee/ebse/
 
 # Ignore history download folder
 noYreq
