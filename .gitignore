@@ -26,6 +26,7 @@ ETL_steps.txt
 EDA_ICO.py
 main_extract_transform_*.py
 sitan_extract.py
+query_keys_SDMX.py
 test_imports.py
 test_nb.py
 test_nb2.py
@@ -194,6 +195,7 @@ populate_data_dictionary
 # ignore some versioning excel files
 indicator_dictionary_TM_v01.xlsx
 sitan_report*.xlsx
+cross_cut*.xlsx
 report_*.xlsx
 discarded_report.xlsx
 Full_TMEE_Database.xlsx
@@ -225,6 +227,8 @@ content_legacy.csv
 /tmee/ba_sdmx/
 # ignore folder ebse_dev (ebse project kpis)
 /tmee/ebse/
+# ignore folder dash_pages (parse TM dashboard pages)
+/tmee/tm_dash/
 
 # Ignore history download folder
 noYreq
