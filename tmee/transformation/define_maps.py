@@ -1715,7 +1715,7 @@ dflow_const = {
     "LEGACY": {
         "WEALTH_QUINTILE": "_T",
         "RESIDENCE": "_T",
-        "DATA_SOURCE": "TMEE Legacy DB",
+        "DATA_SOURCE": "TMEE Data Collection: 2020 Publication",
     },
     "WASH_SCHOOLS": {"SEX": "_T", "AGE": "_T", "WEALTH_QUINTILE": "_T"},
     "csv-str-1": {
