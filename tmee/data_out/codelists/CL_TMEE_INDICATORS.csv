@@ -554,179 +554,149 @@ PP_ADOL_ITXT,Adolescents (15-year-olds) who are high or extreme internet users (
 PP_ADOL_WORK_PAID,"Adolescents (15-year-olds) who do paid work, before or after school (%)"
 PP_ADOL_WORK_HOME,"Adolescents (15-year-olds) who do unpaid work in the home, before or after school (%)"
 ECD_CHLD_U5_LFT-ALN,Percentage of children under age 5 left alone or under the supervision of another child younger than 10 years of age for more than 1 hour at least once in the last week
-DM_POP_TOT,"Total population at the beginning of the year (persons), 1989-2019"
-DM_AVG_POP_TOT,"Average total population (persons), 1989-2018"
-DM_DPR_AGE,"Age dependency ratio (% of population aged 0-14 and 65 and over, to population aged 15-64), 1989-2019"
-DM_DPR_CHD,"Child dependency ratio (% of population aged 0-14, to population aged 15-64), 1989-2019"
-DM_DPR_OLD,"Old-age dependency ratio (% of population aged 65 and over, to population aged 15-64), 1989-2019"
-DM_IMG,"Number of immigrants, 1989-2018"
-DM_EMG,"Number of emigrants, 1989-2018"
-DM_NEXT_MG,Net external migration
-DM_NEXTRT_MG,"Crude rate of net migration (per 100,000 average population), 1989-2018"
-DM_MRG,Number of marriages
-DM_MRGRT,"Crude marriage rate (per 1,000 average population)"
-DM_DIV,"Number of divorces, 1989-2018"
-DM_CRDIVRT,"Crude divorce rate (per 1,000 average population), 1989-2018"
-DM_GNDIVRT,General divorce rate (per 100 marriages)
-DM_CHLD_DIV,"Number of children affected by parental divorce, 1989-2018"
-FT_BRTS_LIVE,Number of live births by sex and by mother's age
-FT_BRTS_LIVE_LOW,"Number of low-weight births (live births under 2,500 grams)"
-FT_BRTS_LIVE_LOWRT,"Proportion of live births under 2,500 grams (births under 2,500 grams as % of total live births)"
-FT_CRBR,"Crude birth rate (live births per 1,000 average population)"
-FT_ABRS,Number of legally induced abortions
-FT_ABRT,Abortion rate (legally induced abortions per 100 live births)
-EDU_CHLD_DISAB,Number of children with disabilities in education
-EDU_CHLD_DISAB_GENERAL,Number of children with disabilities in education by type of school: Ordinary (general) school
-EDU_CHLD_DISAB_SPECIAL,Number of children with disabilities in education by type of school: special school
-EDU_CHLD_DISAB_L02,Number of children with disabilities in education by ISCED level: ISCED 0
-EDU_CHLD_DISAB_L1,Number of children with disabilities in education by ISCED level: ISCED 1
-EDU_CHLD_DISAB_L2,Number of children with disabilities in education by ISCED level: ISCED 2
-EDU_CHLD_DISAB_L3,Number of children with disabilities in education by ISCED level: ISCED 3
-PT_CHLD_NO_PARENTAL_CARE,Total number of children left without parental care (during the year)
-PT_CHLD_NO_PARENTAL_CARE_DISABILITY,Number of children with disabilities left without parental care (during the year)
-PT_CHLD_NO_PARENTAL_CARE_ORPHAN,Children left without parental care by cause: orphan children (during the year)
-PT_CHLD_NO_PARENTAL_CARE_PARRIGHTS,Children left without parental care by cause: deprivation of parental rights (during the year)
-PT_CHLD_NO_PARENTAL_CARE_ABANDON,Children left without parental care by cause: abandonment or relinquishment by the parents (during the year)
-PT_CHLD_NO_PARENTAL_CARE_UNABLE,Children left without parental care by cause: parents temporary unable/ not in a position to care for the child (during the year)
-PT_CHLD_NO_PARENTAL_CARE_OTHER,Children left without parental care by cause: other (during the year)
-PT_CHLD_NO_PARENTAL_CARE_INCARE,Children left without parental care placed into care (during the year)
-PT_CHLD_NO_PARENTAL_CARE_INRESIDENTIAL,Children left without parental care by type of placement: in residential care (during the year)
-PT_CHLD_NO_PARENTAL_CARE_ININSTITUTE,Children left without parental care by type of placement: entered educational institution (during the year)
-PT_CHLD_NO_PARENTAL_CARE_INFOSTER,Children left without parental care by type of placement: entered foster care (during the year)
-PT_CHLD_NO_PARENTAL_CARE_INGUARDIAN,Children left without parental care by type of placement: entered guardian care (during the year)
-PT_CHLD_NO_PARENTAL_CARE_ADOPTED,Children left without parental care by type of placement: were adopted (during the year)
-PT_CHLD_INFORMALCARE,Total number of children in formal care (at the end of the year)
-PT_CHLD_INRESIDENTIAL,Total number of children in residential care (at the end of the year) - Includes persons aged 18 years old and over in some countries
-PT_CHLD_DISAB_PUBLIC,Number of children with disabilities in public residential care - all types of institutions (at the end of the year)
-PT_CHLD_NO_PARENTAL_CARE_PUBLIC,"Number of children without parental care in public residential care (at the end of the year, by age groups)"
-PT_CHLD_ININFANTHOME,Number of children in infant homes (at the end of the year)
-PT_CHLD_INBOARDING,Number of children in general boarding schools - under the full state support (at the end of the year)
-PT_CHLD_NONPUBLIC,"Number of children in non-public residential care (at the end of the year, by sex and age groups)"
-PT_CHLD_LEFTRESCARE,Number of children who left public residential care - including those transferred to another institution (during the year)
-PT_CHLD_LEFTRESCARE_RETURNED,Children who left public residential care by reason: were returned to their parents /reintegrated in the family (during the year)
-PT_CHLD_LEFTRESCARE_INFAMILY,Children who left public residential care by reason: were placed into family type care (during the year)
-PT_CHLD_LEFTRESCARE_ADOPTED,Children who left public residential care by reason: were adopted (during the year)
-PT_CHLD_LEFTRESCARE_INDEPENDENT,Children who left public residential care by reason: started independent life (during the year)
-PT_CHLD_LEFTRESCARE_TRANSFERED,Children who left public residential care by reason: transferred to another institution (during the year)
-PT_CHLD_LEFTRESCARE_DIED,Children who left public residential care by reason: died (during the year)
-PT_CHLD_LEFTRESCARE_OTHER,Children who left public residential care by reason: other (during the year)
-PT_CHLD_INCARE_FOSTER,Children in care of foster parents or guardians (at the end of the year)
-PT_CHLD_REGISTERED_FOSTER,Number of registered foster families (at the end of the year)
-PT_CHLD_ENTEREDFOSTER,Total number of children who entered foster care (during the year)
-PT_CHLD_LEFTFOSTER,Total number of children who left foster care (during the year)
-PT_CHLD_LEFTFOSTER_RETURNED,Children who left foster care by reason: were returned to their biological parents (during the year)
-PT_CHLD_LEFTFOSTER_EDUINSTITUTION,Children who left foster care by reason: entered child care/educational institutions (during the year)
-PT_CHLD_LEFTFOSTER_INDEPENDENT,Children who left foster care by reason for leaving: started independent life (during the year)
-PT_CHLD_LEFTFOSTER_OTHER,Children who left foster care by reason: other (during the year)
-PT_CHLD_LEFTFOSTER_INFAMILY,Children who left foster care by reason: placed into other foster family (during the year)
-PT_CHLD_CARED_BY_FOSTER,Total number of children cared for by foster parents (at the end of the year)
-PT_CHLD_DISAB_FOSTER,Number of children with disabilities in foster care (at the end of the year)
-PT_CHLD_GUARDIAN,Total number of children who entered guardian care (during the year)
-PT_CHLD_GUARDIAN_LEFT,Total number of children who left guardian care (during the year)
-PT_CHLD_GUARDIAN_LEFT_RETURNED,Children who left guardian care by reason: returned to their biological parents (during the year)
-PT_CHLD_GUARDIAN_LEFT_INSTITUTION,Children who left guardian care by reason: entered child care/educational institutions (during the year)
-PT_CHLD_GUARDIAN_LEFT_INDEPENDET,Children who left guardian care by reason: started independent life (during the year)
-PT_CHLD_GUARDIAN_LEFT_OTHER,Children who left guardian care by reason: other (during the year)
-PT_CHLD_CARED_GUARDIAN,Total number of children cared for by guardians (at the end of the year)
-PT_CHLD_DISAB_CARED_GUARDIAN,Number of children with disabilities in guardian care (at the end of the year)
 PT_CHLD_ADOPTION,Total number of adoptions - including intercountry adoptions (during the year)
 PT_CHLD_ADOPTION_DISAB,Number of adopted children with disabilities (during the year)
-PT_CHLD_ADOPTION_INTERCOUNTRY,Total number of intercountry adoptions (during the year)
-PT_CHLD_ADOPTION_INTER_COUNTRY_DISAB,Intercountry adoptions: number of adopted children with disabilities (during the year)
-PT_CHLD_ADOPTION_AVAILABLE,Total number of children available for adoption (at the end of the year)
-PT_CHLD_ADOPTION_AVAILABLE_DISAB,Number of children with disabilities available for adoption (at the end of the year)
-JJ_CRIMERT,"Registered total crime rate (per 100,000 average population)"
-JJ_JUV_CRIME,Registered number of crimes committed by or with participation of children/juveniles (during the year)
-JJ_CHLD_CRIME,Total number of registered crimes committed against children (during the year)
-JJ_CHLD_CRIME_PERSON,Registered crimes committed against children by type: against a person (as % of total crimes committed against children)
-JJ_CHLD_CRIME_PROPERTY,Registered crimes committed against children by type: property crimes (as % of total crimes committed against children)
-JJ_CHLD_CRIME_OTHER,Registered crimes committed against children by type: other crimes (as % of total crimes committed against children)
-JJ_CHLD_POLICE,"Total number of children reported as being in contact with the police because of their own behaviour (during the year)"
-JJ_CHLD_ARRESTED,"Total number of arrested children (during the year, by sex)"
-JJ_CHLD_OFFENCE,"Total number of children charged with an offence - crimes (during the year, by sex)"
-JJ_CHLD_OFFENCE_PERSON,Children charged with an offence (crimes) by type of offence: against a person (as % of total)
-JJ_CHLD_OFFENCE_PROPERTY,Children charged with an offence (crimes) by type of offence: against a property (as % of total)
-JJ_CHLD_OFFENCE_OTHER,Children charged with an offence (crimes) by type of offence: other type (as % of total)
-JJ_CHLD_DETENTION,Total number of children who entered pre-sentence detention (during the year)
-JJ_CHLD_VICTIM,"Total number of children as victims involved in criminal proceedings (during the year, by sex and age groups)"
-JJ_CHLD_OFFENDER,"Total number of children as offenders involved in criminal proceedings (during the year, by sex and age groups)"
-JJ_CHLD_CONVICTED,Total number of children convicted for criminal activity (during the year)
-JJ_CHLD_CONVICTED_VIOLENT,Convicted children by type of crime: violent crimes (during the year)
-JJ_CHLD_CONVICTED_PROPERTY,Convicted children by type of crime: property crimes (during the year)
-JJ_CHLD_CONVICTED_OTHER,Convicted children by type of crime: other crimes (during the year)
-JJ_CHLD_SENTENCE_PRISION,"Convicted juveniles by type of sentencing: committal to a closed facility (including prisons, penal colony) (during the year)"
-JJ_CHLD_SENTENCE_CORRECTIONAL,Convicted juveniles by type of sentencing: placed in specialized educational/correctional institution (during the year)
-JJ_CHLD_SENTENCE_PROBATION,Convicted juveniles by type of sentencing: supervision or probation order (during the year)
-JJ_CHLD_SENTENCE_CUSTODIAL,Convicted juveniles by type of sentencing: suspended or conditional custodial sentence (during the year)
-JJ_CHLD_SENTENCE_FINANCIAL,Convicted juveniles by type of sentencing: fine/financial compensation (during the year)
-JJ_CHLD_SENTENCE_SERVICE,Convicted juveniles by type of sentencing: community service (during the year)
-JJ_CHLD_SENTENCE_LABOUR,Convicted juveniles by type of sentencing: corrective labour (during the year)
-JJ_CHLD_SENTENCE_OTHER,Convicted juveniles by type of sentencing: other (during the year)
-JJ_CHLD_PRISION,Total number of children in a closed facility (by reason of their actual or suspected participation in criminal activity) (at the end of the year)
-JJ_CHLD_PRETRIAL,"Total number of children in pre-trial facilities (at the end of the year, by sex)"
-JJ_CHLD_PRISION_ADJUDICATION,"Total number of children in closed facilities following adjudication (at the end of the year, by sex)"
-SP_TOT,Total Social Protection expenditure as % of GDP
-SP_SOC_BEN_CASH,Expenditure on cash social benefits as % of GDP
-SP_BEN_KIND,Expenditure on social benefits in kind as % of GDP
-SP_BEN_FAMILY,Expenditure on social benefits under Family/Children function as % of GDP
-SP_BEN_FAMILY_CASH,Expenditure on cash social benefits under Family/Children function as % of GDP
-SP_BEN_FAMILY_KIND,Expenditure on social benefits in kind under Family/Children function as % of GDP
-SP_MEANS_TESTED,Expenditure on means-tested social protection benefits as % of total social protection expenditure
-SP_CASH_EXP,Expenditure on cash social benefits as % of total social protection expenditure
-SP_KIND_EXP,Expenditure on social benefits in kind as % of total social protection expenditure
-SP_BEN_FAMILY_EXP,Expenditure on social benefits under Family/Children function as % of total social protection expenditure
-SP_KIND_FAMILY_KIND,Social benefits in kind under family/children function as % of total social benefits in kind
-SP_FAMILY_ALLOW,Expenditure on Family allowances as % of total cash expenditure under family/children function
-SP_IMCOME_MATERNITY,Expenditure on Income compensation during maternity as % of total cash expenditure under family/children function
-SP_PARENTAL_LEAVE,Expenditure on Parental leave as % of total cash expenditure under family/children function
-SP_BITRH_GRANT,Expenditure on Birth grant as % of total cash expenditure under family/children function
-SP_OTHER_FAMILY,Expenditure on other family cash social benefits as % of total cash expenditure under family/children function
-SP_ALLOW_CHILD,Total number of children receiving monthly family allowances
-SP_ALLOW_MEANSTEST,Number of children receiving means-tested family allowances
-SP_ALLOW_SINGLE,Number of children of single-parent families receiving specific allowances
-SP_ALLOW_OTHER_CHILD,Number of children receiving other child allowances
-SP_ALLOW_FOSGUARD,Number of children for whom foster/guardian allowance is received
-SP_ALLOW_FAMILY,Total number of families receiving monthly family allowances
-SP_ALLOW_FAMILY_SINGLE,Number of single-parent families receiving specific allowances
-SP_ALLOW_FAMILY_OTHER_CHILD,Number of families receiving other child allowances
-SP_ALLOW_FAMILY_FOSSINGLE,Total number of families receiving foster/guardian allowance
-SP_PARLEAVE_DAYSAVG,Daily average number of parents on parental leave
-SP_PENSIONER,Total number of pensioners
-SP_PENSIONER_OLD,Total number of old age pensioners
-SP_PENSIONER_DISAB,Total number of disability pensioners
-SP_PENSIONER_DISAB_CHLD,Total number of children receiving pension for disability
-SP_PENSIONER_DISAB_CHLDRT,Percentage of disability pensioners who are children
-SP_PENSIONER_SURVIVOR,Total number of survivor's pensioners
-SP_PENSION_ORPHAN,Total number of orphan's pensions or allowances
-SP_PENSIONER_EARLY,Total number of early retirement pensioners
-SP_PENSIONER_VETERAN,"Total number of veteran, merit and other pensioners"
-SP_PENSION_VALUE,Average value of pensions (national currency)
-SP_PENSION_VALUE_OLD,Average value of old age pensions (national currency)
-SP_PENSION_VALUE_DISAB,Average value of disability pensions (national currency)
-SP_PENSION_VALUE_DISAB_CHLD,Average value of disability pensions for children (national currency)
-SP_PENSION_VALUE_SURVIVOR,Average value of survivors' pensions (national currency)
-SP_PENSION_VALUE_ORPHAN,Average value of orphan's pensions or allowances (national currency)
-SP_PENSION_VALUE_MIN,Average minimum pension (national currency)
-DM_CHLDRT_DIV,"Rate of children affected by parental divorce (per 1,000 average population aged 0-17), 1989-2018"
-DM_MRG_AGE,"Average age at first marriage (years), 1989-2018"
-DM_POP_PROP,"Proportion of total population (%), 1989-2019"
-FT_BRTS_AGE,Mean age of women at the birth of first child (years)
-FT_BRTS_LIVERT_U20,Proportion of births to mothers under age 20 (as % of total live births)
-FT_FRATE,Total fertility rate (number of children per woman aged 15-49)
-FT_FRATE_AGE,"Age-specific fertility rate among younger than 20 year olds (live births per 1,000 women aged 15-19)"
-FT_POP_ABRT,"Abortion rate per women population (legally induced abortions per 1,000 women, by age groups)"
-JJ_CHLD_CRIMERT,"Registered rate of crimes committed against children (per 100,000 average population aged 0-17)"
-JJ_CHLD_CRIME_PERPETRATOR,"Registered number of crimes committed against children (during the year, by age group of perpetrator)"
-JJ_CHLD_SENTENCERT,"Children aged 14-17 years sentencing rate (per 100,000 average population)"
-PT_CHLD_ADOPTION_INTERCOUNTRY_RATE,"Intercountry adoption rate (per 100,000 average population aged  0-3)"
-PT_CHLD_ADOPTION_RATE,"Gross adoption rate (per 100,000 average population aged  0-3)"
-PT_CHLD_CARED_BY_FOSTER_RATE,"Rate of children in foster parents care (at the end of the year, per 100,000 population aged 0-17)"
-PT_CHLD_CARED_GUARDIAN_RATE,"Rate of children in guardian care (at the end of the year, per 100,000 population aged 0-17)"
-PT_CHLD_INCARE_FOSTER_RATE,"Rate of children in care of foster parents or guardians (at the end of the year, per 100,000 population aged 0-17)"
-PT_CHLD_INFORMALCARE_RATE,"Rate of children in formal care (at the end of the year, per 100,000 population aged 0-17)"
-PT_CHLD_ININFANTHOME_RATE,"Rate of children in infant homes (at the end of the year, per 100,000 population aged 0-3)"
-PT_CHLD_INRESIDENTIAL_RATE_A,"Rate of children in residential care (at the end of the year, per 100,000 population aged  0-17) - Includes persons aged 18 years old and over in some countries"
-PT_CHLD_INRESIDENTIAL_RATE_B,"Rate of children in residential care (at the end of the year, per 100,000 population aged  0-17) - Excludes persons aged 18 years old and over when data is available"
-PT_CHLD_NO_PARENTAL_CARE_RATE,"Rate of children left without parental care (during the year, per 100,000 average population aged 0-17)"
-SP_MOTHLEAVE_DAYSAVG,Daily average number of women receiving maternity leave in the period
-SP_WOM_BIRTHGRANT,Total number of women receiving birth grant in the year
+PT_CHLD_INRESIDENTIAL,"Total number of children aged 0-17 in formal residential care, at the end of the year"
+PT_CHLD_DISAB_INRESIDENTIAL,"Total number of children with disabilities aged 0-17 in formal residential care, at the end of the year"
+PT_YOUNG_INRESIDENTIAL,"Total number of young people aged 18-24 in formal residential care, at the end of the year (TM Indicator 4.1)"
+PT_YOUNG_DISAB_INRESIDENTIAL,"Total number of young people with disabilities aged 18-24 in formal residential care, at the end of the year (TM Indicator 4.2)"
+PT_CHLD_NO_PARENTAL_CARE_INRESIDENTIAL,"Total number of children aged 0-17 who entered formal residential care, during the year"
+PT_CHLD_DISAB_ENTER_RESIDENTIAL,"Total number of children with disabilities aged 0-17 who entered formal residential care, during the year"
+PT_CHLD_LEFT_RESIDENTIAL,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon leaving care/death of child (TM Indicator 7.1)"
+PT_CHLD_LEFT_RESIDENTIAL_REUNION,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon: Family reunification (TM Indicator 7.2)"
+PT_CHLD_LEFT_RESIDENTIAL_FAMILY,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon: Placed in formal family-based care arrangements (TM Indicator 7.3)"
+PT_CHLD_LEFT_RESIDENTIAL_ADOPT,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon: Adopted (TM Indicator 7.4)"
+PT_CHLD_LEFT_RESIDENTIAL_INDEP,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon: Started independent life before age 18 (TM Indicator 7.5)"
+PT_CHLD_LEFT_RESIDENTIAL_DEATH,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon: Death of child (TM Indicator 7.6)"
+PT_CHLD_LEFT_RESIDENTIAL_OTHER,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon: Other reasons (TM Indicator 7.7)"
+PT_CHLD_DISAB_LEFT_RESIDENTIAL,"Total number of children with disabilities aged 0-17 who left formal residential care, during the year"
+PT_YOUNG_LEFT_RESIDENTIAL,"Total number of young people aged 18-24 who left formal residential care, during the year (TM Indicator 9.1)"
+PT_YOUNG_DISAB_LEFT_RESIDENTIAL,"Total number of young people with disabilities aged 18-24 who left formal residential care, during the year (TM Indicator 9.2)"
+PT_CHLD_CARED_BY_FOSTER,"Total number of children aged 0-17 in formal foster care, at the end of the year"
+PT_CHLD_DISAB_FOSTER,"Total number of children with disabilities aged 0-17 in formal foster care, at the end of the year"
+PT_CHLD_INKINSHIP,"Total number of children aged 0-17 in formal kinship care, at the end of the year"
+PT_CHLD_DISAB_INKINSHIP,"Total number of children with disabilities aged 0-17 in formal kinship care, at the end of the year"
+PT_CHLD_INOTHER_FAMILY,"Total number of children aged 0-17 in other forms of formal family-based care, at the end of the year"
+PT_CHLD_DISAB_INOTHER_FAMILY,"Total number of children with disabilities aged 0-17 in other forms of formal family-based care, at the end of the year"
+PT_CHLD_DISAB_INALL_FAMILY,"Total number of children with disabilities aged 0-17 in all formal family-based care, at the end of the year"
+PT_YOUNG_INALL_FAMILY,"Total number of young people aged 18-24 in all formal family-based care, at the end of the year (TM Indicator 16.1)"
+PT_YOUNG_DISAB_INALL_FAMILY,"Total number of young people with disabilities aged 18-24 in all formal family-based care, at the end of the year (TM Indicator 16.2)"
+PT_CHLD_ENTER_ALLFAMILY,"Total number of children aged 0-17 who entered all formal family-based care, during the year"
+PT_CHLD_DISAB_ENTER_ALLFAMILY,"Total number of children with disabilities aged 0-17 who entered all formal family-based care, during the year"
+PT_CHLD_ENTEREDFOSTER,"Total number of children aged 0-17 who entered formal foster care, during the year (TM Indicator 19.1)"
+PT_CHLD_DISAB_ENTEREDFOSTER,"Total number of children with disabilities aged 0-17 who entered formal foster care, during the year (TM Indicator 19.2)"
+PT_CHLD_ENTEREDKINSHIP,"Total number of children aged 0-17 who entered formal kinship care, during the year (TM Indicator 20.1)"
+PT_CHLD_DISAB_ENTEREDKINSHIP,"Total number of children with disabilities aged 0-17 who entered formal kinship care, during the year (TM Indicator 20.2)"
+PT_CHLD_ENTEREDOTHER_FAMILY,"Total number of children aged 0-17 who entered other forms of formal family-based care, during the year (TM Indicator 21.1)"
+PT_CHLD_DISAB_ENTEREDOTHER_FAMILY,"Total number of children with disabilities aged 0-17 who entered other forms of formal family-based care, during the year (TM Indicator 21.2)"
+PT_CHLD_LEFT_ALLFAMILY,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon leaving care/death of child (TM Indicator 22.1)"
+PT_CHLD_LEFT_ALLFAMILY_REUNION,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon: Family reunification (TM Indicator 22.2)"
+PT_CHLD_LEFT_ALLFAMILY_RESIDENTIAL,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon: Placed in formal residential care (TM Indicator 22.3)"
+PT_CHLD_LEFT_ALLFAMILY_ADOPT,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon: Adopted (TM Indicator 22.4)"
+PT_CHLD_LEFT_ALLFAMILY_INDEP,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon: Started independent life before age 18 (TM Indicator 22.5)"
+PT_CHLD_LEFT_ALLFAMILY_DEATH,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon: Death of child (TM Indicator 22.6)"
+PT_CHLD_LEFT_ALLFAMILY_OTHER,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon: Other reasons (TM Indicator 22.7)"
+PT_CHLD_DISAB_LEFT_ALLFAMILY,"Total number of children with disabilities aged 0-17 who left all formal family-based care, during the year"
+PT_YOUNG_LEFT_ALLFAMILY,"Total number of young people aged 18-24 who left all formal family-based care, during the year (TM Indicator 24.1)"
+PT_YOUNG_DISAB_LEFT_ALLFAMILY,"Total number of young people with disabilities aged 18-24 who left all formal family-based care, during the year (TM Indicator 24.2)"
+PT_CHLD_LEFTFOSTER,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon leaving care/death of child (TM Indicator 25.1)"
+PT_CHLD_DISAB_LEFTFOSTER,"Total number of children with disabilities aged 0-17 who left formal foster care, during the year, by destination upon leaving care/death of child (TM Indicator 25.2)"
+PT_CHLD_LEFTFOSTER_RETURNED,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Family reunification (TM Indicator 25.3)"
+PT_CHLD_LEFTFOSTER_FAMILY,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Placed in formal kinship or other forms of formal family-based care arrangements (TM Indicator 25.4)"
+PT_CHLD_LEFTFOSTER_EDUINSTITUTION,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Placed in formal residential care (TM Indicator 25.5)"
+PT_CHLD_LEFTFOSTER_ADOPT,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Adopted (TM Indicator 25.6)"
+PT_CHLD_LEFTFOSTER_INDEP,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Started independent life before age 18 (TM Indicator 25.7)"
+PT_CHLD_LEFTFOSTER_DEATH,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Death of child (TM Indicator 25.8)"
+PT_CHLD_LEFTFOSTER_OTHER_REASON,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Other reasons (TM Indicator 25.9)"
+PT_CHLD_LEFT_KINSHIP,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon leaving care/death of child (TM Indicator 26.1)"
+PT_CHLD_DISAB_LEFT_KINSHIP,"Total number of children with disabilities aged 0-17 who left formal kinship care, during the year, by destination upon leaving care/death of child (TM Indicator 26.2)"
+PT_CHLD_LEFT_KINSHIP_REUNION,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Family reunification (TM Indicator 26.3)"
+PT_CHLD_LEFT_KINSHIP_FAMILY,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Placed in formal foster or other forms of formal family-based care arrangements (TM Indicator 26.4)"
+PT_CHLD_LEFT_KINSHIP_RESIDENTIAL,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Placed in formal residential care (TM Indicator 26.5)"
+PT_CHLD_LEFT_KINSHIP_ADOPT,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Adopted (TM Indicator 26.6)"
+PT_CHLD_LEFT_KINSHIP_INDEP,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Started independent life before age 18 (TM Indicator 26.7)"
+PT_CHLD_LEFT_KINSHIP_DEATH,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Death of child (TM Indicator 26.8)"
+PT_CHLD_LEFT_KINSHIP_OTHER,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Other reasons (TM Indicator 26.9)"
+PT_CHLD_LEFT_FAMILY,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon leaving care/death of child (TM Indicator 27.1)"
+PT_CHLD_DISAB_LEFT_FAMILY,"Total number of children with disabilities aged 0-17 who left other forms of formal family-based care, during the year, by destination upon leaving care/death of child (TM Indicator 27.2)"
+PT_CHLD_LEFT_FAMILY_REUNION,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Family reunification (TM Indicator 27.3)"
+PT_CHLD_LEFT_FAMILY_FOSTER,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Placed in formal foster or kinship care arrangements (TM Indicator 27.4)"
+PT_CHLD_LEFT_FAMILY_RESIDENTIAL,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Placed in formal residential care (TM Indicator 27.5)"
+PT_CHLD_LEFT_FAMILY_ADOPT,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Adopted (TM Indicator 27.6)"
+PT_CHLD_LEFT_FAMILY_INDEP,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Started independent life before age 18 (TM Indicator 27.7)"
+PT_CHLD_LEFT_FAMILY_DEATH,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Death of child (TM Indicator 27.8)"
+PT_CHLD_LEFT_FAMILY_OTHER,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Other reasons (TM Indicator 27.9)"
+PT_CHLD_ADOPT_DOMESTIC,Total number of children aged 0-17 formally adopted - Domestic - during the year
+PT_CHLD_DISAB_ADOPT_DOMESTIC,Total number of children with disabilities aged 0-17 formally adopted - Domestic - during the year
+PT_CHLD_ADOPTION_INTERCOUNTRY,Total number of children aged 0-17 formally adopted - Intercountry - during the year
+PT_CHLD_ADOPTION_INTER_COUNTRY_DISAB,Total number of children with disabilities aged 0-17 formally adopted - Intercountry - during the year
+JJ_CHLD_VICTIM_CRIME,"Total number of child victims of crime aged 0-17 registered by the police, during the year"
+JJ_CHLD_WITNESS_CRIME,"Total number of child witnesses of crime aged 0-17 registered by the police, during the year"
+JJ_CHLD_PRETRIAL,"Total number of children in pre-sentence detention, at the end of the year"
+JJ_CHLD_PRISION_ADJUDICATION,"Total number of children in post-sentence detention, at the end of the year"
+JJ_CHLD_DETENTION,"Total number of children detained in pre-sentence detention, during the year"
+JJ_CHLD_POST_SENTENCE_DETENTION,"Total number of children detained in post-sentence detention, during the year"
+JJ_CHLD_CUSTODIAL_SENTENCE,"Total number of children sentenced to custodial sentences, during the year"
+JJ_CHLD_ALTERNATIVE_SENTENCE,"Total number of children sentenced to alternative measures, during the year"
+JJ_CHLD_COMPLAINT_HHRR,"Total number of children aged 0-17 who brought or on whose behalf a complaint was brought by an adult to independent human rights mechanisms, during the year (TM Indicator 38.1)"
+JJ_CHLD_DISAB_COMPLAINT_HHRR,"Total number of children with disabilities aged 0-17 who brought or on whose behalf a complaint was brought by an adult to independent human rights mechanisms, during the year (TM Indicator 38.2)"
+PT_CHLD_VIOLENCE_WELFARE,"Total number of child victims of violence aged 0-17 registered by child/social welfare authorities, during the year (TM Indicator 39.1)"
+PT_CHLD_DISAB_VIOLENCE_WELFARE,"Total number of child with disability victims of violence aged 0-17 registered by child/social welfare authorities, during the year (TM Indicator 39.2)"
+PT_CHLD_VIOLENCE_HEALTHCARE,"Total number of child victims of violence aged 0-17 registered by healthcare authorities, during the year (TM Indicator 40.1)"
+PT_CHLD_DISAB_VIOLENCE_HEALTHCARE,"Total number of child with disability victims of violence aged 0-17 registered by healthcare authorities, during the year (TM Indicator 40.2)"
+PT_CHLD_VIOLENCE_EDUCATION,"Total number of child victims of violence aged 0-17 registered by education authorities, during the year (TM Indicator 41.1)"
+PT_CHLD_DISAB_VIOLENCE_EDUCATION,"Total number of child with disability victims of violence aged 0-17 registered by education authorities, during the year (TM Indicator 41.2)"
+HT_REG_PS_DISAB,Total number of registered as persons with disabilities (at the end of the year)
+HT_REG_CHLD_DISAB,Total number of registered as children aged 0-17 with disabilities (at the end of the year)
+HT_NEW_REG_PS_DISAB,Total number of newly registered as persons with disabilities (during the year)
+HT_NEW_REG_CHLD_DISAB,Total number of newly registered as children aged 0-17 with disabilities (during the year)
+SP_PS_DISAB_CASH,"Number of persons with disabilities receiving disability cash benefits, at the end of the year"
+SP_CHLD_DISAB_CASH,"Number of children aged 0-17 receiving disability cash benefits, at the end of the year"
+SP_EXP_CHLD_DISAB_CASH,Expenditure on cash benefits provided directly to children with disabilities (Millions Local Currency)
+EDU_CHLD_DISAB,Number of children with disabilities in education (TM Indicator 51.1)
+EDU_CHLD_DISAB_GENERAL,Number of children with disabilities in education by type of school: Ordinary (general) school (TM Indicator 51.2)
+EDU_CHLD_DISAB_GENERAL_BOARDING,Number of children with disabilities in education by type of school: General Boarding school (TM Indicator 51.3)
+EDU_CHLD_DISAB_SPECIAL,Number of children with disabilities in education by type of school: Special school (TM Indicator 51.4)
+EDU_CHLD_DISAB_SPECIAL_BOARDING,Number of children with disabilities in education by type of school: Special Boarding school (TM Indicator 51.5)
+EDU_CHLD_DISAB_HOME,Number of children with disabilities in education: Home schooling (TM Indicator 51.6)
+EDU_CHLD_DISAB_L02,Number of children with disabilities in education by ISCED level: ISCED 0 (TM Indicator 51.7)
+EDU_CHLD_DISAB_L1,Number of children with disabilities in education by ISCED level: ISCED 1 (TM Indicator 51.8)
+EDU_CHLD_DISAB_L2,Number of children with disabilities in education by ISCED level: ISCED 2 (TM Indicator 51.9)
+EDU_CHLD_DISAB_L3,Number of children with disabilities in education by ISCED level: ISCED 3 (TM Indicator 51.10)
+PT_CHLD_INFORMALCARE_RATE,"Rate of children in formal alternative care at the end of the year (per 100,000) (TM Indicator 1)"
+PT_CHLD_INRESIDENTIAL_RATE_B,"Rate of children in formal residential care at the end of the year (per 100,000) (TM Indicator 2)"
+PT_CHLD_DISAB_INRESIDENTIAL_PROP,Proportion of children with disabilities in formal residential care at the end of the year (TM Indicator 3)
+PT_CHLD_ENTER_RESIDENTIAL_RATE,"Rate of children who entered formal residential care during the year (per 100,000) (TM Indicator 5)"
+PT_CHLD_DISAB_ENTER_RESIDENTIAL_PROP,Proportion of children with disabilities who entered formal residential care during the year (TM Indicator 6)
+PT_CHLD_DISAB_LEFT_RESIDENTIAL_PROP,Proportion of children with disabilities who left formal residential care during the year (TM Indicator 8)
+PT_CHLD_INRESIDENTIAL_PROP,Proportion of children in formal residential care of the total number of children in formal alternative care at the end of the year (TM Indicator 10)
+PT_CHLD_INCARE_FOSTER_RATE,"Rate of children in formal family-based care at the end of the year (per 100,000) (TM Indicator 11)"
+PT_CHLD_INFOSTER_PROP,Proportion of children in formal foster care of the total number of children in formal family-based care at the end of the year (TM Indicator 12.1)
+PT_CHLD_DISAB_INFOSTER_PROP,Proportion of children with disabilities in formal foster care of the total number of children in formal family-based care at the end of the year (TM Indicator 12.2)
+PT_CHLD_INKINSHIP_PROP,Proportion of children in formal kinship care of the total number of children in formal family-based care at the end of the year (TM Indicator 13.1)
+PT_CHLD_DISAB_INKINSHIP_PROP,Proportion of children with disabilities in formal kinship care of the total number of children in formal family-based care at the end of the year (TM Indicator 13.2)
+PT_CHLD_INOTHER_FAMILY_PROP,Proportion of children in other forms of formal family-based care of the total number of children in formal family-based care at the end of the year (TM Indicator 14.1)
+PT_CHLD_DISAB_INOTHER_FAMILY_PROP,Proportion of children with disabilities in other forms of formal family-based care of the total number of children in formal family-based care at the end of the year (TM Indicator 14.2)
+PT_CHLD_DISAB_INFAMILY_PROP,Proportion of children with disabilities in formal family-based care at the end of the year (TM Indicator 15)
+PT_CHLD_ENTEREDFAMILY_RATE,"Rate of children who entered formal family-based care during the year (per 100,000) (TM Indicator 17)"
+PT_CHLD_DISAB_ENTEREDFAMILY_PROP,Proportion of children with disabilities who entered formal family-based care during the year (TM Indicator 18)
+PT_CHLD_ALLFAMILY_PROP,Proportion of children in formal family-based care of the total number of children in formal alternative care at the end of the year (TM Indicator 28)
+PT_CHLD_ADOPTION_RATE,"Rate of formal Adoption of children during the year (per 100,000) (TM Indicator 29.1)"
+PT_CHLD_ADOPT_DOMESTIC_RATE,"Rate of formal Adoption of children during the year, by type: Domestic (per 100,000) (TM Indicator 29.2)"
+PT_CHLD_ADOPTION_INTERCOUNTRY_RATE,"Rate of formal Adoption of children during the year, by type: Intercountry (per 100,000) (TM Indicator 29.3)"
+PT_CHLD_DISAB_ADOPT_PROP,Proportion of children with disabilities who were formally adopted during the year (TM Indicator 30.1)
+PT_CHLD_DISAB_ADOPT_DOMESTIC_PROP,"Proportion of children with disabilities who were formally adopted during the year, by type: Domestic (TM Indicator 30.2)"
+PT_CHLD_DISAB_ADOPT_INTERCOUNTRY_PROP,"Proportion of children with disabilities who were formally adopted during the year, by type: Intercountry (TM Indicator 30.3)"
+JJ_CHLD_VICTIM_CRIME_RATE,"Rate of child victims of crime registered by the police during the year (per 100,000) (TM Indicator 31)"
+JJ_CHLD_WITNESS_CRIME_RATE,"Rate of child witnesses of crime registered by the police during the year (per 100,000) (TM Indicator 32)"
+JJ_CHLD_DETENTION_RATE,"Rate of children in detention at the end of the year (per 100,000) (TM Indicator 33.1)"
+JJ_CHLD_PRE_SENTENCE_DETENTION_RATE,"Rate of children in detention at the end of the year, by type: Pre-sentence detention (per 100,000) (TM Indicator 33.2)"
+JJ_CHLD_POST_SENTENCE_DETENTION_RATE,"Rate of children in detention at the end of the year, by type: Post-sentence detention (per 100,000) (TM Indicator 33.3)"
+JJ_CHLD_ENTER_DETENTION_RATE,"Rate of children detained during the year (per 100,000) (TM Indicator 34.1)"
+JJ_CHLD_ENTER_PRE_SENTENCE_DETENTION_RATE,"Rate of children detained during the year, by type: Pre-sentence detention (per 100,000) (TM Indicator 34.2)"
+JJ_CHLD_ENTER_POST_SENTENCE_DETENTION_RATE,"Rate of children detained during the year, by type: Post-sentence detention (per 100,000) (TM Indicator 34.3)"
+JJ_CHLD_CUSTODIAL_SENTENCE_PROP,Percentage of children sentenced to custodial sentences during the year (TM Indicator 36)
+JJ_CHLD_ALTERNATIVE_SENTENCE_PROP,Percentage of children sentenced with alternative measures during the year (TM Indicator 37)
+HT_REG_CHLD_DISAB_PROP,Proportion of children registered as with disabilities at the end of the year (TM Indicator 52)
+HT_NEW_REG_CHLD_DISAB_PROP,Proportion of children newly registered as with disabilities (during the year) (TM Indicator 53)
+DM_CHLD_NSO,Child population aged 0-17 at the beginning of the year (persons)
