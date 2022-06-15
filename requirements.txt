@@ -20,7 +20,7 @@ ipykernel
 notebook
 nbconvert
 jupyter
-pandoc
+# pandoc
 matplotlib
 # for small apps (and sharepoint auth)
 dash
@@ -28,6 +28,13 @@ dash-bootstrap-components
 dash_extensions
 jupyter-dash
 jupyter_server_proxy
+geojson-rewind
+# kaleido
+# latex
+# pylatex
+# pyppeteer
+# notebook-as-pdf
 styleframe
+statsmodels
 Office365-REST-Python-Client
 xlsxwriter
