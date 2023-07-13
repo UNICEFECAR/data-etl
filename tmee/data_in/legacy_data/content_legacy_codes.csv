@@ -1,0 +1,323 @@
+indicator,sex,age,unit,code
+1.1.1 Total population on 1 January,_T,_T,NUMBER,DM_POP_TOT
+1.1.2 Total male population on 1 January,M,_T,NUMBER,DM_POP_TOT
+1.1.3 Total female population on 1 January,F,_T,NUMBER,DM_POP_TOT
+1.1.4 Population aged 0-17 years on 1 January,_T,Y0T17,NUMBER,DM_POP_TOT
+1.1.5 Male population aged 0-17 years on 1 January,M,Y0T17,NUMBER,DM_POP_TOT
+1.1.6 Female population aged 0-17 years on 1 January,F,Y0T17,NUMBER,DM_POP_TOT
+"1.1.7 Population aged 0-2 years, on 1 January",_T,Y0T2,NUMBER,DM_POP_TOT
+"1.1.8 Population aged 0-4 years, on 1 January",_T,Y0T4,NUMBER,DM_POP_TOT
+"1.1.9 Population aged 3-6 years, on 1 January",_T,Y3T6,NUMBER,DM_POP_TOT
+1.1.10 Population aged 0-14 years on 1 January,_T,Y0T14,NUMBER,DM_POP_TOT
+1.1.11 Population aged 14-17 years on 1 January,_T,Y14T17,NUMBER,DM_POP_TOT
+"1.1.12 Population aged  7-17 years, on 1 January",_T,Y7T17,NUMBER,DM_POP_TOT
+1.1.13 Population aged 18-59 years on 1 January,_T,Y18T59,NUMBER,DM_POP_TOT
+1.1.14 Population aged 60 and over on 1 January,_T,Y_GE60,NUMBER,DM_POP_TOT
+1.1.15 Population aged 15-64 years on 1 January,_T,Y15T64,NUMBER,DM_POP_TOT
+1.1.16 Population aged 65 and over on 1 January,_T,Y_GE65,NUMBER,DM_POP_TOT
+1.2.1 Average total population,_T,_T,NUMBER,DM_AVG_POP_TOT
+1.2.2 Average total population aged 0-17 years,_T,Y0T17,NUMBER,DM_AVG_POP_TOT
+1.2.3 Average total population aged under 1 year,_T,Y0,NUMBER,DM_AVG_POP_TOT
+1.2.4 Average total population aged 0-2  years,_T,Y0T2,NUMBER,DM_AVG_POP_TOT
+1.2.5 Average total population aged 0-4  years,_T,Y0T4,NUMBER,DM_AVG_POP_TOT
+1.2.6 Average total population aged 5-9  years,_T,Y5T9,NUMBER,DM_AVG_POP_TOT
+1.2.7 Average total population aged 0-14  years,_T,Y0T14,NUMBER,DM_AVG_POP_TOT
+1.2.8 Average total population aged 14-17  years,_T,Y14T17,NUMBER,DM_AVG_POP_TOT
+1.2.9 Average total population aged 15-17 years,_T,Y15T17,NUMBER,DM_AVG_POP_TOT
+1.2.10 Average total population aged 15-19 years,_T,Y15T19,NUMBER,DM_AVG_POP_TOT
+1.2.11 Average total population aged 18-19 years,_T,Y18T19,NUMBER,DM_AVG_POP_TOT
+1.2.12 Average total male population,M,_T,NUMBER,DM_AVG_POP_TOT
+1.2.13 Average male population aged 0-17 years,M,Y0T17,NUMBER,DM_AVG_POP_TOT
+1.2.14 Average male population aged under 1 year,M,Y0,NUMBER,DM_AVG_POP_TOT
+1.2.15 Average male population aged 0-2 years,M,Y0T2,NUMBER,DM_AVG_POP_TOT
+1.2.16 Average male population aged 0-4 years,M,Y0T4,NUMBER,DM_AVG_POP_TOT
+1.2.17 Average male population aged 5-9 years,M,Y5T9,NUMBER,DM_AVG_POP_TOT
+1.2.18 Average male population aged 0-14 years,M,Y0T14,NUMBER,DM_AVG_POP_TOT
+1.2.19 Average male population aged 14-17 years,M,Y14T17,NUMBER,DM_AVG_POP_TOT
+1.2.20 Average male population aged 15-17 years,M,Y15T17,NUMBER,DM_AVG_POP_TOT
+1.2.21 Average male population aged 15-19 years,M,Y15T19,NUMBER,DM_AVG_POP_TOT
+1.2.22 Average total female population,F,_T,NUMBER,DM_AVG_POP_TOT
+1.2.23 Average female population aged 0-17 years,F,Y0T17,NUMBER,DM_AVG_POP_TOT
+1.2.24 Average female population aged under 1 year,F,Y0,NUMBER,DM_AVG_POP_TOT
+1.2.25 Average female population aged 0-2 years,F,Y0T2,NUMBER,DM_AVG_POP_TOT
+1.2.26 Average female population aged 0-4 years,F,Y0T4,NUMBER,DM_AVG_POP_TOT
+1.2.27 Average female population aged 5-9 years,F,Y5T9,NUMBER,DM_AVG_POP_TOT
+1.2.28 Average female population aged 0-14 years,F,Y0T14,NUMBER,DM_AVG_POP_TOT
+1.2.29 Average female population aged 14-17 years,F,Y14T17,NUMBER,DM_AVG_POP_TOT
+1.2.30 Average female population aged 15-17 years,F,Y15T17,NUMBER,DM_AVG_POP_TOT
+1.2.31 Average female population aged 15-19 years,F,Y15T19,NUMBER,DM_AVG_POP_TOT
+1.3.1 Proportion of population aged 0-2 years (% of total population),_T,Y0T2,PCNT,DM_POP_PROP
+1.3.2 Proportion of population aged 0-4 years (% of total population),_T,Y0T4,PCNT,DM_POP_PROP
+1.3.3 Proportion of population aged 3-6 years (% of total population),_T,Y3T6,PCNT,DM_POP_PROP
+1.3.4 Proportion of population aged 0-14 years  (% of total population),_T,Y0T14,PCNT,DM_POP_PROP
+1.3.5 Proportion of population aged 14-17 years (% of total population),_T,Y14T17,PCNT,DM_POP_PROP
+1.3.6 Proportion of population aged 0-17 years  (% of total population),_T,Y0T17,PCNT,DM_POP_PROP
+1.3.7 Proportion of population aged 7-17 years (% of total population),_T,Y7T17,PCNT,DM_POP_PROP
+1.3.8 Proportion of population aged 18-59 years (% of total population),_T,Y18T59,PCNT,DM_POP_PROP
+1.3.9 Proportion of population aged 60 years and over (% of total population),_T,Y_GE60,PCNT,DM_POP_PROP
+1.3.10 Proportion of population aged 15-64 years (% of total population),_T,Y15T64,PCNT,DM_POP_PROP
+1.3.11 Proportion of population aged 65 and over (% of total population),_T,Y_GE65,PCNT,DM_POP_PROP
+"1.3.12 Age dependency ratio (population aged 0-14 and 65 and over to population aged 15-64, %)",_T,_T,PCNT,DM_DPR_AGE
+"1.3.13 Child dependency ratio (population aged 0-14 to population aged 15-64, %)",_T,_T,PCNT,DM_DPR_CHD
+"1.3.14 Old-age dependency ratio (population aged 65 and over  to population aged 15-64, %)",_T,_T,PCNT,DM_DPR_OLD
+1.4.1 Number of immigrants,_T,_T,NUMBER,MG_IMG
+1.4.2 Number of emigrants,_T,_T,NUMBER,MG_EMG
+1.4.3 Net external migration,_T,_T,NUMBER,MG_NEXT
+"1.4.4 Crude rate of net migration (per 100,000 average population)",_T,_T,NUMBER,MG_NEXTRT
+1.5.1 Number of marriages,_T,_T,NUMBER,DM_MRG
+"1.5.2 Crude marriage rate  (per 1,000 average population)",_T,_T,NUMBER,DM_MRGRT
+"1.5.3 Age-specific marriage rate (marriages per 1,000 average population aged 15-44)",_T,Y15T44,NUMBER,DM_MRGRT
+1.5.4 Average age of women at first marriage (years),F,_T,NUMBER,DM_MRG_AGE
+1.5.5 Average age of men at first marriage (years),M,_T,NUMBER,DM_MRG_AGE
+1.5.6 Number of divorces,_T,_T,NUMBER,DM_DIV
+"1.5.7 Crude divorce rate (per 1,000 average population)",_T,_T,NUMBER,DM_CRDIVRT
+1.5.8 General divorce rate (per 100 marriages),_T,_T,PCNT,DM_GNDIVRT
+1.5.9 Number of children affected by parental divorce,_T,_T,NUMBER,DM_CHLD_DIV
+"1.5.10 Rate of children affected by parental divorce (per 1,000 average population aged 0-17)",_T,_T,NUMBER,DM_CHLDRT_DIV
+2.1.1 Number of total births,_T,_T,NUMBER,FT_BRTS
+2.1.2 Number of live births - Boys,M,_T,NUMBER,FT_BRTS_LIVE
+2.1.3 Number of live births - Girls,F,_T,NUMBER,FT_BRTS_LIVE
+2.1.4 Number of live births to women under age 20,_T,_T,NUMBER,FT_BRTS_LIVE_U20
+2.1.5 Proportion of births to mothers under age 20 (as % of total live births),_T,_T,PCNT,FT_BRTS_LIVERT_U20
+"2.1.6 Number of low-weight births (live births under 2,500 grams)",_T,_T,NUMBER,FT_BRTS_LIVE_LOW
+"2.1.7 Proportion of live births under 2,500 grams (births under 2,500 grams as % of total live births)",_T,_T,PCNT,FT_BRTS_LIVE_LOWRT
+"2.1.8 Proportion of low-weight births among mothers under age 20 (births under 2,500 grams as % of total live births to mothers under 20)",_T,Y0T19,PCNT,FT_BRTS_LIVE_LOWRT
+"2.2.1 Crude birth rate (live births per 1,000 average population)",_T,_T,NUMBER,FT_CRBR
+2.2.2 Total fertility rate (number of children per woman aged 15-49),_T,_T,NUMBER,FT_FRATE
+2.2.3 Mean age of women at the birth of first child (years),_T,_T,NUMBER,FT_BRTS_AGE
+"2.2.4 Age specific fertility rate among younger than 20 year olds (live births per 1,000 women aged 15-19)",_T,Y15T19,NUMBER,FT_FRATE
+2.3.1 Number of legally induced abortions,_T,_T,NUMBER,FT_ABRS
+2.3.2 Abortion rate (legally induced abortions per 100 live births),_T,_T,PCNT,FT_ABRT
+"2.3.3 Abortion rate per population (legally induced abortions per 1,000 women aged 15-49)",_T,_T,NUMBER,FT_POP_ABRT
+2.3.4 Number of legally induced abortions among women under age 20,_T,Y0T19,NUMBER,FT_ABRS
+2.3.5 Abortion rate among women under age 20 (legally induced abortions among women under age 20 per 100 live births to women of the same age),_T,Y0T19,PCNT,FT_ABRT
+"2.3.6 Abortion rate per population among women under age 20 (legally induced abortions among women under age 20 per 1,000 women aged 15-19)",_T,Y15T19,NUMBER,FT_POP_ABRT
+3.1.1 Number of children with disabilities in education,_T,_T,NUMBER,EDU_CHLD_DISAB
+3.1.2 Number of children with disabilities in education by sex: boys,M,_T,NUMBER,EDU_CHLD_DISAB
+3.1.3 Number of children with disabilities in education by sex: girls,F,_T,NUMBER,EDU_CHLD_DISAB
+3.1.4 Number of children with disabilities in education by type of school: Ordinary (general) school,_T,_T,NUMBER,EDU_CHLD_DISAB_GENERAL
+3.1.5 Number of children with disabilities in education by type of school: special school,_T,_T,NUMBER,EDU_CHLD_DISAB_SPECIAL
+3.1.6 Number of children with disabilities in education by ISCED level: ISCED 0,_T,_T,NUMBER,EDU_CHLD_DISAB_L02
+3.1.7 Number of children with disabilities in education by ISCED level: ISCED 1,_T,_T,NUMBER,EDU_CHLD_DISAB_L1
+3.1.8 Number of children with disabilities in education by ISCED level: ISCED 2,_T,_T,NUMBER,EDU_CHLD_DISAB_L2
+3.1.9 Number of children with disabilities in education by ISCED level: ISCED 3,_T,_T,NUMBER,EDU_CHLD_DISAB_L3
+4.1.1 Total number of children left without parental care (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE
+"4.1.2 Rate of children left without parental care ( during the year, per 100,000 average population aged 0-17)",_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_RATE
+4.1.3 Children left without parental care by sex: boys (during the year),M,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE
+4.1.4 Children left without parental care by sex: girls (during the year),F,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE
+4.1.5 Children  left without parental care by age: 0-2 year olds (during the year),_T,Y0T2,NUMBER,PT_CHLD_NO_PARENTAL_CARE
+4.1.6 Children  left without parental care by age: 3-6 year olds (during the year),_T,Y3T6,NUMBER,PT_CHLD_NO_PARENTAL_CARE
+4.1.7 Children  left without parental care by age: 7-17 year olds (during the year),_T,Y7T17,NUMBER,PT_CHLD_NO_PARENTAL_CARE
+4.1.8 Number of children with disabilities left without parental care (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_DISABILITY
+4.1.9 Children with disabilities left without parental care: boys (during the year),M,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_DISABILITY
+4.1.10 Children with disabilities left without parental care by sex: girls (during the year),F,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_DISABILITY
+4.1.11 Children left without parental care by cause: orphan children (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_ORPHAN
+4.1.12 Children left without parental care by cause: deprivation of parental rights (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_PARRIGHTS
+4.1.13 Children left without parental care by cause: abandonment or relinquishment by the parents (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_ABANDON
+4.1.14 Children left without parental care by cause: parents temporary unable/ not in a position to care for the child (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_UNABLE
+4.1.15 Children left without parental care by cause: other (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_OTHER
+4.1.16 Children left without parental care placed into care (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_INCARE
+4.1.17 Children left without parental care by type of placement: in residential care (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_INRESIDENTIAL
+4.1.18 Children left without parental care by type of placement: entered educational institution (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_ININSTITUTE
+4.1.19 Children left without parental care by type of placement: entered in foster care (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_INFOSTER
+4.1.20 Children left without parental care by type of placement: entered in guardian care (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_INGUARDIAN
+4.1.21 Children left without parental care by type of placement: were adopted (during the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_ADOPTED
+4.1.22 Total number of children in formal care (at the end of the year),_T,_T,NUMBER,PT_CHLD_INFORMALCARE
+"4.1.23 Rate of children  in formal care (at the end of the year, per 100,000 population aged 0-17)",_T,_T,NUMBER,PT_CHLD_INFORMALCARE_RATE
+4.2.1 Total number of children in residential care (at the end of the year),_T,_T,NUMBER,PT_CHLD_INRESIDENTIAL
+"4.2.2 Rate of children in residential care (at the end of the year, per 100,000 population aged  0-17)",_T,_T,NUMBER,PT_CHLD_INRESIDENTIAL_RATE
+4.2.3 Children in residential care by sex:  boys (at the end of the year),M,_T,NUMBER,PT_CHLD_INRESIDENTIAL
+4.2.4 Children in residential care by sex:  girls (at the end of the year),F,_T,NUMBER,PT_CHLD_INRESIDENTIAL
+4.2.5 Children in residential care by age: 0-2 years olds (at the end of the year),_T,Y0T2,NUMBER,PT_CHLD_INRESIDENTIAL
+4.2.6 Children in residential care by age: 3-6 years olds (at the end of the year),_T,Y3T6,NUMBER,PT_CHLD_INRESIDENTIAL
+4.2.7 Children in residential care by age: 7-17 years olds (at the end of the year),_T,Y7T17,NUMBER,PT_CHLD_INRESIDENTIAL
+4.2.8 Children in residential care by age: 18 years and older (at the end of the year),_T,Y_GE18,NUMBER,PT_CHLD_INRESIDENTIAL
+4.2.9 Number of children with disabilities in public residential care - all types of institutions (at the end of the year),_T,_T,NUMBER,PT_CHLD_DISAB_PUBLIC
+4.2.10 Children with disability in public residential care by sex:  boys (at the end of the year),M,_T,NUMBER,PT_CHLD_DISAB_PUBLIC
+4.2.11 Children with disability in public residential care by sex:  girls (at the end of the year),F,_T,NUMBER,PT_CHLD_DISAB_PUBLIC
+4.2.12 Children with disability in public residential care by age: 0-2 years olds (at the end of the year),_T,Y0T2,NUMBER,PT_CHLD_DISAB_PUBLIC
+4.2.13 Children with disability in public residential care by age: 3-6 years olds (at the end of the year),_T,Y3T6,NUMBER,PT_CHLD_DISAB_PUBLIC
+4.2.14 Children with disability in public residential care by age: 7-17 years olds (at the end of the year),_T,Y7T17,NUMBER,PT_CHLD_DISAB_PUBLIC
+4.2.15 Children with disability in public residential care by age: 18 years and older (at the end of the year),_T,Y_GE18,NUMBER,PT_CHLD_DISAB_PUBLIC
+4.2.16 Number of children without parental care in public residential care (at the end of the year),_T,_T,NUMBER,PT_CHLD_NO_PARENTAL_CARE_PUBLIC
+4.2.17 Children without parental care in public residential care by age: 0-2 years olds (at the end of the year),_T,Y0T2,NUMBER,PT_CHLD_NO_PARENTAL_CARE_PUBLIC
+4.2.18 Children without parental care in public residential care  by age: 3-6 years olds (at the end of the year),_T,Y3T6,NUMBER,PT_CHLD_NO_PARENTAL_CARE_PUBLIC
+4.2.19 Children without parental care in public residential care  by age: 7-17 years olds (at the end of the year),_T,Y7T17,NUMBER,PT_CHLD_NO_PARENTAL_CARE_PUBLIC
+4.2.20 Children without parental care in public residential care  by age: 18 years and older (at the end of the year),_T,Y_GE18,NUMBER,PT_CHLD_NO_PARENTAL_CARE_PUBLIC
+4.2.21 Number of children in infant homes (at the end of the year),_T,_T,NUMBER,PT_CHLD_ININFANTHOME
+"4.2.22 Rate of children in infant homes  (at the end of the year, per 100,000 population aged 0-3)",_T,_T,NUMBER,PT_CHLD_ININFANTHOME_RATE
+4.2.23 Number of children in general boarding schools - under the full state support (at the end of the year),_T,_T,NUMBER,PT_CHLD_INBOARDING
+4.2.24 Number of children in non-public residential care (at the end of the year),_T,_T,NUMBER,PT_CHLD_NONPUBLIC
+4.2.25 Children in non-public residential care by sex:  boys (at the end of the year),M,_T,NUMBER,PT_CHLD_NONPUBLIC
+4.2.26 Children in non-public residential care by sex:  girls (at the end of the year),F,_T,NUMBER,PT_CHLD_NONPUBLIC
+4.2.27 Children in non-public residential care by age: 0-2 years olds (at the end of the year),_T,Y0T2,NUMBER,PT_CHLD_NONPUBLIC
+4.2.28 Children in non-public residential care by age: 3-6 years olds (at the end of the year),_T,Y3T6,NUMBER,PT_CHLD_NONPUBLIC
+4.2.29 Children in non-public residential care by age: 7-17 years olds (at the end of the year),_T,Y7T17,NUMBER,PT_CHLD_NONPUBLIC
+4.2.30 Children in non-public residential care by age: 18 years and older (at the end of the year),_T,Y_GE18,NUMBER,PT_CHLD_NONPUBLIC
+4.2.31 Number of children who left public residential care - including those transferred to another institution (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE
+4.2.32 Children who left public residential care by reason: were returned to their parents /reintegrated in the family (during the year)/,_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_RETURNED
+4.2.33 Children who left public residential care by reason: were placed into family type care (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_INFAMILY
+4.2.34 Children who left public residential care by reason: were adopted (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_ADOPTED
+4.2.35 Children who left public residential care by reason: started independent life (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_INDEPENDENT
+4.2.36 Children who left public residential care by reason: transferred to another insitution (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_TRANSFERED
+4.2.37 Children who left public residential care by reason: died (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_DIED
+4.2.38 Children who left public residential care by reason: other (during the year),_T,_T,NUMBER,PT_CHLD_LEFTRESCARE_OTHER
+4.3.1 Children in care of foster parents or guardians (at the end of the year),_T,_T,NUMBER,PT_CHLD_INCARE_FOSTER
+"4.3.2 Rate of children in care of foster parents or guardians ( at the end of the year, per 100,000 population aged 0-17)",_T,_T,NUMBER,PT_CHLD_INCARE_FOSTER_RATE
+4.3.3 Number  of registered foster families (at the end of the year),_T,_T,NUMBER,PT_CHLD_REGISTERED_FORSTER
+4.3.4 Total number of children who entered foster care (during the year),_T,_T,NUMBER,PT_CHLD_ENTEREDFOSTER
+4.3.5 Children who entered foster care by sex: boys (during the year),M,_T,NUMBER,PT_CHLD_ENTEREDFOSTER
+4.3.6 Children who entered foster care by sex: girls (during the year),F,_T,NUMBER,PT_CHLD_ENTEREDFOSTER
+4.3.7  Children who entered foster care by age: 0-2 years olds (during the year),_T,Y0T2,NUMBER,PT_CHLD_ENTEREDFOSTER
+4.3.8 Children who entered foster care by age: 3-6 years olds (during the year),_T,Y3T6,NUMBER,PT_CHLD_ENTEREDFOSTER
+4.3.9 Children who entered foster care by age: 7-17 years olds (during the year),_T,Y7T17,NUMBER,PT_CHLD_ENTEREDFOSTER
+4.3.10 Total number of children who left foster care (during the year),_T,_T,NUMBER,PT_CHLD_LEFTFOSTER
+4.3.11 Children who left foster care by reason: were returned to their biological parents (during the year),_T,_T,NUMBER,PT_CHLD_LEFTFOSTER_RETURNED
+4.3.12 Children who left foster care by reason: entered child care/educational institutions (during the year),_T,_T,NUMBER,PT_CHLD_LEFTFOSTER_EDUINSTITUTION
+4.3.13 Children who left foster care by reason for leaving: started independent life (during the year),_T,_T,NUMBER,PT_CHLD_LEFTFOSTER_INDEPENDENT
+4.3.14 Children who left foster care by reason: other (during the year),_T,_T,NUMBER,PT_CHLD_LEFTFOSTER_OTHER
+4.3.15 Children who left foster care by reason: placed into other foster family (during the year),_T,_T,NUMBER,PT_CHLD_LEFTFOSTER_INFAMILY
+4.3.16 Total number of children cared for by foster parents (at the end of the year),_T,_T,NUMBER,PT_CHLD_CARED_BY_FOSTER
+"4.3.17 Rate of children in foster parents care (at the end of the year, per 100,000 population aged 0-17)",_T,_T,NUMBER,PT_CHLD_CARED_BY_FOSTER_RATE
+4.3.18 Children in foster care by age: 0-2 years old (at the end of the year),_T,Y0T2,NUMBER,PT_CHLD_CARED_BY_FOSTER
+4.3.19 Children in foster care by age: 3-6 years old (at the end of the year),_T,Y3T6,NUMBER,PT_CHLD_CARED_BY_FOSTER
+4.3.20 Children in foster care by age: 7-17 years old (at the end of the year),_T,Y7T17,NUMBER,PT_CHLD_CARED_BY_FOSTER
+4.3.21 Children in foster care by age: 18 years and older (at the end of the year),_T,Y_GE18,NUMBER,PT_CHLD_CARED_BY_FOSTER
+4.3.22 Number of children with disabilities in foster care (at the end of the year),_T,_T,NUMBER,PT_CHLD_DISAB_FOSTER
+4.3.23 Total number of children who entered guardian care (during the year),_T,_T,NUMBER,PT_CHLD_GUARDIAN
+4.3.24 Children who entered guardian care by sex: boys (during the year),M,_T,NUMBER,PT_CHLD_GUARDIAN
+4.3.25 Children who entered guardian care by sex: girls (during the year),F,_T,NUMBER,PT_CHLD_GUARDIAN
+4.3.26 Children who entered guardian care by age: 0-2 years olds (during the year),_T,Y0T2,NUMBER,PT_CHLD_GUARDIAN
+4.3.27 Children who entered guardian care by age: 3-6 years olds (during the year),_T,Y3T6,NUMBER,PT_CHLD_GUARDIAN
+4.3.28 Children who entered guardian care by age: 7-17 years olds (during the year),_T,Y7T17,NUMBER,PT_CHLD_GUARDIAN
+4.3.29 Total number of children who left guardian care (during the year),_T,_T,NUMBER,PT_CHLD_GUARDIAN_LEFT
+4.3.30 Children who left guardian care by reason: returned to their biological parents (during the year),_T,_T,NUMBER,PT_CHLD_GUARDIAN_LEFT_RETURNED
+4.3.31 Children who left guardian care by reason: entered child care/educational institutions (during the year),_T,_T,NUMBER,PT_CHLD_GUARDIAN_LEFT_INSTITUTION
+4.3.32 Children who left guardian care by reason: started independent life (during the year),_T,_T,NUMBER,PT_CHLD_GUARDIAN_LEFT_INDEPENDET
+4.3.33 Children who left guardian care by reason: other (during the year),_T,_T,NUMBER,PT_CHLD_GUARDIAN_LEFT_OTHER
+4.3.34 Total number of children cared for by guardians (at the end of the year),_T,_T,NUMBER,PT_CHLD_CARED_GUARDIAN
+"4.3.35 Rate of children in guradian care (at the end of the year, per 100,000 population aged 0-17)",_T,_T,NUMBER,PT_CHLD_CARED_GUARDIAN_RATE
+4.3.36 Number of children with disabilities in guardian care (at the end of the year),_T,_T,NUMBER,PT_CHLD_DISAB_CARED_GUARDIAN
+4.4.1 Total number of adoptions - including intercountry adoptions (during the year),_T,_T,NUMBER,PT_CHLD_ADOPTION
+"4.4.2 Gross adoption rate (per 100,000 average population aged  0-3)",_T,_T,NUMBER,PT_CHLD_ADOPTION_RATE
+4.4.3 Adopted children by age: 0-2 years old (during the year),_T,Y0T2,NUMBER,PT_CHLD_ADOPTION
+4.4.4 Adopted children by age: 3-6 years old (during the year),_T,Y3T6,NUMBER,PT_CHLD_ADOPTION
+4.4.5 Adopted children by age: 7-17 years old (during the year),_T,Y7T17,NUMBER,PT_CHLD_ADOPTION
+4.4.6 Number of adopted children with disabilities (during the year),_T,_T,NUMBER,PT_CHLD_ADOPTION_DISAB
+4.4.7 Total number of intercountry adoptions (during the year),_T,_T,NUMBER,PT_CHLD_ADOPTION_INTERCOUNTRY
+"4.4.8 Intercountry adoption rate (per 100,000 average population aged  0-3)",_T,_T,NUMBER,PT_CHLD_ADOPTION_INTERCOUNTRY_RATE
+4.4.9 Intercountry adoptions: number of adopted children with disabilities (during the year),_T,_T,NUMBER,PT_CHLD_ADOPTION_INTER_COUNTRY_DISAB
+4.4.10 Total number of children available for adoption (at the end of the year),_T,_T,NUMBER,PT_CHLD_ADOPTION_AVAILABLE
+4.4.11 Children available for adoption by age: 0-2 years old (at the end of the year),_T,Y0T2,NUMBER,PT_CHLD_ADOPTION_AVAILABLE
+4.4.12 Children available for adoption by age: 3-6 years old (at the end of the year),_T,Y3T6,NUMBER,PT_CHLD_ADOPTION_AVAILABLE
+4.4.13 Children available for adoption by age: 7-9 years old (at the end of the year),_T,Y7T9,NUMBER,PT_CHLD_ADOPTION_AVAILABLE
+4.4.14 Children available for adoption by age: 10-17 years old (at the end of the year),_T,Y10T17,NUMBER,PT_CHLD_ADOPTION_AVAILABLE
+4.4.15 Number of children with disabilities available for adoption (at the end of the year),_T,_T,NUMBER,PT_CHLD_ADOPTION_AVAILABLE_DISAB
+"5.1.1 Registered total crime rate (per 100,000 average population)",_T,_T,NUMBER,JJ_CRIMERT
+5.1.2 Registered number of crimes committed by or with participation of children/juveniles (during the year),_T,_T,NUMBER,JJ_JUV_CRIME
+"5.1.3 Registered juvenile crime rate (per 100,000 average population aged 14-17)",_T,Y14T17,NUMBER,JJ_CRIMERT
+5.2.1 Total number of registered crimes committed against children (during the year),_T,_T,NUMBER,JJ_CHLD_CRIME
+"5.2.2 Registered rate of crimes committed against children (per 100,000 average population aged 0-17)",_T,_T,NUMBER,JJ_CHLD_CRIMERT
+5.2.3 Registered crimes committed against children: against boys (during the year),M,_T,NUMBER,JJ_CHLD_CRIME
+5.2.4 Registered crimes committed against children: against girls (during the year),F,_T,NUMBER,JJ_CHLD_CRIME
+5.2.5 Registered crimes committed against children: victim aged 13 years or younger (during the year),_T,Y0T13,NUMBER,JJ_CHLD_CRIME
+5.2.6 Registered crimes committed against children: victim  14-17 years old (during the year),_T,Y14T17,NUMBER,JJ_CHLD_CRIME
+5.2.7 Registered crimes committed against children by age of perpetrator: 13 years or younger (during the year),_T,Y0T13,NUMBER,JJ_CHLD_CRIME_PERPETRATOR
+5.2.8 Registered crimes committed against children by age of perpetrator: 14-17 years old (during the year),_T,Y14T17,NUMBER,JJ_CHLD_CRIME_PERPETRATOR
+5.2.9 Registered crimes committed against children by age of perpetrator: 18 years or older (during the year),_T,Y_GE18,NUMBER,JJ_CHLD_CRIME_PERPETRATOR
+5.2.10 Registered crimes committed against children by type: against a person (as % of total crimes committed against children),_T,_T,PCNT,JJ_CHLD_CRIME_PERSON
+5.2.11 Registered crimes committed against children by type: property crimes (as % of total crimes committed against children),_T,_T,PCNT,JJ_CHLD_CRIME_PROPERTY
+5.2.12 Registered crimes committed against children by type: other crimes (as % of total crimes committed against children),_T,_T,PCNT,JJ_CHLD_CRIME_OTHER
+"5.3.1 Total number of children reported as being in contact with the police (because of their own behaviour, during the year)",_T,_T,NUMBER,JJ_CHLD_POLICE
+5.3.2 Children reported as being in contact with the police by sex: boys (during the year),M,_T,NUMBER,JJ_CHLD_POLICE
+5.3.3 Children reported as being in contact with the police by sex: girls (during the year),F,_T,NUMBER,JJ_CHLD_POLICE
+5.3.4 Children reported as being in contact with the police by age:  13 years or younger (during the year),_T,Y0T13,NUMBER,JJ_CHLD_POLICE
+5.3.5 Children reported as being in contact with the police by age: 14-17 years old (during the year),_T,Y14T17,NUMBER,JJ_CHLD_POLICE
+5.4.1 Total number of arrested children (during the year),_T,_T,NUMBER,JJ_CHLD_ARRESTED
+5.4.2 Number of arrested boys (during the year),M,_T,NUMBER,JJ_CHLD_ARRESTED
+5.4.3 Number of arrested girls (during the year),F,_T,NUMBER,JJ_CHLD_ARRESTED
+"5.5.1 Total number of children charged with an offence (crimes, during the year)",_T,_T,NUMBER,JJ_CHLD_OFFENCE
+5.5.2 Children charged with an offence (crimes) by sex: boys (during the year),M,_T,NUMBER,JJ_CHLD_OFFENCE
+5.5.3 Children charged with an offence (crimes) by sex: girls (during the year),F,_T,NUMBER,JJ_CHLD_OFFENCE
+5.5.4 Children charged with an offence (crimes) by type of offence: against a person (as % of total),_T,_T,PCNT,JJ_CHLD_OFFENCE_PERSON
+5.5.5 Children charged with an offence (crimes) by type of offence: against a property (as % of total),_T,_T,PCNT,JJ_CHLD_OFFENCE_PROPERTY
+5.5.6 Children charged with an offence (crimes) by type of offence: other type (as % of total),_T,_T,PCNT,JJ_CHLD_OFFENCE_OTHER
+5.6.1 Total number of children who entered pre-sentence detention (during the year),_T,_T,NUMBER,JJ_CHLD_DETENTION
+5.6.2 Children who entered pre-sentence detention:  boys (during the year),M,_T,NUMBER,JJ_CHLD_DETENTION
+5.6.3 Children who entered pre-sentence detention: girls (during the year),F,_T,NUMBER,JJ_CHLD_DETENTION
+5.5.1 Total number of children as victims involved in criminal proceedings (during the year),_T,_T,NUMBER,JJ_CHLD_VICTIM
+5.5.2 Children as victims involved in criminal proceedings by sex: boys (during the year),M,_T,NUMBER,JJ_CHLD_VICTIM
+5.5.3 Children as victims involved in criminal proceedings by sex: girls (during the year),F,_T,NUMBER,JJ_CHLD_VICTIM
+5.5.4 Children as victims involved in criminal proceedings by age: 13 years or younger (during the year),_T,Y0T13,NUMBER,JJ_CHLD_VICTIM
+5.5.5 Children as victims involved in criminal proceedings by age: 14-17 years old (during the year),_T,Y14T17,NUMBER,JJ_CHLD_VICTIM
+5.5.6 Total number of children as offenders involved in criminal proceedings (during the year),_T,_T,NUMBER,JJ_CHLD_OFFENDER
+5.5.7 Children as offenders involved in criminal proceedings by sex: boys (during the year),M,_T,NUMBER,JJ_CHLD_OFFENDER
+5.5.8 Children as offenders involved in criminal proceedings by sex: girls (during the year),F,_T,NUMBER,JJ_CHLD_OFFENDER
+5.5.9 Children as offenders involved in criminal proceedings by age: 13 years old and younger (during the year),_T,Y0T13,NUMBER,JJ_CHLD_OFFENDER
+5.5.10 Children as offenders involved in criminal proceedings by age: 14-17 years old  (during the year),_T,Y14T17,NUMBER,JJ_CHLD_OFFENDER
+5.8.1 Total number of children convicted for criminal activity (during the year),_T,_T,NUMBER,JJ_CHLD_CONVICTED
+"5.8.2 Children sentencing rate (per 100,000 average population aged 14-17)",_T,_T,NUMBER,JJ_CHLD_SENTENCERT
+5.8.3 Children convicted for criminal activity by sex: boys (during the year),M,_T,NUMBER,JJ_CHLD_CONVICTED
+5.8.4 Children convicted for criminal activity by sex: girls (during the year),F,_T,NUMBER,JJ_CHLD_CONVICTED
+5.8.5 Convicted juveniles by type of crime: violent crimes (during the year),_T,_T,NUMBER,JJ_CHLD_CONVICTED_VIOLENT
+5.8.6 Convicted juveniles by type of crime: property crimes (during the year),_T,_T,NUMBER,JJ_CHLD_CONVICTED_PROPERTY
+5.8.7 Convicted juveniles by type of crime: other crimes (during the year),_T,_T,NUMBER,JJ_CHLD_CONVICTED_OTHER
+"5.8.8 Convicted juveniles by type of sentencing: committal to a closed facility (including prisons, penal colony, during the year)",_T,_T,NUMBER,JJ_CHLD_SENTENCE_PRISION
+5.8.9 Convicted juveniles by type of sentencing: placed in specialized educational/correctional  institution (during the year),_T,_T,NUMBER,JJ_CHLD_SENTENCE_CORRECTIONAL
+5.8.10 Convicted juveniles by type of sentencing: supervision or probation order (during the year),_T,_T,NUMBER,JJ_CHLD_SENTENCE_PROBATION
+5.8.11 Convicted juveniles by type of sentencing: suspended or conditional custodial sentence (during the year),_T,_T,NUMBER,JJ_CHLD_SENTENCE_CUSTODIAL
+5.8.12 Convicted juveniles by type of sentencing: fine/financial compensation (during the year),_T,_T,NUMBER,JJ_CHLD_SENTENCE_FINANCIAL
+5.8.13 Convicted juveniles by type of sentencing: community service (during the year),_T,_T,NUMBER,JJ_CHLD_SENTENCE_SERVICE
+5.8.14 Convicted juveniles by type of sentencing: corrective labour (during the year),_T,_T,NUMBER,JJ_CHLD_SENTENCE_LABOUR
+5.8.15 Convicted juveniles by type of sentencing: other (during the year),_T,_T,NUMBER,JJ_CHLD_SENTENCE_OTHER
+"5.9.1 Total number of children in a closed facility  (by reason of their actual or suspected participation in criminal activity, at the end of the year)",_T,_T,NUMBER,JJ_CHLD_PRISION
+5.9.2 Total number of children in pre-trial facilities (at the end of the year),_T,_T,NUMBER,JJ_CHLD_PRETRIAL
+5.9.3 Number of children in pre-trial facilities: boys (at the end of the year),M,_T,NUMBER,JJ_CHLD_PRETRIAL
+5.9.4 Number of children in pre-trial facilities: girls (at the end of the year),F,_T,NUMBER,JJ_CHLD_PRETRIAL
+5.9.5 Total number of children in closed facilities following adjudication (at the end of the year),_T,_T,NUMBER,JJ_CHLD_PRISION_ADJUDICATION
+5.9.6 Number of children in closed facilities following adjudication: boys (at the end of the year),M,_T,NUMBER,JJ_CHLD_PRISION_ADJUDICATION
+5.9.7 Number of children in closed facilities following adjudication: girls (at the end of the year),F,_T,NUMBER,JJ_CHLD_PRISION_ADJUDICATION
+6.1.1 Total social protection expenditure as % of GDP,_T,_T,PCNT,SP_TOT
+6.1.2 Expenditure on cash social benefits as % of GDP,_T,_T,PCNT,SP_SOC_BEN_CASH
+6.1.3 Expenditure on social benefits in kind as % of GDP,_T,_T,PCNT,SP_BEN_KIND
+6.1.4 Expenditure on social benefits under Family/Children function as % of GDP,_T,_T,PCNT,SP_BEN_FAMILY
+6.1.5 Expenditure on cash social benefits under Family/Children function as % of GDP,_T,_T,PCNT,SP_BEN_FAMILY_CASH
+6.1.6 Expenditure on social benefits in kind under Family/Children function as % of GDP,_T,_T,PCNT,SP_BEN_FAMILY_KIND
+6.1.7 Expenditure on means-tested social protection benefits as % of total social protection expenditure,_T,_T,PCNT,SP_MEANS_TESTED
+6.1.8 Expenditure on cash social benefits as % of total social protection expenditure,_T,_T,PCNT,SP_CASH_EXP
+6.1.9 Expenditure on social benefits in kind as % of total social protection expenditure,_T,_T,PCNT,SP_KIND_EXP
+6.1.10 Expenditure on social benefits under Family/Children function as % of total social protection expenditure,_T,_T,PCNT,SP_BEN_FAMILY_EXP
+6.1.11 Social benefits in kind under family/children function as % of total social benefits in kind,_T,_T,PCNT,SP_KIND_FAMILY_KIND
+6.1.12 Expenditure on Family allowances as % of total cash expenditure under family/children function,_T,_T,PCNT,SP_FAMILY_ALLOW
+6.1.13 Expenditure on Income compensation during maternity as % of total cash expenditure under family/children function,_T,_T,PCNT,SP_IMCOME_MATERNITY
+6.1.14  Expenditure on Parental leave as % of total cash expenditure under family/children function,_T,_T,PCNT,SP_PARENTAL_LEAVE
+6.1.15 Expenditure on Birth grant as % of total cash expenditure under family/children function,_T,_T,PCNT,SP_BITRH_GRANT
+6.1.16 Expenditure on other family cash social benefits as % of total cash expenditure under family/children function,_T,_T,PCNT,SP_OTHER_FAMILY
+6.2.1 Total number of children receiving monthly family allowances,_T,_T,NUMBER,SP_ALLOW_CHILD
+6.2.2 Number of children receiving means-tested family allowances,_T,_T,NUMBER,SP_ALLOW_MEANSTEST
+6.2.3 Number of children of single-parent families receiving specific allowances,_T,_T,NUMBER,SP_ALLOW_SINGLE
+6.2.4 Number of children receiving other child allowances,_T,_T,NUMBER,SP_ALLOW_OTHER_CHILD
+6.2.5 Number of children for whom foster/guardian allowance is received,_T,_T,NUMBER,SP_ALLOW_FOSGUARD
+6.2.6 Total number of families receiving monthly family allowances,_T,_T,NUMBER,SP_ALLOW_FAMILY
+6.2.7 Number of single-parent families receiving specific allowances,_T,_T,NUMBER,SP_ALLOW_FAMILY_SINGLE
+6.2.8 Number of families receiving other child allowances,_T,_T,NUMBER,SP_ALLOW_FAMILY_OTHER_CHILD
+6.2.9 Total number of families receiving foster/guardian allowance,_T,_T,NUMBER,SP_ALLOW_FAMILY_FOSSINGLE
+6.2.10 Daily average number of women receiving maternity leave in the period,_T,_T,NUMBER,SP_MOTHLEAVE_DAYSAVG
+6.2.11 Total number of women receiving birth grant in the year,_T,_T,NUMBER,SP_WOM_BIRTHGRANT
+6.2.12 Daily average number of parents on parental leave,_T,_T,NUMBER,SP_PATLEAVE_DAYSAVG
+6.3.1 Total number of pensioners,_T,_T,NUMBER,SP_PENSIONER
+6.3.2 Number of old age pensioners,_T,_T,NUMBER,SP_PENSIONER_OLD
+6.3.3 Total number of disability pensioners,_T,_T,NUMBER,SP_PENSIONER_DISAB
+6.3.4 Number of children receiving pension for disability,_T,_T,NUMBER,SP_PENSIONER_DISAB_CHLD
+6.3.5 Percentage of disability pensioners who are children,_T,_T,PCNT,SP_PENSIONER_DISAB_CHLDRT
+6.3.6 Total number of survivor's pensioners,_T,_T,NUMBER,SP_PENSIONER_SURVIVOR
+6.3.7 Number of orphan's pensions or allowances,_T,_T,NUMBER,SP_PENSION_ORPHAN
+6.3.8 Total number of early retirement pensioners,_T,_T,NUMBER,SP_PENSIONER_EARLY
+"6.3.9 Total number of veteran, merit and other pensioners",_T,_T,NUMBER,SP_PENSIONER_VETERAN
+6.3.10 Average value of pensions (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE
+6.3.11 Average value of old age pensions (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE_OLD
+6.3.12 Average value of  disability  pensions (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE_DISAB
+6.3.13 Average value of  disability  pensions for children (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE_DISAB_CHLD
+6.3.14 Average value of survivors'  pensions (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE_SURVIVOR
+6.3.15 Average value of orphan's pensions or allowances (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE_ORPHAN
+6.3.16 Average minimum pension (natonal currency),_T,_T,NUMBER,SP_PENSION_VALUE_MIN

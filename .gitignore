@@ -1,4 +1,5 @@
 
+
 # Created by https://www.toptal.com/developers/gitignore/api/windows,jupyternotebooks,microsoftoffice
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,jupyternotebooks,microsoftoffice
 
@@ -11,6 +12,41 @@
 
 # python cache (created by imports executed in notebooks)
 __pycache__
+*/__pycache__/*
+*.pyc
+
+# Debug file used for temporary debugging
+debug_file.py
+india_covid_dash.py
+india_covid_dash_.py
+EDA_covid19_trends.py
+EDA_covid19_v0.py
+ETL_steps*.py
+ETL_steps.txt
+EDA_ICO.py
+main_extract_transform_*.py
+sitan_extract.py
+query_keys_SDMX.py
+test_imports.py
+test_nb.py
+test_nb2.py
+
+# Gecko driver log file
+*.log
+
+# exclude all archive folders
+z_archive
+data/*/z_archive
+
+# Exclude all data output by the ETL script (commented by Alberto below)
+# data_out/
+# (Alberto: treated for tmee/data_out end of file)
+
+# this is legacy, because the data folder has been renamed to data_out
+data/*
+
+# exclude folder created by visual studio 2019
+#.vs/
 
 # IPython
 profile_default/
@@ -65,5 +101,144 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/windows,jupyternotebooks,microsoftoffice
+data/data_normalized/S_101_normalized.xlsx
+data/data_normalized/S_101_normalized.xlsx
+data/data_raw/S-155, S-156 nrgi_data.csv
+data/data_raw/S-166 Registering Property.xlsx
+data/data_raw/S-167 Pct_IP_CommunityLands.zip
+data/data_raw/S-189 idmc_displacement_all_dataset.xlsx
+data/data_raw/S-3-Ratifications_20200828165211.xls
+data/data_raw/S-37, S-38, S-39.xlsx
+data/data_raw/S-49 WORLD_Dataset_Poverty_3.9.15_0/WORLD Poverty Public Use Data Dictionary.pdf
+data/data_raw/S-49 WORLD_Dataset_Poverty_3.9.15_0/WORLD_Dataset_Poverty_3.9.15.dta
+data/data_raw/S-49 WORLD_Dataset_Poverty_3.9.15_0/WORLD_Dataset_Poverty_3.9.15.xls
+data/data_raw/S-59-Ratifications_20200828165032.xls
+data/data_raw/S-59-Ratifications_20200828165128.xls
+data/data_raw/S-59-Ratifications_20200828165147.xls
+data/data_raw/S_10, S_13, S_36, S_45/Childhood Public Use Data Dictionary_4.16.15.pdf
+data/data_raw/S_10, S_13, S_36, S_45/WORLD_Dataset_Childhood_4.16.15.dta
+data/data_raw/S_10, S_13, S_36, S_45/WORLD_Dataset_Childhood_4.16.15.xls
+data/data_raw/S_10, S_13, S_36, S_45/WORLD_Dataset_Childhood_4.16.15.zip
+data/data_raw/S_40, S_41, S_63, S_64, S_65, S_66/WORLD Adult Labor Public Use Data Dictionary_9.17.2018.pdf
+data/data_raw/S_40, S_41, S_63, S_64, S_65, S_66/WORLD_Dataset_Adult_Labor_9.17.2018.dta
+data/data_raw/S_40, S_41, S_63, S_64, S_65, S_66/WORLD_Dataset_Adult_Labor_9.17.2018.xls
+data/data_raw/S_40, S_41, S_63, S_64, S_65, S_66/WORLD_Dataset_Adult_Labor_9.17.2018_0.zip
+data/data_raw/S_42, S_43, S_44/Workplace Discrimination Public Use Data Dictionary_13July20.pdf
+data/data_raw/S_42, S_43, S_44/WORLD_Dataset_Discrimination_at_Work_14July20_2.zip
+data/data_raw/S_42, S_43, S_44/WORLD_discrimination_at_work.dta
+data/data_raw/S_42, S_43, S_44/WORLD_discrimination_at_work.xls
+data/data_raw/S_8, S_9/All WOrld Policy Analysis Centre Data Catalogues.pdf
+data/data_raw/S_8, S_9/Child Labor Public Use Data Dictionary 10.28.19.pdf
+data/data_raw/S_8, S_9/WORLD_child_labor.dta
+data/data_raw/S_8, S_9/WORLD_child_labor.xls
+data/data_raw/S_8, S_9/WORLD_Dataset_Child_Labor_10.28.19.zip
+
+# ignore local VS code settings (this should be applied from dev container)
+settings.json
+
+# ignore folder tests
+tests
+
+# ignore from validation
+/tmee/validation/*.csv
+/tmee/validation/*.py
+/tmee/validation/ipynb_2_py
+
+# ignore python files with mapping dictionaries (written by ETL)
+# these dictionaries have been copied into codes_2_map.py
+seasons_map.py
+country_map.py
+country_names_map.py
+
+
+# Ignore noteboooks prototypes
+API_calls.ipynb
+column_mapper.ipynb
+proto_sqlite.ipynb
+prototype_API_Transform.ipynb
+wrap_API_calls.ipynb
+wrap_API_calls2.ipynb
+proto_extract_transform.ipynb
+excel_tmee.ipynb
+sdg_16_2_1.ipynb
+sitan_extract.ipynb
+sitan_invoice.ipynb
+EDA_covid19_trends.ipynb
+EDA_covid19_v0.ipynb
+ETL_steps*.ipynb
+main_legacy.ipynb
+main_legacy_proto.ipynb
+prototype_legacy.ipynb
+prototype_API.ipynb
+prototype_API_v2.ipynb
+prototype_transform.ipynb
+prototype_validation.ipynb
+main_extract_transform - Copy.ipynb
+test_imports.ipynb
+sharepoint_auth.ipynb
+test_pandera.ipynb
+try_sql_excel.ipynb
+validation_analytics.ipynb
+test_nb.ipynb
+main_validation - Copy.ipynb
+proto_who_imm_scrape.ipynb
+bdss_uis.ipynb
+bdss_uis_sdg_ger.ipynb
+bdss_uis_unicef.ipynb
+
+
+# ignore folder below (all excel files)
+populate_data_dictionary
+
+# ignore some versioning excel files
+indicator_dictionary_TM_v01.xlsx
+sitan_report*.xlsx
+cross_cut*.xlsx
+report_*.xlsx
+discarded_report.xlsx
+Full_TMEE_Database.xlsx
+styled.xlsx
+content_legacy.csv
+
+# ignore csv files from particular folders
+/tmee/data_out/data_raw/*.csv
+/tmee/data_out/data_transformed/*.csv
+# track from data_out: TMEE_ETL_out --> this allows to know how the DB is updated along history
+# commented: lack of git LFS space
+# !TMEE_ETL_out.csv
+# ignore xml files from particular folders
+/tmee/data_out/data_raw/*.xml
+# ignore json files from particular folders
+/tmee/data_out/data_raw/*.json
+# ignore excel files from codelist
+/tmee/data_out/codelists/*.xlsx
+# ignore csv files from codelist
+/tmee/data_out/codelists/*.csv
+# track from codelists: indicators, age and units
+!CL_TMEE_INDICATORS.csv
+!CL_TMEE_UNITS.csv
+!CL_TMEE_AGE.csv
+
+# ignore test folder population (india ICO project)
+/tmee/population/
+# ignore folder ba_sdmx (flavio project bosnia sdmx)
+/tmee/ba_sdmx/
+# ignore folder ebse_dev (ebse project kpis)
+/tmee/ebse/
+# ignore folder dash_pages (parse TM dashboard pages)
+/tmee/tm_dash/
+
+# Ignore history download folder
+noYreq
+extractTest
+loopTest
+older
+
+# Ignore data_raw, transformed and data_2_load folders in tmee folder
+/tmee/data_raw/
+/tmee/data_transformed/
+/tmee/data_2_load/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,jupyternotebooks,microsoftoffice

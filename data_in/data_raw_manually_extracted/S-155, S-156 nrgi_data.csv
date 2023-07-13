@@ -1,0 +1,90 @@
+rank,name,sector,region,Composite/component,Subcomponent,Indicator,score
+1,Norway (oil & gas),oil-gas,WE,Composite,,,86
+2,Chile (mining),mining,LAC,Composite,,,81
+3,United Kingdom (oil & gas),oil-gas,WE,Composite,,,77
+4,Canada (Alberta) (oil & gas),oil-gas,NA,Composite,,,75
+5,United States of America (Gulf of Mexico) (oil & gas),oil-gas,NA,Composite,,,74
+6,Brazil (oil & gas),oil-gas,LAC,Composite,,,71
+7,Colombia (oil & gas),oil-gas,LAC,Composite,,,71
+8,Australia (Western) (mining),mining,ASIAP,Composite,,,71
+9,India (oil & gas),oil-gas,ASIAP,Composite,,,70
+10,Colombia (mining),mining,LAC,Composite,,,69
+11,Indonesia (mining),mining,ASIAP,Composite,,,68
+12,Indonesia (oil & gas),oil-gas,ASIAP,Composite,,,68
+13,Ghana (oil & gas),oil-gas,SSA-AF,Composite,,,67
+14,Trinidad and Tobago (oil & gas),oil-gas,LAC,Composite,,,64
+15,Mongolia (mining),mining,EURA,Composite,,,64
+16,Peru (mining),mining,LAC,Composite,,,62
+17,Mexico (oil & gas),oil-gas,LAC,Composite,,,61
+18,Botswana (mining),mining,SSA-AF,Composite,,,61
+19,Mexico (mining),mining,LAC,Composite,,,60
+20,Burkina Faso (mining),mining,SSA-AF,Composite,,,59
+21,Philippines (mining),mining,ASIAP,Composite,,,58
+22,Argentina (oil & gas),oil-gas,LAC,Composite,,,57
+23,South Africa (mining),mining,SSA-AF,Composite,,,57
+24,Ghana (mining),mining,SSA-AF,Composite,,,56
+25,Kazakhstan (oil & gas),oil-gas,EURA,Composite,,,56
+26,Tunisia (oil & gas),oil-gas,MENA-AF,Composite,,,56
+27,Malaysia (oil & gas),oil-gas,ASIAP,Composite,,,56
+28,Cote d'Ivoire (oil & gas),oil-gas,SSA-AF,Composite,,,55
+29,China (oil & gas),oil-gas,ASIAP,Composite,,,55
+30,Cameroon (oil & gas),oil-gas,SSA-AF,Composite,,,54
+31,Niger (mining),mining,SSA-AF,Composite,,,54
+32,Ecuador (oil & gas),oil-gas,LAC,Composite,,,54
+33,Kuwait (oil & gas),oil-gas,MENA,Composite,,,54
+34,Bolivia (oil & gas),oil-gas,LAC,Composite,,,54
+35,Mali (mining),mining,SSA-AF,Composite,,,53
+36,Tanzania (oil & gas),oil-gas,SSA-AF,Composite,,,53
+37,Morocco (mining),mining,MENA-AF,Composite,,,52
+38,Kyrgyz Republic (mining),mining,EURA,Composite,,,51
+39,Oman (oil & gas),oil-gas,MENA,Composite,,,50
+40,Zambia (mining),mining,SSA-AF,Composite,,,50
+41,Mozambique (oil & gas),oil-gas,SSA-AF,Composite,,,50
+42,Tanzania (mining),mining,SSA-AF,Composite,,,49
+43,Timor-Leste (oil & gas),oil-gas,ASIAP,Composite,,,49
+44,Ukraine (oil & gas),oil-gas,EURA,Composite,,,49
+45,Vietnam (oil & gas),oil-gas,ASIAP,Composite,,,48
+46,Papua New Guinea (mining),mining,ASIAP,Composite,,,47
+47,Azerbaijan (oil & gas),oil-gas,EURA,Composite,,,47
+48,Tunisia (mining),mining,MENA-AF,Composite,,,46
+49,Sierra Leone (mining),mining,SSA-AF,Composite,,,46
+50,Russia (oil & gas),oil-gas,EURA,Composite,,,45
+51,Uganda (oil & gas),oil-gas,SSA-AF,Composite,,,44
+52,Liberia (mining),mining,SSA-AF,Composite,,,44
+53,Qatar (oil & gas),oil-gas,MENA,Composite,,,43
+54,United Arab Emirates (oil & gas),oil-gas,MENA-AF,Composite,,,42
+55,Nigeria (oil & gas),oil-gas,SSA-AF,Composite,,,42
+56,Guatemala (mining),mining,LAC,Composite,,,41
+57,Ethiopia (mining),mining,SSA-AF,Composite,,,40
+58,Congo (oil & gas),oil-gas,SSA-AF,Composite,,,39
+59,Bahrain (oil & gas),oil-gas,MENA,Composite,,,39
+60,Egypt (oil & gas),oil-gas,MENA-AF,Composite,,,39
+61,Iraq (oil & gas),oil-gas,MENA,Composite,,,38
+62,Iran (oil & gas),oil-gas,MENA,Composite,,,38
+63,Guinea (mining),mining,SSA-AF,Composite,,,38
+64,Lao PDR (mining),mining,ASIAP,Composite,,,38
+65,Gabon (oil & gas),oil-gas,SSA-AF,Composite,,,36
+66,Cuba (oil & gas),oil-gas,LAC,Composite,,,36
+67,Bangladesh (oil & gas),oil-gas,ASIAP,Composite,,,36
+68,Madagascar (mining),mining,SSA-AF,Composite,,,36
+69,Saudi Arabia (oil & gas),oil-gas,MENA,Composite,,,36
+70,Angola (oil & gas),oil-gas,SSA-AF,Composite,,,35
+71,Afghanistan (mining),mining,EURA,Composite,,,34
+72,Chad (oil & gas),oil-gas,SSA-AF,Composite,,,34
+73,Algeria (oil & gas),oil-gas,MENA-AF,Composite,,,33
+74,Venezuela (oil & gas),oil-gas,,Composite,,,33
+75,Democratic Republic of Congo (mining),mining,SSA-AF,Composite,,,33
+76,South Sudan (oil & gas),oil-gas,SSA-AF,Composite,,,32
+77,Myanmar (oil & gas),oil-gas,ASIAP,Composite,,,31
+78,Yemen (oil & gas),oil-gas,MENA,Composite,,,30
+79,Cambodia (mining),mining,ASIAP,Composite,,,30
+80,Uzbekistan (oil & gas),oil-gas,EURA,Composite,,,29
+81,Zimbabwe (mining),mining,SSA-AF,Composite,,,29
+82,Mauritania (mining),mining,MENA-AF,Composite,,,29
+83,Myanmar (mining),mining,ASIAP,Composite,,,27
+84,Democratic Republic of Congo (oil & gas),oil-gas,SSA-AF,Composite,,,25
+85,Equatorial Guinea (oil & gas),oil-gas,SSA-AF,Composite,,,22
+86,Sudan (oil & gas),oil-gas,SSA-AF,Composite,,,21
+87,Libya (oil & gas),oil-gas,MENA-AF,Composite,,,18
+88,Turkmenistan (oil & gas),oil-gas,EURA,Composite,,,11
+89,Eritrea (mining),mining,SSA-AF,Composite,,,10

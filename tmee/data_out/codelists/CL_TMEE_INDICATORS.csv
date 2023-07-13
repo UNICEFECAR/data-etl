@@ -1,0 +1,702 @@
+Code,Indicator_name
+DM_BRTS,Number of births (expressed in thousands)
+DM_POP_URBN,Urban population as a percentage of the total population
+DM_POP_TOT_AGE,Total population by age (expressed in thousands)
+DM_POP_NETM,Net migration
+FT_WHS_PBR,Preterm birth rate (per 100 live births)
+DM_FRATE_TOT,Total fertility rate (average live births per woman aged 15-49)
+FT_SP_DYN_ADKL,"3.7.2. Adolescent birth rate (per 1,000 women aged 15-19)"
+NT_BW_LBW,Prevalence of low birth weight among new-borns (%)
+MT_SP_DYN_CDRT_IN,"Crude death rate (per 1,000 average population)"
+DM_LIFE_EXP,Life expectancy at birth (average years)
+CME_MRY0,"Infant mortality rate (per 1,000 live births)"
+CME_MRY0T4,"3.2.1. Under-5 mortality rate (per 1,000 live births)"
+CME_MRM0,"3.2.2. Neonatal mortality rate (per 1,000 live births)"
+MNCH_MMR,"3.1.1. Maternal mortality ratio (per 100,000 live births)"
+MT_SDG_SUICIDE,"Suicide mortality rate (deaths per 100,000 population)"
+HT_SH_HAP_HBSAG,3.3.4. SDG Incidence of Hepatitis B (percentage of children under 5 years who have developed chronic HBV infection)
+HT_SH_TBS_INCD,"3.3.2. Incidence of tuberculosis (new cases per 100,000 average population)"
+HT_SH_HIV_INCD,"3.3.1. Number of new HIV infections per 1,000 uninfected population"
+HT_SH_SUD_ALCOL,3.5.1. Alcohol use disorders of 12 month prevalence with 95% (percentage of population aged 15+ years)
+MNCH_SAB,3.1.2. Proportion of births attended by skilled health personnel (%)
+HVA_PMTCT_ARV_CVG,Percentage of pregnant women living with HIV receiving ARVs for PMTCT
+MNCH_ANC4,Antenatal care 4+ visits - percentage of women attended at least four times during pregnancy by any provider
+MNCH_PNCMOM,Postnatal care for mothers - percentage of women who received postnatal care within 2 days of giving birth
+MNCH_PNEUCARE,Care seeking for children (under age 5) with symptoms of Acute Respiratory Infection -ARI- (%)
+HT_SH_FPL_MTMM,"3.7.1. Women of reproductive age 15-49 years, who have family planning modern methods (%)"
+IM_DTP3,Percentage of surviving infants who received the third dose of DPT-containing vaccine
+HT_DIST79DTP3_P,Percentage of districts with DTP3 coverage 50-79%
+IM_MCV2,"Percentage of children who received the 2nd dose of measles-containing vaccine, as per administered in the national schedule"
+HT_DIST79MCV2_P,Percentage of districts with MCV2 coverage 50-79%
+HT_SDG_PM25,Annual mean concentration of particles PM2.5 (ug/m3)
+NT_BF_EIBF,Percentage of most recent live-born children to women with a live birth in the last 2 years who were put to the breast within one hour of birth
+NT_BF_EXBF,Percentage of infants under 6 months of age who are exclusively breastfed
+NT_CF_MAD,Percentage of children age 6-23 months who had at least the minimum dietary diversity and the minimum meal frequency during the previous day
+NT_ANT_WHZ_PO2,2.2.2. Percentage of children under age 5 who are above two standard deviations (moderate and severe) of the median weight for height of the WHO standard - Overweight prevelance
+NT_ANT_HAZ_NE2,2.2.1. Percentage of children under age 5 who fall below minus two standard deviations (moderate and severe) of the median height for age of the WHO standard -(stunting prevelance)
+ECD_CHLD_36-59M_ADLT_SRC,4.2.3. Percentage of children with whom any adult household member has engaged in 4 or more activities to provide early stimulation and responsive care in the last 3 days
+HT_SH_SUD_TREAT,"3.5.1. Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders (%)"
+HT_SH_ACS_UNHC,3.8.1. Universal health coverage (UHC) service coverage index
+HT_ADOL_UNMETMED_NOUNMET,Percentage of self-reported unmet needs for medical examination and main reason declared: No unmet needs to declare
+HT_ADOL_UNMETMED_TOOEXP,Percentage of self-reported unmet needs for medical examination and main reason declared: Too expensive
+HT_ADOL_UNMETMED_TOOFAR,Percentage of self-reported unmet needs for medical examination and main reason declared: Too far to travel
+HT_ADOL_UNMETMED_WAITING,Percentage of self-reported unmet needs for medical examination and main reason declared: Waiting list
+HT_ADOL_UNMETMED_TOOEFW,Percentage of self-reported unmet needs for medical examination and main reason declared: Too expensive or too far to travel or waiting list
+HT_ADOL_UNMETMED_NOTIME,Percentage of self-reported unmet needs for medical examination and main reason declared: No time
+HT_ADOL_UNMETMED_NOKNOW,Percentage of self-reported unmet needs for medical examination and main reason declared: Didn't know any good doctor or specialist
+HT_ADOL_UNMETMED_FEAR,"Percentage of self-reported unmet needs for medical examination and main reason declared: Fear of doctor, hospital, examination or treatment"
+HT_ADOL_UNMETMED_HOPING,Percentage of self-reported unmet needs for medical examination and main reason declared: Wanted to wait and see if problem got better on its own
+HT_ADOL_UNMETMED_OTH,Percentage of self-reported unmet needs for medical examination and main reason declared: Other
+HT_SH_XPD_CHEX_GD_ZS,Current health expenditure (% of GDP)
+HT_SH_XPD_GHED_GD_ZS,Domestic general government health expenditure (% of GDP)
+HT_SH_XPD_GHED_GE_ZS,Domestic general government health expenditure (% of general government expenditure)
+HT_SH_XPD_GHED_CH_ZS,Domestic general government health expenditure (% of current health expenditure)
+HT_SH_XPD_GHED_PP_CD,"Domestic general government health expenditure per capita, PPP (current international $)"
+HT_SH_XPD_GHED_PC_CD,Domestic general government health expenditure per capita (current US$)
+HT_SH_XPD_PVTD_CH_ZS,Domestic private health expenditure (% of current health expenditure)
+HT_SH_XPD_PVTD_PP_CD,"Domestic private health expenditure per capita, PPP (current international $)"
+HT_SH_XPD_PVTD_PC_CD,Domestic private health expenditure per capita (current US$)
+HT_SH_XPD_CHEX_PP_CD,"Current health expenditure per capita, PPP (current international $)"
+HT_SH_XPD_CHEX_PC_CD,Current health expenditure per capita (current US$)
+HT_SH_XPD_OOPC_CH_ZS,"Out-of-pocket expenditure (OOPS), as % of current health expenditure"
+HT_SH_XPD_OOPC_PP_CD,"Out-of-pocket expenditure (OOPS) per capita, PPP (current international $)"
+HT_SH_XPD_OOPC_PC_CD,Out-of-pocket expenditure (OOPS) per capita (current US$)
+HT_INS_COV,Total population covered by public and primary private health insurance (%)
+CME_TMY0T4,Under-five deaths (number)
+CME_SBR,"Stillbirth rate (per 1,000 total births)"
+CME_PND,Neonatal deaths as a percentage of under-five deaths
+HT_U5DEATH_AIDS,Percentage of under-five deaths detailed by cause: AIDS
+HT_U5DEATH_DIAR,Percentage of under-five deaths detailed by cause: Diarrhoea
+HT_U5DEATH_PERT,Percentage of under-five deaths detailed by cause: Pertussis
+HT_U5DEATH_TETA,Percentage of under-five deaths detailed by cause: Tetanus
+HT_U5DEATH_MEAS,Percentage of under-five deaths detailed by cause: Measles
+HT_U5DEATH_MENI,Percentage of under-five deaths detailed by cause: Meningitis
+HT_U5DEATH_MALA,Percentage of under-five deaths detailed by cause: Malaria
+HT_U5DEATH_PNEU,Percentage of under-five deaths detailed by cause: Pneumonia
+HT_U5DEATH_PRET,Percentage of under-five deaths detailed by cause: Preterm
+HT_U5DEATH_INTR,Percentage of under-five deaths detailed by cause: Intrapartum-related events
+HT_U5DEATH_SEPS,Percentage of under-five deaths detailed by cause: Sepsis
+HT_U5DEATH_OTHE,Percentage of under-five deaths detailed by cause: Other
+HT_U5DEATH_CONG,Percentage of under-five deaths detailed by cause: Congenital
+HT_U5DEATH_NCDS,Percentage of under-five deaths detailed by cause: NCDs
+HT_U5DEATH_INJU,Percentage of under-five deaths detailed by cause: Injuries
+MNCH_CSEC,C-section rate - percentage of deliveries by cesarean section
+MNCH_MATERNAL_DEATHS,Estimated number of maternal deaths
+MNCH_SH_MMR_RISK,Lifetime risk of maternal death (1 in X)
+MNCH_SH_MMR_RISK_ZS,Lifetime risk of maternal death (%)
+MNCH_INSTDEL,Institutional deliveries - percentage of deliveries in a health facility
+MNCH_BIRTH18,Early childbearing - percentage of women (aged 20-24 years) who gave birth before age 18
+HT_SH_ACS_DTP3,3.b.1. Proportion of the target population with access to 3 doses of diphtheria-tetanus-pertussis (DTP3)
+HT_SH_ACS_HPV,"3.b.1. Proportion of the target population with access to affordable medicines and vaccines on a sustainable basis, human papillomavirus (HPV)"
+HT_SH_ACS_MCV2,3.b.1. Proportion of the target population with access to measles-containing-vaccine second-dose (MCV2)
+HT_SH_ACS_PCV3,3.b.1. Proportion of the target population with access to pneumococcal conjugate 3rd dose (PCV3)
+IM_MCV1,Percentage of surviving infants who received the first dose of measles-containing vaccine
+HT_DIST80DTP3_P,Percentage of districts with at least 80% DTP3 coverage
+HT_COVERAGE_DTP3,WHO-UNICEF estimates of DTP3 coverage (%)
+HT_SN_STA_OVWGTN,2.2.2. Number of children moderately or severely overweight (in thousands)
+HT_SH_STA_ANEM,2.2.3. Proportion of women aged 15-49 years with anaemia (%)
+HT_SH_STA_ANEM_NPRG,"2.2.3. Proportion of women aged 15-49 years with anaemia, non-pregnant (%)"
+HT_SH_STA_ANEM_PREG,"2.2.3. Proportion of women aged 15-49 years with anaemia, pregnant (%)"
+NT_BW_UNW,Percentage of births without a birth weight in key data sources
+HT_NCD_BMI_18A,"Prevalence of underweight among adults, BMI < 18.5 (%, age-standardized estimate)"
+HT_ADOL_MT,Adolescents (aged 10-19 years) mortality rate
+HT_SH_PRV_SMOK,3.a.1. Age-standardized prevalence of current tobacco use among persons aged 15 years and older
+HT_CDRT_SELF_HARM,Crude death rate caused by intentional self-harm
+HT_ADOL_MEAL,Adolescents (15-year-olds) skipping either breakfast or dinner (%)
+HT_ADOL_NO_EXCS,Adolescents (15-year-olds) who report doing no physical activity outside of school (%)
+HT_ADOL_VGRS_EXCS,Adolescents (15-year-olds) who report regularly engaging in vigorous physical activity outside of school (%)
+HT_CHLD_BODY_RGHT,"Children (11-, 13- and 15-year-olds) who report thinking their body is ""about right"" (%)"
+HT_CHLD_BODY_NO_RGHT,"Children (11-, 13- and 15-year-olds) who report thinking their body is ""much too thin"" or ""much too fat"" (%)"
+HT_CHLD_REG_SMOK,"Children (11-, 13- and 15-year-olds) who are regular smokers (%)"
+HT_CHLD_DRNK,"Children (11-, 13- and 15-year-olds) who have been drunk at least twice (%)"
+HT_ADOL_HIGH_SATS,Adolescents (15-year-olds) reporting high life satisfaction (%)
+HT_ADOL_LOW_SATS,Adolescents (15-year-olds) reporting low life satisfaction (%)
+HT_SH_HIV_0014,Number of children (aged 0-14 years) living with HIV
+HVA_EPI_LHIV_0-19,Estimated number of children (aged 0-19 years) living with HIV
+HVA_EPI_LHIV_15-24,Estimated number of adolescents and young people (aged 15-24 years) living with HIV
+HVA_EPI_INF_RT_0-14,"Estimated incidence rate (new HIV infection per 1,000 uninfected population, children aged 0-14 years)"
+HVA_EPI_INF_RT_10-19,"Estimated incidence rate (new HIV infection per 1,000 uninfected population, adolescents aged 10-19 years)"
+HVA_PED_ART_NUM,Reported number of children (aged 0-14 years) receiving antiretroviral treatment (ART)
+HVA_PED_ART_CVG,Percentage of children (aged 0-14 years) living with HIV and receiving antiretroviral therapy (ART)
+HVA_EPI_INF_ANN_15-24,Estimated number of new HIV infections in adolescents and young people aged 15-24 years
+WS_PPL_W-SM,6.1.1. Proportion of population using safely managed drinking water services
+WS_PPL_S-SM,6.1.2. Proportion of population using safely managed sanitation services
+WS_PPL_H-B,6.2.1. Proportion of population with a handwashing facility with soap and water available at home
+WS_PPS_S-OD,Proportion of population practising open defecation
+HT_NO_BTH_SHW_FLSH,"Proportion of population having neither a bath, nor a shower, nor indoor flushing toilet in their household"
+EDUNF_STU_L01_TOT,Number of early childhood educational development enrolments
+EDUNF_STU_L01_PUB,Number of early childhood educational development enrolments in public institutions
+EDUNF_STU_L01_PRV,Number of early childhood educational development enrolments in private institutions
+EDU_SDG_GER_L01,Gross enrolment ratio of children aged 0-2 years in early childhood educational development programs
+EDU_SDG_FREE_EDU_L02,4.2.5. Number of years of free pre-primary education guaranteed in legal framework
+EDU_SDG_COMP_EDU_L02,4.2.5. Number of years of compulsory pre-primary education guaranteed in legal framework
+EDUNF_STU_L02_TOT,Number of pre-primary (ISCED 02) education enrolments
+EDUNF_STU_L02_PUB,Number of pre-primary (ISCED 02) education enrolments in public institutions
+EDUNF_STU_L02_PRV,Number of pre-primary (ISCED 02) education enrolments in  private institutions
+EDUNF_GER_L02,Gross enrolment ratio in pre-primary (ISCED 02) education of population aged 3-6 years
+EDUNF_NER_L02,Net enrolment ratio in pre-primary (ISCED 02) education of population aged 3-6 years
+EDUNF_PRP_L02,Percentage of all children enrolled in private institutions of pre-primary (ISCED 02) education
+EDUNF_FEP_L02,Percentage of females in pre-primary (ISCED 02) education
+EDUNF_NERA_L1_UNDER1,"4.2.2. Participation in organized learning (Adjusted net enrolment rate, one year before official primary entry age - Administrative data)"
+EDUNF_NARA_L1_UNDER1,"4.2.2. Participation in organized learning (Adjusted net attendance rate, one year before official primary entry age - Household survey data)"
+ECD_CHLD_36-59M_LMPSL,"4.2.1. Percentage of children (aged 36-59 months) developmentally on track in at least 3 of the 4 following domains: literacy-numeracy, physical, social-emotional and learning"
+EDUNF_NIR_L1_ENTRYAGE,Net Intake Rate to primary education of official entry age
+EDUNF_STU_L1_TOT,Number of primary education (ISCED 1) enrolments
+EDUNF_FEP_L1,Percentage of females in primary (ISCED 1) education
+EDUNF_STU_L2_TOT,Number of lower secondary education (ISCED 2) enrolments
+EDUNF_FEP_L2,Percentage of females in lower secondary (ISCED 2) education
+EDUNF_STU_L3_TOT,Number of upper secondary education (ISCED 3) enrolments
+EDUNF_FEP_L3,Percentage of females in upper secondary education (ISCED 3)
+EDUNF_FEP_L3_GEN,Percentage of females in general upper-secondary education
+EDUNF_FEP_L3_VOC,Percentage of females in vocational upper-secondary education
+EDUNF_STU_L3_GEN,Number of upper secondary enrolments by program orientation - General
+EDUNF_STU_L3_VOC,Number of upper secondary enrolments by program orientation - Vocational
+EDUNF_STU_L1_PUB,Number of primary (ISCED 1) education enrolments in public institutions
+EDUNF_STU_L1_PRV,Number of primary (ISCED 1) education enrolments in private institutions
+EDUNF_PRP_L1,Percentage of enrolments in private schools of primary (ISCED 1) education
+EDUNF_STU_L2_PUB,Number of lower secondary education (ISCED 2) enrolments in public institutions
+EDUNF_STU_L2_PRV,Number of lower secondary education (ISCED 2) enrolments in private institutions
+EDUNF_PRP_L2,Percentage of children enrolled in private schools of lower secondary (ISCED 2) education
+EDUNF_STU_L3_PUB,Number of children enrolled in upper secondary education (ISCED 3) - public institutions
+EDUNF_STU_L3_PRV,Number of children enrolled in upper secondary education (ISCED 3) - private institutions
+EDUNF_PRP_L3,Percentage of students enrolled in private schools of upper secondary (ISCED 3) education
+EDUNF_STU_L3_GEN_PUB,"Upper secondary enrolments - General, public institutions"
+EDUNF_STU_L3_GEN_PRV,"Upper secondary enrolments - General, private institutions"
+EDUNF_STU_L3_VOC_PUB,Vocational or technical upper secondary education enrolments in public institutions
+EDUNF_STU_L3_VOC_PRV,Vocational or technical upper secondary education enrolments  in private institutions
+EDUNF_GER_L1,Primary education (ISCED 1) gross enrolment ratio (% of relevant population)
+EDUNF_GER_L2,Lower secondary education (ISCED 2) gross enrolment ratio (% of relevant population)
+EDUNF_GER_L1AND2,Basic education (ISCED 1 and 2) gross enrolment ratio (% of relevant population)
+EDUNF_GER_L2_GEN,Lower secondary education (ISCED 2) gross enrolment ratio by program orientation - General (% of relevant population)
+EDUNF_GER_L2_VOC,Lower secondary education (ISCED 2) gross enrolment ratio by program orientation - Vocational (% of relevant population)
+EDUNF_GER_L3,Upper-secondary education (ISCED 3) gross enrolment ratio (% of population aged 15-18)
+EDUNF_GER_L3_GEN,Upper secondary gross enrolment ratio by program orientiation - General (% of population aged 15-18)
+EDUNF_GER_L3_VOC,Upper secondary gross enrolment ratio by program orientiation - Vocational (% of population aged 15-18)
+EDUNF_NERA_L1,Adjusted net enrolment rate: primary education (%)
+EDUNF_NERA_L2,Adjusted net enrolment rate: lower secondary (%)
+EDU_SDG_STU_L1_G2OR3_REA,Proportion of children in grade 2 or 3 reaching minimum proficiency in reading
+EDU_SDG_STU_L1_G2OR3_MAT,Proportion of children in grade 2 or 3 reaching minimum proficiency in math
+EDU_SDG_STU_L1_GLAST_REA,Proportion of children at the end of primary education reaching minimum proficiency in reading
+EDU_SDG_STU_L1_GLAST_MAT,Proportion of children at the end of primary education reaching minimum proficiency in math
+EDU_SDG_STU_L2_GLAST_REA,Proportion of children at the end of lower secondary education reaching minimum proficiency in reading
+EDU_SDG_STU_L2_GLAST_MAT,Proportion of children at the end of lower secondary education reaching minimum proficiency in math
+EDUNF_ADMIN_L1_GLAST_REA,Administration of nationally representative learning assessment in reading (End primary)
+EDUNF_ADMIN_L1_GLAST_MAT,Administration of nationally representative learning assessment in math (End primary)
+EDUNF_ADMIN_L2_REA,Administration of nationally representative learning assessment in reading (Lower secondary)
+EDUNF_ADMIN_L2_MAT,Administration of nationally representative learning assessment in math (Lower secondary)
+EDU_TIMSS_MAT4,TIMSS: Mean performance on the Mathematics scale for Grade 4 students
+EDU_TIMSS_SCI4,TIMSS: Mean performance on the Science scale for Grade 4 students
+EDU_TIMSS_MAT8,TIMSS: Mean performance on the Mathematics scale for Grade 8 students
+EDU_TIMSS_SCI8,TIMSS: Mean performance on the Science scale for Grade 8 students
+EDU_PIRLS_REA,PIRLS: Mean performance on the Reading scale for Grade 4 students
+EDU_PISA_MAT,PISA: Mean performance on the Mathematics scale for 15-year-old students
+EDU_PISA_REA,PISA: Mean performance on the Reading scale for 15-year-old students
+EDU_PISA_SCI,PISA: Mean performance on the Science scale for 15-year-old students
+EDUNF_LR_YOUTH,"Youth literacy rate, population 15-24 years (%)"
+EDUNF_RPTR_L1,Number of repeaters in all grades of primary education (ISCED 1)
+EDUNF_RPTR_L2,Number of repeaters in all grades of lower secondary general education (ISCED 2 - C4)
+EDUNF_REPP_L1,Percentage of repeaters in all grades of primary education (ISCED 1)
+EDUNF_REPP_L2,Percentage of repeaters in all grades of lower secondary general education (ISCED 2 - C4)
+EDUNF_FRP_L1,Percentage of females among repeaters in primary education (ISCED 1)
+EDUNF_DR_L1,Cumulative drop-out rate in primary education (% to the last grade)
+EDUNF_ESL_L1,Number of early school leavers from primary education
+EDUNF_DR_L2,Cumulative drop-out rate in lower secondary general education (% to the last grade)
+EDUNF_SR_L1,Survival rate to the last grade of primary education (%)
+EDUNF_SR_L2,Survival rate to the last grade of lower secondary general education (%)
+EDUNF_CR_L1,Completion rate - Primary education (%)
+EDUNF_CR_L2,Completion rate - Lower secondary education (%)
+EDUNF_CR_L3,Completion rate - Upper secondary education (%)
+EDUNF_TRANRA_L2,Effective transition rate from primary to lower secondary general education (%)
+EDUNF_OFST_L1,Number of out-of-school children of primary school age
+EDUNF_ROFST_L1,Out-of-school rate for children of primary school age (%)
+EDUNF_OFST_L2,Number of out-of-school adolescents of lower secondary school age
+EDUNF_ROFST_L2,Out-of-school rate for adolescents of lower secondary school age (%)
+EDUNF_OFST_L3,Number of out-of-school youth of upper secondary school age
+EDUNF_ROFST_L3,Out-of-school rate for youth of upper secondary school age (%)
+EDU_SDG_YOUTH_NEET,"8.6.1. Proportion of youth (aged 15-24 years) not in education, employment or training (%)"
+EDU_SDG_PRYA,Participation rate of youth and adults in formal and non-formal education and training for the previous 12 months (%)
+EDUNF_STU_L4_TOT,Number of post-secondary non-tertiary education (ISCED 4) enrolments
+EDUNF_STU_L4_PUB,Number of post-secondary non-tertiary education (ISCED 4) enrolments in public institutions
+EDUNF_STU_L4_PRV,Number of post-secondary non-tertiary education (ISCED 4) enrolments in private institutions
+EDUNF_PRP_L4,Percentage of private enrolments in post-secondary non-tertiary education (ISCED 4)
+EDUNF_FEP_L4,Percentage of female enrolments in post-secondary non-tertiary education (ISCED 4)
+EDUNF_STU_L5T8_TOT,Number of tertiary education (ISCED 5) enrolments
+EDUNF_STU_L5T8_PUB,Number of tertiary education (ISCED 5) enrolments in public institutions
+EDUNF_STU_L5T8_PRV,Number of tertiary education (ISCED 5) enrolments in private institutions
+EDUNF_PRP_L5T8,Percentage of private enrolments in tertiary education (ISCED 5)
+EDUNF_FEP_L5T8,Percentage of female enrolments in tertiary education (ISCED 5)
+EDUNF_GER_GPI_L02,"Gross enrolment ratio, pre-primary, Gender Parity Index (GPI)"
+EDUNF_GER_GPI_L1,"Gross enrolment ratio, primary, Gender Parity Index (GPI)"
+EDUNF_GER_GPI_L2,"Gross enrolment ratio, lower secondary, Gender Parity Index (GPI)"
+EDUNF_GER_GPI_L3,"Gross enrolment ratio, upper secondary, Gender Parity Index (GPI)"
+EDUNF_GER_GPI_L2AND3,"Gross enrolment ratio, secondary, Gender Parity Index (GPI)"
+EDU_FIN_EXP_PT_GDP,Government expenditure on education as a percentage of GDP (%)
+EDU_FIN_EXP_PT_TOT,Expenditure on education as a percentage of total government expenditure
+EDU_FIN_EXP_CONST_PPP,"Government expenditure on education, in constant PPP ($ millions)"
+EDU_FIN_EXP_L02,Expenditure on pre-primary as a percentage of government expenditure on education
+EDU_FIN_EXP_L1,Expenditure on primary as a percentage of government expenditure on education
+EDU_FIN_EXP_L2,Expenditure on lower secondary as a percentage of government expenditure on education
+EDU_FIN_EXP_L3,Expenditure on upper secondary as a percentage of government expenditure on education
+EDU_FIN_EXP_L4,Expenditure on post-secondary non-tertiary as a percentage of government expenditure on education
+EDU_FIN_EXP_L5T8,Expenditure on tertiary as a percentage of government expenditure on education
+EDU_SDG_SCH_L1,Proportion of schools with access to adapted infrastructure and materials for students with disabilities - Primary (%)
+EDU_SDG_SCH_L2,Proportion of schools with access to adapted infrastructure and materials for students with disabilities - Lower secondary (%)
+EDU_SDG_SCH_L3,Proportion of schools with access to adapted infrastructure and materials for students with disabilities - Upper secondary (%)
+WS_SCH_H-B,Proportion of total schools with basic hygiene services (%)
+WS_SCH_S-B,Proportion of total schools with basic sanitation services (%)
+WS_SCH_W-B,Proportion of total schools with basic drinking water services (%)
+EDUNF_TEACH_L1,Total number of Classroom teachers in primary education (ISCED 1)
+EDUNF_TEACH_L2,Total number of Classroom teachers in lower secondary education (ISCED 2)
+EDUNF_TEACH_L3,Total number of Classroom teachers in upper secondary education (ISCED 3)
+EDUNF_PTR_L1,Pupil-teacher ratio in primary education (ISCED1) (headcount basis)
+EDUNF_PTR_L2,Pupil-teacher ratio in lower secondary education (ISCED 2) (headcount basis)
+EDUNF_PTR_L2AND3,Pupil-teacher ratio in secondary education (ISCED 2 and 3) (headcount basis)
+EDUNF_PTR_L3,Pupil-teacher ratio in upper secondary education (ISCED 3) (headcount basis)
+EDU_SDG_TRTP_L02,Percentage of trained teachers in pre-primary education
+EDU_SDG_TRTP_L1,Percentage of trained teachers in primary education
+EDU_SDG_TRTP_L2,Percentage of trained teachers in lower secondary education
+EDU_SDG_TRTP_L3,Percentage of trained teachers in upper secondary education
+EDU_SDG_PTTR_L02,Pupil-trained teacher ratio in pre-primary education (headcount basis)
+EDU_SDG_PTTR_L1,Pupil-trained teacher ratio in primary education (headcount basis)
+EDU_SDG_PTTR_L2,Pupil-trained teacher ratio in lower secondary education (headcount basis)
+EDU_SDG_PTTR_L3,Pupil-trained teacher ratio in upper secondary education (headcount basis)
+EDU_SDG_QUTP_L02,Proportion of teachers qualified according to national standards in pre-primary education (%)
+EDU_SDG_QUTP_L1,Proportion of teachers qualified according to national standards in primary education (%)
+EDU_SDG_QUTP_L2,Proportion of teachers qualified according to national standards in lower secondary education (%)
+EDU_SDG_QUTP_L3,Proportion of teachers qualified according to national standards in upper secondary education (%)
+EDU_SDG_PQTR_L02,Pupil-qualified teacher ratio in pre-primary education (headcount basis)
+EDU_SDG_PQTR_L1,Pupil-qualified teacher ratio in primary education (headcount basis)
+EDU_SDG_PQTR_L2,Pupil-qualified teacher ratio in lower secondary education (headcount basis)
+EDU_SDG_PQTR_L3,Pupil-qualified teacher ratio in upper secondary education (headcount basis)
+ECD_CHLD_U5_BKS-HM,4.2.3. Percentage of children who have 3 or more children's books at home
+ECD_CHLD_U5_PLYTH-HM,4.2.3. Percentage of children under age 5 who play with 2 or more types of playthings at home
+EDUNF_EA_L2T8,"Educational attainment: at least completed lower secondary (ISCED 2 or higher), population 25+ years (%)"
+EDUNF_ADMIN_L1_G2OR3_REA,Administration of nationally representative learning assessment in reading (Grade 2 or 3)
+EDUNF_ADMIN_L1_G2OR3_MAT,Administration of nationally representative learning assessment in math (Grade 2 or 3)
+EDU_PISA_MAT2,PISA: 15-year-olds by sex achieving proficiency Level 2 (%) in Mathematics
+EDU_PISA_MAT3,PISA: 15-year-olds by sex achieving proficiency Level 3 (%) in Mathematics
+EDU_PISA_MAT4,PISA: 15-year-olds by sex achieving proficiency Level 4 (%) in Mathematics
+EDU_PISA_MAT5,PISA: 15-year-olds by sex achieving proficiency Level 5 (%) in Mathematics
+EDU_PISA_MAT6,PISA: 15-year-olds by sex achieving proficiency Level 6 (%) in Mathematics
+EDU_PISA_REA2,PISA: 15-year-olds by sex achieving proficiency Level 2 (%) in Reading
+EDU_PISA_REA3,PISA: 15-year-olds by sex achieving proficiency Level 3 (%) in Reading
+EDU_PISA_REA4,PISA: 15-year-olds by sex achieving proficiency Level 4 (%) in Reading
+EDU_PISA_REA5,PISA: 15-year-olds by sex achieving proficiency Level 5 (%) in Reading
+EDU_PISA_REA6,PISA: 15-year-olds by sex achieving proficiency Level 6 (%) in Reading
+EDU_PISA_SCI2,PISA: 15-year-olds by sex achieving proficiency Level 2 (%) in Science
+EDU_PISA_SCI3,PISA: 15-year-olds by sex achieving proficiency Level 3 (%) in Science
+EDU_PISA_SCI4,PISA: 15-year-olds by sex achieving proficiency Level 4 (%) in Science
+EDU_PISA_SCI5,PISA: 15-year-olds by sex achieving proficiency Level 5 (%) in Science
+EDU_PISA_SCI6,PISA: 15-year-olds by sex achieving proficiency Level 6 (%) in Science
+EDUNF_LR_ADULT,"Adult literacy rate, population 15+ years by sex (%)"
+EDUNF_FRP_L2AND3,Percentage of females among repeaters in secondary education (ISCED 2 and 3)
+EDUNF_OFST_L1_UNDER1,Number of out-of-school children one year younger than the official entry age to primary education
+EDUNF_ROFST_L1_UNDER1,Out-of-school rate for children one year younger than the official entry age to primary education (%)
+EDUNF_GER_GPI_L01,"Gross enrolment ratio, early childhood educational development programmes, Gender Parity Index (GPI)"
+EDUNF_SAP_L02,Population of the official age for pre-primary education (number of persons)
+EDUNF_SAP_L1,Population of the official age for primary education (number of persons)
+EDUNF_SAP_L2,Population of the official age for lower secondary education (number of persons)
+EDUNF_SAP_L3,Population of the official age for upper secondary education (number of persons)
+EDUNF_SAP_L1T3,Population of the official age for primary and secondary education - ISCED 1 to 3 included - (number of persons)
+EDUNF_OFST_L1T3,"Number of out-of-school children, adolescents and youth of primary and secondary school age (persons)"
+EDUNF_ROFST_L1T3,"Out-of-school rate for children, adolescents and youth of primary and secondary school age (%)"
+EDUNF_SAP_L2_GLAST,"Population of the official age for Last Grade of lower secondary education - ISCED 2, Last Grade - (number of persons)"
+EDUNF_PRP_L2AND3,Percentage of children enrolled in private schools of secondary education - ISCED 2 and 3
+EDUNF_STU_L2AND3_PRV,Number of children enrolled in private schools of secondary education - ISCED 2 and 3
+EDUNF_COMP_YR,Duration of compulsory education in years
+EDUNF_COMP_YR_L02T3,Total number of years of compulsory education guaranteed in legal frameworks
+EDUNF_PTR_L02,Pupil-teacher ratio in pre-primary education (headcount basis)
+EDUNF_GECER_L01,Gross early childhood enrolment ratio in early childhood educational development (%)
+EDUNF_GECER_L02,Gross early childhood enrolment ratio in pre-primary education (%)
+EDU_ECEC_PART,Participation in early childhood education (% of children aged 4 and over)
+ED_ANAR_L1,4.1.2. Adjusted net attendance rate for children of primary school age (%)
+ED_ANAR_L2,4.1.2. Adjusted net attendance rate for adolescents of lower secondary school age (%)
+ED_ANAR_L3,4.1.2. Adjusted net attendance rate for youth of upper secondary school age (%)
+EDU_SE_ACS_INTNT_L1,4.a.1. Percentage of primary schools with access to the internet for pedagogical purposes
+EDU_SE_ACS_INTNT_L2,4.a.1. Percentage of lower secondary schools with access to the internet for pedagogical purposes
+EDU_SE_ACS_INTNT_L3,4.a.1. Percentage of upper secondary schools with access to the internet for pedagogical purposes
+EDU_SE_ACS_CMPTR_L1,4.a.1. Percentage of primary schools with access to computers for pedagogical purposes
+EDU_SE_ACS_CMPTR_L2,4.a.1. Percentage of lower secondary schools with access to computers for pedagogical purposes
+EDU_SE_ACS_CMPTR_L3,4.a.1. Percentage of upper secondary schools with access to computers for pedagogical purposes
+EDU_SE_ACS_ELECT_L1,4.a.1. Percentage of primary schools with access to electricity
+EDU_SE_ACS_ELECT_L2,4.a.1. Percentage of lower secondary schools with access to electricity
+EDU_SE_ACS_ELECT_L3,4.a.1. Percentage of upper secondary schools with access to electricity
+EDU_SE_TOT_GPI_L1_REA,4.5.1. Adjusted gender parity index for students at the end of primary education achieving a minimum proficiency level in reading
+EDU_SE_TOT_GPI_L2_REA,4.5.1. Adjusted gender parity index for students at the end of lower secondary education achieving a minimum proficiency level in reading
+EDU_SE_TOT_GPI_L1_MAT,4.5.1. Adjusted gender parity index for students at the end of primary education achieving a minimum proficiency level in mathematics
+EDU_SE_TOT_GPI_L2_MAT,4.5.1. Adjusted gender parity index for students at the end of lower secondary education achieving a minimum proficiency level in mathematics
+EDU_SE_TOT_GPI_FS_LIT,4.5.1. Adjusted gender parity index for achieving at least a fixed level of proficiency in functional literacy skills
+EDU_SE_TOT_GPI_FS_NUM,4.5.1. Adjusted gender parity index for achieving at least a fixed level of proficiency in functional numeracy skills
+EDU_SE_AGP_CPRA_L1,4.5.1. Adjusted gender parity index for primary education completion rate
+EDU_SE_AGP_CPRA_L2,4.5.1. Adjusted gender parity index for lower secondary education completion rate
+EDU_SE_AGP_CPRA_L3,4.5.1. Adjusted gender parity index for upper secondary education completion rate
+EDU_SE_GPI_PART,4.5.1. Adjusted gender parity index for participation rate of youth and adults in formal and non-formal education and training in the previous 12 months
+EDU_SE_GPI_PTNPRE,4.5.1. Adjusted gender parity index for participation rate in organized learning (one year before the official primary entry age)
+EDU_SE_GPI_TCAQ_L02,4.5.1. Adjusted gender parity index for the proportion of qualified teachers in pre-primary education
+EDU_SE_GPI_TCAQ_L1,4.5.1. Adjusted gender parity index for the proportion of qualified teachers in primary education
+EDU_SE_GPI_TCAQ_L2,4.5.1. Adjusted gender parity index for the proportion of qualified teachers in lower secondary education
+EDU_SE_GPI_TCAQ_L3,4.5.1. Adjusted gender parity index for the proportion of qualified teachers in upper secondary education
+EDU_SE_NAP_ACHI_L1_REA,4.5.1. Adjusted immigration status parity index for students at the end of primary education achieving a minimum proficiency level in reading
+EDU_SE_NAP_ACHI_L2_REA,4.5.1. Adjusted immigration status parity index for students at the end of lower secondary education achieving a minimum proficiency level in reading
+EDU_SE_NAP_ACHI_L1_MAT,4.5.1. Adjusted immigration status parity index for students at the end of primary education achieving a minimum proficiency level in mathematics
+EDU_SE_NAP_ACHI_L2_MAT,4.5.1. Adjusted immigration status parity index for students at the end of lower secondary education achieving a minimum proficiency level in mathematics
+EDU_SE_IMP_FPOF_LIT,4.5.1. Adjusted immigration status parity index for achieving at least a fixed level of proficiency in functional literacy skills
+EDU_SE_IMP_FPOF_NUM,4.5.1. Adjusted immigration status parity index for achieving at least a fixed level of proficiency in functional numeracy skills
+EDU_SE_LGP_ACHI_L1_REA,4.5.1. Adjusted language test parity index for students at the end of primary education achieving a minimum proficiency level in reading
+EDU_SE_LGP_ACHI_L2_REA,4.5.1. Adjusted language test parity index for students at the end of lower secondary education achieving a minimum proficiency level in reading
+EDU_SE_LGP_ACHI_L1_MAT,4.5.1. Adjusted language test parity index for students at the end of primary education achieving a minimum proficiency level in mathematics
+EDU_SE_LGP_ACHI_L2_MAT,4.5.1. Adjusted language test parity index for students at the end of lower secondary education achieving a minimum proficiency level in mathematics
+EDU_SE_ALP_CPLR_L1,4.5.1. Adjusted location parity index for primary education completion rate
+EDU_SE_ALP_CPLR_L2,4.5.1. Adjusted location parity index for lower secondary education completion rate
+EDU_SE_ALP_CPLR_L3,4.5.1. Adjusted location parity index for upper secondary education completion rate
+EDU_SE_TOT_SESPI_L1_REA,4.5.1. Adjusted wealth parity index for students at the end of primary education achieving a minimum proficiency level in reading
+EDU_SE_TOT_SESPI_L2_REA,4.5.1. Adjusted wealth parity index for students at the end of lower secondary education achieving a minimum proficiency level in reading
+EDU_SE_TOT_SESPI_L1_MAT,4.5.1. Adjusted wealth parity index for students at the end of primary education achieving a minimum proficiency level in mathematics
+EDU_SE_TOT_SESPI_L2_MAT,4.5.1. Adjusted wealth parity index for students at the end of lower secondary education achieving a minimum proficiency level in mathematics
+EDU_SE_TOT_SESPI_FS_LIT,4.5.1. Adjusted wealth parity index for achieving at least a fixed level of proficiency in functional literacy skills
+EDU_SE_TOT_SESPI_FS_NUM,4.5.1. Adjusted wealth parity index for achieving at least a fixed level of proficiency in functional numeracy skills
+EDU_SE_TOT_RUPI_L1_REA,4.5.1. Adjusted location parity index for students at the end of primary education achieving a minimum proficiency level in reading
+EDU_SE_TOT_RUPI_L2_REA,4.5.1. Adjusted location parity index for students at the end of lower secondary education achieving a minimum proficiency level in reading
+EDU_SE_TOT_RUPI_L1_MAT,4.5.1. Adjusted location parity index for students at the end of primary education achieving a minimum proficiency level in mathematics
+EDU_SE_TOT_RUPI_L2_MAT,4.5.1. Adjusted location parity index for students at the end of lower secondary education achieving a minimum proficiency level in mathematics
+EDU_SE_AWP_CPRA_L1,4.5.1. Adjusted wealth parity index for primary education completion rate
+EDU_SE_AWP_CPRA_L2,4.5.1. Adjusted wealth parity index for lower secondary education completion rate
+EDU_SE_AWP_CPRA_L3,4.5.1. Adjusted wealth parity index for upper secondary education completion rate
+EDUNF_STEM_GRAD_RT,"Percentage of tertiary education graduates from Science, Technology , Engineering and Mathematics (STEM) programmes"
+EDUNF_GER_L5T8,Tertiary education gross enrolment ratio (%)
+EDUNF_GER_GPI_L5T8,"Gross enrolment ratio, tertiary, Gender Parity Index (GPI)"
+ECD_CHLD_36-59M_FHR-SPT-LNG,4.2.3. Percentage of children (aged 36-59 months) whose father has engaged in 4 or more activities to provide early stimulation and responsive care in the last 3 days
+ECD_CHLD_36-59M_EDU-PGM,Percentage of children (aged 36-59 months) attending an early childhood education programme
+EDU_FIN_INIT_GOV_L02_GDP,Initial government funding of pre-primary education as a percentage of GDP (%)
+PV_SI_POV_EMP1,1.1.1. Employed population below international poverty line (%)
+PV_SI_POV_DAY1,1.1.1. Proportion of population below international poverty line (%)
+PV_SI_POV_UMIC,Poverty headcount ratio at $5.50 a day (2011 PPP) (% of population)
+PV_SDG_SI_POV_NAHC,1.2.1. Proportion of population living below the national poverty line (%)
+PV_WB_SI_POV_NAHC,1.2.1. Poverty headcount ratio at national poverty lines (% of population)
+PV_AROPE,People at risk of poverty or social exclusion (%)
+PV_AROPRT,At-risk-of-poverty rate by threshold: 60% of median equivalized income after social transfers (%)
+PV_SD_MDP_CSMP,1.2.1. Proportion of children living in child-specific multidimensional poverty (%)
+PV_SD_MDP_MUHHC,1.2.1. Proportion of households living in multidimensional poverty (%)
+PV_SD_MDP_MUHC,1.2.1. Proportion of population living in multidimensional poverty (%)
+PV_SI_POV_MDIM,Multidimensional poverty headcount ratio (% of total population)
+PV_SI_POV_MDIM_17,"Multidimensional poverty headcount ratio, children (% of population ages 0-17)"
+WS_PPL_W-B,Proportion of population using basic drinking water services (%)
+WS_PPL_S-B,Proportion of population using basic sanitation services (%)
+PV_SEV_MAT_DPRT,Severe material deprivation rate (%)
+PV_SI_COV_BENFTS,1.3.1. Proportion of population covered by at least one social protection benefit (%)
+PV_SI_COV_LMKT,1.3.1. Proportion of population covered by labour market programs (%)
+PV_SI_COV_SOCAST,1.3.1. Proportion of population covered by social assistance programs (%)
+PV_SI_COV_SOCINS,1.3.1. Proportion of population covered by social insurance programs (%)
+PV_SI_COV_WKINJRY,1.3.1. Proportion of employed population covered in the event of work injury (%)
+PV_SI_COV_CHLD,1.3.1. Proportion of children/households receiving child/family cash benefit (%)
+PV_SI_COV_DISAB,1.3.1. Proportion of population with severe disabilities receiving disability cash benefit (%)
+PV_SI_COV_MATNL,1.3.1. Proportion of mothers with newborns receiving maternity cash benefit (%)
+PV_SI_COV_POOR,1.3.1. Proportion of poor population receiving social assistance cash benefit (%)
+PV_SI_COV_UEMP,1.3.1. Proportion of unemployed persons receiving unemployment cash benefit (%)
+PV_SI_COV_VULN,1.3.1. Proportion of vulnerable population receiving social assistance cash benefit (%)
+PV_SI_COV_PENSN,1.3.1. Proportion of population above statutory pensionable age receiving a pension (%)
+DM_CHLD_TWO_PRNT,Percentage of children (0-17) living with two parents
+DM_CHLD_POP,Total child population aged 0-17 years (expressed in thousands)
+DM_ADOL_POP,Total adolescent population aged 10-19 years (expressed in thousands)
+DM_TOT_POP_PROSP,Total population prospects (expressed in thousands)
+DM_CHLD_POP_PT,Percentage of children as a share of the total population
+DM_SP_POP_BRTH_MF,Sex ratio at birth (male births per female births)
+DM_ADOL_YOUTH_POP,"Total adolescent, young and youth population aged 10-24 years (expressed in thousands)"
+DM_ADULT_YOUTH_POP,Total adult youth population aged 20-29 years (expressed in thousands)
+DM_REPD_AGE_POP,Total population of reproductive age 15-49 years (expressed in thousands)
+EC_HDI,Human Development Index (HDI)
+EC_NY_GDP_MKTP_KD_ZG,GDP growth (annual %)
+EC_NY_GDP_PCAP_KD_ZG,GDP per capita growth (annual %)
+EC_NE_DAB_TOTL_ZS,Gross national expenditure (% of GDP)
+EC_TEC_GRL_GOV_EXP,Total general government expenditure (% of GDP)
+EC_TEC_CNT_GOV_EXP,Total central government expenditure (% of GDP)
+EC_TEC_STA_GOV_EXP,Total state government expenditure (% of GDP)
+EC_TEC_LOC_GOV_EXP,Total local government expenditure (% of GDP)
+EC_TEC_SSF_EXP,Total social security funds expenditure (% of GDP)
+EC_GR_G14_GDP,17.1.1. Total government revenue (budgetary central government) as a proportion of GDP (%)
+EC_SP_GOV_EXP_GDP,Total general government expenditure in Social Protection (% of GDP)
+EC_SP_GOV_EXP_TOT,Total general government expenditure in Social Protection (% of total government expenditure)
+EC_NY_GDP_PCAP_PP_CD,"GDP per capita, PPP (current international $)"
+EC_NY_GNP_ATLS_CD,"GNI, Atlas method (current US$)"
+EC_NY_GNP_PCAP_CD,"GNI per capita, Atlas method (current US$)"
+EC_GC_DOD_TOTL_GD_ZS,"Central government debt, total (% of GDP)"
+EC_SI_POV_GINI,Gini index (World Bank estimate)
+EC_SL_UEM_TOTL_NE_ZS,"8.5.2. Unemployment, national estimate (% of total labor force)"
+EC_SL_UEM_TOTL_ZS,"8.5.2. Unemployment, modelled ILO estimate (% of total labor force)"
+GN_MTNTY_LV_BNFTS,Maternity leave paid benefits (ILO standards)
+GN_PTNTY_LV_BNFTS,Paternity leave paid benefits (of any length)
+EC_GDI,Gender Development Index (GDI)
+EC_GII,Gender Inequality Index (GII)
+EC_IQ_CPA_GNDR_XQ,CPIA gender equality rating (1=low to 6=high)
+EC_SIGI,Social Institutions and Gender Index (SIGI)
+EC_YOUTH_UNE_RT,8.5.2. Youth unemployment rate (% of population aged 15 to 29 years old)
+EC_EAP_RT,Labour force participation rate (%)
+EC_GNI_PCAP_PPP,Gross national income (GNI) per capita (constant 2017 PPP$)
+EC_FB_BNK_ACCSS,8.10.2. Proportion of adults with an account at a financial institution or mobile-money-service provider (% of adults aged 15 years and older)
+SL_DOM_TSPD,5.4.1. Proportion of time spent on unpaid domestic chores and care work (%)
+SG_GEN_PARL,5.5.1. Proportion of seats held by women in national parliaments (%)
+EC_INACT_RT,Inactivity rate (%)
+EC_YOUTH_INACT_RT,Youth inactivity rate (% of population aged 15 to 29 years old)
+EC_GEN_PAY_GAP,Gender pay gap in unadjusted form (%)
+EC_GEN_CONF_JUD,Share of women declaring lack of confidence in the justice system (%)
+EC_HCI_OVRL,Human capital index (HCI) (scale 0-1)
+EC_MIN_WAGE,Minimum wages (EUR)
+DM_SM_POP_REFG,Refugee population by country or territory of asylum
+DM_SM_POP_REFG_OR,Refugee population by country or territory of origin
+DM_ASYL_FRST,First time asylum applicants (persons)
+DM_ASYL_UASC,Asylum applicants considered to be unaccompanied minors (persons)
+MG_INTNL_MG_CNTRY_DEST_PS,International migrant stock by country of destination (thousands of persons)
+MG_INTNL_MG_CNTRY_DEST_RT,International migrant stock by country of destination (% of total population)
+CR_VC_DSR_MTMP,"11.5.1. Number of deaths and missing persons attributed to disasters (per 100,000 population)"
+CR_VC_DSR_DAFF,"11.5.1. Number of directly affected persons attributed to disasters (per 100,000 population)"
+CR_SH_AAP_MORT,"3.9.1. Crude death rate attributed to ambient air pollution (deaths per 100,000 population)"
+CR_SH_HAP_MORT,"3.9.1. Crude death rate attributed to household air pollution (deaths per 100,000 population)"
+CR_SH_STA_AIRP,"3.9.1. Crude death rate attributed to household and ambient air pollution (deaths per 100,000 population)"
+CR_SH_AAP_ASMORT,"3.9.1. Age-standardized mortality rate attributed to ambient air pollution (deaths per 100,000 population)"
+CR_SH_HAP_ASMORT,"3.9.1. Age-standardized mortality rate attributed to household air pollution (deaths per 100,000 population)"
+CR_SH_STA_ASAIRP,"3.9.1. Age-standardized mortality rate attributed to household and ambient air pollution (deaths per 100,000 population)"
+CR_AAP_DEATH,Total number of deaths attributable to ambient air pollution
+CR_HAP_DEATH,Total number of deaths attributable to household air pollution
+CR_CCRI_VUL_HT,Children's vulnerability index: lack of essential services of health and nutrition
+CR_CCRI_VUL_EDU,Children's vulnerability index: lack of essential services of education
+CR_CCRI_VUL_WASH,"Children's vulnerability index: lack of essential services of water, sanitation and hygiene (WASH)"
+CR_CCRI_VUL_SP,"Children's vulnerability index: lack of essential services of poverty, communication assets and social protection"
+CR_CCRI_VUL_ES,Children's vulnerability index to climate hazards due to the lack of access to essential services
+CR_CCRI,Children's Climate and Environment Risk Index (CCRI)
+CR_EG_EGY_CLEAN,7.1.2. Proportion of population with primary reliance on clean fuels and technology (%)
+CR_EG_ACS_ELEC,7.1.1. Proportion of population with access to electricity (%)
+CR_CCRI_EXP_WS,Children's exposure index to water scarsity
+CR_CCRI_EXP_RF,Children's exposure index to riverine floods
+CR_CCRI_EXP_CF,Children's exposure index to coastal floods
+CR_CCRI_EXP_TC,Children's exposure index to tropical cyclones
+CR_CCRI_EXP_VBD,Children's exposure index to vector borne diseases
+CR_CCRI_EXP_HEAT,Children's exposure index to heatwaves
+CR_CCRI_EXP_AP,Children's exposure index to air pollution
+CR_CCRI_EXP_SWP,Children's exposure index to soil and water pollution
+CR_CCRI_EXP_CESS,Children's exposure index to climate and environmental shocks and stresses
+CR_SG_DSR_LGRGSR,1.5.3. Score of adoption and implementation of national DRR strategies in line with the Sendai Framework
+CR_VC_VOV_GDSD,"10.3.1. Percentage of population reporting having felt discriminated against, by grounds of discrimination, sex or disability"
+CR_VC_VOV_GDSD_PD,"10.3.1. Percentage of persons with disability reporting having felt discriminated against, by grounds of discrimination, sex or disability"
+CR_VC_VOV_GDSD_DISHEA_PD,"10.3.1. Percentage of persons with disability reporting having felt discriminated against, by grounds of disability or health status"
+CR_UN_CHLD_RIGHTS,"UN Convention on the Rights of the Child, 1989 (signature, ratification, acceptance, accession or succession)"
+CR_UN_CHLD_SALE,"UN Convention on the Rights of the Child, Optional Protocol on the sale of children, child prostitution and child pornography (signature, ratification, accession or succession)"
+CR_UN_RIGHTS_DISAB,"UN Convention on the Rights of Persons with Disabilities, 2006 (signature, formal confirmation, accession or ratification)"
+EC_TOT_PUB_EXP_GDP,Total public social expenditure (% of GDP)
+EC_TOT_PUB_EXP_TOT,1.a.2. Total public social expenditure (% of total general government expenditure)
+EC_FAM_PUB_EXP_GDP,Family public social expenditure (% of GDP)
+EC_FAM_PUB_EXP_TOT,Family public social expenditure (% of total general government expenditure)
+CR_IQ_SCI_OVRL,Statistical Capacity score (Overall average)
+CR_SG_STT_FPOS,17.18.2. Countries with national statistical legislation exists that complies with the Fundamental Principles of Official Statistics
+CR_SG_STT_NSDSFND,17.18.3. Countries with national statistical plans that are fully funded
+CR_SG_STT_NSDSIMPL,17.18.3. Countries with national statistical plans that are under implementation
+CR_SG_STT_NSDSFDGVT,17.18.3. Countries with national statistical plans with funding from Government
+CR_SG_STT_NSDSFDDNR,17.18.3. Countries with national statistical plans with funding from donors
+CR_SG_STT_NSDSFDOTHR,17.18.3. Countries with national statistical plans with funding from others
+CR_SG_STT_CAPTY,17.19.1. Value of all resources made available to strengthen statistical capacity in developing countries (current US$)
+CR_SG_REG_CENSUSN,17.19.2. Countries that have conducted at least one population and housing census in the last 10 years
+PT_F_GE15_PS-SX-EM_V_PTNR_12MNTH,"5.2.1. Percentage of ever-partnered women and girls (aged 15 years and older) subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months"
+PT_F_GE15_SX_V_PTNR_12MNTH,5.2.2. Women and girls aged 15 and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months (%)
+PT_VC_VOV_PHYL,16.1.3. Proportion of population subjected to physical violence in the previous 12 months
+PT_VC_VOV_SEXL,16.1.3. Proportion of population subjected to sexual violence in the previous 12 months
+PT_VC_VOV_ROBB,16.1.3. Proportion of population subjected to robbery in the previous 12 months
+PT_VC_SNS_WALN,16.1.4. Proportion of population that feel safe walking alone around the area they live
+PT_CHLD_1-14_PS-PSY-V_CGVR,16.2.1. Percentage of children who experienced any physical punishment and/or psychological aggression by caregivers
+PT_F_18-29_SX-V_AGE-18,16.2.3. Percentage of women aged 18 and over years who experienced sexual violence by age 18 years
+PT_M_18-29_SX-V_AGE-18,16.3.1. Percentage of men (aged 18 and over) who experienced sexual violence by age 18
+PT_VC_PRR_PHYV,17.7.2. Police reporting rate for physical assault (%)
+PT_VC_PRR_SEXV,17.7.2. Police reporting rate for sexual assault (%)
+PT_VC_PRR_ROBB,17.7.2. Police reporting rate for robbery (%)
+PT_ADLT_PS_NEC,Percentage of adults who think that physical punishment is necessary to raise/educate children
+PT_F_15-49_W-BTNG,Percentage of women aged 15-49 years who consider a husband to be justified in hitting or beating his wife for at least one of the specified reasons
+PT_M_15-49_W-BTNG,Percentage of men aged 15-49 years who consider a husband to be justified in hitting or beating his wife for at least one of the specified reasons
+PT_ST_13-15_BUL_30-DYS,Percentage of students who reported being bullied on 1 or more days in the past 30 days
+PT_F_15-19_MRD,Percentage of girls aged 15-19 years who are currently married or in union
+PT_M_15-19_MRD,Percentage of boys aged 15-19 years who are currently married or in union
+PT_F_20-24_MRD_U15,5.3.1. Percentage of women aged 20-24 years married or in union before age 15
+PT_F_20-24_MRD_U18,5.3.1. Percentage of women aged 20-24 years married or in union before age 18
+PT_M_20-24_MRD_U18,Percentage of men aged 20-24 years married or in union before age 18
+PT_CHLD_5-17_LBR_ECON,Percentage of children aged 5-17 years engaged in child labour (economic activities)
+PT_CHLD_5-17_LBR_ECON-HC,8.7.1. Percentage of children aged 5-17 years engaged in child labour (economic activities and household chores)
+PT_ADLS_10-14_LBR_HC,Percentage of adolescents (aged 10-14 years) engaged in household chores
+JJ_VC_PRS_UNSNT,16.3.2. Unsentenced detainees as a proportion of overall prison population (%)
+JJ_PRISIONERS,Number of Prisoners
+JJ_PRISIONERS_RT,Rate of Prisoners
+PT_CHLD_Y0T4_REG,16.9.1. Proportion of children whose births have been registered with a civil authority (%)
+PP_SG_REG_BRTH90N,17.19.2. Countries with birth registration data that are at least 90 percent complete
+PP_SG_REG_DETH75N,17.19.2. Countries with death registration data that are at least 75 percent complete
+PP_SG_NHR_IMPLN,16.a.1. Countries with National Human Rights Institutions in compliance with the Paris Principles (A status)
+PP_SG_NHR_INTEXSTN,16.a.1. Countries with National Human Rights Institutions not fully compliant with the Paris Principles (B status)
+PP_SG_NHR_NOSTUSN,16.a.1. Countries with National Human Rights Institutions and no status with the Paris Principles (C status)
+PP_SG_NHR_NOAPPLN,16.a.1. Countries with no application for accreditation with the Paris Principles (D status)
+PP_IT_USE_ii99,17.6.1. Internet users per 100 inhabitants
+PP_SE_ADT_ACTS_ATCH,4.4.1. Proportion of youth and adults with ICT skill: sending e-mails with attached files
+PP_SE_ADT_ACTS_CPT,4.4.1. Proportion of youth and adults with ICT skill: using copy and paste tools to duplicate or move information within a document
+PP_SE_ADT_ACTS_CDV,4.4.1. Proportion of youth and adults with ICT skill: connecting and installing new devices
+PP_SE_ADT_ACTS_SSHT,4.4.1. Proportion of youth and adults with ICT skill: using basic arithmetic formula in a spreadsheet
+PP_SE_ADT_ACTS_PRGM,4.4.1. Proportion of youth and adults with ICT skill: writing a computer program using a specialized programming language
+PP_SE_ADT_ACTS_PST,4.4.1. Proportion of youth and adults with ICT skill: creating electronic presentations with presentation software
+PP_SE_ADT_ACTS_SFWR,"4.4.1. Proportion of youth and adults with ICT skill: finding, downloading, installing and configuring software"
+PP_SE_ADT_ACTS_TRFF,4.4.1. Proportion of youth and adults with ICT skill: transferring files between a computer and other devices
+PP_SE_ADT_ACTS_CMFL,4.4.1. Proportion of youth and adults with ICT skill: copying or moving a file or folder
+PP_SE_GPI_ICTS_ATCH,4.4.1. Gender parity index for the proportion of youth and adults with ICT skill: sending e-mails with attached files
+PP_SE_GPI_ICTS_CPT,4.4.1. Gender parity index for the proportion of youth and adults with ICT skill: using copy and paste tools to duplicate or move information within a document
+PP_SE_GPI_ICTS_CDV,4.4.1. Gender parity index for the proportion of youth and adults with ICT skill: connecting and installing new devices
+PP_SE_GPI_ICTS_SSHT,4.4.1. Gender parity index for the proportion of youth and adults with ICT skill: using basic arithmetic formula in a spreadsheet
+PP_SE_GPI_ICTS_PRGM,4.4.1. Gender parity index for the proportion of youth and adults with ICT skill: writing a computer program using a specialized programming language
+PP_SE_GPI_ICTS_PST,4.4.1. Gender parity index for the proportion of youth and adults with ICT skill: creating electronic presentations with presentation software
+PP_SE_GPI_ICTS_SFWR,"4.4.1. Gender parity index for the proportion of youth and adults with ICT skill: finding, downloading, installing and configuring software"
+PP_SE_GPI_ICTS_TRFF,4.4.1. Gender parity index for the proportion of youth and adults with ICT skill: transferring files between a computer and other devices
+PP_SE_GPI_ICTS_CMFL,4.4.1. Gender parity index for the proportion of youth and adults with ICT skill: copying or moving a file or folder
+PP_IT_MOB_OWN,5.b.1. Proportion of individuals who own a mobile telephone
+PP_ADOL_TVGM,"Adolescents (15-year-olds) who watch TV or play video games, before or after school (%)"
+PP_ADOL_INET,"Adolescents (15-year-olds) who use the internet and social networks, before or after school (%)"
+PP_ADOL_ITXT,Adolescents (15-year-olds) who are high or extreme internet users (%)
+PP_ADOL_WORK_PAID,"Adolescents (15-year-olds) who do paid work, before or after school (%)"
+PP_ADOL_WORK_HOME,"Adolescents (15-year-olds) who do unpaid work in the home, before or after school (%)"
+ECD_CHLD_U5_LFT-ALN,Percentage of children under age 5 left alone or under the supervision of another child younger than 10 years of age for more than 1 hour at least once in the last week
+PT_CHLD_ADOPTION,Total number of adoptions - including intercountry adoptions (during the year)
+PT_CHLD_ADOPTION_DISAB,Number of adopted children with disabilities (during the year)
+PT_CHLD_INRESIDENTIAL,"Total number of children aged 0-17 in formal residential care, at the end of the year"
+PT_CHLD_DISAB_INRESIDENTIAL,"Total number of children with disabilities aged 0-17 in formal residential care, at the end of the year"
+PT_YOUNG_INRESIDENTIAL,"Total number of young people aged 18-24 in formal residential care, at the end of the year (TM Indicator 4.1)"
+PT_YOUNG_DISAB_INRESIDENTIAL,"Total number of young people with disabilities aged 18-24 in formal residential care, at the end of the year (TM Indicator 4.2)"
+PT_CHLD_NO_PARENTAL_CARE_INRESIDENTIAL,"Total number of children aged 0-17 who entered formal residential care, during the year"
+PT_CHLD_DISAB_ENTER_RESIDENTIAL,"Total number of children with disabilities aged 0-17 who entered formal residential care, during the year"
+PT_CHLD_LEFT_RESIDENTIAL,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon leaving care/death of child (TM Indicator 7.1)"
+PT_CHLD_LEFT_RESIDENTIAL_REUNION,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon: Family reunification (TM Indicator 7.2)"
+PT_CHLD_LEFT_RESIDENTIAL_FAMILY,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon: Placed in formal family-based care arrangements (TM Indicator 7.3)"
+PT_CHLD_LEFT_RESIDENTIAL_ADOPT,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon: Adopted (TM Indicator 7.4)"
+PT_CHLD_LEFT_RESIDENTIAL_INDEP,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon: Started independent life before age 18 (TM Indicator 7.5)"
+PT_CHLD_LEFT_RESIDENTIAL_DEATH,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon: Death of child (TM Indicator 7.6)"
+PT_CHLD_LEFT_RESIDENTIAL_OTHER,"Total number of children aged 0-17 who left formal residential care, during the year, by destination upon: Other reasons (TM Indicator 7.7)"
+PT_CHLD_DISAB_LEFT_RESIDENTIAL,"Total number of children with disabilities aged 0-17 who left formal residential care, during the year"
+PT_YOUNG_LEFT_RESIDENTIAL,"Total number of young people aged 18-24 who left formal residential care, during the year (TM Indicator 9.1)"
+PT_YOUNG_DISAB_LEFT_RESIDENTIAL,"Total number of young people with disabilities aged 18-24 who left formal residential care, during the year (TM Indicator 9.2)"
+PT_CHLD_CARED_BY_FOSTER,"Total number of children aged 0-17 in formal foster care, at the end of the year"
+PT_CHLD_DISAB_FOSTER,"Total number of children with disabilities aged 0-17 in formal foster care, at the end of the year"
+PT_CHLD_INKINSHIP,"Total number of children aged 0-17 in formal kinship care, at the end of the year"
+PT_CHLD_DISAB_INKINSHIP,"Total number of children with disabilities aged 0-17 in formal kinship care, at the end of the year"
+PT_CHLD_INOTHER_FAMILY,"Total number of children aged 0-17 in other forms of formal family-based care, at the end of the year"
+PT_CHLD_DISAB_INOTHER_FAMILY,"Total number of children with disabilities aged 0-17 in other forms of formal family-based care, at the end of the year"
+PT_CHLD_DISAB_INALL_FAMILY,"Total number of children with disabilities aged 0-17 in all formal family-based care, at the end of the year"
+PT_YOUNG_INALL_FAMILY,"Total number of young people aged 18-24 in all formal family-based care, at the end of the year (TM Indicator 16.1)"
+PT_YOUNG_DISAB_INALL_FAMILY,"Total number of young people with disabilities aged 18-24 in all formal family-based care, at the end of the year (TM Indicator 16.2)"
+PT_CHLD_ENTER_ALLFAMILY,"Total number of children aged 0-17 who entered all formal family-based care, during the year"
+PT_CHLD_DISAB_ENTER_ALLFAMILY,"Total number of children with disabilities aged 0-17 who entered all formal family-based care, during the year"
+PT_CHLD_ENTEREDFOSTER,"Total number of children aged 0-17 who entered formal foster care, during the year (TM Indicator 19.1)"
+PT_CHLD_DISAB_ENTEREDFOSTER,"Total number of children with disabilities aged 0-17 who entered formal foster care, during the year (TM Indicator 19.2)"
+PT_CHLD_ENTEREDKINSHIP,"Total number of children aged 0-17 who entered formal kinship care, during the year (TM Indicator 20.1)"
+PT_CHLD_DISAB_ENTEREDKINSHIP,"Total number of children with disabilities aged 0-17 who entered formal kinship care, during the year (TM Indicator 20.2)"
+PT_CHLD_ENTEREDOTHER_FAMILY,"Total number of children aged 0-17 who entered other forms of formal family-based care, during the year (TM Indicator 21.1)"
+PT_CHLD_DISAB_ENTEREDOTHER_FAMILY,"Total number of children with disabilities aged 0-17 who entered other forms of formal family-based care, during the year (TM Indicator 21.2)"
+PT_CHLD_LEFT_ALLFAMILY,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon leaving care/death of child (TM Indicator 22.1)"
+PT_CHLD_LEFT_ALLFAMILY_REUNION,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon: Family reunification (TM Indicator 22.2)"
+PT_CHLD_LEFT_ALLFAMILY_RESIDENTIAL,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon: Placed in formal residential care (TM Indicator 22.3)"
+PT_CHLD_LEFT_ALLFAMILY_ADOPT,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon: Adopted (TM Indicator 22.4)"
+PT_CHLD_LEFT_ALLFAMILY_INDEP,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon: Started independent life before age 18 (TM Indicator 22.5)"
+PT_CHLD_LEFT_ALLFAMILY_DEATH,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon: Death of child (TM Indicator 22.6)"
+PT_CHLD_LEFT_ALLFAMILY_OTHER,"Total number of children aged 0-17 who left all formal family-based care, during the year, by destination upon: Other reasons (TM Indicator 22.7)"
+PT_CHLD_DISAB_LEFT_ALLFAMILY,"Total number of children with disabilities aged 0-17 who left all formal family-based care, during the year"
+PT_YOUNG_LEFT_ALLFAMILY,"Total number of young people aged 18-24 who left all formal family-based care, during the year (TM Indicator 24.1)"
+PT_YOUNG_DISAB_LEFT_ALLFAMILY,"Total number of young people with disabilities aged 18-24 who left all formal family-based care, during the year (TM Indicator 24.2)"
+PT_CHLD_LEFTFOSTER,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon leaving care/death of child (TM Indicator 25.1)"
+PT_CHLD_DISAB_LEFTFOSTER,"Total number of children with disabilities aged 0-17 who left formal foster care, during the year, by destination upon leaving care/death of child (TM Indicator 25.2)"
+PT_CHLD_LEFTFOSTER_RETURNED,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Family reunification (TM Indicator 25.3)"
+PT_CHLD_LEFTFOSTER_FAMILY,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Placed in formal kinship or other forms of formal family-based care arrangements (TM Indicator 25.4)"
+PT_CHLD_LEFTFOSTER_EDUINSTITUTION,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Placed in formal residential care (TM Indicator 25.5)"
+PT_CHLD_LEFTFOSTER_ADOPT,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Adopted (TM Indicator 25.6)"
+PT_CHLD_LEFTFOSTER_INDEP,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Started independent life before age 18 (TM Indicator 25.7)"
+PT_CHLD_LEFTFOSTER_DEATH,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Death of child (TM Indicator 25.8)"
+PT_CHLD_LEFTFOSTER_OTHER_REASON,"Total number of children aged 0-17 who left formal foster care, during the year, by destination upon: Other reasons (TM Indicator 25.9)"
+PT_CHLD_LEFT_KINSHIP,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon leaving care/death of child (TM Indicator 26.1)"
+PT_CHLD_DISAB_LEFT_KINSHIP,"Total number of children with disabilities aged 0-17 who left formal kinship care, during the year, by destination upon leaving care/death of child (TM Indicator 26.2)"
+PT_CHLD_LEFT_KINSHIP_REUNION,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Family reunification (TM Indicator 26.3)"
+PT_CHLD_LEFT_KINSHIP_FAMILY,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Placed in formal foster or other forms of formal family-based care arrangements (TM Indicator 26.4)"
+PT_CHLD_LEFT_KINSHIP_RESIDENTIAL,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Placed in formal residential care (TM Indicator 26.5)"
+PT_CHLD_LEFT_KINSHIP_ADOPT,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Adopted (TM Indicator 26.6)"
+PT_CHLD_LEFT_KINSHIP_INDEP,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Started independent life before age 18 (TM Indicator 26.7)"
+PT_CHLD_LEFT_KINSHIP_DEATH,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Death of child (TM Indicator 26.8)"
+PT_CHLD_LEFT_KINSHIP_OTHER,"Total number of children aged 0-17 who left formal kinship care, during the year, by destination upon: Other reasons (TM Indicator 26.9)"
+PT_CHLD_LEFT_FAMILY,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon leaving care/death of child (TM Indicator 27.1)"
+PT_CHLD_DISAB_LEFT_FAMILY,"Total number of children with disabilities aged 0-17 who left other forms of formal family-based care, during the year, by destination upon leaving care/death of child (TM Indicator 27.2)"
+PT_CHLD_LEFT_FAMILY_REUNION,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Family reunification (TM Indicator 27.3)"
+PT_CHLD_LEFT_FAMILY_FOSTER,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Placed in formal foster or kinship care arrangements (TM Indicator 27.4)"
+PT_CHLD_LEFT_FAMILY_RESIDENTIAL,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Placed in formal residential care (TM Indicator 27.5)"
+PT_CHLD_LEFT_FAMILY_ADOPT,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Adopted (TM Indicator 27.6)"
+PT_CHLD_LEFT_FAMILY_INDEP,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Started independent life before age 18 (TM Indicator 27.7)"
+PT_CHLD_LEFT_FAMILY_DEATH,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Death of child (TM Indicator 27.8)"
+PT_CHLD_LEFT_FAMILY_OTHER,"Total number of children aged 0-17 who left other forms of formal family-based care, during the year, by destination upon: Other reasons (TM Indicator 27.9)"
+PT_CHLD_ADOPT_DOMESTIC,Total number of children aged 0-17 formally adopted - Domestic - during the year
+PT_CHLD_DISAB_ADOPT_DOMESTIC,Total number of children with disabilities aged 0-17 formally adopted - Domestic - during the year
+PT_CHLD_ADOPTION_INTERCOUNTRY,Total number of children aged 0-17 formally adopted - Intercountry - during the year
+PT_CHLD_ADOPTION_INTER_COUNTRY_DISAB,Total number of children with disabilities aged 0-17 formally adopted - Intercountry - during the year
+JJ_CHLD_VICTIM_CRIME,"Total number of child victims of crime aged 0-17 registered by the police, during the year"
+JJ_CHLD_WITNESS_CRIME,"Total number of child witnesses of crime aged 0-17 registered by the police, during the year"
+JJ_CHLD_PRETRIAL,"Total number of children in pre-sentence detention, at the end of the year"
+JJ_CHLD_PRISION_ADJUDICATION,"Total number of children in post-sentence detention, at the end of the year"
+JJ_CHLD_DETENTION,"Total number of children detained in pre-sentence detention, during the year"
+JJ_CHLD_POST_SENTENCE_DETENTION,"Total number of children detained in post-sentence detention, during the year"
+JJ_CHLD_CUSTODIAL_SENTENCE,"Total number of children sentenced to custodial sentences, during the year"
+JJ_CHLD_ALTERNATIVE_SENTENCE,"Total number of children sentenced to alternative measures, during the year"
+JJ_CHLD_COMPLAINT_HHRR,"Total number of children aged 0-17 who brought or on whose behalf a complaint was brought by an adult to independent human rights mechanisms, during the year (TM Indicator 38.1)"
+JJ_CHLD_DISAB_COMPLAINT_HHRR,"Total number of children with disabilities aged 0-17 who brought or on whose behalf a complaint was brought by an adult to independent human rights mechanisms, during the year (TM Indicator 38.2)"
+PT_CHLD_VIOLENCE_WELFARE,"Total number of child victims of violence aged 0-17 registered by child/social welfare authorities, during the year (TM Indicator 39.1)"
+PT_CHLD_DISAB_VIOLENCE_WELFARE,"Total number of child with disability victims of violence aged 0-17 registered by child/social welfare authorities, during the year (TM Indicator 39.2)"
+PT_CHLD_VIOLENCE_HEALTHCARE,"Total number of child victims of violence aged 0-17 registered by healthcare authorities, during the year (TM Indicator 40.1)"
+PT_CHLD_DISAB_VIOLENCE_HEALTHCARE,"Total number of child with disability victims of violence aged 0-17 registered by healthcare authorities, during the year (TM Indicator 40.2)"
+PT_CHLD_VIOLENCE_EDUCATION,"Total number of child victims of violence aged 0-17 registered by education authorities, during the year (TM Indicator 41.1)"
+PT_CHLD_DISAB_VIOLENCE_EDUCATION,"Total number of child with disability victims of violence aged 0-17 registered by education authorities, during the year (TM Indicator 41.2)"
+HT_REG_PS_DISAB,Total number of registered as persons with disabilities (at the end of the year)
+HT_REG_CHLD_DISAB,Total number of registered as children aged 0-17 with disabilities (at the end of the year)
+HT_NEW_REG_PS_DISAB,Total number of newly registered as persons with disabilities (during the year)
+HT_NEW_REG_CHLD_DISAB,Total number of newly registered as children aged 0-17 with disabilities (during the year)
+SP_PS_DISAB_CASH,"Number of persons with disabilities receiving disability cash benefits, at the end of the year"
+SP_CHLD_DISAB_CASH,"Number of children aged 0-17 receiving disability cash benefits, at the end of the year"
+SP_EXP_CHLD_DISAB_CASH,Expenditure on cash benefits provided directly to children with disabilities (Millions Local Currency)
+EDU_CHLD_DISAB,Number of children with disabilities in education (TM Indicator 51.1)
+EDU_CHLD_DISAB_GENERAL,Number of children with disabilities in education by type of school: Ordinary (general) school (TM Indicator 51.2)
+EDU_CHLD_DISAB_GENERAL_BOARDING,Number of children with disabilities in education by type of school: General Boarding school (TM Indicator 51.3)
+EDU_CHLD_DISAB_SPECIAL,Number of children with disabilities in education by type of school: Special school (TM Indicator 51.4)
+EDU_CHLD_DISAB_SPECIAL_BOARDING,Number of children with disabilities in education by type of school: Special Boarding school (TM Indicator 51.5)
+EDU_CHLD_DISAB_HOME,Number of children with disabilities in education: Home schooling (TM Indicator 51.6)
+EDU_CHLD_DISAB_L02,Number of children with disabilities in education by ISCED level: ISCED 0 (TM Indicator 51.7)
+EDU_CHLD_DISAB_L1,Number of children with disabilities in education by ISCED level: ISCED 1 (TM Indicator 51.8)
+EDU_CHLD_DISAB_L2,Number of children with disabilities in education by ISCED level: ISCED 2 (TM Indicator 51.9)
+EDU_CHLD_DISAB_L3,Number of children with disabilities in education by ISCED level: ISCED 3 (TM Indicator 51.10)
+PT_CHLD_INFORMALCARE_RATE,"Rate of children in formal alternative care at the end of the year (per 100,000) (TM Indicator 1)"
+PT_CHLD_INRESIDENTIAL_RATE_B,"Rate of children in formal residential care at the end of the year (per 100,000) (TM Indicator 2)"
+PT_CHLD_DISAB_INRESIDENTIAL_PROP,Proportion of children with disabilities in formal residential care at the end of the year (TM Indicator 3)
+PT_CHLD_ENTER_RESIDENTIAL_RATE,"Rate of children who entered formal residential care during the year (per 100,000) (TM Indicator 5)"
+PT_CHLD_DISAB_ENTER_RESIDENTIAL_PROP,Proportion of children with disabilities who entered formal residential care during the year (TM Indicator 6)
+PT_CHLD_DISAB_LEFT_RESIDENTIAL_PROP,Proportion of children with disabilities who left formal residential care during the year (TM Indicator 8)
+PT_CHLD_INRESIDENTIAL_PROP,Proportion of children in formal residential care of the total number of children in formal alternative care at the end of the year (TM Indicator 10)
+PT_CHLD_INCARE_FOSTER_RATE,"Rate of children in formal family-based care at the end of the year (per 100,000) (TM Indicator 11)"
+PT_CHLD_INFOSTER_PROP,Proportion of children in formal foster care of the total number of children in formal family-based care at the end of the year (TM Indicator 12.1)
+PT_CHLD_DISAB_INFOSTER_PROP,Proportion of children with disabilities in formal foster care of the total number of children in formal family-based care at the end of the year (TM Indicator 12.2)
+PT_CHLD_INKINSHIP_PROP,Proportion of children in formal kinship care of the total number of children in formal family-based care at the end of the year (TM Indicator 13.1)
+PT_CHLD_DISAB_INKINSHIP_PROP,Proportion of children with disabilities in formal kinship care of the total number of children in formal family-based care at the end of the year (TM Indicator 13.2)
+PT_CHLD_INOTHER_FAMILY_PROP,Proportion of children in other forms of formal family-based care of the total number of children in formal family-based care at the end of the year (TM Indicator 14.1)
+PT_CHLD_DISAB_INOTHER_FAMILY_PROP,Proportion of children with disabilities in other forms of formal family-based care of the total number of children in formal family-based care at the end of the year (TM Indicator 14.2)
+PT_CHLD_DISAB_INFAMILY_PROP,Proportion of children with disabilities in formal family-based care at the end of the year (TM Indicator 15)
+PT_CHLD_ENTEREDFAMILY_RATE,"Rate of children who entered formal family-based care during the year (per 100,000) (TM Indicator 17)"
+PT_CHLD_DISAB_ENTEREDFAMILY_PROP,Proportion of children with disabilities who entered formal family-based care during the year (TM Indicator 18)
+PT_CHLD_ALLFAMILY_PROP,Proportion of children in formal family-based care of the total number of children in formal alternative care at the end of the year (TM Indicator 28)
+PT_CHLD_ADOPTION_RATE,"Rate of formal Adoption of children during the year (per 100,000) (TM Indicator 29.1)"
+PT_CHLD_ADOPT_DOMESTIC_RATE,"Rate of formal Adoption of children during the year, by type: Domestic (per 100,000) (TM Indicator 29.2)"
+PT_CHLD_ADOPTION_INTERCOUNTRY_RATE,"Rate of formal Adoption of children during the year, by type: Intercountry (per 100,000) (TM Indicator 29.3)"
+PT_CHLD_DISAB_ADOPT_PROP,Proportion of children with disabilities who were formally adopted during the year (TM Indicator 30.1)
+PT_CHLD_DISAB_ADOPT_DOMESTIC_PROP,"Proportion of children with disabilities who were formally adopted during the year, by type: Domestic (TM Indicator 30.2)"
+PT_CHLD_DISAB_ADOPT_INTERCOUNTRY_PROP,"Proportion of children with disabilities who were formally adopted during the year, by type: Intercountry (TM Indicator 30.3)"
+JJ_CHLD_VICTIM_CRIME_RATE,"Rate of child victims of crime registered by the police during the year (per 100,000) (TM Indicator 31)"
+JJ_CHLD_WITNESS_CRIME_RATE,"Rate of child witnesses of crime registered by the police during the year (per 100,000) (TM Indicator 32)"
+JJ_CHLD_DETENTION_RATE,"Rate of children in detention at the end of the year (per 100,000) (TM Indicator 33.1)"
+JJ_CHLD_PRE_SENTENCE_DETENTION_RATE,"Rate of children in detention at the end of the year, by type: Pre-sentence detention (per 100,000) (TM Indicator 33.2)"
+JJ_CHLD_POST_SENTENCE_DETENTION_RATE,"Rate of children in detention at the end of the year, by type: Post-sentence detention (per 100,000) (TM Indicator 33.3)"
+JJ_CHLD_ENTER_DETENTION_RATE,"Rate of children detained during the year (per 100,000) (TM Indicator 34.1)"
+JJ_CHLD_ENTER_PRE_SENTENCE_DETENTION_RATE,"Rate of children detained during the year, by type: Pre-sentence detention (per 100,000) (TM Indicator 34.2)"
+JJ_CHLD_ENTER_POST_SENTENCE_DETENTION_RATE,"Rate of children detained during the year, by type: Post-sentence detention (per 100,000) (TM Indicator 34.3)"
+JJ_CHLD_CUSTODIAL_SENTENCE_PROP,Percentage of children sentenced to custodial sentences during the year (TM Indicator 36)
+JJ_CHLD_ALTERNATIVE_SENTENCE_PROP,Percentage of children sentenced with alternative measures during the year (TM Indicator 37)
+HT_REG_CHLD_DISAB_PROP,Proportion of children registered as with disabilities at the end of the year (TM Indicator 52)
+HT_NEW_REG_CHLD_DISAB_PROP,Proportion of children newly registered as with disabilities (during the year) (TM Indicator 53)
+DM_CHLD_NSO,Child population aged 0-17 at the beginning of the year (persons)

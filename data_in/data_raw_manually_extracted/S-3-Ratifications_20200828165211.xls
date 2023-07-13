@@ -1,0 +1,443 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:x='urn:schemas-microsoft-com:office:excel' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+body { border:solid 0.1pt #CCCCCC; }
+</style>
+<!--[if gte mso 9]>
+
+<![endif]-->
+</head>
+<body>
+<table id="ctl00_PlaceHolderMain_dgReports_ctl00" style="width:100%;table-layout:auto;empty-cells:show;">
+	<colgroup>
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+		<col  />
+	</colgroup>
+<thead>
+		<tr>
+			<th scope="col"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_PlaceHolderMain_dgReports_ctl00&#39;), &#39;CountryName&#39;); return false;" title="Click here to sort" href="javascript:__doPostBack(&#39;ctl00$PlaceHolderMain$dgReports$ctl00$ctl02$ctl00$ctl00&#39;,&#39;&#39;)">COUNTRY</a></th><th scope="col"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_PlaceHolderMain_dgReports_ctl00&#39;), &#39;Treatydescription&#39;); return false;" title="Click here to sort" href="javascript:__doPostBack(&#39;ctl00$PlaceHolderMain$dgReports$ctl00$ctl02$ctl00$ctl03&#39;,&#39;&#39;)">Treaty Description</a></th><th scope="col"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_PlaceHolderMain_dgReports_ctl00&#39;), &#39;TreatyName&#39;); return false;" title="Click here to sort" href="javascript:__doPostBack(&#39;ctl00$PlaceHolderMain$dgReports$ctl00$ctl02$ctl00$ctl04&#39;,&#39;&#39;)">Treaty Name</a></th><th scope="col"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_PlaceHolderMain_dgReports_ctl00&#39;), &#39;SignatureDate&#39;); return false;" title="Click here to sort" href="javascript:__doPostBack(&#39;ctl00$PlaceHolderMain$dgReports$ctl00$ctl02$ctl00$ctl05&#39;,&#39;&#39;)">Signature Date</a></th><th scope="col"><a onclick="Telerik.Web.UI.Grid.Sort($find(&#39;ctl00_PlaceHolderMain_dgReports_ctl00&#39;), &#39;CombinedDate&#39;); return false;" title="Click here to sort" href="javascript:__doPostBack(&#39;ctl00$PlaceHolderMain$dgReports$ctl00$ctl02$ctl00$ctl06&#39;,&#39;&#39;)">Ratification Date, Accession(a), Succession(d) Date</a></th>
+		</tr>
+	</thead><tbody>
+	<tr>
+		<td>Afghanistan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>19 Sep 2002 (a)</td>
+	</tr><tr>
+		<td>Albania</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>05 Feb 2008 (a)</td>
+	</tr><tr>
+		<td>Algeria</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>27 Dec 2006 (a)</td>
+	</tr><tr>
+		<td>Andorra</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>30 Apr 2001</td>
+	</tr><tr>
+		<td>Angola</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>24 Mar 2005 (a)</td>
+	</tr><tr>
+		<td>Antigua and Barbuda</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>18 Dec 2001</nobr></td><td>30 Apr 2002</td>
+	</tr><tr>
+		<td>Argentina</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>01 Apr 2002</nobr></td><td>25 Sep 2003</td>
+	</tr><tr>
+		<td>Armenia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>24 Sep 2003</nobr></td><td>30 Jun 2005</td>
+	</tr><tr>
+		<td>Australia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>18 Dec 2001</nobr></td><td>08 Jan 2007</td>
+	</tr><tr>
+		<td>Austria</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>06 May 2004</td>
+	</tr><tr>
+		<td>Azerbaijan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>03 Jul 2002</td>
+	</tr><tr>
+		<td>Bahamas</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>28 Sep 2015 (a)</td>
+	</tr><tr>
+		<td>Bahrain</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>21 Sep 2004 (a)</td>
+	</tr><tr>
+		<td>Bangladesh</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>06 Sep 2000</td>
+	</tr><tr>
+		<td>Barbados</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td></td>
+	</tr><tr>
+		<td>Belarus</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>23 Jan 2002 (a)</td>
+	</tr><tr>
+		<td>Belgium</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>17 Mar 2006</td>
+	</tr><tr>
+		<td>Belize</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>01 Dec 2003</td>
+	</tr><tr>
+		<td>Benin</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>22 Feb 2001</nobr></td><td>31 Jan 2005</td>
+	</tr><tr>
+		<td>Bhutan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>15 Sep 2005</nobr></td><td>26 Oct 2009</td>
+	</tr><tr>
+		<td>Bolivia (Plurinational State of)</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>10 Nov 2001</nobr></td><td>03 Jun 2003</td>
+	</tr><tr>
+		<td>Bosnia and Herzegovina</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>04 Sep 2002</td>
+	</tr><tr>
+		<td>Botswana</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>24 Sep 2003 (a)</td>
+	</tr><tr>
+		<td>Brazil</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>27 Jan 2004</td>
+	</tr><tr>
+		<td>Brunei Darussalam</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>21 Nov 2006 (a)</td>
+	</tr><tr>
+		<td>Bulgaria</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Jun 2001</nobr></td><td>12 Feb 2002</td>
+	</tr><tr>
+		<td>Burkina Faso</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>16 Nov 2001</nobr></td><td>31 Mar 2006</td>
+	</tr><tr>
+		<td>Burundi</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>06 Nov 2007 (a)</td>
+	</tr><tr>
+		<td>Cabo Verde</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>10 May 2002 (a)</td>
+	</tr><tr>
+		<td>Cambodia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>27 Jun 2000</nobr></td><td>30 May 2002</td>
+	</tr><tr>
+		<td>Cameroon</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>05 Oct 2001</nobr></td><td></td>
+	</tr><tr>
+		<td>Canada</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>10 Nov 2001</nobr></td><td>14 Sep 2005</td>
+	</tr><tr>
+		<td>Central African Republic</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>27 Sep 2010</nobr></td><td>24 Oct 2012</td>
+	</tr><tr>
+		<td>Chad</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>03 May 2002</nobr></td><td>28 Aug 2002</td>
+	</tr><tr>
+		<td>Chile</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>28 Jun 2000</nobr></td><td>06 Feb 2003</td>
+	</tr><tr>
+		<td>China</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>03 Dec 2002</td>
+	</tr><tr>
+		<td>Colombia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>11 Nov 2003</td>
+	</tr><tr>
+		<td>Comoros</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>23 Feb 2007 (a)</td>
+	</tr><tr>
+		<td>Congo</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>27 Oct 2009 (a)</td>
+	</tr><tr>
+		<td>Cook Islands</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td></td>
+	</tr><tr>
+		<td>Costa Rica</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>09 Apr 2002</td>
+	</tr><tr>
+		<td>Côte d'Ivoire</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>19 Sep 2011 (a)</td>
+	</tr><tr>
+		<td>Croatia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 May 2002</nobr></td><td>13 May 2002</td>
+	</tr><tr>
+		<td>Cuba</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>13 Oct 2000</nobr></td><td>25 Sep 2001</td>
+	</tr><tr>
+		<td>Cyprus</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Feb 2001</nobr></td><td>06 Apr 2006</td>
+	</tr><tr>
+		<td>Czech Republic</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>26 Jan 2005</nobr></td><td>26 Aug 2013</td>
+	</tr><tr>
+		<td>Democratic People's Republic of Korea</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>09 Sep 2014</nobr></td><td>10 Nov 2014</td>
+	</tr><tr>
+		<td>Democratic Republic of the Congo</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>11 Nov 2001 (a)</td>
+	</tr><tr>
+		<td>Denmark</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>24 Jul 2003</td>
+	</tr><tr>
+		<td>Djibouti</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>14 Jun 2006</nobr></td><td>27 Apr 2011</td>
+	</tr><tr>
+		<td>Dominica</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>20 Sep 2002 (a)</td>
+	</tr><tr>
+		<td>Dominican Republic</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>06 Dec 2006 (a)</td>
+	</tr><tr>
+		<td>Ecuador</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>30 Jan 2004</td>
+	</tr><tr>
+		<td>Egypt</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>12 Jul 2002 (a)</td>
+	</tr><tr>
+		<td>El Salvador</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>13 Sep 2002</nobr></td><td>17 May 2004</td>
+	</tr><tr>
+		<td>Equatorial Guinea</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>07 Feb 2003 (a)</td>
+	</tr><tr>
+		<td>Eritrea</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>16 Feb 2005 (a)</td>
+	</tr><tr>
+		<td>Estonia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>24 Sep 2003</nobr></td><td>03 Aug 2004</td>
+	</tr><tr>
+		<td>Eswatini</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>24 Sep 2012 (a)</td>
+	</tr><tr>
+		<td>Ethiopia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>25 Mar 2014 (a)</td>
+	</tr><tr>
+		<td>Fiji</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>16 Sep 2005</nobr></td><td></td>
+	</tr><tr>
+		<td>Finland</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>01 Jun 2012</td>
+	</tr><tr>
+		<td>France</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>05 Feb 2003</td>
+	</tr><tr>
+		<td>Gabon</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>01 Oct 2007</td>
+	</tr><tr>
+		<td>Gambia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>21 Dec 2000</nobr></td><td>08 Apr 2010</td>
+	</tr><tr>
+		<td>Georgia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>28 Jun 2005 (a)</td>
+	</tr><tr>
+		<td>Germany</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>15 Jul 2009</td>
+	</tr><tr>
+		<td>Ghana</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>24 Sep 2003</nobr></td><td></td>
+	</tr><tr>
+		<td>Greece</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>22 Feb 2008</td>
+	</tr><tr>
+		<td>Grenada</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>06 Feb 2012 (a)</td>
+	</tr><tr>
+		<td>Guatemala</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>09 May 2002</td>
+	</tr><tr>
+		<td>Guinea</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>16 Nov 2011 (a)</td>
+	</tr><tr>
+		<td>Guinea-Bissau</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>01 Nov 2010</td>
+	</tr><tr>
+		<td>Guyana</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>30 Jul 2010 (a)</td>
+	</tr><tr>
+		<td>Haiti</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>15 Aug 2002</nobr></td><td>09 Sep 2014</td>
+	</tr><tr>
+		<td>Holy See</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>10 Oct 2000</nobr></td><td>24 Oct 2001</td>
+	</tr><tr>
+		<td>Honduras</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>08 May 2002 (a)</td>
+	</tr><tr>
+		<td>Hungary</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>11 Mar 2002</nobr></td><td>24 Feb 2010</td>
+	</tr><tr>
+		<td>Iceland</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>09 Jul 2001</td>
+	</tr><tr>
+		<td>India</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>15 Nov 2004</nobr></td><td>16 Aug 2005</td>
+	</tr><tr>
+		<td>Indonesia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>24 Sep 2001</nobr></td><td>24 Sep 2012</td>
+	</tr><tr>
+		<td>Iran (Islamic Republic of)</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>26 Sep 2007 (a)</td>
+	</tr><tr>
+		<td>Iraq</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>24 Jun 2008 (a)</td>
+	</tr><tr>
+		<td>Ireland</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td></td>
+	</tr><tr>
+		<td>Israel</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>14 Nov 2001</nobr></td><td>23 Jul 2008</td>
+	</tr><tr>
+		<td>Italy</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>09 May 2002</td>
+	</tr><tr>
+		<td>Jamaica</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>26 Aug 2011</td>
+	</tr><tr>
+		<td>Japan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>10 May 2002</nobr></td><td>24 Jan 2005</td>
+	</tr><tr>
+		<td>Jordan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>04 Dec 2006</td>
+	</tr><tr>
+		<td>Kazakhstan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>24 Aug 2001</td>
+	</tr><tr>
+		<td>Kenya</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td></td>
+	</tr><tr>
+		<td>Kiribati</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>16 Sep 2015 (a)</td>
+	</tr><tr>
+		<td>Kuwait</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>26 Aug 2004 (a)</td>
+	</tr><tr>
+		<td>Kyrgyzstan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>12 Feb 2003 (a)</td>
+	</tr><tr>
+		<td>Lao People's Democratic Republic</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>20 Sep 2006 (a)</td>
+	</tr><tr>
+		<td>Latvia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>01 Feb 2002</nobr></td><td>22 Feb 2006</td>
+	</tr><tr>
+		<td>Lebanon</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>10 Oct 2001</nobr></td><td>08 Nov 2004</td>
+	</tr><tr>
+		<td>Lesotho</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>24 Sep 2003</td>
+	</tr><tr>
+		<td>Liberia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>22 Sep 2004</nobr></td><td></td>
+	</tr><tr>
+		<td>Libya</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>18 Jun 2004 (a)</td>
+	</tr><tr>
+		<td>Liechtenstein</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>30 Jan 2013</td>
+	</tr><tr>
+		<td>Lithuania</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>05 Aug 2004 (a)</td>
+	</tr><tr>
+		<td>Luxembourg</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>02 Sep 2011</td>
+	</tr><tr>
+		<td>Madagascar</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>22 Sep 2004</td>
+	</tr><tr>
+		<td>Malawi</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>07 Oct 2009</td>
+	</tr><tr>
+		<td>Malaysia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>12 Apr 2012 (a)</td>
+	</tr><tr>
+		<td>Maldives</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>10 May 2002</nobr></td><td>10 May 2002</td>
+	</tr><tr>
+		<td>Mali</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>16 May 2002 (a)</td>
+	</tr><tr>
+		<td>Malta</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>28 Sep 2010</td>
+	</tr><tr>
+		<td>Marshall Islands</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>29 Jan 2019 (a)</td>
+	</tr><tr>
+		<td>Mauritania</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>23 Apr 2007 (a)</td>
+	</tr><tr>
+		<td>Mauritius</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>11 Nov 2001</nobr></td><td>14 Jun 2011</td>
+	</tr><tr>
+		<td>Mexico</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>15 Mar 2002</td>
+	</tr><tr>
+		<td>Micronesia (Federated States of)</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 May 2002</nobr></td><td>23 Apr 2012</td>
+	</tr><tr>
+		<td>Monaco</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>26 Jun 2000</nobr></td><td>24 Sep 2008</td>
+	</tr><tr>
+		<td>Mongolia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>12 Nov 2001</nobr></td><td>27 Jun 2003</td>
+	</tr><tr>
+		<td>Montenegro</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>23 Oct 2006 (d)</td>
+	</tr><tr>
+		<td>Morocco</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>02 Oct 2001</td>
+	</tr><tr>
+		<td>Mozambique</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>06 Mar 2003 (a)</td>
+	</tr><tr>
+		<td>Myanmar</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>16 Jan 2012 (a)</td>
+	</tr><tr>
+		<td>Namibia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>16 Apr 2002</td>
+	</tr><tr>
+		<td>Nauru</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td></td>
+	</tr><tr>
+		<td>Nepal</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>20 Jan 2006</td>
+	</tr><tr>
+		<td>Netherlands</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>23 Aug 2005</td>
+	</tr><tr>
+		<td>New Zealand</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>20 Sep 2011</td>
+	</tr><tr>
+		<td>Nicaragua</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>02 Dec 2004 (a)</td>
+	</tr><tr>
+		<td>Niger</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>27 Mar 2002</nobr></td><td>26 Oct 2004</td>
+	</tr><tr>
+		<td>Nigeria</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>27 Sep 2010</td>
+	</tr><tr>
+		<td>Niue</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td></td>
+	</tr><tr>
+		<td>North Macedonia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>17 Jul 2001</nobr></td><td>17 Oct 2003</td>
+	</tr><tr>
+		<td>Norway</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>13 Jun 2000</nobr></td><td>02 Oct 2001</td>
+	</tr><tr>
+		<td>Oman</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>17 Sep 2004 (a)</td>
+	</tr><tr>
+		<td>Pakistan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>26 Sep 2001</nobr></td><td>05 Jul 2011</td>
+	</tr><tr>
+		<td>Palau</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td></td>
+	</tr><tr>
+		<td>Panama</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>31 Oct 2000</nobr></td><td>09 Feb 2001</td>
+	</tr><tr>
+		<td>Papua New Guinea</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td></td>
+	</tr><tr>
+		<td>Paraguay</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>13 Sep 2000</nobr></td><td>18 Aug 2003</td>
+	</tr><tr>
+		<td>Peru</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>01 Nov 2000</nobr></td><td>08 May 2002</td>
+	</tr><tr>
+		<td>Philippines</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>28 May 2002</td>
+	</tr><tr>
+		<td>Poland</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>13 Feb 2002</nobr></td><td>04 Feb 2005</td>
+	</tr><tr>
+		<td>Portugal</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>16 May 2003</td>
+	</tr><tr>
+		<td>Qatar</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>14 Dec 2001 (a)</td>
+	</tr><tr>
+		<td>Republic of Korea</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>24 Sep 2004</td>
+	</tr><tr>
+		<td>Republic of Moldova</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Feb 2002</nobr></td><td>12 Apr 2007</td>
+	</tr><tr>
+		<td>Romania</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>18 Oct 2001</td>
+	</tr><tr>
+		<td>Russian Federation</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>26 Sep 2012</nobr></td><td>24 Sep 2013</td>
+	</tr><tr>
+		<td>Rwanda</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>14 Mar 2002 (a)</td>
+	</tr><tr>
+		<td>Saint Kitts and Nevis</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td></td>
+	</tr><tr>
+		<td>Saint Lucia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>22 Sep 2011</nobr></td><td>08 Oct 2013</td>
+	</tr><tr>
+		<td>Saint Vincent and the Grenadines</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>15 Sep 2005 (a)</td>
+	</tr><tr>
+		<td>Samoa</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>29 Apr 2016 (a)</td>
+	</tr><tr>
+		<td>San Marino</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>05 Jun 2000</nobr></td><td>26 Sep 2011</td>
+	</tr><tr>
+		<td>Sao Tome and Principe</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td></td>
+	</tr><tr>
+		<td>Saudi Arabia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>18 Aug 2010 (a)</td>
+	</tr><tr>
+		<td>Senegal</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>05 Nov 2003</td>
+	</tr><tr>
+		<td>Serbia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Oct 2001</nobr></td><td>10 Oct 2002</td>
+	</tr><tr>
+		<td>Seychelles</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>23 Jan 2001</nobr></td><td>11 Dec 2012</td>
+	</tr><tr>
+		<td>Sierra Leone</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>17 Sep 2001</td>
+	</tr><tr>
+		<td>Singapore</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td></td>
+	</tr><tr>
+		<td>Slovakia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>30 Nov 2001</nobr></td><td>25 Jun 2004</td>
+	</tr><tr>
+		<td>Slovenia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>23 Sep 2004</td>
+	</tr><tr>
+		<td>Solomon Islands</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>24 Sep 2009</nobr></td><td></td>
+	</tr><tr>
+		<td>Somalia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td></td>
+	</tr><tr>
+		<td>South Africa</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>30 Jun 2003 (a)</td>
+	</tr><tr>
+		<td>South Sudan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>27 Sep 2018 (a)</td>
+	</tr><tr>
+		<td>Spain</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>06 Sep 2000</nobr></td><td>18 Dec 2001</td>
+	</tr><tr>
+		<td>Sri Lanka</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 May 2002</nobr></td><td>22 Sep 2006</td>
+	</tr><tr>
+		<td>State of Palestine</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>29 Dec 2017 (a)</td>
+	</tr><tr>
+		<td>Sudan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>02 Nov 2004 (a)</td>
+	</tr><tr>
+		<td>Suriname</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>10 May 2002</nobr></td><td>18 May 2012</td>
+	</tr><tr>
+		<td>Sweden</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>19 Jan 2007</td>
+	</tr><tr>
+		<td>Switzerland</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>19 Sep 2006</td>
+	</tr><tr>
+		<td>Syrian Arab Republic</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>15 May 2003 (a)</td>
+	</tr><tr>
+		<td>Tajikistan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>05 Aug 2002 (a)</td>
+	</tr><tr>
+		<td>Thailand</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>11 Jan 2006 (a)</td>
+	</tr><tr>
+		<td>Timor-Leste</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>16 Apr 2003 (a)</td>
+	</tr><tr>
+		<td>Togo</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>15 Nov 2001</nobr></td><td>02 Jul 2004</td>
+	</tr><tr>
+		<td>Tonga</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td></td>
+	</tr><tr>
+		<td>Trinidad and Tobago</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td></td>
+	</tr><tr>
+		<td>Tunisia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>22 Apr 2002</nobr></td><td>13 Sep 2002</td>
+	</tr><tr>
+		<td>Turkey</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>19 Aug 2002</td>
+	</tr><tr>
+		<td>Turkmenistan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>28 Mar 2005 (a)</td>
+	</tr><tr>
+		<td>Tuvalu</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td></td>
+	</tr><tr>
+		<td>Uganda</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>30 Nov 2001 (a)</td>
+	</tr><tr>
+		<td>Ukraine</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>03 Jul 2003</td>
+	</tr><tr>
+		<td>United Arab Emirates</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>02 Mar 2016 (a)</td>
+	</tr><tr>
+		<td>United Kingdom of Great Britain and Northern Ireland</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>20 Feb 2009</td>
+	</tr><tr>
+		<td>United Republic of Tanzania</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>24 Apr 2003 (a)</td>
+	</tr><tr>
+		<td>United States of America</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>05 Jul 2000</nobr></td><td>23 Dec 2002</td>
+	</tr><tr>
+		<td>Uruguay</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>03 Jul 2003</td>
+	</tr><tr>
+		<td>Uzbekistan</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>23 Dec 2008 (a)</td>
+	</tr><tr>
+		<td>Vanuatu</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>16 Sep 2005</nobr></td><td>17 May 2007</td>
+	</tr><tr>
+		<td>Venezuela (Bolivarian Republic of)</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>07 Sep 2000</nobr></td><td>08 May 2002</td>
+	</tr><tr>
+		<td>Viet Nam</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>08 Sep 2000</nobr></td><td>20 Dec 2001</td>
+	</tr><tr>
+		<td>Yemen</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>15 Dec 2004 (a)</td>
+	</tr><tr>
+		<td>Zambia</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td><nobr>29 Sep 2008</nobr></td><td></td>
+	</tr><tr>
+		<td>Zimbabwe</td><td>Optional Protocol to the Convention on the Rights of the Child on the sale of children child prostitution and child pornography</td><td>CRC-OP-SC</td><td>&nbsp;</td><td>14 Feb 2012 (a)</td>
+	</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td class="rgCommandCell"><table class="rgCommandTable" summary="Command item for additional functionalities for the grid like adding a new record and exporting." style="width:100%;">
+				<caption>
+					<span style='display: none'>Command item</span>
+				</caption><thead>
+					<tr>
+						<th scope="col">Command item</th>
+					</tr>
+				</thead><tbody>
+					<tr>
+						<td align="left">&nbsp;</td><td align="right">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<input type="submit" name="ctl00$PlaceHolderMain$dgReports$ctl00$ctl03$ctl01$ExportToExcelButton" value=" " onclick="_spFormOnSubmitCalled = false;_spSuppressFormOnSubmitWrapper=true;" id="ctl00_PlaceHolderMain_dgReports_ctl00_ctl03_ctl01_ExportToExcelButton" title="Export to Excel" class="rgExpXLS" />&nbsp;&nbsp;<input type="submit" name="ctl00$PlaceHolderMain$dgReports$ctl00$ctl03$ctl01$ExportToWordButton" value=" " onclick="_spFormOnSubmitCalled = false;_spSuppressFormOnSubmitWrapper=true;" id="ctl00_PlaceHolderMain_dgReports_ctl00_ctl03_ctl01_ExportToWordButton" title="Export to Word" class="rgExpDOC" /></td>
+					</tr>
+				</tbody>
+			</table></td>
+		</tr>
+	</tfoot>
+</table></body></html>

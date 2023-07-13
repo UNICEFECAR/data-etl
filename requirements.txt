@@ -1,6 +1,40 @@
 requests
 pandas
 bs4
-sqlite3
-io
-
+openpyxl
+pandas_datareader
+black
+numpy
+selenium
+html5lib
+rope
+roman
+fuzzywuzzy
+pandasdmx
+requests-cache
+xmltodict
+xlrd
+pandera
+nltk
+ipykernel
+notebook
+nbconvert
+jupyter
+# pandoc
+matplotlib
+# for small apps (and sharepoint auth)
+dash
+dash-bootstrap-components
+dash_extensions
+jupyter-dash
+jupyter_server_proxy
+geojson-rewind
+# kaleido
+# latex
+# pylatex
+# pyppeteer
+# notebook-as-pdf
+styleframe
+statsmodels
+Office365-REST-Python-Client
+xlsxwriter

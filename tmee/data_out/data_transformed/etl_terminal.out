@@ -1,0 +1,1728 @@
+Legacy data already parsed and writen
+Dealing with indicator: DM_BRTS
+Indicator DM_BRTS skipped (already downloaded)
+Transformation for DM_BRTS skipped (already done)
+Dealing with indicator: DM_POP_URBN
+Indicator DM_POP_URBN skipped (already downloaded)
+Transformation for DM_POP_URBN skipped (already done)
+Dealing with indicator: DM_POP_TOT_AGE
+Indicator DM_POP_TOT_AGE skipped (already downloaded)
+Transformation for DM_POP_TOT_AGE skipped (already done)
+Dealing with indicator: DM_POP_NETM
+Indicator DM_POP_NETM skipped (already downloaded)
+Transformation for DM_POP_NETM skipped (already done)
+Dealing with indicator: FT_WHS_PBR
+Indicator FT_WHS_PBR skipped (already downloaded)
+Transformation for FT_WHS_PBR skipped (already done)
+Dealing with indicator: DM_FRATE_TOT
+Indicator DM_FRATE_TOT skipped (already downloaded)
+Transformation for DM_FRATE_TOT skipped (already done)
+Dealing with indicator: FT_SP_DYN_ADKL
+Indicator FT_SP_DYN_ADKL skipped (already downloaded)
+Transformation for FT_SP_DYN_ADKL skipped (already done)
+Dealing with indicator: NT_BW_LBW
+Indicator NT_BW_LBW skipped (already downloaded)
+Transformation for NT_BW_LBW skipped (already done)
+Dealing with indicator: MT_SP_DYN_CDRT_IN
+Indicator MT_SP_DYN_CDRT_IN skipped (already downloaded)
+Transformation for MT_SP_DYN_CDRT_IN skipped (already done)
+Dealing with indicator: DM_LIFE_EXP
+Indicator DM_LIFE_EXP skipped (already downloaded)
+Transformation for DM_LIFE_EXP skipped (already done)
+Dealing with indicator: CME_MRY0
+Indicator CME_MRY0 skipped (already downloaded)
+Transformation for CME_MRY0 skipped (already done)
+Dealing with indicator: CME_MRY0T4
+Indicator CME_MRY0T4 skipped (already downloaded)
+Transformation for CME_MRY0T4 skipped (already done)
+Dealing with indicator: CME_MRM0
+Indicator CME_MRM0 skipped (already downloaded)
+Transformation for CME_MRM0 skipped (already done)
+Dealing with indicator: MNCH_MMR
+Indicator MNCH_MMR skipped (already downloaded)
+Transformation for MNCH_MMR skipped (already done)
+Dealing with indicator: MT_SDG_SUICIDE
+Indicator MT_SDG_SUICIDE skipped (already downloaded)
+Transformation for MT_SDG_SUICIDE skipped (already done)
+Dealing with indicator: HT_SH_HAP_HBSAG
+Indicator HT_SH_HAP_HBSAG skipped (already downloaded)
+Transformation for HT_SH_HAP_HBSAG skipped (already done)
+Dealing with indicator: HT_SH_TBS_INCD
+Indicator HT_SH_TBS_INCD skipped (already downloaded)
+Transformation for HT_SH_TBS_INCD skipped (already done)
+Dealing with indicator: HT_SH_HIV_INCD
+Indicator HT_SH_HIV_INCD skipped (already downloaded)
+Transformation for HT_SH_HIV_INCD skipped (already done)
+Dealing with indicator: HT_SH_SUD_ALCOL
+Indicator HT_SH_SUD_ALCOL skipped (already downloaded)
+Transformation for HT_SH_SUD_ALCOL skipped (already done)
+Dealing with indicator: MNCH_SAB
+Indicator MNCH_SAB skipped (already downloaded)
+Transformation for MNCH_SAB skipped (already done)
+Dealing with indicator: HVA_PMTCT_ARV_CVG
+Indicator HVA_PMTCT_ARV_CVG skipped (already downloaded)
+Transformation for HVA_PMTCT_ARV_CVG skipped (already done)
+Dealing with indicator: MNCH_ANC4
+Indicator MNCH_ANC4 skipped (already downloaded)
+Transformation for MNCH_ANC4 skipped (already done)
+Dealing with indicator: MNCH_PNCMOM
+Indicator MNCH_PNCMOM skipped (already downloaded)
+Transformation for MNCH_PNCMOM skipped (already done)
+Dealing with indicator: MNCH_PNEUCARE
+Indicator MNCH_PNEUCARE skipped (already downloaded)
+Transformation for MNCH_PNEUCARE skipped (already done)
+Dealing with indicator: HT_SH_FPL_MTMM
+Indicator HT_SH_FPL_MTMM skipped (already downloaded)
+Transformation for HT_SH_FPL_MTMM skipped (already done)
+Dealing with indicator: IM_DTP3
+Indicator IM_DTP3 skipped (already downloaded)
+Transformation for IM_DTP3 skipped (already done)
+Dealing with indicator: HT_DIST79DTP3_P
+Indicator HT_DIST79DTP3_P skipped (already downloaded)
+Transformation for HT_DIST79DTP3_P skipped (already done)
+Dealing with indicator: IM_MCV2
+Indicator IM_MCV2 skipped (already downloaded)
+Transformation for IM_MCV2 skipped (already done)
+Dealing with indicator: HT_DIST79MCV2_P
+Indicator HT_DIST79MCV2_P skipped (already downloaded)
+Transformation for HT_DIST79MCV2_P skipped (already done)
+Dealing with indicator: HT_SDG_PM25
+Indicator HT_SDG_PM25 skipped (already downloaded)
+Transformation for HT_SDG_PM25 skipped (already done)
+Dealing with indicator: NT_BF_EIBF
+Indicator NT_BF_EIBF skipped (already downloaded)
+Transformation for NT_BF_EIBF skipped (already done)
+Dealing with indicator: NT_BF_EXBF
+Indicator NT_BF_EXBF skipped (already downloaded)
+Transformation for NT_BF_EXBF skipped (already done)
+Dealing with indicator: NT_CF_MAD
+Indicator NT_CF_MAD skipped (already downloaded)
+Transformation for NT_CF_MAD skipped (already done)
+Dealing with indicator: NT_ANT_WHZ_PO2
+Indicator NT_ANT_WHZ_PO2 skipped (already downloaded)
+Transformation for NT_ANT_WHZ_PO2 skipped (already done)
+Dealing with indicator: NT_ANT_HAZ_NE2
+Indicator NT_ANT_HAZ_NE2 skipped (already downloaded)
+Transformation for NT_ANT_HAZ_NE2 skipped (already done)
+Dealing with indicator: ECD_CHLD_36-59M_ADLT_SRC
+Indicator ECD_CHLD_36-59M_ADLT_SRC skipped (already downloaded)
+Transformation for ECD_CHLD_36-59M_ADLT_SRC skipped (already done)
+Dealing with indicator: HT_SH_SUD_TREAT
+Indicator HT_SH_SUD_TREAT skipped (already downloaded)
+Transformation for HT_SH_SUD_TREAT skipped (already done)
+Dealing with indicator: HT_SH_ACS_UNHC
+Indicator HT_SH_ACS_UNHC skipped (already downloaded)
+Transformation for HT_SH_ACS_UNHC skipped (already done)
+Dealing with indicator: HT_ADOL_UNMETMED_NOUNMET
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_ADOL_UNMETMED_NOUNMET skipped (already downloaded)
+Transformation for HT_ADOL_UNMETMED_NOUNMET skipped (already done)
+Dealing with indicator: HT_ADOL_UNMETMED_TOOEXP
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_ADOL_UNMETMED_TOOEXP skipped (already downloaded)
+Transformation for HT_ADOL_UNMETMED_TOOEXP skipped (already done)
+Dealing with indicator: HT_ADOL_UNMETMED_TOOFAR
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_ADOL_UNMETMED_TOOFAR skipped (already downloaded)
+Transformation for HT_ADOL_UNMETMED_TOOFAR skipped (already done)
+Dealing with indicator: HT_ADOL_UNMETMED_WAITING
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_ADOL_UNMETMED_WAITING skipped (already downloaded)
+Transformation for HT_ADOL_UNMETMED_WAITING skipped (already done)
+Dealing with indicator: HT_ADOL_UNMETMED_TOOEFW
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_ADOL_UNMETMED_TOOEFW skipped (already downloaded)
+Transformation for HT_ADOL_UNMETMED_TOOEFW skipped (already done)
+Dealing with indicator: HT_ADOL_UNMETMED_NOTIME
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_ADOL_UNMETMED_NOTIME skipped (already downloaded)
+Transformation for HT_ADOL_UNMETMED_NOTIME skipped (already done)
+Dealing with indicator: HT_ADOL_UNMETMED_NOKNOW
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_ADOL_UNMETMED_NOKNOW skipped (already downloaded)
+Transformation for HT_ADOL_UNMETMED_NOKNOW skipped (already done)
+Dealing with indicator: HT_ADOL_UNMETMED_FEAR
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_ADOL_UNMETMED_FEAR skipped (already downloaded)
+Transformation for HT_ADOL_UNMETMED_FEAR skipped (already done)
+Dealing with indicator: HT_ADOL_UNMETMED_HOPING
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_ADOL_UNMETMED_HOPING skipped (already downloaded)
+Transformation for HT_ADOL_UNMETMED_HOPING skipped (already done)
+Dealing with indicator: HT_ADOL_UNMETMED_OTH
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_ADOL_UNMETMED_OTH skipped (already downloaded)
+Transformation for HT_ADOL_UNMETMED_OTH skipped (already done)
+Dealing with indicator: HT_SH_XPD_CHEX_GD_ZS
+Indicator HT_SH_XPD_CHEX_GD_ZS skipped (already downloaded)
+Transformation for HT_SH_XPD_CHEX_GD_ZS skipped (already done)
+Dealing with indicator: HT_SH_XPD_GHED_GD_ZS
+Indicator HT_SH_XPD_GHED_GD_ZS skipped (already downloaded)
+Transformation for HT_SH_XPD_GHED_GD_ZS skipped (already done)
+Dealing with indicator: HT_SH_XPD_GHED_GE_ZS
+Indicator HT_SH_XPD_GHED_GE_ZS skipped (already downloaded)
+Transformation for HT_SH_XPD_GHED_GE_ZS skipped (already done)
+Dealing with indicator: HT_SH_XPD_GHED_CH_ZS
+Indicator HT_SH_XPD_GHED_CH_ZS skipped (already downloaded)
+Transformation for HT_SH_XPD_GHED_CH_ZS skipped (already done)
+Dealing with indicator: HT_SH_XPD_GHED_PP_CD
+Indicator HT_SH_XPD_GHED_PP_CD skipped (already downloaded)
+Transformation for HT_SH_XPD_GHED_PP_CD skipped (already done)
+Dealing with indicator: HT_SH_XPD_GHED_PC_CD
+Indicator HT_SH_XPD_GHED_PC_CD skipped (already downloaded)
+Transformation for HT_SH_XPD_GHED_PC_CD skipped (already done)
+Dealing with indicator: HT_SH_XPD_PVTD_CH_ZS
+Indicator HT_SH_XPD_PVTD_CH_ZS skipped (already downloaded)
+Transformation for HT_SH_XPD_PVTD_CH_ZS skipped (already done)
+Dealing with indicator: HT_SH_XPD_PVTD_PP_CD
+Indicator HT_SH_XPD_PVTD_PP_CD skipped (already downloaded)
+Transformation for HT_SH_XPD_PVTD_PP_CD skipped (already done)
+Dealing with indicator: HT_SH_XPD_PVTD_PC_CD
+Indicator HT_SH_XPD_PVTD_PC_CD skipped (already downloaded)
+Transformation for HT_SH_XPD_PVTD_PC_CD skipped (already done)
+Dealing with indicator: HT_SH_XPD_CHEX_PP_CD
+Indicator HT_SH_XPD_CHEX_PP_CD skipped (already downloaded)
+Transformation for HT_SH_XPD_CHEX_PP_CD skipped (already done)
+Dealing with indicator: HT_SH_XPD_CHEX_PC_CD
+Indicator HT_SH_XPD_CHEX_PC_CD skipped (already downloaded)
+Transformation for HT_SH_XPD_CHEX_PC_CD skipped (already done)
+Dealing with indicator: HT_SH_XPD_OOPC_CH_ZS
+Indicator HT_SH_XPD_OOPC_CH_ZS skipped (already downloaded)
+Transformation for HT_SH_XPD_OOPC_CH_ZS skipped (already done)
+Dealing with indicator: HT_SH_XPD_OOPC_PP_CD
+Indicator HT_SH_XPD_OOPC_PP_CD skipped (already downloaded)
+Transformation for HT_SH_XPD_OOPC_PP_CD skipped (already done)
+Dealing with indicator: HT_SH_XPD_OOPC_PC_CD
+Indicator HT_SH_XPD_OOPC_PC_CD skipped (already downloaded)
+Transformation for HT_SH_XPD_OOPC_PC_CD skipped (already done)
+Dealing with indicator: HT_INS_COV
+Indicator HT_INS_COV skipped (already downloaded)
+Transformation for HT_INS_COV skipped (already done)
+Dealing with indicator: CME_TMY0T4
+Indicator CME_TMY0T4 skipped (already downloaded)
+Transformation for CME_TMY0T4 skipped (already done)
+Dealing with indicator: CME_SBR
+Indicator CME_SBR skipped (already downloaded)
+Transformation for CME_SBR skipped (already done)
+Dealing with indicator: CME_PND
+Indicator CME_PND skipped (already downloaded)
+Transformation for CME_PND skipped (already done)
+Dealing with indicator: HT_U5DEATH_AIDS
+Indicator HT_U5DEATH_AIDS skipped (already downloaded)
+Transformation for HT_U5DEATH_AIDS skipped (already done)
+Dealing with indicator: HT_U5DEATH_DIAR
+Indicator HT_U5DEATH_DIAR skipped (already downloaded)
+Transformation for HT_U5DEATH_DIAR skipped (already done)
+Dealing with indicator: HT_U5DEATH_PERT
+Indicator HT_U5DEATH_PERT skipped (already downloaded)
+Transformation for HT_U5DEATH_PERT skipped (already done)
+Dealing with indicator: HT_U5DEATH_TETA
+Indicator HT_U5DEATH_TETA skipped (already downloaded)
+Transformation for HT_U5DEATH_TETA skipped (already done)
+Dealing with indicator: HT_U5DEATH_MEAS
+Indicator HT_U5DEATH_MEAS skipped (already downloaded)
+Transformation for HT_U5DEATH_MEAS skipped (already done)
+Dealing with indicator: HT_U5DEATH_MENI
+Indicator HT_U5DEATH_MENI skipped (already downloaded)
+Transformation for HT_U5DEATH_MENI skipped (already done)
+Dealing with indicator: HT_U5DEATH_MALA
+Indicator HT_U5DEATH_MALA skipped (already downloaded)
+Transformation for HT_U5DEATH_MALA skipped (already done)
+Dealing with indicator: HT_U5DEATH_PNEU
+Indicator HT_U5DEATH_PNEU skipped (already downloaded)
+Transformation for HT_U5DEATH_PNEU skipped (already done)
+Dealing with indicator: HT_U5DEATH_PRET
+Indicator HT_U5DEATH_PRET skipped (already downloaded)
+Transformation for HT_U5DEATH_PRET skipped (already done)
+Dealing with indicator: HT_U5DEATH_INTR
+Indicator HT_U5DEATH_INTR skipped (already downloaded)
+Transformation for HT_U5DEATH_INTR skipped (already done)
+Dealing with indicator: HT_U5DEATH_SEPS
+Indicator HT_U5DEATH_SEPS skipped (already downloaded)
+Transformation for HT_U5DEATH_SEPS skipped (already done)
+Dealing with indicator: HT_U5DEATH_OTHE
+Indicator HT_U5DEATH_OTHE skipped (already downloaded)
+Transformation for HT_U5DEATH_OTHE skipped (already done)
+Dealing with indicator: HT_U5DEATH_CONG
+Indicator HT_U5DEATH_CONG skipped (already downloaded)
+Transformation for HT_U5DEATH_CONG skipped (already done)
+Dealing with indicator: HT_U5DEATH_NCDS
+Indicator HT_U5DEATH_NCDS skipped (already downloaded)
+Transformation for HT_U5DEATH_NCDS skipped (already done)
+Dealing with indicator: HT_U5DEATH_INJU
+Indicator HT_U5DEATH_INJU skipped (already downloaded)
+Transformation for HT_U5DEATH_INJU skipped (already done)
+Dealing with indicator: MNCH_CSEC
+Indicator MNCH_CSEC skipped (already downloaded)
+Transformation for MNCH_CSEC skipped (already done)
+Dealing with indicator: MNCH_MATERNAL_DEATHS
+Indicator MNCH_MATERNAL_DEATHS skipped (already downloaded)
+Transformation for MNCH_MATERNAL_DEATHS skipped (already done)
+Dealing with indicator: MNCH_SH_MMR_RISK
+Indicator MNCH_SH_MMR_RISK skipped (already downloaded)
+Transformation for MNCH_SH_MMR_RISK skipped (already done)
+Dealing with indicator: MNCH_SH_MMR_RISK_ZS
+Indicator MNCH_SH_MMR_RISK_ZS skipped (already downloaded)
+Transformation for MNCH_SH_MMR_RISK_ZS skipped (already done)
+Dealing with indicator: MNCH_INSTDEL
+Indicator MNCH_INSTDEL skipped (already downloaded)
+Transformation for MNCH_INSTDEL skipped (already done)
+Dealing with indicator: MNCH_BIRTH18
+Indicator MNCH_BIRTH18 skipped (already downloaded)
+Transformation for MNCH_BIRTH18 skipped (already done)
+Dealing with indicator: HT_SH_ACS_DTP3
+Indicator HT_SH_ACS_DTP3 skipped (already downloaded)
+Transformation for HT_SH_ACS_DTP3 skipped (already done)
+Dealing with indicator: HT_SH_ACS_HPV
+Indicator HT_SH_ACS_HPV skipped (already downloaded)
+Transformation for HT_SH_ACS_HPV skipped (already done)
+Dealing with indicator: HT_SH_ACS_MCV2
+Indicator HT_SH_ACS_MCV2 skipped (already downloaded)
+Transformation for HT_SH_ACS_MCV2 skipped (already done)
+Dealing with indicator: HT_SH_ACS_PCV3
+Indicator HT_SH_ACS_PCV3 skipped (already downloaded)
+Transformation for HT_SH_ACS_PCV3 skipped (already done)
+Dealing with indicator: IM_MCV1
+Indicator IM_MCV1 skipped (already downloaded)
+Transformation for IM_MCV1 skipped (already done)
+Dealing with indicator: HT_DIST80DTP3_P
+Indicator HT_DIST80DTP3_P skipped (already downloaded)
+Transformation for HT_DIST80DTP3_P skipped (already done)
+Dealing with indicator: HT_COVERAGE_DTP3
+Indicator HT_COVERAGE_DTP3 skipped (already downloaded)
+Transformation for HT_COVERAGE_DTP3 skipped (already done)
+Dealing with indicator: HT_SN_STA_OVWGTN
+Indicator HT_SN_STA_OVWGTN skipped (already downloaded)
+Transformation for HT_SN_STA_OVWGTN skipped (already done)
+Dealing with indicator: HT_SH_STA_ANEM
+Indicator HT_SH_STA_ANEM skipped (already downloaded)
+Transformation for HT_SH_STA_ANEM skipped (already done)
+Dealing with indicator: HT_SH_STA_ANEM_NPRG
+Indicator HT_SH_STA_ANEM_NPRG skipped (already downloaded)
+Transformation for HT_SH_STA_ANEM_NPRG skipped (already done)
+Dealing with indicator: HT_SH_STA_ANEM_PREG
+Indicator HT_SH_STA_ANEM_PREG skipped (already downloaded)
+Transformation for HT_SH_STA_ANEM_PREG skipped (already done)
+Dealing with indicator: NT_BW_UNW
+Indicator NT_BW_UNW skipped (already downloaded)
+Transformation for NT_BW_UNW skipped (already done)
+Dealing with indicator: HT_NCD_BMI_18A
+Indicator HT_NCD_BMI_18A skipped (already downloaded)
+Transformation for HT_NCD_BMI_18A skipped (already done)
+Dealing with indicator: HT_ADOL_MT
+Indicator HT_ADOL_MT skipped (already downloaded)
+Transformation for HT_ADOL_MT skipped (already done)
+Dealing with indicator: HT_SH_PRV_SMOK
+Indicator HT_SH_PRV_SMOK skipped (already downloaded)
+Transformation for HT_SH_PRV_SMOK skipped (already done)
+Dealing with indicator: HT_CDRT_SELF_HARM
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_CDRT_SELF_HARM skipped (already downloaded)
+Transformation for HT_CDRT_SELF_HARM skipped (already done)
+Dealing with indicator: HT_CDRT_SELF_HARM
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_CDRT_SELF_HARM skipped (already downloaded)
+Transformation for HT_CDRT_SELF_HARM skipped (already done)
+Dealing with indicator: HT_ADOL_MEAL
+Indicator HT_ADOL_MEAL skipped (already downloaded)
+Transformation for HT_ADOL_MEAL skipped (already done)
+Dealing with indicator: HT_ADOL_NO_EXCS
+Indicator HT_ADOL_NO_EXCS skipped (already downloaded)
+Transformation for HT_ADOL_NO_EXCS skipped (already done)
+Dealing with indicator: HT_ADOL_VGRS_EXCS
+Indicator HT_ADOL_VGRS_EXCS skipped (already downloaded)
+Transformation for HT_ADOL_VGRS_EXCS skipped (already done)
+Dealing with indicator: HT_CHLD_BODY_RGHT
+Indicator HT_CHLD_BODY_RGHT skipped (already downloaded)
+Transformation for HT_CHLD_BODY_RGHT skipped (already done)
+Dealing with indicator: HT_CHLD_BODY_NO_RGHT
+Indicator HT_CHLD_BODY_NO_RGHT skipped (already downloaded)
+Transformation for HT_CHLD_BODY_NO_RGHT skipped (already done)
+Dealing with indicator: HT_CHLD_REG_SMOK
+Indicator HT_CHLD_REG_SMOK skipped (already downloaded)
+Transformation for HT_CHLD_REG_SMOK skipped (already done)
+Dealing with indicator: HT_CHLD_DRNK
+Indicator HT_CHLD_DRNK skipped (already downloaded)
+Transformation for HT_CHLD_DRNK skipped (already done)
+Dealing with indicator: HT_ADOL_HIGH_SATS
+Indicator HT_ADOL_HIGH_SATS skipped (already downloaded)
+Transformation for HT_ADOL_HIGH_SATS skipped (already done)
+Dealing with indicator: HT_ADOL_LOW_SATS
+Indicator HT_ADOL_LOW_SATS skipped (already downloaded)
+Transformation for HT_ADOL_LOW_SATS skipped (already done)
+Dealing with indicator: HT_SH_HIV_0014
+Indicator HT_SH_HIV_0014 skipped (already downloaded)
+Transformation for HT_SH_HIV_0014 skipped (already done)
+Dealing with indicator: HVA_EPI_LHIV_0-19
+Indicator HVA_EPI_LHIV_0-19 skipped (already downloaded)
+Transformation for HVA_EPI_LHIV_0-19 skipped (already done)
+Dealing with indicator: HVA_EPI_LHIV_15-24
+Indicator HVA_EPI_LHIV_15-24 skipped (already downloaded)
+Transformation for HVA_EPI_LHIV_15-24 skipped (already done)
+Dealing with indicator: HVA_EPI_INF_RT_0-14
+Indicator HVA_EPI_INF_RT_0-14 skipped (already downloaded)
+Transformation for HVA_EPI_INF_RT_0-14 skipped (already done)
+Dealing with indicator: HVA_EPI_INF_RT_10-19
+Indicator HVA_EPI_INF_RT_10-19 skipped (already downloaded)
+Transformation for HVA_EPI_INF_RT_10-19 skipped (already done)
+Dealing with indicator: HVA_PED_ART_NUM
+Indicator HVA_PED_ART_NUM skipped (already downloaded)
+Transformation for HVA_PED_ART_NUM skipped (already done)
+Dealing with indicator: HVA_PED_ART_CVG
+Indicator HVA_PED_ART_CVG skipped (already downloaded)
+Transformation for HVA_PED_ART_CVG skipped (already done)
+Dealing with indicator: HVA_EPI_INF_ANN_15-24
+Indicator HVA_EPI_INF_ANN_15-24 skipped (already downloaded)
+Transformation for HVA_EPI_INF_ANN_15-24 skipped (already done)
+Dealing with indicator: WS_PPL_W-SM
+Indicator WS_PPL_W-SM skipped (already downloaded)
+Transformation for WS_PPL_W-SM skipped (already done)
+Dealing with indicator: WS_PPL_S-SM
+Indicator WS_PPL_S-SM skipped (already downloaded)
+Transformation for WS_PPL_S-SM skipped (already done)
+Dealing with indicator: WS_PPL_H-B
+Indicator WS_PPL_H-B skipped (already downloaded)
+Transformation for WS_PPL_H-B skipped (already done)
+Dealing with indicator: WS_PPS_S-OD
+Indicator WS_PPS_S-OD skipped (already downloaded)
+Transformation for WS_PPS_S-OD skipped (already done)
+Dealing with indicator: HT_NO_BTH_SHW_FLSH
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator HT_NO_BTH_SHW_FLSH skipped (already downloaded)
+Transformation for HT_NO_BTH_SHW_FLSH skipped (already done)
+Dealing with indicator: EDUNF_STU_L01_TOT
+Indicator EDUNF_STU_L01_TOT skipped (already downloaded)
+Transformation for EDUNF_STU_L01_TOT skipped (already done)
+Dealing with indicator: EDUNF_STU_L01_PUB
+Indicator EDUNF_STU_L01_PUB skipped (already downloaded)
+Transformation for EDUNF_STU_L01_PUB skipped (already done)
+Dealing with indicator: EDUNF_STU_L01_PRV
+Indicator EDUNF_STU_L01_PRV skipped (already downloaded)
+Transformation for EDUNF_STU_L01_PRV skipped (already done)
+Dealing with indicator: EDU_SDG_GER_L01
+Indicator EDU_SDG_GER_L01 skipped (already downloaded)
+Transformation for EDU_SDG_GER_L01 skipped (already done)
+Dealing with indicator: EDU_SDG_FREE_EDU_L02
+Indicator EDU_SDG_FREE_EDU_L02 skipped (already downloaded)
+Transformation for EDU_SDG_FREE_EDU_L02 skipped (already done)
+Dealing with indicator: EDU_SDG_COMP_EDU_L02
+Indicator EDU_SDG_COMP_EDU_L02 skipped (already downloaded)
+Transformation for EDU_SDG_COMP_EDU_L02 skipped (already done)
+Dealing with indicator: EDUNF_STU_L02_TOT
+Indicator EDUNF_STU_L02_TOT skipped (already downloaded)
+Transformation for EDUNF_STU_L02_TOT skipped (already done)
+Dealing with indicator: EDUNF_STU_L02_PUB
+Indicator EDUNF_STU_L02_PUB skipped (already downloaded)
+Transformation for EDUNF_STU_L02_PUB skipped (already done)
+Dealing with indicator: EDUNF_STU_L02_PRV
+Indicator EDUNF_STU_L02_PRV skipped (already downloaded)
+Transformation for EDUNF_STU_L02_PRV skipped (already done)
+Dealing with indicator: EDUNF_GER_L02
+Indicator EDUNF_GER_L02 skipped (already downloaded)
+Transformation for EDUNF_GER_L02 skipped (already done)
+Dealing with indicator: EDUNF_NER_L02
+Indicator EDUNF_NER_L02 skipped (already downloaded)
+Transformation for EDUNF_NER_L02 skipped (already done)
+Dealing with indicator: EDUNF_PRP_L02
+Indicator EDUNF_PRP_L02 skipped (already downloaded)
+Transformation for EDUNF_PRP_L02 skipped (already done)
+Dealing with indicator: EDUNF_FEP_L02
+Indicator EDUNF_FEP_L02 skipped (already downloaded)
+Transformation for EDUNF_FEP_L02 skipped (already done)
+Dealing with indicator: EDUNF_NERA_L1_UNDER1
+Indicator EDUNF_NERA_L1_UNDER1 skipped (already downloaded)
+Transformation for EDUNF_NERA_L1_UNDER1 skipped (already done)
+Dealing with indicator: EDUNF_NARA_L1_UNDER1
+Indicator EDUNF_NARA_L1_UNDER1 skipped (already downloaded)
+Transformation for EDUNF_NARA_L1_UNDER1 skipped (already done)
+Dealing with indicator: ECD_CHLD_36-59M_LMPSL
+Indicator ECD_CHLD_36-59M_LMPSL skipped (already downloaded)
+Transformation for ECD_CHLD_36-59M_LMPSL skipped (already done)
+Dealing with indicator: EDUNF_NIR_L1_ENTRYAGE
+Indicator EDUNF_NIR_L1_ENTRYAGE skipped (already downloaded)
+Transformation for EDUNF_NIR_L1_ENTRYAGE skipped (already done)
+Dealing with indicator: EDUNF_STU_L1_TOT
+Indicator EDUNF_STU_L1_TOT skipped (already downloaded)
+Transformation for EDUNF_STU_L1_TOT skipped (already done)
+Dealing with indicator: EDUNF_FEP_L1
+Indicator EDUNF_FEP_L1 skipped (already downloaded)
+Transformation for EDUNF_FEP_L1 skipped (already done)
+Dealing with indicator: EDUNF_STU_L2_TOT
+Indicator EDUNF_STU_L2_TOT skipped (already downloaded)
+Transformation for EDUNF_STU_L2_TOT skipped (already done)
+Dealing with indicator: EDUNF_FEP_L2
+Indicator EDUNF_FEP_L2 skipped (already downloaded)
+Transformation for EDUNF_FEP_L2 skipped (already done)
+Dealing with indicator: EDUNF_STU_L3_TOT
+Indicator EDUNF_STU_L3_TOT skipped (already downloaded)
+Transformation for EDUNF_STU_L3_TOT skipped (already done)
+Dealing with indicator: EDUNF_FEP_L3
+Indicator EDUNF_FEP_L3 skipped (already downloaded)
+Transformation for EDUNF_FEP_L3 skipped (already done)
+Dealing with indicator: EDUNF_FEP_L3_GEN
+Indicator EDUNF_FEP_L3_GEN skipped (already downloaded)
+Transformation for EDUNF_FEP_L3_GEN skipped (already done)
+Dealing with indicator: EDUNF_FEP_L3_VOC
+Indicator EDUNF_FEP_L3_VOC skipped (already downloaded)
+Transformation for EDUNF_FEP_L3_VOC skipped (already done)
+Dealing with indicator: EDUNF_STU_L3_GEN
+Indicator EDUNF_STU_L3_GEN skipped (already downloaded)
+Transformation for EDUNF_STU_L3_GEN skipped (already done)
+Dealing with indicator: EDUNF_STU_L3_VOC
+Indicator EDUNF_STU_L3_VOC skipped (already downloaded)
+Transformation for EDUNF_STU_L3_VOC skipped (already done)
+Dealing with indicator: EDUNF_STU_L1_PUB
+Indicator EDUNF_STU_L1_PUB skipped (already downloaded)
+Transformation for EDUNF_STU_L1_PUB skipped (already done)
+Dealing with indicator: EDUNF_STU_L1_PRV
+Indicator EDUNF_STU_L1_PRV skipped (already downloaded)
+Transformation for EDUNF_STU_L1_PRV skipped (already done)
+Dealing with indicator: EDUNF_PRP_L1
+Indicator EDUNF_PRP_L1 skipped (already downloaded)
+Transformation for EDUNF_PRP_L1 skipped (already done)
+Dealing with indicator: EDUNF_STU_L2_PUB
+Indicator EDUNF_STU_L2_PUB skipped (already downloaded)
+Transformation for EDUNF_STU_L2_PUB skipped (already done)
+Dealing with indicator: EDUNF_STU_L2_PRV
+Indicator EDUNF_STU_L2_PRV skipped (already downloaded)
+Transformation for EDUNF_STU_L2_PRV skipped (already done)
+Dealing with indicator: EDUNF_PRP_L2
+Indicator EDUNF_PRP_L2 skipped (already downloaded)
+Transformation for EDUNF_PRP_L2 skipped (already done)
+Dealing with indicator: EDUNF_STU_L3_PUB
+Indicator EDUNF_STU_L3_PUB skipped (already downloaded)
+Transformation for EDUNF_STU_L3_PUB skipped (already done)
+Dealing with indicator: EDUNF_STU_L3_PRV
+Indicator EDUNF_STU_L3_PRV skipped (already downloaded)
+Transformation for EDUNF_STU_L3_PRV skipped (already done)
+Dealing with indicator: EDUNF_PRP_L3
+Indicator EDUNF_PRP_L3 skipped (already downloaded)
+Transformation for EDUNF_PRP_L3 skipped (already done)
+Dealing with indicator: EDUNF_STU_L3_GEN_PUB
+Indicator EDUNF_STU_L3_GEN_PUB skipped (already downloaded)
+Transformation for EDUNF_STU_L3_GEN_PUB skipped (already done)
+Dealing with indicator: EDUNF_STU_L3_GEN_PRV
+Indicator EDUNF_STU_L3_GEN_PRV skipped (already downloaded)
+Transformation for EDUNF_STU_L3_GEN_PRV skipped (already done)
+Dealing with indicator: EDUNF_STU_L3_VOC_PUB
+Indicator EDUNF_STU_L3_VOC_PUB skipped (already downloaded)
+Transformation for EDUNF_STU_L3_VOC_PUB skipped (already done)
+Dealing with indicator: EDUNF_STU_L3_VOC_PRV
+Indicator EDUNF_STU_L3_VOC_PRV skipped (already downloaded)
+Transformation for EDUNF_STU_L3_VOC_PRV skipped (already done)
+Dealing with indicator: EDUNF_GER_L1
+Indicator EDUNF_GER_L1 skipped (already downloaded)
+Transformation for EDUNF_GER_L1 skipped (already done)
+Dealing with indicator: EDUNF_GER_L2
+Indicator EDUNF_GER_L2 skipped (already downloaded)
+Transformation for EDUNF_GER_L2 skipped (already done)
+Dealing with indicator: EDUNF_GER_L1AND2
+Indicator EDUNF_GER_L1AND2 skipped (already downloaded)
+Transformation for EDUNF_GER_L1AND2 skipped (already done)
+Dealing with indicator: EDUNF_GER_L2_GEN
+Indicator EDUNF_GER_L2_GEN skipped (already downloaded)
+Transformation for EDUNF_GER_L2_GEN skipped (already done)
+Dealing with indicator: EDUNF_GER_L2_VOC
+Indicator EDUNF_GER_L2_VOC skipped (already downloaded)
+Transformation for EDUNF_GER_L2_VOC skipped (already done)
+Dealing with indicator: EDUNF_GER_L3
+Indicator EDUNF_GER_L3 skipped (already downloaded)
+Transformation for EDUNF_GER_L3 skipped (already done)
+Dealing with indicator: EDUNF_GER_L3_GEN
+Indicator EDUNF_GER_L3_GEN skipped (already downloaded)
+Transformation for EDUNF_GER_L3_GEN skipped (already done)
+Dealing with indicator: EDUNF_GER_L3_VOC
+Indicator EDUNF_GER_L3_VOC skipped (already downloaded)
+Transformation for EDUNF_GER_L3_VOC skipped (already done)
+Dealing with indicator: EDUNF_NERA_L1
+Indicator EDUNF_NERA_L1 skipped (already downloaded)
+Transformation for EDUNF_NERA_L1 skipped (already done)
+Dealing with indicator: EDUNF_NERA_L2
+Indicator EDUNF_NERA_L2 skipped (already downloaded)
+Transformation for EDUNF_NERA_L2 skipped (already done)
+Dealing with indicator: EDU_SDG_STU_L1_G2OR3_REA
+Indicator EDU_SDG_STU_L1_G2OR3_REA skipped (already downloaded)
+Transformation for EDU_SDG_STU_L1_G2OR3_REA skipped (already done)
+Dealing with indicator: EDU_SDG_STU_L1_G2OR3_MAT
+Indicator EDU_SDG_STU_L1_G2OR3_MAT skipped (already downloaded)
+Transformation for EDU_SDG_STU_L1_G2OR3_MAT skipped (already done)
+Dealing with indicator: EDU_SDG_STU_L1_GLAST_REA
+Indicator EDU_SDG_STU_L1_GLAST_REA skipped (already downloaded)
+Transformation for EDU_SDG_STU_L1_GLAST_REA skipped (already done)
+Dealing with indicator: EDU_SDG_STU_L1_GLAST_MAT
+Indicator EDU_SDG_STU_L1_GLAST_MAT skipped (already downloaded)
+Transformation for EDU_SDG_STU_L1_GLAST_MAT skipped (already done)
+Dealing with indicator: EDU_SDG_STU_L2_GLAST_REA
+Indicator EDU_SDG_STU_L2_GLAST_REA skipped (already downloaded)
+Transformation for EDU_SDG_STU_L2_GLAST_REA skipped (already done)
+Dealing with indicator: EDU_SDG_STU_L2_GLAST_MAT
+Indicator EDU_SDG_STU_L2_GLAST_MAT skipped (already downloaded)
+Transformation for EDU_SDG_STU_L2_GLAST_MAT skipped (already done)
+Dealing with indicator: EDUNF_ADMIN_L1_GLAST_REA
+Indicator EDUNF_ADMIN_L1_GLAST_REA skipped (already downloaded)
+Transformation for EDUNF_ADMIN_L1_GLAST_REA skipped (already done)
+Dealing with indicator: EDUNF_ADMIN_L1_GLAST_MAT
+Indicator EDUNF_ADMIN_L1_GLAST_MAT skipped (already downloaded)
+Transformation for EDUNF_ADMIN_L1_GLAST_MAT skipped (already done)
+Dealing with indicator: EDUNF_ADMIN_L2_REA
+Indicator EDUNF_ADMIN_L2_REA skipped (already downloaded)
+Transformation for EDUNF_ADMIN_L2_REA skipped (already done)
+Dealing with indicator: EDUNF_ADMIN_L2_MAT
+Indicator EDUNF_ADMIN_L2_MAT skipped (already downloaded)
+Transformation for EDUNF_ADMIN_L2_MAT skipped (already done)
+Dealing with indicator: EDU_TIMSS_MAT4
+Indicator EDU_TIMSS_MAT4 skipped (already downloaded)
+Transformation for EDU_TIMSS_MAT4 skipped (already done)
+Dealing with indicator: EDU_TIMSS_SCI4
+Indicator EDU_TIMSS_SCI4 skipped (already downloaded)
+Transformation for EDU_TIMSS_SCI4 skipped (already done)
+Dealing with indicator: EDU_TIMSS_MAT8
+Indicator EDU_TIMSS_MAT8 skipped (already downloaded)
+Transformation for EDU_TIMSS_MAT8 skipped (already done)
+Dealing with indicator: EDU_TIMSS_SCI8
+Indicator EDU_TIMSS_SCI8 skipped (already downloaded)
+Transformation for EDU_TIMSS_SCI8 skipped (already done)
+Dealing with indicator: EDU_PIRLS_REA
+Indicator EDU_PIRLS_REA skipped (already downloaded)
+Transformation for EDU_PIRLS_REA skipped (already done)
+Dealing with indicator: EDU_PISA_MAT
+Indicator EDU_PISA_MAT skipped (already downloaded)
+Transformation for EDU_PISA_MAT skipped (already done)
+Dealing with indicator: EDU_PISA_REA
+Indicator EDU_PISA_REA skipped (already downloaded)
+Transformation for EDU_PISA_REA skipped (already done)
+Dealing with indicator: EDU_PISA_SCI
+Indicator EDU_PISA_SCI skipped (already downloaded)
+Transformation for EDU_PISA_SCI skipped (already done)
+Dealing with indicator: EDUNF_LR_YOUTH
+Indicator EDUNF_LR_YOUTH skipped (already downloaded)
+Transformation for EDUNF_LR_YOUTH skipped (already done)
+Dealing with indicator: EDUNF_RPTR_L1
+Indicator EDUNF_RPTR_L1 skipped (already downloaded)
+Transformation for EDUNF_RPTR_L1 skipped (already done)
+Dealing with indicator: EDUNF_RPTR_L2
+Indicator EDUNF_RPTR_L2 skipped (already downloaded)
+Transformation for EDUNF_RPTR_L2 skipped (already done)
+Dealing with indicator: EDUNF_REPP_L1
+Indicator EDUNF_REPP_L1 skipped (already downloaded)
+Transformation for EDUNF_REPP_L1 skipped (already done)
+Dealing with indicator: EDUNF_REPP_L2
+Indicator EDUNF_REPP_L2 skipped (already downloaded)
+Transformation for EDUNF_REPP_L2 skipped (already done)
+Dealing with indicator: EDUNF_FRP_L1
+Indicator EDUNF_FRP_L1 skipped (already downloaded)
+Transformation for EDUNF_FRP_L1 skipped (already done)
+Dealing with indicator: EDUNF_DR_L1
+Indicator EDUNF_DR_L1 skipped (already downloaded)
+Transformation for EDUNF_DR_L1 skipped (already done)
+Dealing with indicator: EDUNF_ESL_L1
+Indicator EDUNF_ESL_L1 skipped (already downloaded)
+Transformation for EDUNF_ESL_L1 skipped (already done)
+Dealing with indicator: EDUNF_DR_L2
+Indicator EDUNF_DR_L2 skipped (already downloaded)
+Transformation for EDUNF_DR_L2 skipped (already done)
+Dealing with indicator: EDUNF_SR_L1
+Indicator EDUNF_SR_L1 skipped (already downloaded)
+Transformation for EDUNF_SR_L1 skipped (already done)
+Dealing with indicator: EDUNF_SR_L2
+Indicator EDUNF_SR_L2 skipped (already downloaded)
+Transformation for EDUNF_SR_L2 skipped (already done)
+Dealing with indicator: EDUNF_CR_L1
+Indicator EDUNF_CR_L1 skipped (already downloaded)
+Transformation for EDUNF_CR_L1 skipped (already done)
+Dealing with indicator: EDUNF_CR_L2
+Indicator EDUNF_CR_L2 skipped (already downloaded)
+Transformation for EDUNF_CR_L2 skipped (already done)
+Dealing with indicator: EDUNF_CR_L3
+Indicator EDUNF_CR_L3 skipped (already downloaded)
+Transformation for EDUNF_CR_L3 skipped (already done)
+Dealing with indicator: EDUNF_TRANRA_L2
+Indicator EDUNF_TRANRA_L2 skipped (already downloaded)
+Transformation for EDUNF_TRANRA_L2 skipped (already done)
+Dealing with indicator: EDUNF_OFST_L1
+Indicator EDUNF_OFST_L1 skipped (already downloaded)
+Transformation for EDUNF_OFST_L1 skipped (already done)
+Dealing with indicator: EDUNF_ROFST_L1
+Indicator EDUNF_ROFST_L1 skipped (already downloaded)
+Transformation for EDUNF_ROFST_L1 skipped (already done)
+Dealing with indicator: EDUNF_OFST_L2
+Indicator EDUNF_OFST_L2 skipped (already downloaded)
+Transformation for EDUNF_OFST_L2 skipped (already done)
+Dealing with indicator: EDUNF_ROFST_L2
+Indicator EDUNF_ROFST_L2 skipped (already downloaded)
+Transformation for EDUNF_ROFST_L2 skipped (already done)
+Dealing with indicator: EDUNF_OFST_L3
+Indicator EDUNF_OFST_L3 skipped (already downloaded)
+Transformation for EDUNF_OFST_L3 skipped (already done)
+Dealing with indicator: EDUNF_ROFST_L3
+Indicator EDUNF_ROFST_L3 skipped (already downloaded)
+Transformation for EDUNF_ROFST_L3 skipped (already done)
+Dealing with indicator: EDU_SDG_YOUTH_NEET
+Indicator EDU_SDG_YOUTH_NEET skipped (already downloaded)
+Transformation for EDU_SDG_YOUTH_NEET skipped (already done)
+Dealing with indicator: EDU_SDG_PRYA
+Indicator EDU_SDG_PRYA skipped (already downloaded)
+Transformation for EDU_SDG_PRYA skipped (already done)
+Dealing with indicator: EDUNF_STU_L4_TOT
+Indicator EDUNF_STU_L4_TOT skipped (already downloaded)
+Transformation for EDUNF_STU_L4_TOT skipped (already done)
+Dealing with indicator: EDUNF_STU_L4_PUB
+Indicator EDUNF_STU_L4_PUB skipped (already downloaded)
+Transformation for EDUNF_STU_L4_PUB skipped (already done)
+Dealing with indicator: EDUNF_STU_L4_PRV
+Indicator EDUNF_STU_L4_PRV skipped (already downloaded)
+Transformation for EDUNF_STU_L4_PRV skipped (already done)
+Dealing with indicator: EDUNF_PRP_L4
+Indicator EDUNF_PRP_L4 skipped (already downloaded)
+Transformation for EDUNF_PRP_L4 skipped (already done)
+Dealing with indicator: EDUNF_FEP_L4
+Indicator EDUNF_FEP_L4 skipped (already downloaded)
+Transformation for EDUNF_FEP_L4 skipped (already done)
+Dealing with indicator: EDUNF_STU_L5T8_TOT
+Indicator EDUNF_STU_L5T8_TOT skipped (already downloaded)
+Transformation for EDUNF_STU_L5T8_TOT skipped (already done)
+Dealing with indicator: EDUNF_STU_L5T8_PUB
+Indicator EDUNF_STU_L5T8_PUB skipped (already downloaded)
+Transformation for EDUNF_STU_L5T8_PUB skipped (already done)
+Dealing with indicator: EDUNF_STU_L5T8_PRV
+Indicator EDUNF_STU_L5T8_PRV skipped (already downloaded)
+Transformation for EDUNF_STU_L5T8_PRV skipped (already done)
+Dealing with indicator: EDUNF_PRP_L5T8
+Indicator EDUNF_PRP_L5T8 skipped (already downloaded)
+Transformation for EDUNF_PRP_L5T8 skipped (already done)
+Dealing with indicator: EDUNF_FEP_L5T8
+Indicator EDUNF_FEP_L5T8 skipped (already downloaded)
+Transformation for EDUNF_FEP_L5T8 skipped (already done)
+Dealing with indicator: EDUNF_GER_GPI_L02
+Indicator EDUNF_GER_GPI_L02 skipped (already downloaded)
+Transformation for EDUNF_GER_GPI_L02 skipped (already done)
+Dealing with indicator: EDUNF_GER_GPI_L1
+Indicator EDUNF_GER_GPI_L1 skipped (already downloaded)
+Transformation for EDUNF_GER_GPI_L1 skipped (already done)
+Dealing with indicator: EDUNF_GER_GPI_L2
+Indicator EDUNF_GER_GPI_L2 skipped (already downloaded)
+Transformation for EDUNF_GER_GPI_L2 skipped (already done)
+Dealing with indicator: EDUNF_GER_GPI_L3
+Indicator EDUNF_GER_GPI_L3 skipped (already downloaded)
+Transformation for EDUNF_GER_GPI_L3 skipped (already done)
+Dealing with indicator: EDUNF_GER_GPI_L2AND3
+Indicator EDUNF_GER_GPI_L2AND3 skipped (already downloaded)
+Transformation for EDUNF_GER_GPI_L2AND3 skipped (already done)
+Dealing with indicator: EDU_FIN_EXP_PT_GDP
+Indicator EDU_FIN_EXP_PT_GDP skipped (already downloaded)
+Transformation for EDU_FIN_EXP_PT_GDP skipped (already done)
+Dealing with indicator: EDU_FIN_EXP_PT_TOT
+Indicator EDU_FIN_EXP_PT_TOT skipped (already downloaded)
+Transformation for EDU_FIN_EXP_PT_TOT skipped (already done)
+Dealing with indicator: EDU_FIN_EXP_CONST_PPP
+Indicator EDU_FIN_EXP_CONST_PPP skipped (already downloaded)
+Transformation for EDU_FIN_EXP_CONST_PPP skipped (already done)
+Dealing with indicator: EDU_FIN_EXP_L02
+Indicator EDU_FIN_EXP_L02 skipped (already downloaded)
+Transformation for EDU_FIN_EXP_L02 skipped (already done)
+Dealing with indicator: EDU_FIN_EXP_L1
+Indicator EDU_FIN_EXP_L1 skipped (already downloaded)
+Transformation for EDU_FIN_EXP_L1 skipped (already done)
+Dealing with indicator: EDU_FIN_EXP_L2
+Indicator EDU_FIN_EXP_L2 skipped (already downloaded)
+Transformation for EDU_FIN_EXP_L2 skipped (already done)
+Dealing with indicator: EDU_FIN_EXP_L3
+Indicator EDU_FIN_EXP_L3 skipped (already downloaded)
+Transformation for EDU_FIN_EXP_L3 skipped (already done)
+Dealing with indicator: EDU_FIN_EXP_L4
+Indicator EDU_FIN_EXP_L4 skipped (already downloaded)
+Transformation for EDU_FIN_EXP_L4 skipped (already done)
+Dealing with indicator: EDU_FIN_EXP_L5T8
+Indicator EDU_FIN_EXP_L5T8 skipped (already downloaded)
+Transformation for EDU_FIN_EXP_L5T8 skipped (already done)
+Dealing with indicator: EDU_SDG_SCH_L1
+Indicator EDU_SDG_SCH_L1 skipped (already downloaded)
+Transformation for EDU_SDG_SCH_L1 skipped (already done)
+Dealing with indicator: EDU_SDG_SCH_L2
+Indicator EDU_SDG_SCH_L2 skipped (already downloaded)
+Transformation for EDU_SDG_SCH_L2 skipped (already done)
+Dealing with indicator: EDU_SDG_SCH_L3
+Indicator EDU_SDG_SCH_L3 skipped (already downloaded)
+Transformation for EDU_SDG_SCH_L3 skipped (already done)
+Dealing with indicator: WS_SCH_H-B
+Indicator WS_SCH_H-B skipped (already downloaded)
+Transformation for WS_SCH_H-B skipped (already done)
+Dealing with indicator: WS_SCH_S-B
+Indicator WS_SCH_S-B skipped (already downloaded)
+Transformation for WS_SCH_S-B skipped (already done)
+Dealing with indicator: WS_SCH_W-B
+Indicator WS_SCH_W-B skipped (already downloaded)
+Transformation for WS_SCH_W-B skipped (already done)
+Dealing with indicator: EDUNF_TEACH_L1
+Indicator EDUNF_TEACH_L1 skipped (already downloaded)
+Transformation for EDUNF_TEACH_L1 skipped (already done)
+Dealing with indicator: EDUNF_TEACH_L2
+Indicator EDUNF_TEACH_L2 skipped (already downloaded)
+Transformation for EDUNF_TEACH_L2 skipped (already done)
+Dealing with indicator: EDUNF_TEACH_L3
+Indicator EDUNF_TEACH_L3 skipped (already downloaded)
+Transformation for EDUNF_TEACH_L3 skipped (already done)
+Dealing with indicator: EDUNF_PTR_L1
+Indicator EDUNF_PTR_L1 skipped (already downloaded)
+Transformation for EDUNF_PTR_L1 skipped (already done)
+Dealing with indicator: EDUNF_PTR_L2
+Indicator EDUNF_PTR_L2 skipped (already downloaded)
+Transformation for EDUNF_PTR_L2 skipped (already done)
+Dealing with indicator: EDUNF_PTR_L2AND3
+Indicator EDUNF_PTR_L2AND3 skipped (already downloaded)
+Transformation for EDUNF_PTR_L2AND3 skipped (already done)
+Dealing with indicator: EDUNF_PTR_L3
+Indicator EDUNF_PTR_L3 skipped (already downloaded)
+Transformation for EDUNF_PTR_L3 skipped (already done)
+Dealing with indicator: EDU_SDG_TRTP_L02
+Indicator EDU_SDG_TRTP_L02 skipped (already downloaded)
+Transformation for EDU_SDG_TRTP_L02 skipped (already done)
+Dealing with indicator: EDU_SDG_TRTP_L1
+Indicator EDU_SDG_TRTP_L1 skipped (already downloaded)
+Transformation for EDU_SDG_TRTP_L1 skipped (already done)
+Dealing with indicator: EDU_SDG_TRTP_L2
+Indicator EDU_SDG_TRTP_L2 skipped (already downloaded)
+Transformation for EDU_SDG_TRTP_L2 skipped (already done)
+Dealing with indicator: EDU_SDG_TRTP_L3
+Indicator EDU_SDG_TRTP_L3 skipped (already downloaded)
+Transformation for EDU_SDG_TRTP_L3 skipped (already done)
+Dealing with indicator: EDU_SDG_PTTR_L02
+Indicator EDU_SDG_PTTR_L02 skipped (already downloaded)
+Transformation for EDU_SDG_PTTR_L02 skipped (already done)
+Dealing with indicator: EDU_SDG_PTTR_L1
+Indicator EDU_SDG_PTTR_L1 skipped (already downloaded)
+Transformation for EDU_SDG_PTTR_L1 skipped (already done)
+Dealing with indicator: EDU_SDG_PTTR_L2
+Indicator EDU_SDG_PTTR_L2 skipped (already downloaded)
+Transformation for EDU_SDG_PTTR_L2 skipped (already done)
+Dealing with indicator: EDU_SDG_PTTR_L3
+Indicator EDU_SDG_PTTR_L3 skipped (already downloaded)
+Transformation for EDU_SDG_PTTR_L3 skipped (already done)
+Dealing with indicator: EDU_SDG_QUTP_L02
+Indicator EDU_SDG_QUTP_L02 skipped (already downloaded)
+Transformation for EDU_SDG_QUTP_L02 skipped (already done)
+Dealing with indicator: EDU_SDG_QUTP_L1
+Indicator EDU_SDG_QUTP_L1 skipped (already downloaded)
+Transformation for EDU_SDG_QUTP_L1 skipped (already done)
+Dealing with indicator: EDU_SDG_QUTP_L2
+Indicator EDU_SDG_QUTP_L2 skipped (already downloaded)
+Transformation for EDU_SDG_QUTP_L2 skipped (already done)
+Dealing with indicator: EDU_SDG_QUTP_L3
+Indicator EDU_SDG_QUTP_L3 skipped (already downloaded)
+Transformation for EDU_SDG_QUTP_L3 skipped (already done)
+Dealing with indicator: EDU_SDG_PQTR_L02
+Indicator EDU_SDG_PQTR_L02 skipped (already downloaded)
+Transformation for EDU_SDG_PQTR_L02 skipped (already done)
+Dealing with indicator: EDU_SDG_PQTR_L1
+Indicator EDU_SDG_PQTR_L1 skipped (already downloaded)
+Transformation for EDU_SDG_PQTR_L1 skipped (already done)
+Dealing with indicator: EDU_SDG_PQTR_L2
+Indicator EDU_SDG_PQTR_L2 skipped (already downloaded)
+Transformation for EDU_SDG_PQTR_L2 skipped (already done)
+Dealing with indicator: EDU_SDG_PQTR_L3
+Indicator EDU_SDG_PQTR_L3 skipped (already downloaded)
+Transformation for EDU_SDG_PQTR_L3 skipped (already done)
+Dealing with indicator: ECD_CHLD_U5_BKS-HM
+Indicator ECD_CHLD_U5_BKS-HM skipped (already downloaded)
+Transformation for ECD_CHLD_U5_BKS-HM skipped (already done)
+Dealing with indicator: ECD_CHLD_U5_PLYTH-HM
+Indicator ECD_CHLD_U5_PLYTH-HM skipped (already downloaded)
+Transformation for ECD_CHLD_U5_PLYTH-HM skipped (already done)
+Dealing with indicator: EDUNF_EA_L2T8
+Indicator EDUNF_EA_L2T8 skipped (already downloaded)
+Transformation for EDUNF_EA_L2T8 skipped (already done)
+Dealing with indicator: EDUNF_ADMIN_L1_G2OR3_REA
+Indicator EDUNF_ADMIN_L1_G2OR3_REA skipped (already downloaded)
+Transformation for EDUNF_ADMIN_L1_G2OR3_REA skipped (already done)
+Dealing with indicator: EDUNF_ADMIN_L1_G2OR3_MAT
+Indicator EDUNF_ADMIN_L1_G2OR3_MAT skipped (already downloaded)
+Transformation for EDUNF_ADMIN_L1_G2OR3_MAT skipped (already done)
+Dealing with indicator: EDU_PISA_MAT2
+Indicator EDU_PISA_MAT2 skipped (already downloaded)
+Transformation for EDU_PISA_MAT2 skipped (already done)
+Dealing with indicator: EDU_PISA_MAT3
+Indicator EDU_PISA_MAT3 skipped (already downloaded)
+Transformation for EDU_PISA_MAT3 skipped (already done)
+Dealing with indicator: EDU_PISA_MAT4
+Indicator EDU_PISA_MAT4 skipped (already downloaded)
+Transformation for EDU_PISA_MAT4 skipped (already done)
+Dealing with indicator: EDU_PISA_MAT5
+Indicator EDU_PISA_MAT5 skipped (already downloaded)
+Transformation for EDU_PISA_MAT5 skipped (already done)
+Dealing with indicator: EDU_PISA_MAT6
+Indicator EDU_PISA_MAT6 skipped (already downloaded)
+Transformation for EDU_PISA_MAT6 skipped (already done)
+Dealing with indicator: EDU_PISA_REA2
+Indicator EDU_PISA_REA2 skipped (already downloaded)
+Transformation for EDU_PISA_REA2 skipped (already done)
+Dealing with indicator: EDU_PISA_REA3
+Indicator EDU_PISA_REA3 skipped (already downloaded)
+Transformation for EDU_PISA_REA3 skipped (already done)
+Dealing with indicator: EDU_PISA_REA4
+Indicator EDU_PISA_REA4 skipped (already downloaded)
+Transformation for EDU_PISA_REA4 skipped (already done)
+Dealing with indicator: EDU_PISA_REA5
+Indicator EDU_PISA_REA5 skipped (already downloaded)
+Transformation for EDU_PISA_REA5 skipped (already done)
+Dealing with indicator: EDU_PISA_REA6
+Indicator EDU_PISA_REA6 skipped (already downloaded)
+Transformation for EDU_PISA_REA6 skipped (already done)
+Dealing with indicator: EDU_PISA_SCI2
+Indicator EDU_PISA_SCI2 skipped (already downloaded)
+Transformation for EDU_PISA_SCI2 skipped (already done)
+Dealing with indicator: EDU_PISA_SCI3
+Indicator EDU_PISA_SCI3 skipped (already downloaded)
+Transformation for EDU_PISA_SCI3 skipped (already done)
+Dealing with indicator: EDU_PISA_SCI4
+Indicator EDU_PISA_SCI4 skipped (already downloaded)
+Transformation for EDU_PISA_SCI4 skipped (already done)
+Dealing with indicator: EDU_PISA_SCI5
+Indicator EDU_PISA_SCI5 skipped (already downloaded)
+Transformation for EDU_PISA_SCI5 skipped (already done)
+Dealing with indicator: EDU_PISA_SCI6
+Indicator EDU_PISA_SCI6 skipped (already downloaded)
+Transformation for EDU_PISA_SCI6 skipped (already done)
+Dealing with indicator: EDUNF_LR_ADULT
+Indicator EDUNF_LR_ADULT skipped (already downloaded)
+Transformation for EDUNF_LR_ADULT skipped (already done)
+Dealing with indicator: EDUNF_FRP_L2AND3
+Indicator EDUNF_FRP_L2AND3 skipped (already downloaded)
+Transformation for EDUNF_FRP_L2AND3 skipped (already done)
+Dealing with indicator: EDUNF_OFST_L1_UNDER1
+Indicator EDUNF_OFST_L1_UNDER1 skipped (already downloaded)
+Transformation for EDUNF_OFST_L1_UNDER1 skipped (already done)
+Dealing with indicator: EDUNF_ROFST_L1_UNDER1
+Indicator EDUNF_ROFST_L1_UNDER1 skipped (already downloaded)
+Transformation for EDUNF_ROFST_L1_UNDER1 skipped (already done)
+Dealing with indicator: EDUNF_GER_GPI_L01
+Indicator EDUNF_GER_GPI_L01 skipped (already downloaded)
+Transformation for EDUNF_GER_GPI_L01 skipped (already done)
+Dealing with indicator: EDUNF_SAP_L02
+Indicator EDUNF_SAP_L02 skipped (already downloaded)
+Transformation for EDUNF_SAP_L02 skipped (already done)
+Dealing with indicator: EDUNF_SAP_L1
+Indicator EDUNF_SAP_L1 skipped (already downloaded)
+Transformation for EDUNF_SAP_L1 skipped (already done)
+Dealing with indicator: EDUNF_SAP_L2
+Indicator EDUNF_SAP_L2 skipped (already downloaded)
+Transformation for EDUNF_SAP_L2 skipped (already done)
+Dealing with indicator: EDUNF_SAP_L3
+Indicator EDUNF_SAP_L3 skipped (already downloaded)
+Transformation for EDUNF_SAP_L3 skipped (already done)
+Dealing with indicator: EDUNF_SAP_L1T3
+Indicator EDUNF_SAP_L1T3 skipped (already downloaded)
+Transformation for EDUNF_SAP_L1T3 skipped (already done)
+Dealing with indicator: EDUNF_OFST_L1T3
+Indicator EDUNF_OFST_L1T3 skipped (already downloaded)
+Transformation for EDUNF_OFST_L1T3 skipped (already done)
+Dealing with indicator: EDUNF_ROFST_L1T3
+Indicator EDUNF_ROFST_L1T3 skipped (already downloaded)
+Transformation for EDUNF_ROFST_L1T3 skipped (already done)
+Dealing with indicator: EDUNF_SAP_L2_GLAST
+Indicator EDUNF_SAP_L2_GLAST skipped (already downloaded)
+Transformation for EDUNF_SAP_L2_GLAST skipped (already done)
+Dealing with indicator: EDUNF_PRP_L2AND3
+Indicator EDUNF_PRP_L2AND3 skipped (already downloaded)
+Transformation for EDUNF_PRP_L2AND3 skipped (already done)
+Dealing with indicator: EDUNF_STU_L2AND3_PRV
+Indicator EDUNF_STU_L2AND3_PRV skipped (already downloaded)
+Transformation for EDUNF_STU_L2AND3_PRV skipped (already done)
+Dealing with indicator: EDUNF_COMP_YR
+Indicator EDUNF_COMP_YR skipped (already downloaded)
+Transformation for EDUNF_COMP_YR skipped (already done)
+Dealing with indicator: EDUNF_COMP_YR_L02T3
+Indicator EDUNF_COMP_YR_L02T3 skipped (already downloaded)
+Transformation for EDUNF_COMP_YR_L02T3 skipped (already done)
+Dealing with indicator: EDUNF_PTR_L02
+Indicator EDUNF_PTR_L02 skipped (already downloaded)
+Transformation for EDUNF_PTR_L02 skipped (already done)
+Dealing with indicator: EDUNF_GECER_L01
+Indicator EDUNF_GECER_L01 skipped (already downloaded)
+Transformation for EDUNF_GECER_L01 skipped (already done)
+Dealing with indicator: EDUNF_GECER_L02
+Indicator EDUNF_GECER_L02 skipped (already downloaded)
+Transformation for EDUNF_GECER_L02 skipped (already done)
+Dealing with indicator: EDU_ECEC_PART
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator EDU_ECEC_PART skipped (already downloaded)
+Transformation for EDU_ECEC_PART skipped (already done)
+Dealing with indicator: ED_ANAR_L1
+Indicator ED_ANAR_L1 skipped (already downloaded)
+Transformation for ED_ANAR_L1 skipped (already done)
+Dealing with indicator: ED_ANAR_L2
+Indicator ED_ANAR_L2 skipped (already downloaded)
+Transformation for ED_ANAR_L2 skipped (already done)
+Dealing with indicator: ED_ANAR_L3
+Indicator ED_ANAR_L3 skipped (already downloaded)
+Transformation for ED_ANAR_L3 skipped (already done)
+Dealing with indicator: EDU_SE_ACS_INTNT_L1
+Indicator EDU_SE_ACS_INTNT_L1 skipped (already downloaded)
+Transformation for EDU_SE_ACS_INTNT_L1 skipped (already done)
+Dealing with indicator: EDU_SE_ACS_INTNT_L2
+Indicator EDU_SE_ACS_INTNT_L2 skipped (already downloaded)
+Transformation for EDU_SE_ACS_INTNT_L2 skipped (already done)
+Dealing with indicator: EDU_SE_ACS_INTNT_L3
+Indicator EDU_SE_ACS_INTNT_L3 skipped (already downloaded)
+Transformation for EDU_SE_ACS_INTNT_L3 skipped (already done)
+Dealing with indicator: EDU_SE_ACS_CMPTR_L1
+Indicator EDU_SE_ACS_CMPTR_L1 skipped (already downloaded)
+Transformation for EDU_SE_ACS_CMPTR_L1 skipped (already done)
+Dealing with indicator: EDU_SE_ACS_CMPTR_L2
+Indicator EDU_SE_ACS_CMPTR_L2 skipped (already downloaded)
+Transformation for EDU_SE_ACS_CMPTR_L2 skipped (already done)
+Dealing with indicator: EDU_SE_ACS_CMPTR_L3
+Indicator EDU_SE_ACS_CMPTR_L3 skipped (already downloaded)
+Transformation for EDU_SE_ACS_CMPTR_L3 skipped (already done)
+Dealing with indicator: EDU_SE_ACS_ELECT_L1
+Indicator EDU_SE_ACS_ELECT_L1 skipped (already downloaded)
+Transformation for EDU_SE_ACS_ELECT_L1 skipped (already done)
+Dealing with indicator: EDU_SE_ACS_ELECT_L2
+Indicator EDU_SE_ACS_ELECT_L2 skipped (already downloaded)
+Transformation for EDU_SE_ACS_ELECT_L2 skipped (already done)
+Dealing with indicator: EDU_SE_ACS_ELECT_L3
+Indicator EDU_SE_ACS_ELECT_L3 skipped (already downloaded)
+Transformation for EDU_SE_ACS_ELECT_L3 skipped (already done)
+Dealing with indicator: EDU_SE_TOT_GPI_L1_REA
+Indicator EDU_SE_TOT_GPI_L1_REA skipped (already downloaded)
+Transformation for EDU_SE_TOT_GPI_L1_REA skipped (already done)
+Dealing with indicator: EDU_SE_TOT_GPI_L2_REA
+Indicator EDU_SE_TOT_GPI_L2_REA skipped (already downloaded)
+Transformation for EDU_SE_TOT_GPI_L2_REA skipped (already done)
+Dealing with indicator: EDU_SE_TOT_GPI_L1_MAT
+Indicator EDU_SE_TOT_GPI_L1_MAT skipped (already downloaded)
+Transformation for EDU_SE_TOT_GPI_L1_MAT skipped (already done)
+Dealing with indicator: EDU_SE_TOT_GPI_L2_MAT
+Indicator EDU_SE_TOT_GPI_L2_MAT skipped (already downloaded)
+Transformation for EDU_SE_TOT_GPI_L2_MAT skipped (already done)
+Dealing with indicator: EDU_SE_TOT_GPI_FS_LIT
+Indicator EDU_SE_TOT_GPI_FS_LIT skipped (already downloaded)
+Transformation for EDU_SE_TOT_GPI_FS_LIT skipped (already done)
+Dealing with indicator: EDU_SE_TOT_GPI_FS_NUM
+Indicator EDU_SE_TOT_GPI_FS_NUM skipped (already downloaded)
+Transformation for EDU_SE_TOT_GPI_FS_NUM skipped (already done)
+Dealing with indicator: EDU_SE_AGP_CPRA_L1
+Indicator EDU_SE_AGP_CPRA_L1 skipped (already downloaded)
+Transformation for EDU_SE_AGP_CPRA_L1 skipped (already done)
+Dealing with indicator: EDU_SE_AGP_CPRA_L2
+Indicator EDU_SE_AGP_CPRA_L2 skipped (already downloaded)
+Transformation for EDU_SE_AGP_CPRA_L2 skipped (already done)
+Dealing with indicator: EDU_SE_AGP_CPRA_L3
+Indicator EDU_SE_AGP_CPRA_L3 skipped (already downloaded)
+Transformation for EDU_SE_AGP_CPRA_L3 skipped (already done)
+Dealing with indicator: EDU_SE_GPI_PART
+Indicator EDU_SE_GPI_PART skipped (already downloaded)
+Transformation for EDU_SE_GPI_PART skipped (already done)
+Dealing with indicator: EDU_SE_GPI_PTNPRE
+Indicator EDU_SE_GPI_PTNPRE skipped (already downloaded)
+Transformation for EDU_SE_GPI_PTNPRE skipped (already done)
+Dealing with indicator: EDU_SE_GPI_TCAQ_L02
+Indicator EDU_SE_GPI_TCAQ_L02 skipped (already downloaded)
+Transformation for EDU_SE_GPI_TCAQ_L02 skipped (already done)
+Dealing with indicator: EDU_SE_GPI_TCAQ_L1
+Indicator EDU_SE_GPI_TCAQ_L1 skipped (already downloaded)
+Transformation for EDU_SE_GPI_TCAQ_L1 skipped (already done)
+Dealing with indicator: EDU_SE_GPI_TCAQ_L2
+Indicator EDU_SE_GPI_TCAQ_L2 skipped (already downloaded)
+Transformation for EDU_SE_GPI_TCAQ_L2 skipped (already done)
+Dealing with indicator: EDU_SE_GPI_TCAQ_L3
+Indicator EDU_SE_GPI_TCAQ_L3 skipped (already downloaded)
+Transformation for EDU_SE_GPI_TCAQ_L3 skipped (already done)
+Dealing with indicator: EDU_SE_NAP_ACHI_L1_REA
+Indicator EDU_SE_NAP_ACHI_L1_REA skipped (already downloaded)
+Transformation for EDU_SE_NAP_ACHI_L1_REA skipped (already done)
+Dealing with indicator: EDU_SE_NAP_ACHI_L2_REA
+Indicator EDU_SE_NAP_ACHI_L2_REA skipped (already downloaded)
+Transformation for EDU_SE_NAP_ACHI_L2_REA skipped (already done)
+Dealing with indicator: EDU_SE_NAP_ACHI_L1_MAT
+Indicator EDU_SE_NAP_ACHI_L1_MAT skipped (already downloaded)
+Transformation for EDU_SE_NAP_ACHI_L1_MAT skipped (already done)
+Dealing with indicator: EDU_SE_NAP_ACHI_L2_MAT
+Indicator EDU_SE_NAP_ACHI_L2_MAT skipped (already downloaded)
+Transformation for EDU_SE_NAP_ACHI_L2_MAT skipped (already done)
+Dealing with indicator: EDU_SE_IMP_FPOF_LIT
+Indicator EDU_SE_IMP_FPOF_LIT skipped (already downloaded)
+Transformation for EDU_SE_IMP_FPOF_LIT skipped (already done)
+Dealing with indicator: EDU_SE_IMP_FPOF_NUM
+Indicator EDU_SE_IMP_FPOF_NUM skipped (already downloaded)
+Transformation for EDU_SE_IMP_FPOF_NUM skipped (already done)
+Dealing with indicator: EDU_SE_LGP_ACHI_L1_REA
+Indicator EDU_SE_LGP_ACHI_L1_REA skipped (already downloaded)
+Transformation for EDU_SE_LGP_ACHI_L1_REA skipped (already done)
+Dealing with indicator: EDU_SE_LGP_ACHI_L2_REA
+Indicator EDU_SE_LGP_ACHI_L2_REA skipped (already downloaded)
+Transformation for EDU_SE_LGP_ACHI_L2_REA skipped (already done)
+Dealing with indicator: EDU_SE_LGP_ACHI_L1_MAT
+Indicator EDU_SE_LGP_ACHI_L1_MAT skipped (already downloaded)
+Transformation for EDU_SE_LGP_ACHI_L1_MAT skipped (already done)
+Dealing with indicator: EDU_SE_LGP_ACHI_L2_MAT
+Indicator EDU_SE_LGP_ACHI_L2_MAT skipped (already downloaded)
+Transformation for EDU_SE_LGP_ACHI_L2_MAT skipped (already done)
+Dealing with indicator: EDU_SE_ALP_CPLR_L1
+Indicator EDU_SE_ALP_CPLR_L1 skipped (already downloaded)
+Transformation for EDU_SE_ALP_CPLR_L1 skipped (already done)
+Dealing with indicator: EDU_SE_ALP_CPLR_L2
+Indicator EDU_SE_ALP_CPLR_L2 skipped (already downloaded)
+Transformation for EDU_SE_ALP_CPLR_L2 skipped (already done)
+Dealing with indicator: EDU_SE_ALP_CPLR_L3
+Indicator EDU_SE_ALP_CPLR_L3 skipped (already downloaded)
+Transformation for EDU_SE_ALP_CPLR_L3 skipped (already done)
+Dealing with indicator: EDU_SE_TOT_SESPI_L1_REA
+Indicator EDU_SE_TOT_SESPI_L1_REA skipped (already downloaded)
+Transformation for EDU_SE_TOT_SESPI_L1_REA skipped (already done)
+Dealing with indicator: EDU_SE_TOT_SESPI_L2_REA
+Indicator EDU_SE_TOT_SESPI_L2_REA skipped (already downloaded)
+Transformation for EDU_SE_TOT_SESPI_L2_REA skipped (already done)
+Dealing with indicator: EDU_SE_TOT_SESPI_L1_MAT
+Indicator EDU_SE_TOT_SESPI_L1_MAT skipped (already downloaded)
+Transformation for EDU_SE_TOT_SESPI_L1_MAT skipped (already done)
+Dealing with indicator: EDU_SE_TOT_SESPI_L2_MAT
+Indicator EDU_SE_TOT_SESPI_L2_MAT skipped (already downloaded)
+Transformation for EDU_SE_TOT_SESPI_L2_MAT skipped (already done)
+Dealing with indicator: EDU_SE_TOT_SESPI_FS_LIT
+Indicator EDU_SE_TOT_SESPI_FS_LIT skipped (already downloaded)
+Transformation for EDU_SE_TOT_SESPI_FS_LIT skipped (already done)
+Dealing with indicator: EDU_SE_TOT_SESPI_FS_NUM
+Indicator EDU_SE_TOT_SESPI_FS_NUM skipped (already downloaded)
+Transformation for EDU_SE_TOT_SESPI_FS_NUM skipped (already done)
+Dealing with indicator: EDU_SE_TOT_RUPI_L1_REA
+Indicator EDU_SE_TOT_RUPI_L1_REA skipped (already downloaded)
+Transformation for EDU_SE_TOT_RUPI_L1_REA skipped (already done)
+Dealing with indicator: EDU_SE_TOT_RUPI_L2_REA
+Indicator EDU_SE_TOT_RUPI_L2_REA skipped (already downloaded)
+Transformation for EDU_SE_TOT_RUPI_L2_REA skipped (already done)
+Dealing with indicator: EDU_SE_TOT_RUPI_L1_MAT
+Indicator EDU_SE_TOT_RUPI_L1_MAT skipped (already downloaded)
+Transformation for EDU_SE_TOT_RUPI_L1_MAT skipped (already done)
+Dealing with indicator: EDU_SE_TOT_RUPI_L2_MAT
+Indicator EDU_SE_TOT_RUPI_L2_MAT skipped (already downloaded)
+Transformation for EDU_SE_TOT_RUPI_L2_MAT skipped (already done)
+Dealing with indicator: EDU_SE_AWP_CPRA_L1
+Indicator EDU_SE_AWP_CPRA_L1 skipped (already downloaded)
+Transformation for EDU_SE_AWP_CPRA_L1 skipped (already done)
+Dealing with indicator: EDU_SE_AWP_CPRA_L2
+Indicator EDU_SE_AWP_CPRA_L2 skipped (already downloaded)
+Transformation for EDU_SE_AWP_CPRA_L2 skipped (already done)
+Dealing with indicator: EDU_SE_AWP_CPRA_L3
+Indicator EDU_SE_AWP_CPRA_L3 skipped (already downloaded)
+Transformation for EDU_SE_AWP_CPRA_L3 skipped (already done)
+Dealing with indicator: EDUNF_STEM_GRAD_RT
+Indicator EDUNF_STEM_GRAD_RT skipped (already downloaded)
+Transformation for EDUNF_STEM_GRAD_RT skipped (already done)
+Dealing with indicator: EDUNF_GER_L5T8
+Indicator EDUNF_GER_L5T8 skipped (already downloaded)
+Transformation for EDUNF_GER_L5T8 skipped (already done)
+Dealing with indicator: EDUNF_GER_GPI_L5T8
+Indicator EDUNF_GER_GPI_L5T8 skipped (already downloaded)
+Transformation for EDUNF_GER_GPI_L5T8 skipped (already done)
+Dealing with indicator: ECD_CHLD_36-59M_FHR-SPT-LNG
+Indicator ECD_CHLD_36-59M_FHR-SPT-LNG skipped (already downloaded)
+Transformation for ECD_CHLD_36-59M_FHR-SPT-LNG skipped (already done)
+Dealing with indicator: ECD_CHLD_36-59M_EDU-PGM
+Indicator ECD_CHLD_36-59M_EDU-PGM skipped (already downloaded)
+Transformation for ECD_CHLD_36-59M_EDU-PGM skipped (already done)
+Dealing with indicator: EDU_FIN_INIT_GOV_L02_GDP
+Indicator EDU_FIN_INIT_GOV_L02_GDP skipped (already downloaded)
+Transformation for EDU_FIN_INIT_GOV_L02_GDP skipped (already done)
+Dealing with indicator: PV_SI_POV_EMP1
+Indicator PV_SI_POV_EMP1 skipped (already downloaded)
+Transformation for PV_SI_POV_EMP1 skipped (already done)
+Dealing with indicator: PV_SI_POV_DAY1
+Indicator PV_SI_POV_DAY1 skipped (already downloaded)
+Transformation for PV_SI_POV_DAY1 skipped (already done)
+Dealing with indicator: PV_SI_POV_UMIC
+Indicator PV_SI_POV_UMIC skipped (already downloaded)
+Transformation for PV_SI_POV_UMIC skipped (already done)
+Dealing with indicator: PV_SDG_SI_POV_NAHC
+Indicator PV_SDG_SI_POV_NAHC skipped (already downloaded)
+Transformation for PV_SDG_SI_POV_NAHC skipped (already done)
+Dealing with indicator: PV_WB_SI_POV_NAHC
+Indicator PV_WB_SI_POV_NAHC skipped (already downloaded)
+Transformation for PV_WB_SI_POV_NAHC skipped (already done)
+Dealing with indicator: PV_AROPE
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator PV_AROPE skipped (already downloaded)
+Transformation for PV_AROPE skipped (already done)
+Dealing with indicator: PV_AROPRT
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator PV_AROPRT skipped (already downloaded)
+Transformation for PV_AROPRT skipped (already done)
+Dealing with indicator: PV_SD_MDP_ANDI
+HTTP error occurred: 404 Client Error: Not Found for url: https://data.un.org/ws/rest/data/DF_SDG_GLH/..SD_MDP_ANDI.8+20+31+40+51+56+70+100+112+191+196+203+208+233+246+250+268+276+300+336+348+352+372+380+398+417+428+438+440+442+470+492+498+499+528+578+616+620+642+643+674+688+703+705+724+752+756+762+792+795+804+807+826+860...........?startPeriod=1950&endPeriod=2050
+Dealing with indicator: PV_SD_MDP_ANDIHH
+HTTP error occurred: 404 Client Error: Not Found for url: https://data.un.org/ws/rest/data/DF_SDG_GLH/..SD_MDP_ANDIHH.8+20+31+40+51+56+70+100+112+191+196+203+208+233+246+250+268+276+300+336+348+352+372+380+398+417+428+438+440+442+470+492+498+499+528+578+616+620+642+643+674+688+703+705+724+752+756+762+792+795+804+807+826+860...........?startPeriod=1950&endPeriod=2050
+Dealing with indicator: PV_SD_MDP_CSMP
+Indicator PV_SD_MDP_CSMP skipped (already downloaded)
+Transformation for PV_SD_MDP_CSMP skipped (already done)
+Dealing with indicator: PV_SD_MDP_MUHHC
+Indicator PV_SD_MDP_MUHHC skipped (already downloaded)
+Transformation for PV_SD_MDP_MUHHC skipped (already done)
+Dealing with indicator: PV_SD_MDP_MUHC
+Indicator PV_SD_MDP_MUHC skipped (already downloaded)
+Transformation for PV_SD_MDP_MUHC skipped (already done)
+Dealing with indicator: PV_SI_POV_MDIM
+Indicator PV_SI_POV_MDIM skipped (already downloaded)
+Transformation for PV_SI_POV_MDIM skipped (already done)
+Dealing with indicator: PV_SI_POV_MDIM_17
+Indicator PV_SI_POV_MDIM_17 skipped (already downloaded)
+Transformation for PV_SI_POV_MDIM_17 skipped (already done)
+Dealing with indicator: WS_PPL_W-B
+Indicator WS_PPL_W-B skipped (already downloaded)
+Transformation for WS_PPL_W-B skipped (already done)
+Dealing with indicator: WS_PPL_S-B
+Indicator WS_PPL_S-B skipped (already downloaded)
+Transformation for WS_PPL_S-B skipped (already done)
+Dealing with indicator: PV_SEV_MAT_DPRT
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator PV_SEV_MAT_DPRT skipped (already downloaded)
+Transformation for PV_SEV_MAT_DPRT skipped (already done)
+Dealing with indicator: PV_SI_COV_BENFTS
+Indicator PV_SI_COV_BENFTS skipped (already downloaded)
+Transformation for PV_SI_COV_BENFTS skipped (already done)
+Dealing with indicator: PV_SI_COV_LMKT
+Indicator PV_SI_COV_LMKT skipped (already downloaded)
+Transformation for PV_SI_COV_LMKT skipped (already done)
+Dealing with indicator: PV_SI_COV_SOCAST
+Indicator PV_SI_COV_SOCAST skipped (already downloaded)
+Transformation for PV_SI_COV_SOCAST skipped (already done)
+Dealing with indicator: PV_SI_COV_SOCINS
+Indicator PV_SI_COV_SOCINS skipped (already downloaded)
+Transformation for PV_SI_COV_SOCINS skipped (already done)
+Dealing with indicator: PV_SI_COV_WKINJRY
+Indicator PV_SI_COV_WKINJRY skipped (already downloaded)
+Transformation for PV_SI_COV_WKINJRY skipped (already done)
+Dealing with indicator: PV_SI_COV_CHLD
+Indicator PV_SI_COV_CHLD skipped (already downloaded)
+Transformation for PV_SI_COV_CHLD skipped (already done)
+Dealing with indicator: PV_SI_COV_DISAB
+Indicator PV_SI_COV_DISAB skipped (already downloaded)
+Transformation for PV_SI_COV_DISAB skipped (already done)
+Dealing with indicator: PV_SI_COV_MATNL
+Indicator PV_SI_COV_MATNL skipped (already downloaded)
+Transformation for PV_SI_COV_MATNL skipped (already done)
+Dealing with indicator: PV_SI_COV_POOR
+Indicator PV_SI_COV_POOR skipped (already downloaded)
+Transformation for PV_SI_COV_POOR skipped (already done)
+Dealing with indicator: PV_SI_COV_UEMP
+Indicator PV_SI_COV_UEMP skipped (already downloaded)
+Transformation for PV_SI_COV_UEMP skipped (already done)
+Dealing with indicator: PV_SI_COV_VULN
+Indicator PV_SI_COV_VULN skipped (already downloaded)
+Transformation for PV_SI_COV_VULN skipped (already done)
+Dealing with indicator: PV_SI_COV_PENSN
+Indicator PV_SI_COV_PENSN skipped (already downloaded)
+Transformation for PV_SI_COV_PENSN skipped (already done)
+Dealing with indicator: DM_CHLD_TWO_PRNT
+Indicator DM_CHLD_TWO_PRNT skipped (already downloaded)
+Transformation for DM_CHLD_TWO_PRNT skipped (already done)
+Dealing with indicator: DM_CHLD_POP
+Indicator DM_CHLD_POP skipped (already downloaded)
+Transformation for DM_CHLD_POP skipped (already done)
+Dealing with indicator: DM_ADOL_POP
+Indicator DM_ADOL_POP skipped (already downloaded)
+Transformation for DM_ADOL_POP skipped (already done)
+Dealing with indicator: DM_TOT_POP_PROSP
+Indicator DM_TOT_POP_PROSP skipped (already downloaded)
+Transformation for DM_TOT_POP_PROSP skipped (already done)
+Dealing with indicator: DM_CHLD_POP_PT
+Indicator DM_CHLD_POP_PT skipped (already downloaded)
+Transformation for DM_CHLD_POP_PT skipped (already done)
+Dealing with indicator: DM_SP_POP_BRTH_MF
+Indicator DM_SP_POP_BRTH_MF skipped (already downloaded)
+Transformation for DM_SP_POP_BRTH_MF skipped (already done)
+Dealing with indicator: DM_ADOL_YOUTH_POP
+Indicator DM_ADOL_YOUTH_POP skipped (already downloaded)
+Transformation for DM_ADOL_YOUTH_POP skipped (already done)
+Dealing with indicator: DM_ADULT_YOUTH_POP
+Indicator DM_ADULT_YOUTH_POP skipped (already downloaded)
+Transformation for DM_ADULT_YOUTH_POP skipped (already done)
+Dealing with indicator: DM_REPD_AGE_POP
+Indicator DM_REPD_AGE_POP skipped (already downloaded)
+Transformation for DM_REPD_AGE_POP skipped (already done)
+Dealing with indicator: EC_HDI
+Indicator EC_HDI skipped (already downloaded)
+Transformation for EC_HDI skipped (already done)
+Dealing with indicator: EC_NY_GDP_MKTP_KD_ZG
+Indicator EC_NY_GDP_MKTP_KD_ZG skipped (already downloaded)
+Transformation for EC_NY_GDP_MKTP_KD_ZG skipped (already done)
+Dealing with indicator: EC_NY_GDP_PCAP_KD_ZG
+Indicator EC_NY_GDP_PCAP_KD_ZG skipped (already downloaded)
+Transformation for EC_NY_GDP_PCAP_KD_ZG skipped (already done)
+Dealing with indicator: EC_NE_DAB_TOTL_ZS
+Indicator EC_NE_DAB_TOTL_ZS skipped (already downloaded)
+Transformation for EC_NE_DAB_TOTL_ZS skipped (already done)
+Dealing with indicator: EC_TEC_GRL_GOV_EXP
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator EC_TEC_GRL_GOV_EXP skipped (already downloaded)
+Transformation for EC_TEC_GRL_GOV_EXP skipped (already done)
+Dealing with indicator: EC_TEC_CNT_GOV_EXP
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator EC_TEC_CNT_GOV_EXP skipped (already downloaded)
+Transformation for EC_TEC_CNT_GOV_EXP skipped (already done)
+Dealing with indicator: EC_TEC_STA_GOV_EXP
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator EC_TEC_STA_GOV_EXP skipped (already downloaded)
+Transformation for EC_TEC_STA_GOV_EXP skipped (already done)
+Dealing with indicator: EC_TEC_LOC_GOV_EXP
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator EC_TEC_LOC_GOV_EXP skipped (already downloaded)
+Transformation for EC_TEC_LOC_GOV_EXP skipped (already done)
+Dealing with indicator: EC_TEC_SSF_EXP
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator EC_TEC_SSF_EXP skipped (already downloaded)
+Transformation for EC_TEC_SSF_EXP skipped (already done)
+Dealing with indicator: EC_GR_G14_GDP
+Indicator EC_GR_G14_GDP skipped (already downloaded)
+Transformation for EC_GR_G14_GDP skipped (already done)
+Dealing with indicator: EC_SP_GOV_EXP_GDP
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator EC_SP_GOV_EXP_GDP skipped (already downloaded)
+Transformation for EC_SP_GOV_EXP_GDP skipped (already done)
+Dealing with indicator: EC_SP_GOV_EXP_TOT
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator EC_SP_GOV_EXP_TOT skipped (already downloaded)
+Transformation for EC_SP_GOV_EXP_TOT skipped (already done)
+Dealing with indicator: EC_NY_GDP_PCAP_PP_CD
+Indicator EC_NY_GDP_PCAP_PP_CD skipped (already downloaded)
+Transformation for EC_NY_GDP_PCAP_PP_CD skipped (already done)
+Dealing with indicator: EC_NY_GNP_ATLS_CD
+Indicator EC_NY_GNP_ATLS_CD skipped (already downloaded)
+Transformation for EC_NY_GNP_ATLS_CD skipped (already done)
+Dealing with indicator: EC_NY_GNP_PCAP_CD
+Indicator EC_NY_GNP_PCAP_CD skipped (already downloaded)
+Transformation for EC_NY_GNP_PCAP_CD skipped (already done)
+Dealing with indicator: EC_GC_DOD_TOTL_GD_ZS
+Indicator EC_GC_DOD_TOTL_GD_ZS skipped (already downloaded)
+Transformation for EC_GC_DOD_TOTL_GD_ZS skipped (already done)
+Dealing with indicator: EC_SI_POV_GINI
+Indicator EC_SI_POV_GINI skipped (already downloaded)
+Transformation for EC_SI_POV_GINI skipped (already done)
+Dealing with indicator: EC_SL_UEM_TOTL_NE_ZS
+Indicator EC_SL_UEM_TOTL_NE_ZS skipped (already downloaded)
+Transformation for EC_SL_UEM_TOTL_NE_ZS skipped (already done)
+Dealing with indicator: EC_SL_UEM_TOTL_ZS
+Indicator EC_SL_UEM_TOTL_ZS skipped (already downloaded)
+Transformation for EC_SL_UEM_TOTL_ZS skipped (already done)
+Dealing with indicator: GN_MTNTY_LV_BNFTS
+Indicator GN_MTNTY_LV_BNFTS skipped (already downloaded)
+Transformation for GN_MTNTY_LV_BNFTS skipped (already done)
+Dealing with indicator: GN_PTNTY_LV_BNFTS
+Indicator GN_PTNTY_LV_BNFTS skipped (already downloaded)
+Transformation for GN_PTNTY_LV_BNFTS skipped (already done)
+Dealing with indicator: EC_GDI
+Indicator EC_GDI skipped (already downloaded)
+Transformation for EC_GDI skipped (already done)
+Dealing with indicator: EC_GII
+Indicator EC_GII skipped (already downloaded)
+Transformation for EC_GII skipped (already done)
+Dealing with indicator: EC_IQ_CPA_GNDR_XQ
+Indicator EC_IQ_CPA_GNDR_XQ skipped (already downloaded)
+Transformation for EC_IQ_CPA_GNDR_XQ skipped (already done)
+Dealing with indicator: EC_SIGI
+Indicator EC_SIGI skipped (already downloaded)
+Transformation for EC_SIGI skipped (already done)
+Dealing with indicator: EC_YOUTH_UNE_RT
+Indicator EC_YOUTH_UNE_RT skipped (already downloaded)
+Transformation for EC_YOUTH_UNE_RT skipped (already done)
+Dealing with indicator: EC_EAP_RT
+Indicator EC_EAP_RT skipped (already downloaded)
+Transformation for EC_EAP_RT skipped (already done)
+Dealing with indicator: EC_GNI_PCAP_PPP
+Indicator EC_GNI_PCAP_PPP skipped (already downloaded)
+Transformation for EC_GNI_PCAP_PPP skipped (already done)
+Dealing with indicator: EC_FB_BNK_ACCSS
+Indicator EC_FB_BNK_ACCSS skipped (already downloaded)
+Transformation for EC_FB_BNK_ACCSS skipped (already done)
+Dealing with indicator: SL_DOM_TSPD
+Indicator SL_DOM_TSPD skipped (already downloaded)
+Transformation for SL_DOM_TSPD skipped (already done)
+Dealing with indicator: SG_GEN_PARL
+Indicator SG_GEN_PARL skipped (already downloaded)
+Transformation for SG_GEN_PARL skipped (already done)
+Dealing with indicator: EC_INACT_RT
+Indicator EC_INACT_RT skipped (already downloaded)
+Transformation for EC_INACT_RT skipped (already done)
+Dealing with indicator: EC_YOUTH_INACT_RT
+Indicator EC_YOUTH_INACT_RT skipped (already downloaded)
+Transformation for EC_YOUTH_INACT_RT skipped (already done)
+Dealing with indicator: EC_GEN_PAY_GAP
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator EC_GEN_PAY_GAP skipped (already downloaded)
+Transformation for EC_GEN_PAY_GAP skipped (already done)
+Dealing with indicator: EC_GEN_CONF_JUD
+Indicator EC_GEN_CONF_JUD skipped (already downloaded)
+Transformation for EC_GEN_CONF_JUD skipped (already done)
+Dealing with indicator: EC_HCI_OVRL
+Indicator EC_HCI_OVRL skipped (already downloaded)
+Transformation for EC_HCI_OVRL skipped (already done)
+Dealing with indicator: EC_MIN_WAGE
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator EC_MIN_WAGE skipped (already downloaded)
+Transformation for EC_MIN_WAGE skipped (already done)
+Dealing with indicator: DM_SM_POP_REFG
+Indicator DM_SM_POP_REFG skipped (already downloaded)
+Transformation for DM_SM_POP_REFG skipped (already done)
+Dealing with indicator: DM_SM_POP_REFG_OR
+Indicator DM_SM_POP_REFG_OR skipped (already downloaded)
+Transformation for DM_SM_POP_REFG_OR skipped (already done)
+Dealing with indicator: DM_ASYL_FRST
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator DM_ASYL_FRST skipped (already downloaded)
+Transformation for DM_ASYL_FRST skipped (already done)
+Dealing with indicator: DM_ASYL_UASC
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator DM_ASYL_UASC skipped (already downloaded)
+Transformation for DM_ASYL_UASC skipped (already done)
+Dealing with indicator: MG_INTNL_MG_CNTRY_DEST_PS
+Indicator MG_INTNL_MG_CNTRY_DEST_PS skipped (already downloaded)
+Transformation for MG_INTNL_MG_CNTRY_DEST_PS skipped (already done)
+Dealing with indicator: MG_INTNL_MG_CNTRY_DEST_RT
+Indicator MG_INTNL_MG_CNTRY_DEST_RT skipped (already downloaded)
+Transformation for MG_INTNL_MG_CNTRY_DEST_RT skipped (already done)
+Dealing with indicator: CR_VC_DSR_MTMP
+Indicator CR_VC_DSR_MTMP skipped (already downloaded)
+Transformation for CR_VC_DSR_MTMP skipped (already done)
+Dealing with indicator: CR_VC_DSR_DAFF
+Indicator CR_VC_DSR_DAFF skipped (already downloaded)
+Transformation for CR_VC_DSR_DAFF skipped (already done)
+Dealing with indicator: CR_SH_AAP_MORT
+Indicator CR_SH_AAP_MORT skipped (already downloaded)
+Transformation for CR_SH_AAP_MORT skipped (already done)
+Dealing with indicator: CR_SH_HAP_MORT
+Indicator CR_SH_HAP_MORT skipped (already downloaded)
+Transformation for CR_SH_HAP_MORT skipped (already done)
+Dealing with indicator: CR_SH_STA_AIRP
+Indicator CR_SH_STA_AIRP skipped (already downloaded)
+Transformation for CR_SH_STA_AIRP skipped (already done)
+Dealing with indicator: CR_SH_AAP_ASMORT
+Indicator CR_SH_AAP_ASMORT skipped (already downloaded)
+Transformation for CR_SH_AAP_ASMORT skipped (already done)
+Dealing with indicator: CR_SH_HAP_ASMORT
+Indicator CR_SH_HAP_ASMORT skipped (already downloaded)
+Transformation for CR_SH_HAP_ASMORT skipped (already done)
+Dealing with indicator: CR_SH_STA_ASAIRP
+Indicator CR_SH_STA_ASAIRP skipped (already downloaded)
+Transformation for CR_SH_STA_ASAIRP skipped (already done)
+Dealing with indicator: CR_AAP_DEATH
+Indicator CR_AAP_DEATH succesfully downloaded
+Transform indicator: CR_AAP_DEATH, from dataflow: csv-str-5
+Indicator CR_AAP_DEATH will generate duplicates
+Duplicates eliminated at Transformation phase
+Dealing with indicator: CR_HAP_DEATH
+Indicator CR_HAP_DEATH succesfully downloaded
+Transform indicator: CR_HAP_DEATH, from dataflow: csv-str-5
+Indicator CR_HAP_DEATH will generate duplicates
+Duplicates eliminated at Transformation phase
+Dealing with indicator: CR_CCRI_VUL_HT
+Indicator CR_CCRI_VUL_HT succesfully downloaded
+Transform indicator: CR_CCRI_VUL_HT, from dataflow: CCRI
+Non-numeric observations in CR_CCRI_VUL_HT discarded:
+['x']
+Dealing with indicator: CR_CCRI_VUL_EDU
+Indicator CR_CCRI_VUL_EDU succesfully downloaded
+Transform indicator: CR_CCRI_VUL_EDU, from dataflow: CCRI
+Non-numeric observations in CR_CCRI_VUL_EDU discarded:
+['x']
+Dealing with indicator: CR_CCRI_VUL_WASH
+Indicator CR_CCRI_VUL_WASH succesfully downloaded
+Transform indicator: CR_CCRI_VUL_WASH, from dataflow: CCRI
+Non-numeric observations in CR_CCRI_VUL_WASH discarded:
+['x']
+Dealing with indicator: CR_CCRI_VUL_SP
+Indicator CR_CCRI_VUL_SP succesfully downloaded
+Transform indicator: CR_CCRI_VUL_SP, from dataflow: CCRI
+Dealing with indicator: CR_CCRI_VUL_ES
+Indicator CR_CCRI_VUL_ES succesfully downloaded
+Transform indicator: CR_CCRI_VUL_ES, from dataflow: CCRI
+Dealing with indicator: CR_CCRI
+Indicator CR_CCRI succesfully downloaded
+Transform indicator: CR_CCRI, from dataflow: CCRI
+Dealing with indicator: CR_EG_EGY_CLEAN
+Indicator CR_EG_EGY_CLEAN skipped (already downloaded)
+Transformation for CR_EG_EGY_CLEAN skipped (already done)
+Dealing with indicator: CR_EG_ACS_ELEC
+Indicator CR_EG_ACS_ELEC skipped (already downloaded)
+Transformation for CR_EG_ACS_ELEC skipped (already done)
+Dealing with indicator: CR_CCRI_EXP_WS
+Indicator CR_CCRI_EXP_WS succesfully downloaded
+Transform indicator: CR_CCRI_EXP_WS, from dataflow: CCRI
+Dealing with indicator: CR_CCRI_EXP_RF
+Indicator CR_CCRI_EXP_RF succesfully downloaded
+Transform indicator: CR_CCRI_EXP_RF, from dataflow: CCRI
+Dealing with indicator: CR_CCRI_EXP_CF
+Indicator CR_CCRI_EXP_CF succesfully downloaded
+Transform indicator: CR_CCRI_EXP_CF, from dataflow: CCRI
+Dealing with indicator: CR_CCRI_EXP_TC
+Indicator CR_CCRI_EXP_TC succesfully downloaded
+Transform indicator: CR_CCRI_EXP_TC, from dataflow: CCRI
+Dealing with indicator: CR_CCRI_EXP_VBD
+Indicator CR_CCRI_EXP_VBD succesfully downloaded
+Transform indicator: CR_CCRI_EXP_VBD, from dataflow: CCRI
+Dealing with indicator: CR_CCRI_EXP_HEAT
+Indicator CR_CCRI_EXP_HEAT succesfully downloaded
+Transform indicator: CR_CCRI_EXP_HEAT, from dataflow: CCRI
+Dealing with indicator: CR_CCRI_EXP_AP
+Indicator CR_CCRI_EXP_AP succesfully downloaded
+Transform indicator: CR_CCRI_EXP_AP, from dataflow: CCRI
+Dealing with indicator: CR_CCRI_EXP_SWP
+Indicator CR_CCRI_EXP_SWP succesfully downloaded
+Transform indicator: CR_CCRI_EXP_SWP, from dataflow: CCRI
+Dealing with indicator: CR_CCRI_EXP_CESS
+Indicator CR_CCRI_EXP_CESS succesfully downloaded
+Transform indicator: CR_CCRI_EXP_CESS, from dataflow: CCRI
+Dealing with indicator: CR_SG_DSR_LGRGSR
+Indicator CR_SG_DSR_LGRGSR skipped (already downloaded)
+Transformation for CR_SG_DSR_LGRGSR skipped (already done)
+Dealing with indicator: CR_VC_VOV_GDSD
+Indicator CR_VC_VOV_GDSD skipped (already downloaded)
+Transformation for CR_VC_VOV_GDSD skipped (already done)
+Dealing with indicator: CR_VC_VOV_GDSD_PD
+Indicator CR_VC_VOV_GDSD_PD succesfully downloaded
+Transform indicator: CR_VC_VOV_GDSD_PD, from dataflow: DF_SDG_GLH
+Dealing with indicator: CR_VC_VOV_GDSD_DISHEA_PD
+Indicator CR_VC_VOV_GDSD_DISHEA_PD succesfully downloaded
+Transform indicator: CR_VC_VOV_GDSD_DISHEA_PD, from dataflow: DF_SDG_GLH
+Dealing with indicator: CR_UN_CHLD_RIGHTS
+Indicator CR_UN_CHLD_RIGHTS skipped (already downloaded)
+Transformation for CR_UN_CHLD_RIGHTS skipped (already done)
+Dealing with indicator: CR_UN_CHLD_SALE
+Indicator CR_UN_CHLD_SALE skipped (already downloaded)
+Transformation for CR_UN_CHLD_SALE skipped (already done)
+Dealing with indicator: CR_UN_RIGHTS_DISAB
+Indicator CR_UN_RIGHTS_DISAB skipped (already downloaded)
+Transformation for CR_UN_RIGHTS_DISAB skipped (already done)
+Dealing with indicator: EC_TOT_PUB_EXP_GDP
+Indicator EC_TOT_PUB_EXP_GDP skipped (already downloaded)
+Transformation for EC_TOT_PUB_EXP_GDP skipped (already done)
+Dealing with indicator: EC_TOT_PUB_EXP_TOT
+Indicator EC_TOT_PUB_EXP_TOT skipped (already downloaded)
+Transformation for EC_TOT_PUB_EXP_TOT skipped (already done)
+Dealing with indicator: EC_FAM_PUB_EXP_GDP
+Indicator EC_FAM_PUB_EXP_GDP skipped (already downloaded)
+Transformation for EC_FAM_PUB_EXP_GDP skipped (already done)
+Dealing with indicator: EC_FAM_PUB_EXP_TOT
+Indicator EC_FAM_PUB_EXP_TOT skipped (already downloaded)
+Transformation for EC_FAM_PUB_EXP_TOT skipped (already done)
+Dealing with indicator: CR_IQ_SCI_OVRL
+Indicator CR_IQ_SCI_OVRL skipped (already downloaded)
+Transformation for CR_IQ_SCI_OVRL skipped (already done)
+Dealing with indicator: CR_SG_STT_FPOS
+Indicator CR_SG_STT_FPOS skipped (already downloaded)
+Transformation for CR_SG_STT_FPOS skipped (already done)
+Dealing with indicator: CR_SG_STT_NSDSFND
+Indicator CR_SG_STT_NSDSFND skipped (already downloaded)
+Transformation for CR_SG_STT_NSDSFND skipped (already done)
+Dealing with indicator: CR_SG_STT_NSDSIMPL
+Indicator CR_SG_STT_NSDSIMPL skipped (already downloaded)
+Transformation for CR_SG_STT_NSDSIMPL skipped (already done)
+Dealing with indicator: CR_SG_STT_NSDSFDGVT
+Indicator CR_SG_STT_NSDSFDGVT skipped (already downloaded)
+Transformation for CR_SG_STT_NSDSFDGVT skipped (already done)
+Dealing with indicator: CR_SG_STT_NSDSFDDNR
+Indicator CR_SG_STT_NSDSFDDNR skipped (already downloaded)
+Transformation for CR_SG_STT_NSDSFDDNR skipped (already done)
+Dealing with indicator: CR_SG_STT_NSDSFDOTHR
+Indicator CR_SG_STT_NSDSFDOTHR skipped (already downloaded)
+Transformation for CR_SG_STT_NSDSFDOTHR skipped (already done)
+Dealing with indicator: CR_SG_STT_CAPTY
+Indicator CR_SG_STT_CAPTY skipped (already downloaded)
+Transformation for CR_SG_STT_CAPTY skipped (already done)
+Dealing with indicator: CR_SG_REG_CENSUSN
+Indicator CR_SG_REG_CENSUSN skipped (already downloaded)
+Transformation for CR_SG_REG_CENSUSN skipped (already done)
+Dealing with indicator: PT_F_GE15_PS-SX-EM_V_PTNR_12MNTH
+Indicator PT_F_GE15_PS-SX-EM_V_PTNR_12MNTH skipped (already downloaded)
+Transformation for PT_F_GE15_PS-SX-EM_V_PTNR_12MNTH skipped (already done)
+Dealing with indicator: PT_F_GE15_SX_V_PTNR_12MNTH
+Indicator PT_F_GE15_SX_V_PTNR_12MNTH skipped (already downloaded)
+Transformation for PT_F_GE15_SX_V_PTNR_12MNTH skipped (already done)
+Dealing with indicator: PT_VC_VOV_PHYL
+Indicator PT_VC_VOV_PHYL skipped (already downloaded)
+Transformation for PT_VC_VOV_PHYL skipped (already done)
+Dealing with indicator: PT_VC_VOV_SEXL
+Indicator PT_VC_VOV_SEXL skipped (already downloaded)
+Transformation for PT_VC_VOV_SEXL skipped (already done)
+Dealing with indicator: PT_VC_VOV_ROBB
+Indicator PT_VC_VOV_ROBB skipped (already downloaded)
+Transformation for PT_VC_VOV_ROBB skipped (already done)
+Dealing with indicator: PT_VC_SNS_WALN
+Indicator PT_VC_SNS_WALN skipped (already downloaded)
+Transformation for PT_VC_SNS_WALN skipped (already done)
+Dealing with indicator: PT_CHLD_1-14_PS-PSY-V_CGVR
+Indicator PT_CHLD_1-14_PS-PSY-V_CGVR skipped (already downloaded)
+Transformation for PT_CHLD_1-14_PS-PSY-V_CGVR skipped (already done)
+Dealing with indicator: PT_F_18-29_SX-V_AGE-18
+Indicator PT_F_18-29_SX-V_AGE-18 skipped (already downloaded)
+Transformation for PT_F_18-29_SX-V_AGE-18 skipped (already done)
+Dealing with indicator: PT_M_18-29_SX-V_AGE-18
+Indicator PT_M_18-29_SX-V_AGE-18 skipped (already downloaded)
+Transformation for PT_M_18-29_SX-V_AGE-18 skipped (already done)
+Dealing with indicator: PT_VC_PRR_PHYV
+Indicator PT_VC_PRR_PHYV skipped (already downloaded)
+Transformation for PT_VC_PRR_PHYV skipped (already done)
+Dealing with indicator: PT_VC_PRR_SEXV
+Indicator PT_VC_PRR_SEXV skipped (already downloaded)
+Transformation for PT_VC_PRR_SEXV skipped (already done)
+Dealing with indicator: PT_VC_PRR_ROBB
+Indicator PT_VC_PRR_ROBB skipped (already downloaded)
+Transformation for PT_VC_PRR_ROBB skipped (already done)
+Dealing with indicator: PT_ADLT_PS_NEC
+Indicator PT_ADLT_PS_NEC skipped (already downloaded)
+Transformation for PT_ADLT_PS_NEC skipped (already done)
+Dealing with indicator: PT_F_15-49_W-BTNG
+Indicator PT_F_15-49_W-BTNG skipped (already downloaded)
+Transformation for PT_F_15-49_W-BTNG skipped (already done)
+Dealing with indicator: PT_M_15-49_W-BTNG
+Indicator PT_M_15-49_W-BTNG skipped (already downloaded)
+Transformation for PT_M_15-49_W-BTNG skipped (already done)
+Dealing with indicator: PT_ST_13-15_BUL_30-DYS
+Indicator PT_ST_13-15_BUL_30-DYS skipped (already downloaded)
+Transformation for PT_ST_13-15_BUL_30-DYS skipped (already done)
+Dealing with indicator: PT_F_15-19_MRD
+Indicator PT_F_15-19_MRD skipped (already downloaded)
+Transformation for PT_F_15-19_MRD skipped (already done)
+Dealing with indicator: PT_M_15-19_MRD
+Indicator PT_M_15-19_MRD skipped (already downloaded)
+Transformation for PT_M_15-19_MRD skipped (already done)
+Dealing with indicator: PT_F_20-24_MRD_U15
+Indicator PT_F_20-24_MRD_U15 skipped (already downloaded)
+Transformation for PT_F_20-24_MRD_U15 skipped (already done)
+Dealing with indicator: PT_F_20-24_MRD_U18
+Indicator PT_F_20-24_MRD_U18 skipped (already downloaded)
+Transformation for PT_F_20-24_MRD_U18 skipped (already done)
+Dealing with indicator: PT_M_20-24_MRD_U18
+Indicator PT_M_20-24_MRD_U18 skipped (already downloaded)
+Transformation for PT_M_20-24_MRD_U18 skipped (already done)
+Dealing with indicator: PT_CHLD_5-17_LBR_ECON
+Indicator PT_CHLD_5-17_LBR_ECON skipped (already downloaded)
+Transformation for PT_CHLD_5-17_LBR_ECON skipped (already done)
+Dealing with indicator: PT_CHLD_5-17_LBR_ECON-HC
+Indicator PT_CHLD_5-17_LBR_ECON-HC skipped (already downloaded)
+Transformation for PT_CHLD_5-17_LBR_ECON-HC skipped (already done)
+Dealing with indicator: PT_ADLS_10-14_LBR_HC
+Indicator PT_ADLS_10-14_LBR_HC skipped (already downloaded)
+Transformation for PT_ADLS_10-14_LBR_HC skipped (already done)
+Dealing with indicator: JJ_VC_PRS_UNSNT
+Indicator JJ_VC_PRS_UNSNT skipped (already downloaded)
+Transformation for JJ_VC_PRS_UNSNT skipped (already done)
+Dealing with indicator: JJ_PRISIONERS
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator JJ_PRISIONERS skipped (already downloaded)
+Transformation for JJ_PRISIONERS skipped (already done)
+Dealing with indicator: JJ_PRISIONERS_RT
+Querying EUROSTAT metadata: please wait, long response times are reported
+Indicator JJ_PRISIONERS_RT skipped (already downloaded)
+Transformation for JJ_PRISIONERS_RT skipped (already done)
+Dealing with indicator: PT_CHLD_Y0T4_REG
+Indicator PT_CHLD_Y0T4_REG skipped (already downloaded)
+Transformation for PT_CHLD_Y0T4_REG skipped (already done)
+Dealing with indicator: PP_SG_REG_BRTH90N
+Indicator PP_SG_REG_BRTH90N skipped (already downloaded)
+Transformation for PP_SG_REG_BRTH90N skipped (already done)
+Dealing with indicator: PP_SG_REG_DETH75N
+Indicator PP_SG_REG_DETH75N skipped (already downloaded)
+Transformation for PP_SG_REG_DETH75N skipped (already done)
+Dealing with indicator: PP_SG_NHR_IMPLN
+Indicator PP_SG_NHR_IMPLN skipped (already downloaded)
+Transformation for PP_SG_NHR_IMPLN skipped (already done)
+Dealing with indicator: PP_SG_NHR_INTEXSTN
+Indicator PP_SG_NHR_INTEXSTN skipped (already downloaded)
+Transformation for PP_SG_NHR_INTEXSTN skipped (already done)
+Dealing with indicator: PP_SG_NHR_NOSTUSN
+Indicator PP_SG_NHR_NOSTUSN skipped (already downloaded)
+Transformation for PP_SG_NHR_NOSTUSN skipped (already done)
+Dealing with indicator: PP_SG_NHR_NOAPPLN
+Indicator PP_SG_NHR_NOAPPLN skipped (already downloaded)
+Transformation for PP_SG_NHR_NOAPPLN skipped (already done)
+Dealing with indicator: PP_IT_USE_ii99
+Indicator PP_IT_USE_ii99 skipped (already downloaded)
+Transformation for PP_IT_USE_ii99 skipped (already done)
+Dealing with indicator: PP_SE_ADT_ACTS_ATCH
+Indicator PP_SE_ADT_ACTS_ATCH skipped (already downloaded)
+Transformation for PP_SE_ADT_ACTS_ATCH skipped (already done)
+Dealing with indicator: PP_SE_ADT_ACTS_CPT
+Indicator PP_SE_ADT_ACTS_CPT skipped (already downloaded)
+Transformation for PP_SE_ADT_ACTS_CPT skipped (already done)
+Dealing with indicator: PP_SE_ADT_ACTS_CDV
+Indicator PP_SE_ADT_ACTS_CDV skipped (already downloaded)
+Transformation for PP_SE_ADT_ACTS_CDV skipped (already done)
+Dealing with indicator: PP_SE_ADT_ACTS_SSHT
+Indicator PP_SE_ADT_ACTS_SSHT skipped (already downloaded)
+Transformation for PP_SE_ADT_ACTS_SSHT skipped (already done)
+Dealing with indicator: PP_SE_ADT_ACTS_PRGM
+Indicator PP_SE_ADT_ACTS_PRGM skipped (already downloaded)
+Transformation for PP_SE_ADT_ACTS_PRGM skipped (already done)
+Dealing with indicator: PP_SE_ADT_ACTS_PST
+Indicator PP_SE_ADT_ACTS_PST skipped (already downloaded)
+Transformation for PP_SE_ADT_ACTS_PST skipped (already done)
+Dealing with indicator: PP_SE_ADT_ACTS_SFWR
+Indicator PP_SE_ADT_ACTS_SFWR skipped (already downloaded)
+Transformation for PP_SE_ADT_ACTS_SFWR skipped (already done)
+Dealing with indicator: PP_SE_ADT_ACTS_TRFF
+Indicator PP_SE_ADT_ACTS_TRFF skipped (already downloaded)
+Transformation for PP_SE_ADT_ACTS_TRFF skipped (already done)
+Dealing with indicator: PP_SE_ADT_ACTS_CMFL
+Indicator PP_SE_ADT_ACTS_CMFL skipped (already downloaded)
+Transformation for PP_SE_ADT_ACTS_CMFL skipped (already done)
+Dealing with indicator: PP_SE_GPI_ICTS_ATCH
+Indicator PP_SE_GPI_ICTS_ATCH skipped (already downloaded)
+Transformation for PP_SE_GPI_ICTS_ATCH skipped (already done)
+Dealing with indicator: PP_SE_GPI_ICTS_CPT
+Indicator PP_SE_GPI_ICTS_CPT skipped (already downloaded)
+Transformation for PP_SE_GPI_ICTS_CPT skipped (already done)
+Dealing with indicator: PP_SE_GPI_ICTS_CDV
+Indicator PP_SE_GPI_ICTS_CDV skipped (already downloaded)
+Transformation for PP_SE_GPI_ICTS_CDV skipped (already done)
+Dealing with indicator: PP_SE_GPI_ICTS_SSHT
+Indicator PP_SE_GPI_ICTS_SSHT skipped (already downloaded)
+Transformation for PP_SE_GPI_ICTS_SSHT skipped (already done)
+Dealing with indicator: PP_SE_GPI_ICTS_PRGM
+Indicator PP_SE_GPI_ICTS_PRGM skipped (already downloaded)
+Transformation for PP_SE_GPI_ICTS_PRGM skipped (already done)
+Dealing with indicator: PP_SE_GPI_ICTS_PST
+Indicator PP_SE_GPI_ICTS_PST skipped (already downloaded)
+Transformation for PP_SE_GPI_ICTS_PST skipped (already done)
+Dealing with indicator: PP_SE_GPI_ICTS_SFWR
+Indicator PP_SE_GPI_ICTS_SFWR skipped (already downloaded)
+Transformation for PP_SE_GPI_ICTS_SFWR skipped (already done)
+Dealing with indicator: PP_SE_GPI_ICTS_TRFF
+Indicator PP_SE_GPI_ICTS_TRFF skipped (already downloaded)
+Transformation for PP_SE_GPI_ICTS_TRFF skipped (already done)
+Dealing with indicator: PP_SE_GPI_ICTS_CMFL
+Indicator PP_SE_GPI_ICTS_CMFL skipped (already downloaded)
+Transformation for PP_SE_GPI_ICTS_CMFL skipped (already done)
+Dealing with indicator: PP_IT_MOB_OWN
+Indicator PP_IT_MOB_OWN skipped (already downloaded)
+Transformation for PP_IT_MOB_OWN skipped (already done)
+Dealing with indicator: PP_ADOL_TVGM
+Indicator PP_ADOL_TVGM skipped (already downloaded)
+Transformation for PP_ADOL_TVGM skipped (already done)
+Dealing with indicator: PP_ADOL_INET
+Indicator PP_ADOL_INET skipped (already downloaded)
+Transformation for PP_ADOL_INET skipped (already done)
+Dealing with indicator: PP_ADOL_ITXT
+Indicator PP_ADOL_ITXT skipped (already downloaded)
+Transformation for PP_ADOL_ITXT skipped (already done)
+Dealing with indicator: PP_ADOL_WORK_PAID
+Indicator PP_ADOL_WORK_PAID skipped (already downloaded)
+Transformation for PP_ADOL_WORK_PAID skipped (already done)
+Dealing with indicator: PP_ADOL_WORK_HOME
+Indicator PP_ADOL_WORK_HOME skipped (already downloaded)
+Transformation for PP_ADOL_WORK_HOME skipped (already done)
+Dealing with indicator: ECD_CHLD_U5_LFT-ALN
+Indicator ECD_CHLD_U5_LFT-ALN skipped (already downloaded)
+Transformation for ECD_CHLD_U5_LFT-ALN skipped (already done)
+Transformation for legacy data skipped (already done)
+Check missing indicators in CL_TMEE_INDICATORS.csv file.
+Codes for SEX: ['_T' 'F' 'M' '_U']
+Codes for Residence: ['_T' 'R' 'U' '_Z']
+Codes for Wealth: ['_T' 'Q1' 'Q2' 'Q3' 'Q4' 'Q5' 'B20' 'B40' 'B60' 'B80' 'R20' 'R40' 'R60'
+ 'R80']
+Codes for Freq: [nan '1' '0' '5' '3' '4']
+Codes for Unit Mult: [nan '0' '3' '6']
+Codes for Obs Status: ['A' 'E' nan 'MD' 'PR' 'P' 'RA' 'RP' 'B' 'D' 'U' 'W' 'AD' 'BU' 'N' 'PU'
+ 'BE' 'ER']
+Age-groups codelist UNICEF/CL_AGE checked.
+Deep comparison
+Mismatch: ['CR_SH_STA_AIRP.csv', 'CR_SH_STA_ASAIRP.csv', 'DM_BRTS.csv', 'DM_FRATE_TOT.csv', 'DM_LIFE_EXP.csv', 'DM_POP_URBN.csv', 'DM_SM_POP_REFG.csv', 'DM_SM_POP_REFG_OR.csv', 'ECD_CHLD_36-59M_ADLT_SRC.csv', 'ECD_CHLD_U5_BKS-HM.csv', 'ECD_CHLD_U5_LFT-ALN.csv', 'ECD_CHLD_U5_PLYTH-HM.csv', 'EC_GC_DOD_TOTL_GD_ZS.csv', 'EC_NE_DAB_TOTL_ZS.csv', 'EC_NY_GDP_MKTP_KD_ZG.csv', 'EC_NY_GDP_PCAP_KD_ZG.csv', 'EC_NY_GDP_PCAP_PP_CD.csv', 'EC_NY_GNP_ATLS_CD.csv', 'EC_NY_GNP_PCAP_CD.csv', 'EC_SL_UEM_TOTL_NE_ZS.csv', 'EC_SL_UEM_TOTL_ZS.csv', 'EDU_PIRLS_REA.csv', 'EDU_PISA_MAT.csv', 'EDU_PISA_MAT2.csv', 'EDU_PISA_MAT3.csv', 'EDU_PISA_MAT4.csv', 'EDU_PISA_MAT5.csv', 'EDU_PISA_MAT6.csv', 'EDU_PISA_REA.csv', 'EDU_PISA_REA2.csv', 'EDU_PISA_REA3.csv', 'EDU_PISA_REA4.csv', 'EDU_PISA_REA5.csv', 'EDU_PISA_REA6.csv', 'EDU_PISA_SCI.csv', 'EDU_PISA_SCI2.csv', 'EDU_PISA_SCI3.csv', 'EDU_PISA_SCI4.csv', 'EDU_PISA_SCI5.csv', 'EDU_PISA_SCI6.csv', 'EDU_SDG_YOUTH_NEET.csv', 'EDU_TIMSS_MAT4.csv', 'EDU_TIMSS_MAT8.csv', 'EDU_TIMSS_SCI4.csv', 'EDU_TIMSS_SCI8.csv', 'GN_MTNTY_LV_BNFTS.csv', 'GN_PTNTY_LV_BNFTS.csv', 'HT_DIST79DTP3_P.csv', 'HT_DIST79MCV2_P.csv', 'HT_SDG_PM25.csv', 'MNCH_ANC4.csv', 'MNCH_MMR.csv', 'MNCH_PNCMOM.csv', 'MNCH_PNEUCARE.csv', 'MNCH_SAB.csv', 'PT_ADLT_PS_NEC.csv', 'PT_CHLD_1-14_PS-PSY-V_CGVR.csv', 'PT_CHLD_5-17_LBR_ECON-HC.csv', 'PT_CHLD_5-17_LBR_ECON.csv', 'PT_CHLD_Y0T4_REG.csv', 'PT_F_15-19_MRD.csv', 'PT_F_15-49_W-BTNG.csv', 'PT_F_18-29_SX-V_AGE-18.csv', 'PT_F_20-24_MRD_U15.csv', 'PT_F_20-24_MRD_U18.csv', 'PT_F_GE15_PS-SX-EM_V_PTNR_12MNTH.csv', 'PT_F_GE15_SX_V_PTNR_12MNTH.csv', 'PT_M_15-19_MRD.csv', 'PT_M_15-49_W-BTNG.csv', 'PT_M_18-29_SX-V_AGE-18.csv', 'PT_M_20-24_MRD_U18.csv', 'PT_ST_13-15_BUL_30-DYS.csv']
+Errors: ['CME_PND.csv', 'CME_SBR.csv', 'CME_TMY0T4.csv', 'CR_AAP_DEATH.csv', 'CR_CCRI.csv', 'CR_CCRI_EXP_AP.csv', 'CR_CCRI_EXP_CESS.csv', 'CR_CCRI_EXP_CF.csv', 'CR_CCRI_EXP_HEAT.csv', 'CR_CCRI_EXP_RF.csv', 'CR_CCRI_EXP_SWP.csv', 'CR_CCRI_EXP_TC.csv', 'CR_CCRI_EXP_VBD.csv', 'CR_CCRI_EXP_WS.csv', 'CR_CCRI_VUL_EDU.csv', 'CR_CCRI_VUL_ES.csv', 'CR_CCRI_VUL_HT.csv', 'CR_CCRI_VUL_SP.csv', 'CR_CCRI_VUL_WASH.csv', 'CR_HAP_DEATH.csv', 'CR_IQ_SCI_OVRL.csv', 'CR_SG_REG_CENSUSN.csv', 'CR_SG_STT_CAPTY.csv', 'CR_SG_STT_FPOS.csv', 'CR_SG_STT_NSDSFDDNR.csv', 'CR_SG_STT_NSDSFDGVT.csv', 'CR_SG_STT_NSDSFDOTHR.csv', 'CR_SG_STT_NSDSFND.csv', 'CR_SG_STT_NSDSIMPL.csv', 'CR_SH_AAP_ASMORT.csv', 'CR_SH_AAP_MORT.csv', 'CR_SH_HAP_ASMORT.csv', 'CR_SH_HAP_MORT.csv', 'CR_UN_CHLD_RIGHTS.csv', 'CR_UN_CHLD_SALE.csv', 'CR_UN_RIGHTS_DISAB.csv', 'CR_VC_VOV_GDSD.csv', 'CR_VC_VOV_GDSD_DISHEA_PD.csv', 'CR_VC_VOV_GDSD_PD.csv', 'DM_ADOL_POP.csv', 'DM_ADOL_YOUTH_POP.csv', 'DM_ADULT_YOUTH_POP.csv', 'DM_ASYL_FRST.csv', 'DM_ASYL_UASC.csv', 'DM_CHLD_POP.csv', 'DM_CHLD_POP_PT.csv', 'DM_CHLD_TWO_PRNT.csv', 'DM_REPD_AGE_POP.csv', 'DM_SP_POP_BRTH_MF.csv', 'DM_TOT_POP_PROSP.csv', 'ECD_CHLD_36-59M_EDU-PGM.csv', 'ECD_CHLD_36-59M_FHR-SPT-LNG.csv', 'EC_EAP_RT.csv', 'EC_FAM_PUB_EXP_GDP.csv', 'EC_FAM_PUB_EXP_TOT.csv', 'EC_FB_BNK_ACCSS.csv', 'EC_GDI.csv', 'EC_GEN_CONF_JUD.csv', 'EC_GEN_PAY_GAP.csv', 'EC_GII.csv', 'EC_GNI_PCAP_PPP.csv', 'EC_HCI_OVRL.csv', 'EC_HDI.csv', 'EC_INACT_RT.csv', 'EC_IQ_CPA_GNDR_XQ.csv', 'EC_MIN_WAGE.csv', 'EC_SIGI.csv', 'EC_SI_POV_GINI.csv', 'EC_SP_GOV_EXP_GDP.csv', 'EC_SP_GOV_EXP_TOT.csv', 'EC_TEC_CNT_GOV_EXP.csv', 'EC_TEC_GRL_GOV_EXP.csv', 'EC_TEC_LOC_GOV_EXP.csv', 'EC_TEC_SSF_EXP.csv', 'EC_TEC_STA_GOV_EXP.csv', 'EC_TOT_PUB_EXP_GDP.csv', 'EC_TOT_PUB_EXP_TOT.csv', 'EC_YOUTH_INACT_RT.csv', 'EC_YOUTH_UNE_RT.csv', 'EDUNF_COMP_YR.csv', 'EDUNF_COMP_YR_L02T3.csv', 'EDUNF_GECER_L01.csv', 'EDUNF_GECER_L02.csv', 'EDUNF_GER_GPI_L5T8.csv', 'EDUNF_GER_L5T8.csv', 'EDUNF_PTR_L02.csv', 'EDUNF_STEM_GRAD_RT.csv', 'EDU_ECEC_PART.csv', 'EDU_FIN_INIT_GOV_L02_GDP.csv', 'EDU_SE_ACS_CMPTR_L1.csv', 'EDU_SE_ACS_CMPTR_L2.csv', 'EDU_SE_ACS_CMPTR_L3.csv', 'EDU_SE_ACS_ELECT_L1.csv', 'EDU_SE_ACS_ELECT_L2.csv', 'EDU_SE_ACS_ELECT_L3.csv', 'EDU_SE_ACS_INTNT_L1.csv', 'EDU_SE_ACS_INTNT_L2.csv', 'EDU_SE_ACS_INTNT_L3.csv', 'EDU_SE_AGP_CPRA_L1.csv', 'EDU_SE_AGP_CPRA_L2.csv', 'EDU_SE_AGP_CPRA_L3.csv', 'EDU_SE_ALP_CPLR_L1.csv', 'EDU_SE_ALP_CPLR_L2.csv', 'EDU_SE_ALP_CPLR_L3.csv', 'EDU_SE_AWP_CPRA_L1.csv', 'EDU_SE_AWP_CPRA_L2.csv', 'EDU_SE_AWP_CPRA_L3.csv', 'EDU_SE_GPI_PART.csv', 'EDU_SE_GPI_PTNPRE.csv', 'EDU_SE_GPI_TCAQ_L02.csv', 'EDU_SE_GPI_TCAQ_L1.csv', 'EDU_SE_GPI_TCAQ_L2.csv', 'EDU_SE_GPI_TCAQ_L3.csv', 'EDU_SE_IMP_FPOF_LIT.csv', 'EDU_SE_IMP_FPOF_NUM.csv', 'EDU_SE_LGP_ACHI_L1_MAT.csv', 'EDU_SE_LGP_ACHI_L1_REA.csv', 'EDU_SE_LGP_ACHI_L2_MAT.csv', 'EDU_SE_LGP_ACHI_L2_REA.csv', 'EDU_SE_NAP_ACHI_L1_MAT.csv', 'EDU_SE_NAP_ACHI_L1_REA.csv', 'EDU_SE_NAP_ACHI_L2_MAT.csv', 'EDU_SE_NAP_ACHI_L2_REA.csv', 'EDU_SE_TOT_GPI_FS_LIT.csv', 'EDU_SE_TOT_GPI_FS_NUM.csv', 'EDU_SE_TOT_GPI_L1_MAT.csv', 'EDU_SE_TOT_GPI_L1_REA.csv', 'EDU_SE_TOT_GPI_L2_MAT.csv', 'EDU_SE_TOT_GPI_L2_REA.csv', 'EDU_SE_TOT_RUPI_L1_MAT.csv', 'EDU_SE_TOT_RUPI_L1_REA.csv', 'EDU_SE_TOT_RUPI_L2_MAT.csv', 'EDU_SE_TOT_RUPI_L2_REA.csv', 'EDU_SE_TOT_SESPI_FS_LIT.csv', 'EDU_SE_TOT_SESPI_FS_NUM.csv', 'EDU_SE_TOT_SESPI_L1_MAT.csv', 'EDU_SE_TOT_SESPI_L1_REA.csv', 'EDU_SE_TOT_SESPI_L2_MAT.csv', 'EDU_SE_TOT_SESPI_L2_REA.csv', 'ED_ANAR_L1.csv', 'ED_ANAR_L2.csv', 'ED_ANAR_L3.csv', 'HT_ADOL_HIGH_SATS.csv', 'HT_ADOL_LOW_SATS.csv', 'HT_ADOL_MEAL.csv', 'HT_ADOL_MT.csv', 'HT_ADOL_NO_EXCS.csv', 'HT_ADOL_UNMETMED_FEAR.csv', 'HT_ADOL_UNMETMED_HOPING.csv', 'HT_ADOL_UNMETMED_NOKNOW.csv', 'HT_ADOL_UNMETMED_NOTIME.csv', 'HT_ADOL_UNMETMED_NOUNMET.csv', 'HT_ADOL_UNMETMED_OTH.csv', 'HT_ADOL_UNMETMED_TOOEFW.csv', 'HT_ADOL_UNMETMED_TOOEXP.csv', 'HT_ADOL_UNMETMED_TOOFAR.csv', 'HT_ADOL_UNMETMED_WAITING.csv', 'HT_ADOL_VGRS_EXCS.csv', 'HT_CDRT_SELF_HARM.csv', 'HT_CHLD_BODY_NO_RGHT.csv', 'HT_CHLD_BODY_RGHT.csv', 'HT_CHLD_DRNK.csv', 'HT_CHLD_REG_SMOK.csv', 'HT_COVERAGE_DTP3.csv', 'HT_DIST80DTP3_P.csv', 'HT_INS_COV.csv', 'HT_NCD_BMI_18A.csv', 'HT_NO_BTH_SHW_FLSH.csv', 'HT_SH_ACS_DTP3.csv', 'HT_SH_ACS_HPV.csv', 'HT_SH_ACS_MCV2.csv', 'HT_SH_ACS_PCV3.csv', 'HT_SH_ACS_UNHC.csv', 'HT_SH_HIV_0014.csv', 'HT_SH_PRV_SMOK.csv', 'HT_SH_STA_ANEM.csv', 'HT_SH_STA_ANEM_NPRG.csv', 'HT_SH_STA_ANEM_PREG.csv', 'HT_SH_XPD_CHEX_PC_CD.csv', 'HT_SH_XPD_CHEX_PP_CD.csv', 'HT_SH_XPD_GHED_CH_ZS.csv', 'HT_SH_XPD_GHED_GD_ZS.csv', 'HT_SH_XPD_GHED_GE_ZS.csv', 'HT_SH_XPD_GHED_PC_CD.csv', 'HT_SH_XPD_GHED_PP_CD.csv', 'HT_SH_XPD_OOPC_PC_CD.csv', 'HT_SH_XPD_OOPC_PP_CD.csv', 'HT_SH_XPD_PVTD_CH_ZS.csv', 'HT_SH_XPD_PVTD_PC_CD.csv', 'HT_SH_XPD_PVTD_PP_CD.csv', 'HT_SN_STA_OVWGTN.csv', 'HT_U5DEATH_AIDS.csv', 'HT_U5DEATH_CONG.csv', 'HT_U5DEATH_DIAR.csv', 'HT_U5DEATH_INJU.csv', 'HT_U5DEATH_INTR.csv', 'HT_U5DEATH_MALA.csv', 'HT_U5DEATH_MEAS.csv', 'HT_U5DEATH_MENI.csv', 'HT_U5DEATH_NCDS.csv', 'HT_U5DEATH_OTHE.csv', 'HT_U5DEATH_PERT.csv', 'HT_U5DEATH_PNEU.csv', 'HT_U5DEATH_PRET.csv', 'HT_U5DEATH_SEPS.csv', 'HT_U5DEATH_TETA.csv', 'HVA_EPI_INF_ANN_15-24.csv', 'HVA_EPI_INF_RT_0-14.csv', 'HVA_EPI_INF_RT_10-19.csv', 'HVA_EPI_LHIV_0-19.csv', 'HVA_EPI_LHIV_15-24.csv', 'HVA_PED_ART_CVG.csv', 'HVA_PED_ART_NUM.csv', 'IM_MCV1.csv', 'JJ_PRISIONERS.csv', 'JJ_PRISIONERS_RT.csv', 'MG_INTNL_MG_CNTRY_DEST_PS.csv', 'MG_INTNL_MG_CNTRY_DEST_RT.csv', 'MNCH_BIRTH18.csv', 'MNCH_CSEC.csv', 'MNCH_INSTDEL.csv', 'MNCH_MATERNAL_DEATHS.csv', 'MNCH_SH_MMR_RISK.csv', 'MNCH_SH_MMR_RISK_ZS.csv', 'NT_BW_UNW.csv', 'PP_ADOL_INET.csv', 'PP_ADOL_ITXT.csv', 'PP_ADOL_TVGM.csv', 'PP_ADOL_WORK_HOME.csv', 'PP_ADOL_WORK_PAID.csv', 'PP_IT_MOB_OWN.csv', 'PP_IT_USE_ii99.csv', 'PP_SE_ADT_ACTS_ATCH.csv', 'PP_SE_ADT_ACTS_CDV.csv', 'PP_SE_ADT_ACTS_CMFL.csv', 'PP_SE_ADT_ACTS_CPT.csv', 'PP_SE_ADT_ACTS_PRGM.csv', 'PP_SE_ADT_ACTS_PST.csv', 'PP_SE_ADT_ACTS_SFWR.csv', 'PP_SE_ADT_ACTS_SSHT.csv', 'PP_SE_ADT_ACTS_TRFF.csv', 'PP_SE_GPI_ICTS_ATCH.csv', 'PP_SE_GPI_ICTS_CDV.csv', 'PP_SE_GPI_ICTS_CMFL.csv', 'PP_SE_GPI_ICTS_CPT.csv', 'PP_SE_GPI_ICTS_PRGM.csv', 'PP_SE_GPI_ICTS_PST.csv', 'PP_SE_GPI_ICTS_SFWR.csv', 'PP_SE_GPI_ICTS_SSHT.csv', 'PP_SE_GPI_ICTS_TRFF.csv', 'PP_SG_NHR_IMPLN.csv', 'PP_SG_NHR_INTEXSTN.csv', 'PP_SG_NHR_NOAPPLN.csv', 'PP_SG_NHR_NOSTUSN.csv', 'PP_SG_REG_BRTH90N.csv', 'PP_SG_REG_DETH75N.csv', 'PT_ADLS_10-14_LBR_HC.csv', 'PV_AROPE.csv', 'PV_AROPRT.csv', 'PV_SDG_SI_POV_NAHC.csv', 'PV_SD_MDP_CSMP.csv', 'PV_SD_MDP_MUHC.csv', 'PV_SD_MDP_MUHHC.csv', 'PV_SEV_MAT_DPRT.csv', 'PV_SI_COV_BENFTS.csv', 'PV_SI_COV_CHLD.csv', 'PV_SI_COV_DISAB.csv', 'PV_SI_COV_LMKT.csv', 'PV_SI_COV_MATNL.csv', 'PV_SI_COV_PENSN.csv', 'PV_SI_COV_POOR.csv', 'PV_SI_COV_SOCAST.csv', 'PV_SI_COV_SOCINS.csv', 'PV_SI_COV_UEMP.csv', 'PV_SI_COV_VULN.csv', 'PV_SI_COV_WKINJRY.csv', 'PV_SI_POV_DAY1.csv', 'PV_SI_POV_EMP1.csv', 'PV_SI_POV_MDIM.csv', 'PV_SI_POV_MDIM_17.csv', 'PV_SI_POV_UMIC.csv', 'PV_WB_SI_POV_NAHC.csv', 'SG_GEN_PARL.csv', 'SL_DOM_TSPD.csv', 'WS_PPL_H-B.csv', 'WS_PPL_S-B.csv', 'WS_PPL_S-SM.csv', 'WS_PPL_W-B.csv', 'WS_PPL_W-SM.csv', 'WS_PPS_S-OD.csv']
+4.89 minutes execution
